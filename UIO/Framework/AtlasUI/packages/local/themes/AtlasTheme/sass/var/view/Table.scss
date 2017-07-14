@@ -1,0 +1,17 @@
+
+//row cell over
+$grid-row-cell-over-background-color: mix(#fff, #c1e6f6, 65%);
+$grid-row-cell-over-border-color: ($grid-row-cell-over-background-color);
+$grid-row-cell-border-color: dynamic(#d3d3d3);
+
+//row cell selected
+$grid-row-cell-selected-background-color: mix(#fff, #c1e6f6, 25%);
+$grid-row-cell-alt-selected-background-color: mix(#fff, #c1e6f6, 25%);
+$grid-row-cell-selected-border-color: ($grid-row-cell-selected-background-color);
+$grid-row-cell-focus-border-color: mix(#ddd, #c1e6f6, 20%);
+$grid-row-cell-background-color:none;
+
+$grid-row-cell-font-weight:dynamic(500);
+$grid-row-cell-color :dynamic(#3e4752);
+$grid-row-cell-line-height:dynamic(16px);
+$grid-row-cell-alt-background-color:dynamic(#ffffff);

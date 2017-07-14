@@ -1,0 +1,7 @@
+$form-text-field-border-radius: 4px;
+$form-text-field-border-width: 1px;
+$form-text-field-padding: 2px;
+
+$form-search-trigger-glyph: dynamic($fa-var-search 13px $font-icon-font-family);
+$form-clear-trigger-glyph: dynamic($fa-var-times 13px $font-icon-font-family);
+$form-trigger-glyph: dynamic($fa-var-caret-down 13px $font-icon-font-family);

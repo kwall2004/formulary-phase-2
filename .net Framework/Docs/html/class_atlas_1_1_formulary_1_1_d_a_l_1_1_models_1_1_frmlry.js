@@ -1,0 +1,26 @@
+var class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry =
+[
+    [ "Frmlry", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a75422af561ca517007e37c8951f9eec0", null ],
+    [ "CreatedBy", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#ad8753111f67b46bd2071e5ec10a37a25", null ],
+    [ "CreatedTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#af4d1d431ba0aa08e6adc8023f8528773", null ],
+    [ "DelTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a2637ef685c2a4fc7dd1b768178707029", null ],
+    [ "DrugPostObsltAlwdDays", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#aa2cad6c219273abca077f557ebce3aa4", null ],
+    [ "DrugRefDb", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#af0cbe60c7ca4c00c709102d1299b8fc0", null ],
+    [ "DrugRefDbSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a9c480c876ef626f8427216903c25c0f7", null ],
+    [ "DrugThrputcClsType", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#aea5d05fbbc691734eb1f126dc14a9db4", null ],
+    [ "DrugThrputcClsTypeSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a279ab2960d255cac77fcd5d96971d38b", null ],
+    [ "EfctvEndDt", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a268f095dd194580de1b5baadacad6a6c", null ],
+    [ "EfctvStartDt", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#ad255e2bb7b05894452cbd8cc26c6855a", null ],
+    [ "FrmlryAccess", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a27587ea433df54ffaff945e87f76f8b7", null ],
+    [ "FrmlryConfgPrpty", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#af792fbeee1287a7fa53cd8654b4412bc", null ],
+    [ "FrmlryDrugList", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a0ada9d29df13c420b1a91787d93b5bf3", null ],
+    [ "FrmlryName", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a95206cc5be0c98145f6814fdaa30d4e7", null ],
+    [ "FrmlrySK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a9cadb85dea3911c94f9e0dad6a9771bf", null ],
+    [ "FrmlryTier", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a6b3fa0a682ea00df3be350229f1f55a2", null ],
+    [ "FrmlryVer", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#ae7b8595a4def25c3fec76f2201db771e", null ],
+    [ "InctvTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#aece98e724bc2977bb734b0b67d3d9bd6", null ],
+    [ "LastModfdBy", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a23ef27d05accfd20a37a549ec71d1b9a", null ],
+    [ "LastModfdTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#ac451dc5ae2d0722a8d2ef94174b7bfe9", null ],
+    [ "LOB", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#a193821e1771a91bf292aebf95aa7e370", null ],
+    [ "LOBSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry.html#abb1138326347452c23837185cd912c1b", null ]
+];

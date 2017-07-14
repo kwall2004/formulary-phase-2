@@ -1,0 +1,14 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.BenefitPlan.DAL/Service References/EDIMerlinService
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796727
+Atlas.BenefitPlan.DAL.EDIMerlinService.applyaccumtranResponse.datasource;3491855300;1;1492524706;|288761|544806
+Atlas.BenefitPlan.DAL.EDIMerlinService.getEnrollmentbyGroupCodeResponse.datasource;344839231;1;1492524706;|288762|544807
+Atlas.BenefitPlan.DAL.EDIMerlinService.getXMLOutputForPlanResponse.datasource;3062732822;1;1492524706;|288763|544808
+Atlas.BenefitPlan.DAL.EDIMerlinService.loadExternalAccumulatorsResponse.datasource;2315736918;1;1492524706;|288764|544809
+Atlas.BenefitPlan.DAL.EDIMerlinService.loadMedicalOOPBalanceResponse.datasource;3999310649;1;1492524706;|288765|544810
+configuration.svcinfo;2833590070;1;1492524706;|288766|544811
+configuration91.svcinfo;1647413347;1;1492524706;|288767|544812
+EDIMerlin.wsdl;3974014411;1;1492524706;|288768|544813
+Reference.cs;3399296087;1;1492524707;|288769|544814
+Reference.svcmap;628566116;1;1492524707;|288770|544815

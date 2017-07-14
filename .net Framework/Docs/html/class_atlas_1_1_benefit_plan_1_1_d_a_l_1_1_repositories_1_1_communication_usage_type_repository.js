@@ -1,0 +1,4 @@
+var class_atlas_1_1_benefit_plan_1_1_d_a_l_1_1_repositories_1_1_communication_usage_type_repository =
+[
+    [ "CommunicationUsageTypeRepository", "class_atlas_1_1_benefit_plan_1_1_d_a_l_1_1_repositories_1_1_communication_usage_type_repository.html#adbd212b3967465aba61ef4d28e846c48", null ]
+];

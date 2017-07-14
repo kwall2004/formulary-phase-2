@@ -1,0 +1,8 @@
+var class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_s_d1___x_s_e_n_s_i_t___a_l_l_e_r_g_y___d_e_s_c =
+[
+    [ "DAM_ALRGN_XSENSE", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_s_d1___x_s_e_n_s_i_t___a_l_l_e_r_g_y___d_e_s_c.html#abbea278ea02a9ae16204abc2c258d195", null ],
+    [ "DAM_ALRGN_XSENSE_DESC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_s_d1___x_s_e_n_s_i_t___a_l_l_e_r_g_y___d_e_s_c.html#a5c350541b309006d899867e42c73af99", null ],
+    [ "DAM_ALRGN_XSENSE_STATUS_CD", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_s_d1___x_s_e_n_s_i_t___a_l_l_e_r_g_y___d_e_s_c.html#abda58d027da72239c4c5165a85fab307", null ],
+    [ "DAM_XSENSE_POTENTIAL_INCTV_IND", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_s_d1___x_s_e_n_s_i_t___a_l_l_e_r_g_y___d_e_s_c.html#aa1d2845dbc8518961e1493be0196dc45", null ],
+    [ "RDAMCSD1_XSENSIT_ALLERGY_DESCIdentifier", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_s_d1___x_s_e_n_s_i_t___a_l_l_e_r_g_y___d_e_s_c.html#a582b70eac96dc4565f19fa7ec6aa202f", null ]
+];

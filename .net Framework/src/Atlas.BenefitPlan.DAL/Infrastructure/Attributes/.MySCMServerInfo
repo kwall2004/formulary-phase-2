@@ -1,0 +1,10 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.BenefitPlan.DAL/Infrastructure/Attributes
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796741
+CompareEffectiveDatesAttribute.cs;869984484;1;1492524691;|248663|479754
+DateBetweenAttribute.cs;1416809053;1;1492524691;|248664|479755
+DateRequiredAttribute.cs;3660985363;1;1492524691;|248665|479756
+IndustryIdentifierValueAttribute.cs;1210729754;1;1492524691;|248666|479757
+PostalCodeAttribute.cs;228845116;1;1492524691;|248667|479758
+RequiredIfAttribute.cs;2794076643;1;1492524691;|248668|479759

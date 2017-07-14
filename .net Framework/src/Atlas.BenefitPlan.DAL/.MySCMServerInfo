@@ -1,0 +1,10 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.BenefitPlan.DAL
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796723
+App.config;2942648628;1;1492524691;|248657|546561
+Atlas.BenefitPlan.DAL.csproj;1126377399;1;1492524691;|248658|546562
+Atlas.BenefitPlan.DAL.csproj.user;4189371055;1;1492524691;|248659|479750
+BenefitPlanRepositoryFactory.cs;1240632793;1;1492524691;|248660|518347
+IBenefitPlanRepositoryFactory.cs;2384885647;1;1492524691;|248661|518348
+packages.config;2543197122;1;1492524691;|248662|479753

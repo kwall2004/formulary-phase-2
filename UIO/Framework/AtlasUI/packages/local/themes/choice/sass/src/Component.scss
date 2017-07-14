@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'MuseoSans-300';
+  src: url('../../resources/fonts/MuseoSans_300.otf');
+}
+
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url('../../resources/fonts/MuseoSans_500.otf');
+}
+
+.portalIcon-Patient360_logo {
+  background-image: url('../../resources/images/patient360_logo.png');
+}
+
+.unknownlogin {
+  background-image: url('../../resources/images/lock-screen-background.jpg') ;
+  background-position: center center ;
+  background-color: #000000 ;
+  background-repeat: no-repeat ;
+  background-attachment: fixed ;
+  -webkit-background-size: cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover ;
+}
+
+.member-mhp-login {
+  background-image: url('../../resources/images/MHP_Member_LogIn_bckgnd.jpg') ;
+  background-position: center center ;
+  background-color: #000000 ;
+  background-repeat: no-repeat ;
+  background-attachment: fixed ;
+  -webkit-background-size: cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover ;
+}
+
+.provider-mhp-login {
+  background-image: url('../../resources/images/MHP_Provider_LogIn_bckgnd.jpg') ;
+  background-position: center center ;
+  background-color: #000000 ;
+  background-repeat: no-repeat ;
+  background-attachment: fixed ;
+  -webkit-background-size: cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover ;
+}
+
+.fieldset-override {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.fieldsetOverflow .x-box-inner { overflow: visible !important; }
+
+.x-form-cb-label-default{font: 13px/17px 'MuseoSans-300'}
+
+.hpmember-invisible-fieldset {
+  border: none;
+  border-top: none !important;
+}
+
+.x-form-radio-default {
+  padding: 0px !important;
+  margin: 8px;
+}
+
+.x-form-checkbox-default {
+  padding: 0px !important;
+  margin: 8px;
+}
+
+.x-form-trigger-default {
+  padding: 6px 0 0 0;
+}
+
+.x-form-display-field-default {
+  padding-top: 5px !important;
+}
+
+.x-form-spinner {
+  height: 15px;
+}
+
+.x-form-trigger-default.x-form-trigger-spinner {
+  padding: 0px !important;
+}
+
+.x-form-field.x-form-text.x-form-text-default {
+  height: auto;
+}
+.x-form-item-label-top > span {
+  padding-left: 10px;
+}
+
+.circular-border {
+    border-radius: 100% !important;
+}
+
+.hr-lightgray-thick {
+  border: 1px solid lightgray;
+}
+
+.hr-gray-thin {
+  border-width:0px;
+  height: 1px;
+  background-color: #999;
+}
+
+.x-form-item-label-thin {
+  color: #3e4752;
+  font: 17px 'MuseoSans-300';
+  min-height: 22px;
+  padding-right: 5px;
+}

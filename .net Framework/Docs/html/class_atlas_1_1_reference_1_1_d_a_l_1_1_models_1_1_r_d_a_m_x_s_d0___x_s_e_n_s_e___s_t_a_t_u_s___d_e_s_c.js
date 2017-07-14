@@ -1,0 +1,6 @@
+var class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_s_d0___x_s_e_n_s_e___s_t_a_t_u_s___d_e_s_c =
+[
+    [ "DAM_ALRGN_XSENSE_STATUS_CD", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_s_d0___x_s_e_n_s_e___s_t_a_t_u_s___d_e_s_c.html#a269b92902e582be5f4975d65a8794740", null ],
+    [ "DAM_ALRGN_XSENSE_STATUS_CD_DSC", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_s_d0___x_s_e_n_s_e___s_t_a_t_u_s___d_e_s_c.html#afd3bd0d3625ed599373257d32018c2d1", null ],
+    [ "RDAMXSD0_XSENSE_STATUS_DESCIdentifier", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_s_d0___x_s_e_n_s_e___s_t_a_t_u_s___d_e_s_c.html#a99b21ba6528bd0c2c64d2eb1dcb1fb2e", null ]
+];

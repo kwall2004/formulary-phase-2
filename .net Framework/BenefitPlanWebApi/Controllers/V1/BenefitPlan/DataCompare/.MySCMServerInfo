@@ -1,0 +1,6 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Controllers/V1/BenefitPlan/DataCompare
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796836
+DataCompareMCSController.cs;3259965959;1;1492524453;|288752|544564
+DataCompareMerlinController.cs;3515373084;1;1492524453;|288753|546409

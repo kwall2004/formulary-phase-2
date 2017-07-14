@@ -1,0 +1,75 @@
+/**
+ * Created by s6627 on 10/5/2016.
+ */
+Ext.define('Atlas.formulary.model.FormularyNewDrugModel', {
+    extend: 'Atlas.common.model.Base',
+    //extend: 'Atlas.common.model.StaticBase',
+    fields: [
+        {name: 'NDC ', type: 'string'},
+        {name: 'LN', type: 'string'},
+        {name: 'BrandName', type: 'string'},
+        {name: 'DrugType', type: 'string'},
+        {name: 'GCN_SEQNO', type: 'string'},
+        {name: 'CommanName ', type: 'string'},
+        {name: 'DrugClass', type: 'string'},
+        {name: 'MarketEntryDate', type: 'string'},
+        {name: 'MerlinEntryDate', type: 'string'},
+        {name: 'MSAWPPrice', type: 'string'},
+        {name: 'MSWACPrice ', type: 'string'},
+        {name: 'MSFULPrice', type: 'string'},
+        {name: 'FDBFULPrice', type: 'string'},
+        {name: 'FDBWACPrice', type: 'string'},
+        {name: 'FormularyId', type: 'string'},
+        {name: 'FormularyVersion ', type: 'string'},
+        {name: 'FormularyName', type: 'string'},
+        {name: 'FormularyDrugType', type: 'string'},
+        {name: 'rulelevelID', type: 'string'},
+        {name: 'levelType', type: 'string'},
+        {name: 'OTCInd ', type: 'string'},
+        {name: 'SpecialtyDrugInd', type: 'string'},
+        {name: 'GenderRestriction', type: 'string'},
+        {name: 'MinAge', type: 'string'},
+        {name: 'MaxAge', type: 'string'},
+        {name: 'AgeType ', type: 'string'},
+        {name: 'LimitedAccess', type: 'string'},
+        {name: 'DaysSupply', type: 'string'},
+        {name: 'DaysSupplyTimePeriod', type: 'string'},
+        {name: 'Fills', type: 'string'},
+        {name: 'FillsTimePeriod ', type: 'string'},
+        {name: 'QtyLimit', type: 'string'},
+        {name: 'QtyLmtTimePeriod', type: 'string'},
+        {name: 'QLNotes', type: 'string'},
+        {name: 'PAInd', type: 'string'},
+        {name: 'PAName ', type: 'string'},
+        {name: 'PAGenderCode', type: 'string'},
+        {name: 'PAMinAge', type: 'string'},
+        {name: 'PAMaxAge', type: 'string'},
+        {name: 'StepTherapyInd', type: 'string'},
+        {name: 'StepTherapyName', type: 'string'},
+        {name: 'Notes', type: 'string'},
+        {name: 'TextMessage ', type: 'string'},
+        {name: 'ResourceLink', type: 'string'},
+        {name: 'MedicaidCarveOutDrug', type: 'string'},
+        {name: 'MedicaidFeeScreen', type: 'string'},
+        {name: 'PartDExcludedDrug', type: 'string'},
+        {name: 'MedicarePAType ', type: 'string'},
+        {name: 'MedicareSTGrpCount', type: 'string'},
+        {name: 'MedicareSTGrpDesc1', type: 'string'},
+        {name: 'MedicareSTStepValue1', type: 'string'},
+        {name: 'MedicareSTGrpDesc2', type: 'string'},
+        {name: 'MedicareSTStepValue2 ', type: 'string'},
+        {name: 'MedicareSTGrpDesc3', type: 'string'},
+        {name: 'MedicareSTStepValue3', type: 'string'},
+        {name: 'GPICode', type: 'string'}
+    ],
+    proxy: {
+        extraParams: {
+            pMode:'NewDrugs'
+        },
+        url: 'formulary/{0}/formularynewdrugs',
+        reader: {
+            type    : 'json',
+            rootProperty    : 'data'
+        }
+    }
+});

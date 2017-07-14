@@ -1,0 +1,6 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.Formulary.BLL/CustomNDC
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796697
+CustomNDCBLL.cs;2811233063;1;1492524711;|249277|509396
+ICustomNDCBLL.cs;3886110878;1;1492524711;|249278|509226

@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Atlas.Formulary.DAL</name>
+    </assembly>
+    <members>
+        <member name="T:Atlas.Formulary.DAL.Models.Containers.MessageType">
+            <summary>
+            Enum messageType
+            </summary>
+        </member>
+        <member name="F:Atlas.Formulary.DAL.Models.Containers.MessageType.Request">
+            <summary>
+            The request
+            </summary>
+        </member>
+        <member name="F:Atlas.Formulary.DAL.Models.Containers.MessageType.Response">
+            <summary>
+            The response
+            </summary>
+        </member>
+        <member name="T:Atlas.Formulary.DAL.Models.Containers.Message`1">
+            <summary>
+            Class Message.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Atlas.Formulary.DAL.Models.Containers.Message`1.MessageId">
+            <summary>
+            Gets or sets the message identifier.
+            </summary>
+            <value>The message identifier.</value>
+        </member>
+        <member name="P:Atlas.Formulary.DAL.Models.Containers.Message`1.MessageModuleSource">
+            <summary>
+            Gets or sets the message module source.
+            </summary>
+            <value>The message module source.</value>
+        </member>
+        <member name="P:Atlas.Formulary.DAL.Models.Containers.Message`1.MessageSendDateTime">
+            <summary>
+            Gets or sets the message send date time.
+            </summary>
+            <value>The message send date time.</value>
+        </member>
+        <member name="P:Atlas.Formulary.DAL.Models.Containers.Message`1.MessageRecieveDateTime">
+            <summary>
+            Gets or sets the message recieve date time.
+            </summary>
+            <value>The message recieve date time.</value>
+        </member>
+        <member name="P:Atlas.Formulary.DAL.Models.Containers.Message`1.ErrorList">
+            <summary>
+            Gets or sets the error list.
+            </summary>
+            <value>The error list.</value>
+        </member>
+        <member name="P:Atlas.Formulary.DAL.Models.Containers.Message`1.MessagePayload">
+            <summary>
+            Gets or sets the message payload.
+            </summary>
+            <value>The message payload.</value>
+        </member>
+        <member name="T:Atlas.Formulary.DAL.Repositories.DrugRefDbRepository">
+            <summary>
+            DrugRefDb Repository DAL
+            </summary>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.DrugRefDbRepository.#ctor(Atlas.Configuration.IConfig,Atlas.Formulary.DAL.Models.FormularyEntities)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="db">DB context</param>
+        </member>
+        <member name="T:Atlas.Formulary.DAL.Repositories.DrugThrputcClsTypeRepository">
+            <summary>
+            DrugThrputClsType Repository DAL
+            </summary>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.DrugThrputcClsTypeRepository.#ctor(Atlas.Configuration.IConfig,Atlas.Formulary.DAL.Models.FormularyEntities)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="db">DB context</param>
+        </member>
+        <member name="T:Atlas.Formulary.DAL.Repositories.FormularyRepository">
+            <summary>
+            Formulary Repository DAL
+            </summary>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.#ctor(Atlas.Configuration.IConfig,Atlas.Formulary.DAL.Models.FormularyEntities)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="db">DB context</param>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.AddOrUpdate(Atlas.Formulary.DAL.Models.Frmlry)">
+            <summary>
+            Add or update Frmlry record
+            </summary>
+            <param name="itemToUpdate">Record</param>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.GetAccess(System.Int64)">
+            <summary>
+            Call Formulary GetAccess Stored Procedure
+            </summary>
+            <param name="FormularyId">Formulary Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.GetDrugLists(System.Int64)">
+            <summary>
+            Call Formulary GetDrugLists stored procedure
+            </summary>
+            <param name="FormularyId">Formulary Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.GetHeader(System.Int64)">
+            <summary>
+            Call Formulary GetHeader stored procedure
+            </summary>
+            <param name="FormularyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.GetTierNames(System.Int64)">
+            <summary>
+            Call Formulary GetTierNames stored procedure
+            </summary>
+            <param name="FormularyId">Formulary Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.PutFormularyHeader(System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int32},System.String,System.DateTime,System.DateTime,System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.String,System.Nullable{System.Int64},System.String,System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Boolean)">
+            <summary>
+            Call Formulary Header Put stored procedure
+            </summary>
+            <param name="frmlrySK"></param>
+            <param name="lOBSK"></param>
+            <param name="drugThrputcClsTypeSK"></param>
+            <param name="drugRefDbSK"></param>
+            <param name="drugPostObsltAlwdDays"></param>
+            <param name="frmlryName"></param>
+            <param name="efctvStartDt"></param>
+            <param name="efctvEndDt"></param>
+            <param name="planType"></param>
+            <param name="drugTypeFn"></param>
+            <param name="userId"></param>
+            <param name="drugListName_List"></param>
+            <param name="tierName_List"></param>
+            <param name="ownerUserGrpSk"></param>
+            <param name="accessUserGrpSk_List"></param>
+            <param name="inctvTs"></param>
+            <param name="delTs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.Delete(Atlas.Formulary.DAL.Models.Frmlry)">
+            <summary>
+            Mark record as deleted
+            </summary>
+            <param name="toDelete">Formulary to delete</param>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.FormularyRepository.CopyOrUpdateVersion(System.Int32,System.Boolean,System.String)">
+            <summary>
+            Copy or Update version number of Formulary Header
+            </summary>
+            <param name="formularySk_From"></param>
+            <param name="isNewVersion"></param>
+            <param name="userId">new version(true) or copy(false)</param>
+        </member>
+        <member name="T:Atlas.Formulary.DAL.Repositories.LOBRepository">
+            <summary>
+            LOB Repository DAL
+            </summary>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.LOBRepository.#ctor(Atlas.Configuration.IConfig,Atlas.Formulary.DAL.Models.FormularyEntities)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="db">DB context</param>
+        </member>
+        <member name="T:Atlas.Formulary.DAL.Repositories.UserGroupRepository">
+            <summary>
+            UserGroup Repository DAL
+            </summary>
+        </member>
+        <member name="M:Atlas.Formulary.DAL.Repositories.UserGroupRepository.#ctor(Atlas.Configuration.IConfig,Atlas.Formulary.DAL.Models.FormularyEntities)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="db">DB context</param>
+        </member>
+    </members>
+</doc>

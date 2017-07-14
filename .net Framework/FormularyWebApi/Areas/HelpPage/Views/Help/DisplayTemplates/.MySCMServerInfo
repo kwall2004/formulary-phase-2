@@ -1,0 +1,18 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Areas/HelpPage/Views/Help/DisplayTemplates
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796791
+ApiGroup.cshtml;27508599;1;1492524685;|248462|479553
+CollectionModelDescription.cshtml;1410064185;1;1492524685;|248463|479554
+ComplexTypeModelDescription.cshtml;1955368070;1;1492524685;|248464|479555
+DictionaryModelDescription.cshtml;3320900325;1;1492524685;|248465|479556
+EnumTypeModelDescription.cshtml;3773841773;1;1492524685;|248466|479557
+HelpPageApiModel.cshtml;3416314996;1;1492524685;|248467|479558
+ImageSample.cshtml;1207942213;1;1492524685;|248468|479559
+InvalidSample.cshtml;4242915586;1;1492524685;|248469|479560
+KeyValuePairModelDescription.cshtml;2797993527;1;1492524685;|248470|479561
+ModelDescriptionLink.cshtml;3223852844;1;1492524685;|248471|479562
+Parameters.cshtml;1079224927;1;1492524685;|248472|479563
+Samples.cshtml;3049984904;1;1492524685;|248473|479564
+SimpleTypeModelDescription.cshtml;139330566;1;1492524685;|248474|479565
+TextSample.cshtml;3788511184;1;1492524685;|248475|479566

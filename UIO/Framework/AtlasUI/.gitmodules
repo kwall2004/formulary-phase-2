@@ -1,0 +1,88 @@
+[submodule "packages/local/atlasformulary"]
+	path = packages/local/atlasformulary
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/AtlasFormulary/
+[submodule "packages/local/benefitplan"]
+	path = packages/local/benefitplan
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/BenefitPlan/
+	branch = master
+[submodule "packages/local/reports"]
+	path = packages/local/reports
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Reports
+[submodule "packages/local/provider"]
+	path = packages/local/provider
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Provider/
+[submodule "packages/local/portals"]
+	path = packages/local/portals
+	url = W:/mi/it/Development/Team/AtlasUI/GitOrigin/Portals/
+[submodule "packages/local/rebate"]
+	path = packages/local/rebate
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Rebate
+[submodule "packages/local/pharmacy"]
+	path = packages/local/pharmacy
+	url = W:/mi/it/Development/Team/AtlasUI/GitOrigin/Pharmacy/
+[submodule "packages/local/obiee"]
+	path = packages/local/obiee
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Obiee/
+[submodule "packages/local/plan"]
+	path = packages/local/plan
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Plan
+[submodule "packages/local/member"]
+	path = packages/local/member
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Member
+[submodule "packages/local/home"]
+	path = packages/local/home
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Home
+[submodule "packages/local/sysadmin"]
+	path = packages/local/sysadmin
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/SysAdmin
+[submodule "packages/local/macprice"]
+	path = packages/local/macprice
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/MacPrice
+[submodule "packages/local/localize"]
+	path = packages/local/localize
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Localize
+[submodule "packages/local/healthtracker"]
+	path = packages/local/healthtracker
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/HealthTracker
+[submodule "packages/local/grievances"]
+	path = packages/local/grievances
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Grievances
+[submodule "packages/local/fwa"]
+	path = packages/local/fwa
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/fwa
+[submodule "packages/local/formulary"]
+	path = packages/local/formulary
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/formulary
+[submodule "packages/local/config"]
+	path = packages/local/config
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Config
+[submodule "packages/local/common"]
+	path = packages/local/common
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Common
+[submodule "packages/local/casemanagement"]
+	path = packages/local/casemanagement
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/CaseManagement
+[submodule "packages/local/admin"]
+	path = packages/local/admin
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Admin
+[submodule "packages/local/authorization"]
+	path = packages/local/authorization
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Authorization
+[submodule "packages/local/claims"]
+	path = packages/local/claims
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Claims
+[submodule "packages/local/finance"]
+	path = packages/local/finance
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Finance
+[submodule "packages/local/prescriber"]
+	path = packages/local/prescriber
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Prescriber
+[submodule "packages/local/encounter"]
+    path = packages/local/encounter
+    url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Encounter
+[submodule "Reports"]
+	path = Reports
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Reports
+[submodule "packages/local/letter"]
+	path = packages/local/letter
+	url = W:/MI/IT/Development/Team/AtlasUI/GitOrigin/Letter

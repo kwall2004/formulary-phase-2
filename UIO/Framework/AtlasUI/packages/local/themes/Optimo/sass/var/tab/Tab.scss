@@ -1,0 +1,40 @@
+$tab-closable-icon-glyph-color: dynamic($neutral-color);
+$tab-closable-icon-glyph-color-active: dynamic($neutral-color);
+$tab-closable-icon-glyph-color-over: dynamic($neutral-color);
+
+$tab-plain-closable-icon-glyph-color: dynamic($neutral-color);
+$tab-plain-closable-icon-glyph-color-over: dynamic($base-color);
+$tab-plain-closable-icon-glyph-color-active: dynamic($neutral-color);
+
+
+$tab-outline-color-focus: dynamic($light-color);
+
+$tab-color: dynamic($base-dark-color);
+$tab-color-active: dynamic($base-dark-color);
+$tab-font-size: dynamic(12px);
+
+$tab-border-width: dynamic(0 0 4px 0);
+
+$tab-border-radius: dynamic(0);
+
+$tab-border-color: dynamic($light-color);
+$tab-border-color-active: dynamic($base-color);
+$tab-border-color-disabled: dynamic($light-color);
+$tab-border-color-focus: dynamic($base-color);
+$tab-border-color-focus-active: dynamic($base-color);
+$tab-border-color-focus-over: dynamic($base-color);
+$tab-border-color-over: dynamic(lighten($base-color, 10%));
+
+//$tab-outline-offset-focus: dynamic(-6px);
+$tab-outline-width-focus: dynamic(0); //Erase outline
+
+$tab-background-gradient: dynamic($light-color, $light-color);
+$tab-background-gradient-active: $tab-background-gradient;
+$tab-background-gradient-disabled: $tab-background-gradient;
+$tab-background-gradient-focus: $tab-background-gradient;
+$tab-background-gradient-focus-active: $tab-background-gradient;
+$tab-background-gradient-focus-over: $tab-background-gradient;
+$tab-background-gradient-over: $tab-background-gradient;
+
+$tab-background-opacity: dynamic(0);
+$tab-background-opacity-focus-over: dynamic(0);

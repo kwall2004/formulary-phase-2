@@ -1,0 +1,17 @@
+/*
+ * This is is imported by virtue of "sass.etc" in "app.json".
+ */
+.main-logo{
+  padding-top: 0px;
+  font-size: 18px;
+}
+
+.shadow {
+  @include box-shadow(0 2px 2px 0 rgba(0,0,0,0.2));
+}
+.pop-out {
+  @include box-shadow(2px 2px 8px 2px #ccc);
+}
+.circular {
+  border-radius: 50%;
+}

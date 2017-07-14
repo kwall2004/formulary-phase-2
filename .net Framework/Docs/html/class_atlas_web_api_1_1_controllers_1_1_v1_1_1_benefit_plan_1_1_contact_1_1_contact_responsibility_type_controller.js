@@ -1,0 +1,6 @@
+var class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_responsibility_type_controller =
+[
+    [ "ContactResponsibilityTypeController", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_responsibility_type_controller.html#a8551efe019faf72ad3f514a15caeb9eb", null ],
+    [ "GetAllContactResponsibilityTypes", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_responsibility_type_controller.html#a4c67cd91af5452003323586552641293", null ],
+    [ "GetSingleContactResponsibilityType", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_responsibility_type_controller.html#a0f29496c2b021334652997f9c754e146", null ]
+];

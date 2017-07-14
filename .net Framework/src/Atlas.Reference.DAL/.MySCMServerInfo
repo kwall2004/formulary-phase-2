@@ -1,0 +1,10 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.Reference.DAL
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796651
+ClassDiagram1.cd;404928165;1;1492524722;|249606|480697
+packages.config;2543197122;1;1492524722;|249609|480700
+App.Config;2667747623;4;1496407527;|249604|667043
+Atlas.Reference.DAL.csproj;3444044921;8;1498042890;|249605|668602
+IReferenceRepositoryFactory.cs;725689380;3;1498042890;|249607|668599
+ReferenceRepositoryFactory.cs;2652238189;3;1498042890;|249608|668600

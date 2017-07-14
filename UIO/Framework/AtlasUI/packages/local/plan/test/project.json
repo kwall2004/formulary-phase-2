@@ -1,0 +1,50 @@
+{
+    "framework": "jasmine",
+    "libs": [],
+    "coverageFilters": [],
+    "scenarios": [
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "search",
+            "name": "search"
+        },
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "carriersetup",
+            "name": "carriersetup"
+        },
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "tasks",
+            "name": "tasks"
+        },
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "pcn",
+            "name": "pcn"
+        },
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "programcode",
+            "name": "programcode"
+        },
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "benefitsetup",
+            "name": "benefitsetup"
+        },
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "groupsetup",
+            "name": "groupsetup"
+        }
+    ],
+    "subjectUrl": "http://localhost:1841//apps/atlas/"
+}

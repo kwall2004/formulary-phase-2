@@ -1,0 +1,8 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.Formulary.BLL/Services/DrugSearch
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796687
+IDrugSearchColumnExclusionBitmaskGenerator.cs;3844000648;1;1492524712;|249294|512607
+ISearchWhereCriteriaGenerator.cs;2022691137;2;1493899571;|249295|608976
+DrugSearchColumnExclusionBitmaskGenerator.cs;39846225;3;1496846136;|249293|667380
+SearchWhereCriteriaGenerator.cs;576544541;3;1497465095;|249296|668125

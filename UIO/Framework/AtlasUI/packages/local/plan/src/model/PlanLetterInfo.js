@@ -1,0 +1,90 @@
+/**
+ * Created by d3973 on 11/22/2016.
+ */
+Ext.define('Atlas.plan.model.PlanLetterInfo', {
+    extend: 'Atlas.common.model.Base',
+
+    fields: [{
+        name: 'pgLogoName',
+        type: 'string'
+    }, {
+        name: 'pgNameShort',
+        type: 'string'
+    }, {
+        name: 'pgNameLong',
+        type: 'string'
+    }, {
+        name: 'pgContactPhone',
+        type: 'string'
+    }, {
+        name: 'pgContactExtension',
+        type: 'string'
+    }, {
+        name: 'pgTTYcontactPhone',
+        type: 'string'
+    }, {
+        name: 'pgContactFax',
+        type: 'string'
+    }, {
+        name: 'pgAvailDays',
+        type: 'string'
+    }, {
+        name: 'pgAvailTime',
+        type: 'string'
+    }, {
+        name: 'pgAddress',
+        type: 'string'
+    }, {
+        name: 'pgCity',
+        type: 'string'
+    }, {
+        name: 'pgState',
+        type: 'string'
+    }, {
+        name: 'pgZip',
+        type: 'string'
+    }, {
+        name: 'pharmTechFax',
+        type: 'string'
+    }, {
+        name: 'pharmTechPhone',
+        type: 'string'
+    }, {
+        name: 'pharmTechTTY',
+        type: 'string'
+    }, {
+        name: 'planServStates',
+        type: 'string'
+    }, {
+        name: 'logoColumn',
+        type: 'number'
+    }, {
+        name: 'logoRow',
+        type: 'number'
+    }, {
+        name: 'logoXScale',
+        type: 'number'
+    }, {
+        name: 'logoYScale',
+        type: 'number'
+    }, {
+        name: 'letterFrom',
+        type: 'string'
+    }, {
+        name: 'lastModified',
+        type: 'date'
+    }, {
+        name: 'planGroupId',
+        type: 'number'
+    }, {
+        name: 'recordVersion',
+        type: 'number'
+    }, {
+        name: 'systemID',
+        type: 'number'
+    }],
+
+    proxy: {
+        url: 'plan/{0}/planletterinfo'
+    }
+});

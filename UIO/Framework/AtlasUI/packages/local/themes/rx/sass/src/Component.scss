@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'MuseoSans-300';
+  src: url('/packages/local/themes/AtlasTheme/resources/fonts/MuseoSans_300.otf');
+}
+
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url('/packages/local/themes/AtlasTheme/resources/fonts/MuseoSans_500.otf');
+}
+
+.fieldset-override {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.border-none {
+    border: none !important;
+}

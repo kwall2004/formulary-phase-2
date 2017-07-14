@@ -1,0 +1,1093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D4CB2BF-793A-4240-B344-056550310F7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Atlas.BenefitPlan.DAL</RootNamespace>
+    <AssemblyName>Atlas.BenefitPlan.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLog.4.3.11\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BenefitPlanRepositoryFactory.cs" />
+    <Compile Include="IBenefitPlanRepositoryFactory.cs" />
+    <Compile Include="Infrastructure\Attributes\CompareEffectiveDatesAttribute.cs" />
+    <Compile Include="Infrastructure\Attributes\DateBetweenAttribute.cs" />
+    <Compile Include="Infrastructure\Attributes\DateRequiredAttribute.cs" />
+    <Compile Include="Infrastructure\Attributes\IndustryIdentifierValueAttribute.cs" />
+    <Compile Include="Infrastructure\Attributes\PostalCodeAttribute.cs" />
+    <Compile Include="Infrastructure\Attributes\RequiredIfAttribute.cs" />
+    <Compile Include="Models\AccessCtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Acct.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcctAddr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcctPayerID.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcctPCN.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AcctRXBIN.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Addr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlwdPrescribersDtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlwdPrescribersList.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BenefitPlan.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BenefitPlan.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BenefitPlan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BenefitPlan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BenefitPlan.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BenefitPlanContextPartial.cs" />
+    <Compile Include="Models\Bnft.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftConfgPrpty.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftCrtriaSet.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlan.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanAccessCtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanBnft.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanBnftCvrgSetNtwrkTier.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanConfgPrpty.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanConfgPrptyCrtriaSet.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanPharmType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanPharmTypeDaySupl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanSizeClsfcnType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftPlanWvrRider.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftStat.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BnftSvcType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CmmctnUsageType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CMSBnftStructType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cntct.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctAcct.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctElctrncAddr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctGrp.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctPopGrp.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctPstlAddr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctRespType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctTelNbr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctTenant.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctTenantFam.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntctType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CntyPstlCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConfgPrptyCatgType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConfgPrptyOpt.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConfgPrptyType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Containers\BenefitIntegration.cs" />
+    <Compile Include="Models\Containers\BenefitNetworkCoverageSetDetail.cs" />
+    <Compile Include="Models\Containers\BenefitPlanIntegration.cs" />
+    <Compile Include="Models\Containers\CopyCopaySetupList.cs" />
+    <Compile Include="Models\Containers\CopyLICSCopayList.cs" />
+    <Compile Include="Models\Containers\CostShareMaximumsNetworkDetail.cs" />
+    <Compile Include="Models\Containers\DaySupply.cs" />
+    <Compile Include="Models\Containers\NtwrkTierWithType.cs" />
+    <Compile Include="Models\Containers\PharmacyTypeWithDaySupply.cs" />
+    <Compile Include="Models\Containers\PharmacyTypeWithNetworkTier.cs" />
+    <Compile Include="Models\Containers\PopulationGroupList.cs" />
+    <Compile Include="Models\Containers\ViewExistingBenefitsDetail.cs" />
+    <Compile Include="Models\Containers\BenefitPlanCoveragePhase.cs" />
+    <Compile Include="Models\Containers\BenefitServiceTypeSearch.cs" />
+    <Compile Include="Models\Containers\DropDownList.cs" />
+    <Compile Include="Models\Containers\HierarchyNodeDetail.cs" />
+    <Compile Include="Models\Containers\BenefitNetworkDetail.cs" />
+    <Compile Include="Models\Containers\HierarchyTreeNode.cs" />
+    <Compile Include="Models\Containers\JSON\AddUpdateResponse.cs" />
+    <Compile Include="Models\Containers\JSON\BaseResponse.cs" />
+    <Compile Include="Models\Containers\JSON\Message.cs" />
+    <Compile Include="Models\Containers\JSON\ValidationResponse.cs" />
+    <Compile Include="Models\Containers\PlanBenefitPackageSearch.cs" />
+    <Compile Include="Models\Containers\PopulationGroupPlanBenefitPackageList.cs" />
+    <Compile Include="Models\Containers\ServiceAreaLookup.cs" />
+    <Compile Include="Models\Containers\ServiceAreaLookupDetail.cs" />
+    <Compile Include="Models\Containers\ServiceAreaNodeDetail.cs" />
+    <Compile Include="Models\CopayCoinsuranceLogicType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CopayDist.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CopayFuncType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CopayOvrrd.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CopayOvrrdQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CopaySetup.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CostBasisType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrtriaCondType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrtriaDtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrtriaOperType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrtriaSet.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CrtriaSetType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CvrgPhase.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CvrgPhaseType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CvrgSet.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CvrgSetCrtriaSet.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CvrgSetThreshold.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataCompareDtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataCompareHdr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataCompareMsg.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataCompare\CompareFunctions.cs" />
+    <Compile Include="Models\DataCompare\CompareResults.cs" />
+    <Compile Include="Models\DataCompare\Extensions\Compare.cs" />
+    <Compile Include="Models\DataCompare\Extensions\PropertyInformation.cs" />
+    <Compile Include="Models\DataCompare\Extensions\XMLElements.cs" />
+    <Compile Include="Models\DataCompare\Extensions\XMLLoad.cs" />
+    <Compile Include="Models\DataCompare\MCS\Bnft.cs" />
+    <Compile Include="Models\DataCompare\MCS\BnftSvcType.cs" />
+    <Compile Include="Models\DataCompare\MCS\BnftSvcType_MCS.cs" />
+    <Compile Include="Models\DataCompare\MCS\Bnft_MCS.cs" />
+    <Compile Include="Models\DataCompare\MCS\SvcType _MCS.cs" />
+    <Compile Include="Models\DataCompare\MCS\SvcType.cs" />
+    <Compile Include="Models\DataCompare\Merlin\AllowedPrescriber.cs" />
+    <Compile Include="Models\DataCompare\Merlin\AtlasBenefitPlanForMerlin.cs" />
+    <Compile Include="Models\DataCompare\Merlin\Benefit.cs" />
+    <Compile Include="Models\DataCompare\Merlin\CompareEntity.cs" />
+    <Compile Include="Models\DataCompare\Merlin\Copay.cs" />
+    <Compile Include="Models\DataCompare\Merlin\CopayDistribution.cs" />
+    <Compile Include="Models\DataCompare\Merlin\CoveragePhase.cs" />
+    <Compile Include="Models\DataCompare\Merlin\DAWCopay.cs" />
+    <Compile Include="Models\DataCompare\Merlin\Group.cs" />
+    <Compile Include="Models\DataCompare\Merlin\LocationCoverage.cs" />
+    <Compile Include="Models\DataCompare\Merlin\PharmaLimits.cs" />
+    <Compile Include="Models\DataCompare\Merlin\ProgramCode.cs" />
+    <Compile Include="Models\DAWCopay.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DAWType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DaySuplType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Deducbl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeducblEpsd.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeducblExcl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeducblExclQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeducblScopeType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeducblType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrugBrandType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrugClsType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrugRefDb.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EarlyRefillExcp.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EarlyRefillExcpQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enums\BenefitPlanType.cs" />
+    <Compile Include="Models\Enums\ContactCommunicationType.cs" />
+    <Compile Include="Models\Enums\CriteriaOperatorType.cs" />
+    <Compile Include="Models\Enums\CriteriaSetType.cs" />
+    <Compile Include="Models\Enums\DeductibleType.cs" />
+    <Compile Include="Models\Enums\EntityAddressType.cs" />
+    <Compile Include="Models\Enums\FrequencyQualifierType.cs" />
+    <Compile Include="Models\Enums\Gender.cs" />
+    <Compile Include="Models\Enums\JSON\JSONMessageType.cs" />
+    <Compile Include="Models\Enums\Month.cs" />
+    <Compile Include="Models\Enums\ServiceAreaAddressHierarchy.cs" />
+    <Compile Include="Models\Enums\TenantFamilyHierarchy.cs" />
+    <Compile Include="Models\Enums\TenantIndustryIdentifier.cs" />
+    <Compile Include="Models\Enums\PlanBenefitPackageSearchType.cs" />
+    <Compile Include="Models\Enums\TenantSearchType.cs" />
+    <Compile Include="Models\FillExcp.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FillExcpChngQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FIPSCntyCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FreqQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Frmlry.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FrmlryTier.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FrmlryTierName.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Grp.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GrpAddr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HealthcareFinclAcctType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ISOCntryCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LICSSetup.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LICSType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ListCrosswalk.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ListDtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ListMstr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ListSrc.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ListType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOB.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MACList.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ntwrk.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NtwrkBnftPlanType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NtwrkNtwrkTier.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NtwrkTier.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NtwrkTierType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PayerID.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PBP.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PBPBnftPlan.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PBPBnftPlanConfgPrpty.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PBPConfgPrpty.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PCN.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PharmType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PlanCapLim.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PlanCapLimPerQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PlanCapLimQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PlanClsfcnType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PlanPrcg.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrp.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrpAddr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrpBnftPlan.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrpBnftPlanConfgPrpty.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrpBnftPlanPkgConfgPrpty.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrpPBP.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrpPBPHealthcareFinclAcct.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PopGrpPBPStat.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrdctType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Prescbr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrescbrDrugOvrrdDtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrescbrDrugOvrrdList.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PstlCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PymtPrfl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PymtPrflDtl.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RXBIN.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RxPrcgType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spAccountTenantIndustryIdentifier_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spBenefitDefinitionSearch_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spBenefitPlanSearchByText_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spBenefitPlanSearch_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spGetPopulationGroupPBPList_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spPlanBenefitPackageSearchByText_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spPlanBenefitPackageSearch_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spPopGrpBnftPkgWorkflow_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spSvcAreaHierarchyGetBySvcAreaSK_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spTenantTenantIndustryIdentifier_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spViewExistingBenefitsWithRules_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\spViewExistingBenefits_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StatNote.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StatType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StPrvncCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SvcArea.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SvcAreaCntryCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SvcAreaCntyCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SvcAreaPstlCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SvcAreaStPrvncCode.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SvcType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Tenant.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantAddr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantFam.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantFamAddr.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantHierarchySearch_Result.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantPayerID.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantPCN.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantRXBIN.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TenantTaxnmy.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Threshold.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThresholdQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserGrp.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserGrpType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ValQulfrType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\vwCurrentPopGrpPBPStat.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WvrRiderType.cs">
+      <DependentUpon>BenefitPlan.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AccountAddressRepository.cs" />
+    <Compile Include="Repositories\AccountPayerIdRepository.cs" />
+    <Compile Include="Repositories\AccountPCNRepository.cs" />
+    <Compile Include="Repositories\AccountRepository.cs" />
+    <Compile Include="Repositories\AccountRXBINRepository.cs" />
+    <Compile Include="Repositories\AddressRepository.cs" />
+    <Compile Include="Repositories\AllowedPrescribersDetailRepository.cs" />
+    <Compile Include="Repositories\AllowedPrescribersListRepository.cs" />
+    <Compile Include="Repositories\AtlasBenefitPlanStoredProcsRepository.cs" />
+    <Compile Include="Repositories\BenefitCriteriaSetRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanBenefitRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanConfigurationPropertyRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanPharmacyTypeDaySupplyRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanPharmacyTypeRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanSizeClassificationTypeRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanTypeRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanWaiverRiderRepository.cs" />
+    <Compile Include="Repositories\BenefitRepository.cs" />
+    <Compile Include="Repositories\BenefitServiceTypeRepository.cs" />
+    <Compile Include="Repositories\BenefitStatusRepository.cs" />
+    <Compile Include="Repositories\CMSBenefitStructureTypeRepository.cs" />
+    <Compile Include="Repositories\CommunicationUsageTypeRepository.cs" />
+    <Compile Include="Repositories\ConfigurationPropertyOptionRepository.cs" />
+    <Compile Include="Repositories\ConfigurationPropertyTypeRepository.cs" />
+    <Compile Include="Repositories\ContactAccountRepository.cs" />
+    <Compile Include="Repositories\ContactElectronicAddressRepository.cs" />
+    <Compile Include="Repositories\ContactGroupRepository.cs" />
+    <Compile Include="Repositories\ContactPopulationGroupRepository.cs" />
+    <Compile Include="Repositories\ContactPostalAddressRepository.cs" />
+    <Compile Include="Repositories\ContactRepository.cs" />
+    <Compile Include="Repositories\ContactResponsibilityTypeRepository.cs" />
+    <Compile Include="Repositories\ContactTelephoneNumberRepository.cs" />
+    <Compile Include="Repositories\ContactTenantFamilyRepository.cs" />
+    <Compile Include="Repositories\ContactTenantRepository.cs" />
+    <Compile Include="Repositories\ContactTypeRepository.cs" />
+    <Compile Include="Repositories\CopayCoinsuranceLogicTypeRepository.cs" />
+    <Compile Include="Repositories\CopayDistributionRepository.cs" />
+    <Compile Include="Repositories\CopayFunctionTypeRepository.cs" />
+    <Compile Include="Repositories\CopayOverrideQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\CopayOverrideRepository.cs" />
+    <Compile Include="Repositories\CopaySetupRepository.cs" />
+    <Compile Include="Repositories\CostBasisTypeRepository.cs" />
+    <Compile Include="Repositories\CountyPostalCodeRepository.cs" />
+    <Compile Include="Repositories\CoveragePhaseRepository.cs" />
+    <Compile Include="Repositories\CoveragePhaseTypeRepository.cs" />
+    <Compile Include="Repositories\CoverageSetCriteriaSetRepository.cs" />
+    <Compile Include="Repositories\BenefitPlanBenefitCoverageSetNetworkTierRepository.cs" />
+    <Compile Include="Repositories\CoverageSetRepository.cs" />
+    <Compile Include="Repositories\CoverageSetThresholdRepository.cs" />
+    <Compile Include="Repositories\CriteriaConditionTypeRepository.cs" />
+    <Compile Include="Repositories\CriteriaDetailRepository.cs" />
+    <Compile Include="Repositories\CriteriaSetTypeRepository.cs" />
+    <Compile Include="Repositories\CriteriaOperatorTypeRepository.cs" />
+    <Compile Include="Repositories\CriteriaSetRepository.cs" />
+    <Compile Include="Repositories\DaySupplyTypeRepository.cs" />
+    <Compile Include="Repositories\DeductibleEpisodeRepository.cs" />
+    <Compile Include="Repositories\DeductibleExclusionQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\DeductibleExclusionRepository.cs" />
+    <Compile Include="Repositories\DeductibleRepository.cs" />
+    <Compile Include="Repositories\DeductibleScopeTypeRepository.cs" />
+    <Compile Include="Repositories\DeductibleTypeRepository.cs" />
+    <Compile Include="Repositories\DispenseAsWrittenCopayRepository.cs" />
+    <Compile Include="Repositories\DispenseAsWrittenTypeRepository.cs" />
+    <Compile Include="Repositories\DrugBrandTypeRepository.cs" />
+    <Compile Include="Repositories\DrugClassTypeRepository.cs" />
+    <Compile Include="Repositories\DrugReferenceDatabaseRepository.cs" />
+    <Compile Include="Repositories\EarlyRefillExcptionQulfierTypeRepository.cs" />
+    <Compile Include="Repositories\EarlyRefillExcptionRepository.cs" />
+    <Compile Include="Repositories\FillExceptionChangeQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\FillExceptionRepository.cs" />
+    <Compile Include="Repositories\FIPSCountyCodeRepository.cs" />
+    <Compile Include="Repositories\FormularyRepository.cs" />
+    <Compile Include="Repositories\FormularyTierRepository.cs" />
+    <Compile Include="Repositories\FrequencyQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\GroupAddressRepository.cs" />
+    <Compile Include="Repositories\GroupRepository.cs" />
+    <Compile Include="Repositories\HealthCareFinancialAccountTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAccountAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAccountPayerIdRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAccountPCNRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAccountRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAccountRXBINRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAllowedPrescribersDetailRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAllowedPrescribersListRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAtlasBenefitPlanStoredProcsRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitCriteriaSetRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanBenefitRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanConfigurationPropertyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanPharmacyTypeDaySupplyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanPharmacyTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanSizeClassificationTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanWaiverRiderRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitServiceTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitStatusRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICMSBenefitStructureTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICommunicationUsageTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IConfigurationPropertyOptionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IConfigurationPropertyTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactAccountRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactElectronicAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactPopulationGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactPostalAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactResponsibilityTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactTelephoneNumberRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactTenantFamilyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactTenantRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IContactTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICopayCoinsuranceLogicTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICopayDistributionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICopayFunctionTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICopayOverrideQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICopayOverrideRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICopaySetupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICostBasisTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICountyPostalCodeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICoveragePhaseRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICoveragePhaseTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICoverageSetCriteriaSetRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBenefitPlanBenefitCoverageSetNetworkTierRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICoverageSetRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICoverageSetThresholdRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICriteriaConditionTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICriteriaDetailRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICriteriaSetTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICriteriaOperatorTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICriteriaSetRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDaySupplyTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDeductibleEpisodeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDeductibleExclusionQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDeductibleExclusionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDeductibleRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDeductibleScopeTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDeductibleTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDispenseAsWrittenCopayRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDispenseAsWrittenTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDrugBrandTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDrugClassTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDrugReferenceDatabaseRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEarlyRefillExcptionQulfierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEarlyRefillExcptionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFillExceptionChangeQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFillExceptionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFIPSCountyCodeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFormularyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFormularyTierRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFrequencyQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IGroupAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IHealthCareFinancialAccountTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IISOCountryCodeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ILineOfBusinessRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ILowIncomeCostSharingSubsidySetupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ILowIncomeCostSharingSubsidyTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMACListRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INetworkBenefitPlanTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INetworkNetworkTierRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INetworkRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INetworkTierRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INetworkTierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPayerIdRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPaymentProfileDetailRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPaymentProfileRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPCNRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPharmacyTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanBenefitPackageBenefitPlanConfigurationPropertyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanBenefitPackageBenefitPlanRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanBenefitPackageConfigurationPropertyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPopGroupPlanBenefitPackageHealthCareFinancialAccountRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanBenefitPackageRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanCapLimitPeriodQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanCapLimitQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanCapLimitRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanClassificationTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlanPricingRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPopulationGroupAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPopulationGroupBenefitPlanRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPopulationGroupPlanBenefitPackageRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPopulationGroupPlanBenefitPackageStatusRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPopulationGroupPlanBenefitPlanStatusCurrentRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPopulationGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPostalCodeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPrescriberDrugOverrideDetailRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPrescriberDrugOverrideListRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPrescriberRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProductTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRXBINRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRxPricingTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IServiceAreaCountryRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IServiceAreaCountyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IServiceAreaPostalCodeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IServiceAreaRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IServiceAreaStateProvinceRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IServiceTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IStateProvinceCodeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IStatusNoteRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IStatusTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITenantAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITenantFamilyAddressRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITenantFamilyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITenantPayerIdRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITenantPCNRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITenantRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITenantRXBINRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IThresholdQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IThresholdRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IValueQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IWaiverRiderTypeRepository.cs" />
+    <Compile Include="Repositories\ISOCountryCodeRepository.cs" />
+    <Compile Include="Repositories\LineOfBusinessRepository.cs" />
+    <Compile Include="Repositories\LowIncomeCostSharingSubsidySetupRepository.cs" />
+    <Compile Include="Repositories\LowIncomeCostSharingSubsidyTypeRepository.cs" />
+    <Compile Include="Repositories\MACListRepository.cs" />
+    <Compile Include="Repositories\NetworkBenefitPlanTypeRepository.cs" />
+    <Compile Include="Repositories\NetworkNetworkTierRepository.cs" />
+    <Compile Include="Repositories\NetworkRepository.cs" />
+    <Compile Include="Repositories\NetworkTierRepository.cs" />
+    <Compile Include="Repositories\NetworkTierTypeRepository.cs" />
+    <Compile Include="Repositories\PayerIdRepository.cs" />
+    <Compile Include="Repositories\PaymentProfileDetailRepository.cs" />
+    <Compile Include="Repositories\PaymentProfileRepository.cs" />
+    <Compile Include="Repositories\PCNRepository.cs" />
+    <Compile Include="Repositories\PharmacyTypeRepository.cs" />
+    <Compile Include="Repositories\PlanBenefitPackageBenefitPlanConfigurationPropertyRepository.cs" />
+    <Compile Include="Repositories\PlanBenefitPackageBenefitPlanRepository.cs" />
+    <Compile Include="Repositories\PlanBenefitPackageConfigurationPropertyRepository.cs" />
+    <Compile Include="Repositories\PopGroupPlanBenefitPackageHealthCareFinancialAccountRepository.cs" />
+    <Compile Include="Repositories\PlanBenefitPackageRepository.cs" />
+    <Compile Include="Repositories\PlanCapLimitPeriodQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\PlanCapLimitQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\PlanCapLimitRepository.cs" />
+    <Compile Include="Repositories\PlanClassificationTypeRepository.cs" />
+    <Compile Include="Repositories\PlanPricingRepository.cs" />
+    <Compile Include="Repositories\PopulationGroupAddressRepository.cs" />
+    <Compile Include="Repositories\PopulationGroupBenefitPlanRepository.cs" />
+    <Compile Include="Repositories\PopulationGroupPlanBenefitPackageRepository.cs" />
+    <Compile Include="Repositories\PopulationGroupPlanBenefitPackageStatusRepository.cs" />
+    <Compile Include="Repositories\PopulationGroupPlanBenefitPlanStatusCurrentRepository.cs" />
+    <Compile Include="Repositories\PopulationGroupRepository.cs" />
+    <Compile Include="Repositories\PostalCodeRepository.cs" />
+    <Compile Include="Repositories\PrescriberDrugOverrideDetailRepository.cs" />
+    <Compile Include="Repositories\PrescriberDrugOverrideListRepository.cs" />
+    <Compile Include="Repositories\PrescriberRepository.cs" />
+    <Compile Include="Repositories\ProductTypeRepository.cs" />
+    <Compile Include="Repositories\RXBINRepository.cs" />
+    <Compile Include="Repositories\RxPricingTypeRepository.cs" />
+    <Compile Include="Repositories\ServiceAreaCountryRepository.cs" />
+    <Compile Include="Repositories\ServiceAreaCountyRepository.cs" />
+    <Compile Include="Repositories\ServiceAreaPostalCodeRepository.cs" />
+    <Compile Include="Repositories\ServiceAreaRepository.cs" />
+    <Compile Include="Repositories\ServiceAreaStateProvinceRepository.cs" />
+    <Compile Include="Repositories\ServiceTypeRepository.cs" />
+    <Compile Include="Repositories\StateProvinceCodeRepository.cs" />
+    <Compile Include="Repositories\StatusNoteRepository.cs" />
+    <Compile Include="Repositories\StatusTypeRepository.cs" />
+    <Compile Include="Repositories\TenantAddressRepository.cs" />
+    <Compile Include="Repositories\TenantFamilyAddressRepository.cs" />
+    <Compile Include="Repositories\TenantFamilyRepository.cs" />
+    <Compile Include="Repositories\TenantPayerIdRepository.cs" />
+    <Compile Include="Repositories\TenantPCNRepository.cs" />
+    <Compile Include="Repositories\TenantRepository.cs" />
+    <Compile Include="Repositories\TenantRXBINRepository.cs" />
+    <Compile Include="Repositories\ThresholdQualifierTypeRepository..cs" />
+    <Compile Include="Repositories\ThresholdRepository.cs" />
+    <Compile Include="Repositories\ValueQualifierTypeRepository.cs" />
+    <Compile Include="Repositories\WaiverRiderTypeRepository.cs" />
+    <Compile Include="Service References\EDIMerlinService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\UtilityFunctions.cs" />
+    <Compile Include="ViewModels\AccountIndustryIdentifierVM.cs" />
+    <Compile Include="ViewModels\AccountVM.cs" />
+    <Compile Include="ViewModels\AllowedPrescribersDetailVM.cs" />
+    <Compile Include="ViewModels\AllowedPrescribersVM.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\BenefitCoverageSetDetailsVM.cs" />
+    <Compile Include="ViewModels\BenefitDefinitionVM.cs" />
+    <Compile Include="ViewModels\BenefitDetailVM.cs" />
+    <Compile Include="ViewModels\BenefitPlanBenefitNetworkTierVM.cs" />
+    <Compile Include="ViewModels\BenefitWorkflowVM.cs" />
+    <Compile Include="ViewModels\BusinessRulesUpdateVM.cs" />
+    <Compile Include="ViewModels\CopayDistributionLICSVM.cs" />
+    <Compile Include="ViewModels\GroupCopyContentsDetailVM.cs" />
+    <Compile Include="ViewModels\GroupCopyContentsVM.cs" />
+    <Compile Include="ViewModels\PlanCapLimitsVM.cs" />
+    <Compile Include="ViewModels\EarlyRefillExceptionsVM.cs" />
+    <Compile Include="ViewModels\BenefitPlanPharmacyTypeDaySupplyVM.cs" />
+    <Compile Include="ViewModels\BenefitPlanPharmacyTypeVM.cs" />
+    <Compile Include="ViewModels\BenefitPlanWaiverRiderVM.cs" />
+    <Compile Include="ViewModels\BenefitPlanVM.cs" />
+    <Compile Include="ViewModels\BusinessRulesVM.cs" />
+    <Compile Include="ViewModels\BenefitServiceTypeVM.cs" />
+    <Compile Include="ViewModels\BenefitVM.cs" />
+    <Compile Include="ViewModels\CopayConfigurationVM.cs" />
+    <Compile Include="ViewModels\BenefitPlanCostShareMaximumsVM.cs" />
+    <Compile Include="ViewModels\CopaySetupVM.cs" />
+    <Compile Include="ViewModels\CoveragePhaseVM.cs" />
+    <Compile Include="ViewModels\CopayDistributionVM.cs" />
+    <Compile Include="ViewModels\BenefitPlanBenefitNetworkTierCoverageSetVM.cs" />
+    <Compile Include="ViewModels\CoverageSetConfigurationVM.cs" />
+    <Compile Include="ViewModels\CoverageSetVM.cs" />
+    <Compile Include="ViewModels\CriteriaDetailVM.cs" />
+    <Compile Include="ViewModels\CriteriaSetVM.cs" />
+    <Compile Include="ViewModels\DeductibleExceptionVM.cs" />
+    <Compile Include="ViewModels\CopayExclusionVM.cs" />
+    <Compile Include="ViewModels\FillExceptionVM.cs" />
+    <Compile Include="ViewModels\DispenseAsWrittenCopayVM.cs" />
+    <Compile Include="ViewModels\EntityAddressVM.cs" />
+    <Compile Include="ViewModels\ContactCommunicationsVM.cs" />
+    <Compile Include="ViewModels\EntityContactsVM.cs" />
+    <Compile Include="ViewModels\GroupVM.cs" />
+    <Compile Include="ViewModels\LowIncomeCostSharingSubsidyVM.cs" />
+    <Compile Include="ViewModels\NetworkNetworkTierVM.cs" />
+    <Compile Include="ViewModels\PharmacyPricingDetailVM.cs" />
+    <Compile Include="ViewModels\PlanBenefitPackageBenefitPlanVM.cs" />
+    <Compile Include="ViewModels\PlanBenefitPackageVM.cs" />
+    <Compile Include="ViewModels\PopulationGroupBenefitConfigurationVM.cs" />
+    <Compile Include="ViewModels\PopulationGroupBenefitPlanVM.cs" />
+    <Compile Include="ViewModels\PopulationGroupBenefitWorkflowHistoryVM.cs" />
+    <Compile Include="ViewModels\PopulationGroupBenefitWorkflowUpdateVM.cs" />
+    <Compile Include="ViewModels\PopulationGroupBenefitWorkflowVM.cs" />
+    <Compile Include="ViewModels\PopulationGroupPlanBenefitPackageVM.cs" />
+    <Compile Include="ViewModels\PopulationGroupVM.cs" />
+    <Compile Include="ViewModels\PrescriberDrugOverrideDetailVM.cs" />
+    <Compile Include="ViewModels\PrescriberDrugOverrideVM.cs" />
+    <Compile Include="ViewModels\RuleSetVM.cs" />
+    <Compile Include="ViewModels\SavingsAccountVM.cs" />
+    <Compile Include="ViewModels\ServiceAreaGetVM.cs" />
+    <Compile Include="ViewModels\ServiceAreaConfigurationVM.cs" />
+    <Compile Include="ViewModels\ServiceAreaUpdateListVM.cs" />
+    <Compile Include="ViewModels\ServiceAreaUpdateVM.cs" />
+    <Compile Include="ViewModels\ServiceAreaVM.cs" />
+    <Compile Include="ViewModels\StatusNoteVM.cs" />
+    <Compile Include="ViewModels\ServiceTypeVM.cs" />
+    <Compile Include="ViewModels\TenantFamilyVM.cs" />
+    <Compile Include="ViewModels\TenantIndustryIdentifierVM.cs" />
+    <Compile Include="ViewModels\TenantHierarchyVM.cs" />
+    <Compile Include="ViewModels\TenantVM.cs" />
+    <Compile Include="ViewModels\ThresholdVM.cs" />
+    <Compile Include="ViewModels\TransitionLICSConfigurationVM.cs" />
+    <Compile Include="ViewModels\TransitionRulesVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Models\BenefitPlan.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BenefitPlan.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\BenefitPlan.edmx.diagram">
+      <DependentUpon>BenefitPlan.edmx</DependentUpon>
+    </None>
+    <None Include="Models\Containers\.MySCMServerInfo" />
+    <None Include="Models\Enums\.MySCMServerInfo" />
+    <None Include="packages.config" />
+    <None Include="Service References\EDIMerlinService\Atlas.BenefitPlan.DAL.EDIMerlinService.applyaccumtranResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EDIMerlinService\Atlas.BenefitPlan.DAL.EDIMerlinService.getEnrollmentbyGroupCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EDIMerlinService\Atlas.BenefitPlan.DAL.EDIMerlinService.getXMLOutputForPlanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EDIMerlinService\Atlas.BenefitPlan.DAL.EDIMerlinService.loadExternalAccumulatorsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EDIMerlinService\Atlas.BenefitPlan.DAL.EDIMerlinService.loadMedicalOOPBalanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EDIMerlinService\EDIMerlin.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Atlas.Configuration\Atlas.Configuration.csproj">
+      <Project>{b918f8c1-4fe2-4ff9-bf5a-b1d338a33465}</Project>
+      <Name>Atlas.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atlas.Core.DAL\Atlas.Core.DAL.csproj">
+      <Project>{e587a754-72ad-4c6e-8245-86ab848db40d}</Project>
+      <Name>Atlas.Core.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\BenefitPlan.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BenefitPlan.edmx</DependentUpon>
+      <LastGenOutput>BenefitPlan.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\BenefitPlan.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BenefitPlan.edmx</DependentUpon>
+      <LastGenOutput>BenefitPlan.cs</LastGenOutput>
+    </Content>
+    <None Include="Service References\EDIMerlinService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EDIMerlinService\configuration.svcinfo" />
+    <None Include="Service References\EDIMerlinService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\EDIMerlinService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

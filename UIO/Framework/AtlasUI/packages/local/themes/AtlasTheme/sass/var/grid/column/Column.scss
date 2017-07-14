@@ -1,0 +1,10 @@
+// /** @class Ext.grid.column.Column */
+//
+$grid-header-color: dynamic(#3e4752);
+$grid-header-background-color: dynamic(#ebf8fb);
+$grid-header-font-weight:dynamic(500);
+$grid-column-header-focus-border-color: dynamic(mix($grid-header-background-color, $base-color, 20%));
+$grid-header-menu-glyph-color:dynamic(#1d9d15);
+$grid-header-open-background-color:dynamic(#ebf8fb);
+$grid-header-over-background-color:dynamic(#ebf8fb);
+$grid-header-sorted-background-color:dynamic(#deeef5);

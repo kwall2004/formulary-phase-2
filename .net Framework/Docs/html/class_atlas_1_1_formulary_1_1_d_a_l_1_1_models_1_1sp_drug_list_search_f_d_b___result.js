@@ -1,0 +1,26 @@
+var class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result =
+[
+    [ "BrandName", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#afd5d731733befb0b85b39c3200fef660", null ],
+    [ "DosageForm", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a70f6b12823d35a82aa6754cf71aa55c8", null ],
+    [ "DrugStrength", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#ab440fe85b07dc3e957e20a0cc1c2aab9", null ],
+    [ "DrugType", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#ae5333b397256f6993d75fe8d3043a07e", null ],
+    [ "ETC_ID", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a384db7c3f6de6c6f26255ba3881be290", null ],
+    [ "ETC_NAME", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a1cb3cf98991297ce9f066876e1a816e0", null ],
+    [ "GCN_SEQNO", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a02b0fa2714374effa2b6768378375fbd", null ],
+    [ "GCRT_DESC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#abdeb4e2b548a8f4f0dc1e411f42c8a89", null ],
+    [ "GenericName", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#afb6eec58f3601c0988245f583d2ab642", null ],
+    [ "GTC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#aa6f917a7a0c9ba567872e329b4fce5ed", null ],
+    [ "GTC_DESC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#adcfe29a9d2c609081788cfcc7456ace6", null ],
+    [ "HICL_SEQNO", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a79dcf4368df5fe392c0f7f155217a948", null ],
+    [ "IsCovered", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a299f115049c60d66bae28a57fa42e35d", null ],
+    [ "IsObsolete", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a3c51187e7661252ce0b3e1888050a512", null ],
+    [ "IsSpecialtyDrug", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a45e998a6ad4a426578b9a36a4ba2848f", null ],
+    [ "LabelName", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a7047bb52f4ff6523d3d7a3fcf56b8d9d", null ],
+    [ "MedId", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a5b5cee1cb40ffdece9ed2e8535976566", null ],
+    [ "NDC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#aa3d124ba361df1b1c25372d6d148d4f0", null ],
+    [ "ObsoleteDate", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a888629515714888f2dc34252d2c67e06", null ],
+    [ "OTC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a913f84e276bf47f58046800f58b01d02", null ],
+    [ "PackageSize", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a7b8635be4eba32c548943a2eb71ca464", null ],
+    [ "TierCode", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#a6b9b4d4efd89fc3c4a2041a177db607f", null ],
+    [ "UserId", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1sp_drug_list_search_f_d_b___result.html#ae7556f480a379f3064b85e5f2e6ef51c", null ]
+];

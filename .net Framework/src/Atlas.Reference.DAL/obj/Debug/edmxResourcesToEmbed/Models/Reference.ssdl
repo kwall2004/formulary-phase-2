@@ -1,0 +1,1581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Atlas.Reference.DAL.Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AHFS">
+    <Key>
+      <PropertyRef Name="AHFS_Id" />
+    </Key>
+    <Property Name="AHFS_Id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="AHFS_ParentId" Type="varchar" MaxLength="8" />
+    <Property Name="AHFS_Name" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="AHFS_Name_ESP" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AtlasFormulary_ReferenceData.dbo.AHFSChangeList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AHFSChangeList">
+    <Key>
+      <PropertyRef Name="BatchId" />
+      <PropertyRef Name="AHFS_Id" />
+      <PropertyRef Name="ChangeAction" />
+      <PropertyRef Name="AHFS_NAME" />
+    </Key>
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AHFS_Id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="ChangeAction" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="AHFS_NAME" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="AHFS_ParentId" Type="varchar" MaxLength="8" />
+    <Property Name="PREV_AHFS_NAME" Type="varchar" MaxLength="80" />
+    <Property Name="PREV_AHFS_ParentId" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="AppSettings">
+    <Key>
+      <PropertyRef Name="AppSettingsSK" />
+    </Key>
+    <Property Name="AppSettingsSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AppCode" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="Envmnt" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="AppKey" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="AppSubKey" Type="varchar" MaxLength="80" />
+    <Property Name="Value" Type="varchar(max)" />
+    <Property Name="Type" Type="nchar" MaxLength="25" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="CacheStatus">
+    <Key>
+      <PropertyRef Name="CacheStatusSK" />
+    </Key>
+    <Property Name="CacheStatusSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CacheStatusDesc" Type="varchar" MaxLength="240" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="DrugCatgRule">
+    <Key>
+      <PropertyRef Name="DrugCatgRuleSK" />
+    </Key>
+    <Property Name="DrugCatgRuleSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DrugCatgSK" Type="bigint" Nullable="false" />
+    <Property Name="RuleValueString" Type="char" MaxLength="335" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DrugListCache">
+    <Key>
+      <PropertyRef Name="DrugListCacheSK" />
+    </Key>
+    <Property Name="DrugListCacheSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DrugListSK" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="DrugListDetailDrugAttrVal" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="DrugTypeFn">
+    <Key>
+      <PropertyRef Name="DrugTypeFnSK" />
+    </Key>
+    <Property Name="DrugTypeFnSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DrugTypeFnCd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DrugTypeFnName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="DrugTypeFnDesc" Type="varchar" MaxLength="240" />
+    <Property Name="DrugRefDbSK" Type="bigint" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="ETC">
+    <Key>
+      <PropertyRef Name="ETC_ID" />
+    </Key>
+    <Property Name="ETC_ID" Type="bigint" Nullable="false" />
+    <Property Name="ETC_NAME" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="ETC_PARENT_ETC_ID" Type="bigint" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="ETC_NAME_ESP" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AtlasFormulary_ReferenceData.dbo.ETCChangeList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ETCChangeList">
+    <Key>
+      <PropertyRef Name="BatchId" />
+      <PropertyRef Name="ETC_ID" />
+      <PropertyRef Name="ChangeAction" />
+      <PropertyRef Name="ETC_NAME" />
+    </Key>
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ETC_ID" Type="bigint" Nullable="false" />
+    <Property Name="ChangeAction" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ETC_NAME" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="ETC_PARENT_ETC_ID" Type="bigint" />
+    <Property Name="PREV_ETC_NAME" Type="varchar" MaxLength="80" />
+    <Property Name="PREV_ETC_PARENT_ETC_ID" Type="bigint" />
+  </EntityType>
+  <EntityType Name="FDBClinicalData">
+    <Key>
+      <PropertyRef Name="FDBClinicalDataSK" />
+    </Key>
+    <Property Name="FDBClinicalDataSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatEdMonoCode" Type="int" Nullable="false" />
+    <Property Name="PatEdMonoSeqNo" Type="int" Nullable="false" />
+    <Property Name="PatEdMonoTextType" Type="char" MaxLength="1" />
+    <Property Name="PatEdMonoTextLine" Type="varchar" MaxLength="80" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FDBDrugChangeList">
+    <Key>
+      <PropertyRef Name="DrugChangeListSK" />
+    </Key>
+    <Property Name="DrugChangeListSK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="ChangeAction" Type="nvarchar" MaxLength="10" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="ETC_ID" Type="int" />
+    <Property Name="ETC_NAME" Type="varchar" MaxLength="70" />
+    <Property Name="HICL_SEQNO" Type="int" />
+    <Property Name="BrandName" Type="varchar" MaxLength="60" />
+    <Property Name="GCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="LabelName" Type="varchar" MaxLength="60" />
+    <Property Name="MedId" Type="varchar" MaxLength="10" />
+    <Property Name="DrugType" Type="varchar" MaxLength="10" />
+    <Property Name="OTC" Type="bit" />
+    <Property Name="DrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="DosageForm" Type="varchar" MaxLength="128" />
+    <Property Name="RouteAdministration" Type="varchar" MaxLength="40" />
+    <Property Name="PackageSize" Type="numeric" Precision="11" Scale="3" />
+    <Property Name="IsObsolete" Type="bit" />
+    <Property Name="ObsoleteDate" Type="datetime" />
+    <Property Name="GenericName" Type="varchar" MaxLength="60" />
+    <Property Name="GTC" Type="int" />
+    <Property Name="GTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="AHFS" Type="varchar" MaxLength="8" />
+    <Property Name="NDCTypeSK" Type="bigint" />
+    <Property Name="UnitPrice" Type="money" />
+    <Property Name="PriceFedUprLimit" Type="money" />
+    <Property Name="PriceSugWhlUnit" Type="money" />
+    <Property Name="PriceSugWhlPkg" Type="money" />
+    <Property Name="PriceAWPUnit" Type="money" />
+    <Property Name="PriceAWPPkg" Type="money" />
+    <Property Name="PriceWACUnit" Type="money" />
+    <Property Name="PriceWACPkg" Type="money" />
+    <Property Name="IsMaintDrug" Type="bit" />
+    <Property Name="DateToMarket" Type="datetime" />
+    <Property Name="DEA" Type="char" MaxLength="1" />
+    <Property Name="HCFA_FDA" Type="varchar" MaxLength="2" />
+    <Property Name="MSGenericIndicator" Type="char" MaxLength="1" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" />
+    <Property Name="FedRebateDrug" Type="bit" />
+    <Property Name="PriceAWPEffectiveDate" Type="datetime" />
+    <Property Name="PriceWACEffectiveDate" Type="datetime" />
+    <Property Name="PrevEffectiveDate" Type="datetime" />
+    <Property Name="PrevDeletedDate" Type="datetime" />
+    <Property Name="PrevETC_ID" Type="int" />
+    <Property Name="PrevETC_NAME" Type="varchar" MaxLength="70" />
+    <Property Name="PrevHICL_SEQNO" Type="int" />
+    <Property Name="PrevBrandName" Type="varchar" MaxLength="60" />
+    <Property Name="PrevGCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="PrevLabelName" Type="varchar" MaxLength="60" />
+    <Property Name="PrevMedId" Type="varchar" MaxLength="10" />
+    <Property Name="PrevDrugType" Type="varchar" MaxLength="10" />
+    <Property Name="PrevOTC" Type="bit" />
+    <Property Name="PrevDrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="PrevDosageForm" Type="varchar" MaxLength="128" />
+    <Property Name="PrevRouteAdministration" Type="varchar" MaxLength="40" />
+    <Property Name="PrevPackageSize" Type="numeric" Precision="11" Scale="3" />
+    <Property Name="PrevIsObsolete" Type="bit" />
+    <Property Name="PrevObsoleteDate" Type="datetime" />
+    <Property Name="PrevGenericName" Type="varchar" MaxLength="60" />
+    <Property Name="PrevGTC" Type="int" />
+    <Property Name="PrevGTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="PrevAHFS" Type="varchar" MaxLength="8" />
+    <Property Name="PrevNDCTypeSK" Type="bigint" />
+    <Property Name="PrevUnitPrice" Type="money" />
+    <Property Name="PrevPriceFedUprLimit" Type="money" />
+    <Property Name="PrevPriceSugWhlUnit" Type="money" />
+    <Property Name="PrevPriceSugWhlPkg" Type="money" />
+    <Property Name="PrevPriceAWPUnit" Type="money" />
+    <Property Name="PrevPriceAWPPkg" Type="money" />
+    <Property Name="PrevPriceWACUnit" Type="money" />
+    <Property Name="PrevPriceWACPkg" Type="money" />
+    <Property Name="PrevIsMaintDrug" Type="bit" />
+    <Property Name="PrevDateToMarket" Type="datetime" />
+    <Property Name="PrevDEA" Type="char" MaxLength="1" />
+    <Property Name="PrevHCFA_FDA" Type="varchar" MaxLength="2" />
+    <Property Name="PrevFedRebateDrug" Type="bit" />
+    <Property Name="PrevMSGenericIndicator" Type="char" MaxLength="1" />
+    <Property Name="PrevGPI" Type="varchar" MaxLength="14" />
+    <Property Name="PrevPriceAWPEffectiveDate" Type="datetime" />
+    <Property Name="PrevPriceWACEffectiveDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FDBDrugChangeSummary">
+    <Key>
+      <PropertyRef Name="FDBDrugChangeSK" />
+    </Key>
+    <Property Name="FDBDrugChangeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ChangeList" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="FDBDrugList">
+    <Key>
+      <PropertyRef Name="DrugListSK" />
+    </Key>
+    <Property Name="DrugListSK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="EffectiveDate" Type="datetime" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="ETC_ID" Type="int" />
+    <Property Name="ETC_NAME" Type="varchar" MaxLength="70" />
+    <Property Name="HICL_SEQNO" Type="int" />
+    <Property Name="BrandName" Type="varchar" MaxLength="60" />
+    <Property Name="GCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="LabelName" Type="varchar" MaxLength="60" />
+    <Property Name="MedId" Type="varchar" MaxLength="10" />
+    <Property Name="DrugType" Type="varchar" MaxLength="10" />
+    <Property Name="OTC" Type="bit" />
+    <Property Name="DrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="DosageForm" Type="varchar" MaxLength="128" />
+    <Property Name="RouteAdministration" Type="varchar" MaxLength="40" />
+    <Property Name="PackageSize" Type="numeric" Precision="11" Scale="3" />
+    <Property Name="IsObsolete" Type="bit" />
+    <Property Name="ObsoleteDate" Type="datetime" />
+    <Property Name="GenericName" Type="varchar" MaxLength="60" />
+    <Property Name="GTC" Type="int" />
+    <Property Name="GTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="AHFS" Type="varchar" MaxLength="8" />
+    <Property Name="NDCTypeSK" Type="bigint" />
+    <Property Name="UnitPrice" Type="money" />
+    <Property Name="PriceFedUprLimit" Type="money" />
+    <Property Name="PriceSugWhlUnit" Type="money" />
+    <Property Name="PriceSugWhlPkg" Type="money" />
+    <Property Name="PriceAWPUnit" Type="money" />
+    <Property Name="PriceAWPPkg" Type="money" />
+    <Property Name="PriceWACUnit" Type="money" />
+    <Property Name="PriceWACPkg" Type="money" />
+    <Property Name="IsMaintDrug" Type="bit" />
+    <Property Name="DateToMarket" Type="datetime" />
+    <Property Name="DEA" Type="char" MaxLength="1" />
+    <Property Name="HCFA_FDA" Type="varchar" MaxLength="2" />
+    <Property Name="FedRebateDrug" Type="bit" />
+    <Property Name="MSGenericIndicator" Type="char" MaxLength="1" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="IsNewDrug" Type="bit" />
+    <Property Name="PriceAWPEffectiveDate" Type="datetime" />
+    <Property Name="PriceWACEffectiveDate" Type="datetime" />
+    <Property Name="MarketStartDate" Type="datetime" />
+    <Property Name="MarketEndDate" Type="datetime" />
+    <Property Name="MarketCategory" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="FDBPatEdMstr">
+    <Key>
+      <PropertyRef Name="FDBPatEdMstrId" />
+    </Key>
+    <Property Name="FDBPatEdMstrId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatEdCode" Type="int" Nullable="false" />
+    <Property Name="PatEdMonoCode" Type="int" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FDBPECXRef">
+    <Key>
+      <PropertyRef Name="FDBClinicalDataXRefSK" />
+    </Key>
+    <Property Name="FDBClinicalDataXRefSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PatEdCode" Type="int" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FileFmt">
+    <Key>
+      <PropertyRef Name="FileFmtSK" />
+    </Key>
+    <Property Name="FileFmtSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FileFmtName" Type="varchar" MaxLength="50" />
+    <Property Name="FileFmtExt" Type="varchar" MaxLength="10" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="FontSize">
+    <Key>
+      <PropertyRef Name="FontSizeSK" />
+    </Key>
+    <Property Name="FontSizeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FontSizeName" Type="varchar" MaxLength="50" />
+    <Property Name="FontSizeValue" Type="int" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="FormularyCache">
+    <Key>
+      <PropertyRef Name="FormularyCacheSK" />
+    </Key>
+    <Property Name="FormularyCacheSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FormularySK" Type="bigint" />
+    <Property Name="FormularyId" Type="varchar" MaxLength="80" />
+    <Property Name="FormularyVersion" Type="int" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" />
+    <Property Name="ETC_ID" Type="int" />
+    <Property Name="ETC_NAME" Type="varchar" MaxLength="80" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" />
+    <Property Name="GPIName" Type="varchar" MaxLength="80" />
+    <Property Name="HICL_SEQNO" Type="int" />
+    <Property Name="GenericName" Type="varchar" MaxLength="80" />
+    <Property Name="BrandName" Type="varchar" MaxLength="80" />
+    <Property Name="LabelName" Type="varchar" MaxLength="80" />
+    <Property Name="MedId" Type="varchar" MaxLength="10" />
+    <Property Name="DrugType" Type="varchar" MaxLength="10" />
+    <Property Name="OTC" Type="varchar" MaxLength="10" />
+    <Property Name="DrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="DosageForm" Type="varchar" MaxLength="128" />
+    <Property Name="RouteAdministration" Type="varchar" MaxLength="60" />
+    <Property Name="PackageSize" Type="varchar" MaxLength="60" />
+    <Property Name="IsObsolete" Type="bit" />
+    <Property Name="ObsoleteDate" Type="datetime" />
+    <Property Name="GCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="GTC" Type="int" />
+    <Property Name="GTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="AHFS" Type="varchar" MaxLength="8" />
+    <Property Name="TierNbr" Type="int" />
+    <Property Name="IsCovered" Type="varchar" MaxLength="10" />
+    <Property Name="IsOverrideGenericCheck" Type="bit" />
+    <Property Name="IsSpecialityDrug" Type="bit" />
+    <Property Name="IsRestrictToPkgSize" Type="bit" />
+    <Property Name="IsMedicareCarveOut" Type="bit" />
+    <Property Name="IsMedicaidFeeScreen" Type="bit" />
+    <Property Name="IsMaintenanceDrug" Type="bit" />
+    <Property Name="ExtendedDaysSupply" Type="int" />
+    <Property Name="IsPARequired" Type="bit" />
+    <Property Name="PAAgeLimitMin" Type="int" />
+    <Property Name="PAAgeLimitMax" Type="int" />
+    <Property Name="PAAgeLimitType" Type="varchar" MaxLength="10" />
+    <Property Name="PAName" Type="varchar" MaxLength="255" />
+    <Property Name="IsSTRequired" Type="bit" />
+    <Property Name="STName" Type="varchar" MaxLength="255" />
+    <Property Name="MaxFillQty" Type="int" />
+    <Property Name="MaxFillPerPeriod" Type="int" />
+    <Property Name="MaxFillPeriodType" Type="varchar" MaxLength="80" />
+    <Property Name="QLFillQty" Type="int" />
+    <Property Name="QLFillPerPeriod" Type="int" />
+    <Property Name="QLFillPeriodType" Type="varchar" MaxLength="80" />
+    <Property Name="DaysSupplyFillQty" Type="int" />
+    <Property Name="DaysSupplyFillPerPeriod" Type="int" />
+    <Property Name="DaysSupplyPeriodType" Type="varchar" MaxLength="80" />
+    <Property Name="Gender" Type="varchar" MaxLength="10" />
+    <Property Name="AgeLimitMin" Type="int" />
+    <Property Name="AgeLimitMax" Type="int" />
+    <Property Name="AgeLimitType" Type="varchar" MaxLength="10" />
+    <Property Name="MaleAgeLimitMin" Type="int" />
+    <Property Name="MaleAgeLimitMax" Type="int" />
+    <Property Name="MaleAgeLimitType" Type="varchar" MaxLength="10" />
+    <Property Name="FemaleAgeLimitMin" Type="int" />
+    <Property Name="FemaleAgeLimitMax" Type="int" />
+    <Property Name="FemaleAgeLimitType" Type="varchar" MaxLength="10" />
+    <Property Name="PDLStatus" Type="varchar" MaxLength="10" />
+    <Property Name="PDFMessage" Type="varchar(max)" />
+    <Property Name="UserNotes" Type="varchar(max)" />
+    <Property Name="DrugCatgSK" Type="bigint" />
+    <Property Name="FrmlryTierSK" Type="bigint" />
+    <Property Name="CvrgPrptySummary" Type="varchar(max)" />
+    <Property Name="CacheUpdated" Type="datetime" />
+    <Property Name="HCFA_FDA" Type="varchar" MaxLength="2" />
+    <Property Name="DEA" Type="varchar" MaxLength="5" />
+    <Property Name="IsFedRebateDrug" Type="bit" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="DeletedDate" Type="datetime" />
+    <Property Name="DrugLists" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="FrmlryCacheStatus">
+    <Key>
+      <PropertyRef Name="FrmlryCacheStatusSK" />
+    </Key>
+    <Property Name="FrmlryCacheStatusSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DrugCatgSK" Type="bigint" Nullable="false" />
+    <Property Name="FrmlryTierSK" Type="bigint" />
+    <Property Name="CacheStatusSK" Type="bigint" Nullable="false" />
+    <Property Name="CacheStatusDesc" Type="varchar" MaxLength="240" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="FrmlryPendingFeed">
+    <Key>
+      <PropertyRef Name="FrmlrySk" />
+    </Key>
+    <Property Name="FrmlrySk" Type="bigint" Nullable="false" />
+    <Property Name="FrmlryId" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="DateAdded" Type="datetime" Nullable="false" />
+    <Property Name="DateProcessed" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FrmlryPlanSubType">
+    <Key>
+      <PropertyRef Name="FrmlryPlanSubTypeSK" />
+    </Key>
+    <Property Name="FrmlryPlanSubTypeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FrmlryPlanSubTypeCd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FrmlryPlanSubTypeName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="FrmlryPlanSubTypeDesc" Type="varchar" MaxLength="240" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="FrmlryPlanType">
+    <Key>
+      <PropertyRef Name="FrmlryPlanTypeSK" />
+    </Key>
+    <Property Name="FrmlryPlanTypeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FrmlryPlanTypeCd" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FrmlryPlanTypeName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="FrmlryPlanTypeDesc" Type="varchar" MaxLength="240" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="FrmlryReview">
+    <Key>
+      <PropertyRef Name="FrmlryReviewSK" />
+    </Key>
+    <Property Name="FrmlryReviewSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FrmlrySK" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="FrmlrySK_From" Type="bigint" />
+  </EntityType>
+  <EntityType Name="GCN">
+    <Key>
+      <PropertyRef Name="GCN_SEQNO" />
+    </Key>
+    <Property Name="GCN_SEQNO" Type="bigint" Nullable="false" />
+    <Property Name="HICL_SEQNO" Type="bigint" />
+    <Property Name="GNN" Type="varchar" MaxLength="30" />
+    <Property Name="GNN60" Type="varchar" MaxLength="60" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="GNN60_ESP" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AtlasFormulary_ReferenceData.dbo.GCNChangeList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GCNChangeList">
+    <Key>
+      <PropertyRef Name="BatchId" />
+      <PropertyRef Name="GCN_SEQNO" />
+    </Key>
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="bigint" Nullable="false" />
+    <Property Name="HICL_SEQNO" Type="bigint" />
+    <Property Name="GNN" Type="varchar" MaxLength="30" />
+    <Property Name="GNN60" Type="varchar" MaxLength="60" />
+    <Property Name="ChangeAction" Type="varchar" MaxLength="10" />
+    <Property Name="PREV_HICL_SEQNO" Type="bigint" />
+    <Property Name="PREV_GNN" Type="varchar" MaxLength="30" />
+    <Property Name="PREV_GNN60" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GPI">
+    <Key>
+      <PropertyRef Name="GPI" />
+    </Key>
+    <Property Name="GPI" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="GPI_Parent" Type="varchar" MaxLength="14" />
+    <Property Name="GPI_Name" Type="varchar" MaxLength="60" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="GPI_Name_ESP" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AtlasFormulary_ReferenceData.dbo.GPIChangeList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GPIChangeList">
+    <Key>
+      <PropertyRef Name="BatchId" />
+      <PropertyRef Name="GPI" />
+      <PropertyRef Name="ChangeAction" />
+      <PropertyRef Name="GPI_Name" />
+    </Key>
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="ChangeAction" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="GPI_Name" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="GPI_Parent" Type="varchar" MaxLength="14" />
+    <Property Name="Prev_GPI_Name" Type="varchar" MaxLength="80" />
+    <Property Name="PREV_GPI_Parent" Type="varchar" MaxLength="14" />
+  </EntityType>
+  <EntityType Name="Lang">
+    <Key>
+      <PropertyRef Name="LangSK" />
+    </Key>
+    <Property Name="LangSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LangName" Type="varchar" MaxLength="50" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="MedId">
+    <Key>
+      <PropertyRef Name="MedId" />
+    </Key>
+    <Property Name="MedId" Type="bigint" Nullable="false" />
+    <Property Name="MedIdDesc" Type="varchar" MaxLength="70" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'AtlasFormulary_ReferenceData.dbo.MedIdChangeList' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MedIdChangeList">
+    <Key>
+      <PropertyRef Name="BatchId" />
+      <PropertyRef Name="MedId" />
+      <PropertyRef Name="ChangeAction" />
+      <PropertyRef Name="MedIdDesc" />
+    </Key>
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MedId" Type="bigint" Nullable="false" />
+    <Property Name="ChangeAction" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MedIdDesc" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="PREV_MedIdDesc" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <EntityType Name="MedispanBrandProb">
+    <Key>
+      <PropertyRef Name="NDC" />
+    </Key>
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="MultiSourceInd" Type="varchar" MaxLength="1" />
+    <Property Name="BrandNameInd" Type="varchar" MaxLength="1" />
+    <Property Name="ApplTypeInd" Type="varchar" MaxLength="1" />
+    <Property Name="RefListedInd" Type="varchar" MaxLength="1" />
+    <Property Name="DrugCatgInd" Type="varchar" MaxLength="1" />
+    <Property Name="BrandProbPctVal" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="BrandProbEffDt" Type="datetime" />
+    <Property Name="BrandProbRelvInd" Type="varchar" MaxLength="1" />
+    <Property Name="DistrCode" Type="varchar" MaxLength="2" />
+    <Property Name="LabelerTypeInd" Type="varchar" MaxLength="1" />
+    <Property Name="IsClinicPack" Type="varchar" MaxLength="1" />
+    <Property Name="InnerPack" Type="varchar" MaxLength="1" />
+    <Property Name="RXOTC" Type="varchar" MaxLength="1" />
+    <Property Name="restricted" Type="varchar" MaxLength="1" />
+    <Property Name="TEE" Type="varchar" MaxLength="10" />
+    <Property Name="PriceSpreadInd" Type="varchar" MaxLength="1" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="MedispanBrandProbChangeList">
+    <Key>
+      <PropertyRef Name="BrandProbListSK" />
+    </Key>
+    <Property Name="BrandProbListSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ActionCd" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="MultiSourceInd" Type="varchar" MaxLength="1" />
+    <Property Name="BrandNameInd" Type="varchar" MaxLength="1" />
+    <Property Name="ApplTypeInd" Type="varchar" MaxLength="1" />
+    <Property Name="RefListedInd" Type="varchar" MaxLength="1" />
+    <Property Name="DrugCatgInd" Type="varchar" MaxLength="1" />
+    <Property Name="BrandProbPctVal" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="BrandProbEffDt" Type="datetime" />
+    <Property Name="BrandProbRelvInd" Type="varchar" MaxLength="1" />
+    <Property Name="DistrCode" Type="varchar" MaxLength="2" />
+    <Property Name="LabelerTypeInd" Type="varchar" MaxLength="1" />
+    <Property Name="IsClinicPack" Type="varchar" MaxLength="1" />
+    <Property Name="InnerPack" Type="varchar" MaxLength="1" />
+    <Property Name="RXOTC" Type="varchar" MaxLength="1" />
+    <Property Name="restricted" Type="varchar" MaxLength="1" />
+    <Property Name="TEE" Type="varchar" MaxLength="10" />
+    <Property Name="PriceSpreadInd" Type="varchar" MaxLength="1" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="PrevMultiSourceInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevBrandNameInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevApplTypeInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevRefListedInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevDrugCatgInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevBrandProbPctVal" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="PrevBrandProbEffDt" Type="datetime" />
+    <Property Name="PrevBrandProbRelvInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevDistrCode" Type="varchar" MaxLength="2" />
+    <Property Name="PrevLabelerTypeInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevIsClinicPack" Type="varchar" MaxLength="1" />
+    <Property Name="PrevInnerPack" Type="varchar" MaxLength="1" />
+    <Property Name="PrevRXOTC" Type="varchar" MaxLength="1" />
+    <Property Name="Prevrestricted" Type="varchar" MaxLength="1" />
+    <Property Name="PrevTEE" Type="varchar" MaxLength="10" />
+    <Property Name="PrevPriceSpreadInd" Type="varchar" MaxLength="1" />
+    <Property Name="PrevDeleteDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MedispanDrugChangeList">
+    <Key>
+      <PropertyRef Name="DrugChangeListSK" />
+    </Key>
+    <Property Name="DrugChangeListSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ChangeAction" Type="varchar" MaxLength="10" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" />
+    <Property Name="GPIName" Type="varchar" MaxLength="60" />
+    <Property Name="GenericName" Type="varchar" MaxLength="60" />
+    <Property Name="LabelName" Type="varchar" MaxLength="60" />
+    <Property Name="OTC" Type="int" />
+    <Property Name="IsObsolete" Type="int" />
+    <Property Name="RouteAdministration" Type="varchar" MaxLength="40" />
+    <Property Name="DosageForm" Type="varchar" MaxLength="40" />
+    <Property Name="DrugType" Type="varchar" MaxLength="3" />
+    <Property Name="AHFS" Type="varchar" MaxLength="8" />
+    <Property Name="DrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="PackageSize" Type="varchar" MaxLength="60" />
+    <Property Name="ObsoleteDate" Type="date" />
+    <Property Name="NDCTypeSK" Type="bigint" />
+    <Property Name="UnitPrice" Type="money" />
+    <Property Name="PriceFedUprLimit" Type="money" />
+    <Property Name="PriceSugWhlUnit" Type="money" />
+    <Property Name="PriceSugWhlPkg" Type="money" />
+    <Property Name="AWPUnitPrice" Type="money" />
+    <Property Name="AWPPackagePrice" Type="money" />
+    <Property Name="AWPEffectiveDate" Type="datetime" />
+    <Property Name="WACUnitPrice" Type="money" />
+    <Property Name="WACPackagePrice" Type="money" />
+    <Property Name="WACEffectiveDate" Type="datetime" />
+    <Property Name="MultiSourceCode" Type="varchar" MaxLength="1" />
+    <Property Name="IsMaintDrug" Type="bit" />
+    <Property Name="DateToMarket" Type="datetime" />
+    <Property Name="DEA" Type="varchar" MaxLength="5" />
+    <Property Name="TEECode" Type="varchar" MaxLength="2" />
+    <Property Name="FedRebateDrug" Type="bit" />
+    <Property Name="ETC_ID" Type="int" />
+    <Property Name="ETC_Name" Type="varchar" MaxLength="70" />
+    <Property Name="HICL_SEQNO" Type="int" />
+    <Property Name="BrandName" Type="varchar" MaxLength="60" />
+    <Property Name="GCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="MedId" Type="varchar" MaxLength="10" />
+    <Property Name="GTC" Type="int" />
+    <Property Name="GTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="PrevEffectiveDate" Type="datetime" />
+    <Property Name="PrevGPI" Type="varchar" MaxLength="14" />
+    <Property Name="PrevGPIName" Type="varchar" MaxLength="60" />
+    <Property Name="PrevGenericName" Type="varchar" MaxLength="60" />
+    <Property Name="PrevLabelName" Type="varchar" MaxLength="60" />
+    <Property Name="PrevOTC" Type="int" />
+    <Property Name="PrevIsObsolete" Type="int" />
+    <Property Name="PrevRouteAdministration" Type="varchar" MaxLength="40" />
+    <Property Name="PrevDosageForm" Type="varchar" MaxLength="40" />
+    <Property Name="PrevDrugType" Type="varchar" MaxLength="3" />
+    <Property Name="PrevAHFS" Type="varchar" MaxLength="8" />
+    <Property Name="PrevDrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="PrevPackageSize" Type="varchar" MaxLength="60" />
+    <Property Name="PrevObsoleteDate" Type="date" />
+    <Property Name="PrevNDCTypeSK" Type="bigint" />
+    <Property Name="PrevUnitPrice" Type="money" />
+    <Property Name="PrevPriceFedUprLimit" Type="money" />
+    <Property Name="PrevPriceSugWhlUnit" Type="money" />
+    <Property Name="PrevPriceSugWhlPkg" Type="money" />
+    <Property Name="PrevAWPUnitPrice" Type="money" />
+    <Property Name="PrevAWPPackagePrice" Type="money" />
+    <Property Name="PrevAWPEffectiveDate" Type="datetime" />
+    <Property Name="PrevWACUnitPrice" Type="money" />
+    <Property Name="PrevWACPackagePrice" Type="money" />
+    <Property Name="PrevWACEffectiveDate" Type="datetime" />
+    <Property Name="PrevMultiSourceCode" Type="varchar" MaxLength="1" />
+    <Property Name="PrevIsMaintDrug" Type="bit" />
+    <Property Name="PrevDateToMarket" Type="datetime" />
+    <Property Name="PrevDEA" Type="varchar" MaxLength="5" />
+    <Property Name="PrevTEECode" Type="varchar" MaxLength="2" />
+    <Property Name="PrevFedRebateDrug" Type="bit" />
+    <Property Name="PrevETC_ID" Type="int" />
+    <Property Name="PrevETC_Name" Type="varchar" MaxLength="70" />
+    <Property Name="PrevHICL_SEQNO" Type="int" />
+    <Property Name="PrevBrandName" Type="varchar" MaxLength="60" />
+    <Property Name="PrevGCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="PrevMedId" Type="varchar" MaxLength="10" />
+    <Property Name="PrevGTC" Type="int" />
+    <Property Name="PrevGTC_DESC" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MedispanDrugChangeSummary">
+    <Key>
+      <PropertyRef Name="MedispanDrugChangeSK" />
+    </Key>
+    <Property Name="MedispanDrugChangeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ChangeList" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="MedispanDrugList">
+    <Key>
+      <PropertyRef Name="NDC" />
+    </Key>
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" />
+    <Property Name="GPIName" Type="varchar" MaxLength="60" />
+    <Property Name="GenericName" Type="varchar" MaxLength="60" />
+    <Property Name="LabelName" Type="varchar" MaxLength="60" />
+    <Property Name="OTC" Type="bit" />
+    <Property Name="IsObsolete" Type="bit" />
+    <Property Name="RouteAdministration" Type="varchar" MaxLength="40" />
+    <Property Name="DosageForm" Type="varchar" MaxLength="40" />
+    <Property Name="DrugType" Type="varchar" MaxLength="3" />
+    <Property Name="AHFS" Type="varchar" MaxLength="8" />
+    <Property Name="DrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="PackageSize" Type="varchar" MaxLength="60" />
+    <Property Name="ObsoleteDate" Type="datetime" />
+    <Property Name="NDCTypeSK" Type="bigint" />
+    <Property Name="UnitPrice" Type="money" />
+    <Property Name="PriceFedUprLimit" Type="money" />
+    <Property Name="PriceSugWhlUnit" Type="money" />
+    <Property Name="PriceSugWhlPkg" Type="money" />
+    <Property Name="AWPUnitPrice" Type="money" />
+    <Property Name="AWPPackagePrice" Type="money" />
+    <Property Name="AWPEffectiveDate" Type="datetime" />
+    <Property Name="WACUnitPrice" Type="money" />
+    <Property Name="WACPackagePrice" Type="money" />
+    <Property Name="WACEffectiveDate" Type="datetime" />
+    <Property Name="MultiSourceCode" Type="varchar" MaxLength="1" />
+    <Property Name="IsMaintDrug" Type="bit" />
+    <Property Name="DateToMarket" Type="datetime" />
+    <Property Name="DEA" Type="varchar" MaxLength="5" />
+    <Property Name="TEECode" Type="varchar" MaxLength="2" />
+    <Property Name="FedRebateDrug" Type="bit" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="IsNewDrug" Type="bit" />
+    <Property Name="ETC_ID" Type="int" />
+    <Property Name="ETC_Name" Type="varchar" MaxLength="70" />
+    <Property Name="HICL_SEQNO" Type="int" />
+    <Property Name="BrandName" Type="varchar" MaxLength="60" />
+    <Property Name="GCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="MedId" Type="varchar" MaxLength="10" />
+    <Property Name="GTC" Type="int" />
+    <Property Name="GTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="MarketStartDate" Type="datetime" />
+    <Property Name="MarketEndDate" Type="datetime" />
+    <Property Name="MarketCategory" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MSDrugType">
+    <Key>
+      <PropertyRef Name="MSDrugTypeSK" />
+    </Key>
+    <Property Name="MSDrugTypeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OTCInd" Type="bit" Nullable="false" />
+    <Property Name="BeginPctVal" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="EndPctVal" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="DrugType" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LasMofdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastMofdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NDCNote">
+    <Key>
+      <PropertyRef Name="NDCNoteSK" />
+    </Key>
+    <Property Name="NDCNoteSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="NDCNotes" Type="varchar(max)" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="NDCType">
+    <Key>
+      <PropertyRef Name="NDCTypeSK" />
+    </Key>
+    <Property Name="NDCTypeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NDCTypeName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="NDCTypeDesc" Type="varchar" MaxLength="240" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="NewDrugNotToDrugList">
+    <Key>
+      <PropertyRef Name="NewDrugNotToDrugListSK" />
+    </Key>
+    <Property Name="NewDrugNotToDrugListSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="DrugListSK" Type="bigint" Nullable="false" />
+    <Property Name="DateNotAdded" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewDrugNotToFrmlry">
+    <Key>
+      <PropertyRef Name="NewDrugNotToFrmlrySK" />
+    </Key>
+    <Property Name="NewDrugNotToFrmlrySK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="FrmlrySK" Type="bigint" Nullable="false" />
+    <Property Name="DateNotAdded" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewDrugToDrugList">
+    <Key>
+      <PropertyRef Name="NewDrugToDrugListSK" />
+    </Key>
+    <Property Name="NewDrugToDrugListSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="DrugListSK" Type="bigint" Nullable="false" />
+    <Property Name="DateAdded" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewDrugToFrmlry">
+    <Key>
+      <PropertyRef Name="NewDrugToFrmlrySK" />
+    </Key>
+    <Property Name="NewDrugToFrmlrySK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="FrmlrySK" Type="bigint" Nullable="false" />
+    <Property Name="DateAdded" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NSDEDrugChangeList">
+    <Key>
+      <PropertyRef Name="DrugChangeListSK" />
+    </Key>
+    <Property Name="DrugChangeListSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+    <Property Name="ChangeAction" Type="varchar" MaxLength="10" />
+    <Property Name="MarketStartDate" Type="datetime" />
+    <Property Name="MarketEndDate" Type="datetime" />
+    <Property Name="MarketCategory" Type="varchar" MaxLength="255" />
+    <Property Name="PrevMarketStartDate" Type="datetime" />
+    <Property Name="PreMarketEndDate" Type="datetime" />
+    <Property Name="PrevMarketCategory" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="NSDEDrugList">
+    <Key>
+      <PropertyRef Name="NDC" />
+    </Key>
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="MarketStartDate" Type="datetime" />
+    <Property Name="MarketEndDate" Type="datetime" />
+    <Property Name="MarketCategory" Type="varchar" MaxLength="255" />
+    <Property Name="BatchId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="PatEdMonoTextType">
+    <Key>
+      <PropertyRef Name="PatEdMonoTextTypeSK" />
+    </Key>
+    <Property Name="PatEdMonoTextTypeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatEdMonoTextType" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="PatEdMonoTextTypeDesc" Type="varchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PDFMessage">
+    <Key>
+      <PropertyRef Name="PDFMessageSK" />
+    </Key>
+    <Property Name="PDFMessageSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PDFMessage" Type="varchar(max)" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RptFmt">
+    <Key>
+      <PropertyRef Name="RptFmtSK" />
+    </Key>
+    <Property Name="RptFmtSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RptFmtName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="RptFmtDesc" Type="varchar" MaxLength="240" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RptFmtSection">
+    <Key>
+      <PropertyRef Name="RptFmtSectionSK" />
+    </Key>
+    <Property Name="RptFmtSectionSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RptFmtSK" Type="bigint" Nullable="false" />
+    <Property Name="SectionNbr" Type="int" Nullable="false" />
+    <Property Name="SectionTitle" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SectionContents" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SmartSearchField">
+    <Key>
+      <PropertyRef Name="SmartSearchFieldSK" />
+    </Key>
+    <Property Name="SmartSearchFieldSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SmartSearchFieldName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="SmartSearchGroupSK" Type="bigint" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SmartSearchGroup">
+    <Key>
+      <PropertyRef Name="SmartSearchGroupSK" />
+    </Key>
+    <Property Name="SmartSearchGroupSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SmartSearchGroupName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptCfg">
+    <Key>
+      <PropertyRef Name="SumRptCfgSK" />
+    </Key>
+    <Property Name="SumRptCfgSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptCfgName" Type="varchar" MaxLength="80" />
+    <Property Name="SumRptCfgDesc" Type="varchar" MaxLength="240" />
+    <Property Name="FileFmtSK" Type="bigint" />
+    <Property Name="LangSK" Type="bigint" />
+    <Property Name="FontSizeSK" Type="bigint" />
+    <Property Name="InclUMInd" Type="bit" />
+    <Property Name="InclNotCvrdInd" Type="bit" />
+    <Property Name="TierDisplSK" Type="bigint" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptCfgCol">
+    <Key>
+      <PropertyRef Name="SumRptCfgColSK" />
+    </Key>
+    <Property Name="SumRptCfgColSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptCfgSK" Type="bigint" Nullable="false" />
+    <Property Name="SumRptColSK" Type="bigint" Nullable="false" />
+    <Property Name="SumRptCfgColName" Type="varchar" MaxLength="80" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptCfgCvrgPrptyType">
+    <Key>
+      <PropertyRef Name="SumRptCfgCvrgPrptyTypeSK" />
+    </Key>
+    <Property Name="SumRptCfgCvrgPrptyTypeSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptCfgSK" Type="bigint" Nullable="false" />
+    <Property Name="CvrgPrptyTypeSK" Type="bigint" Nullable="false" />
+    <Property Name="CvrgPrptyTypeCode" Type="varchar" MaxLength="20" />
+    <Property Name="CvrgPrptyTypeDesc" Type="varchar" MaxLength="240" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptCfgSctn">
+    <Key>
+      <PropertyRef Name="SumRptCfgSctnSK" />
+    </Key>
+    <Property Name="SumRptCfgSctnSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptCfgSK" Type="bigint" Nullable="false" />
+    <Property Name="SumRptSctnSK" Type="bigint" Nullable="false" />
+    <Property Name="SctnSortOrder" Type="float" />
+    <Property Name="SSRSTmplName" Type="varchar" MaxLength="80" />
+    <Property Name="SctnCfgJSON" Type="varchar" MaxLength="2048" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptCfgTier">
+    <Key>
+      <PropertyRef Name="SumRptCfgTierSK" />
+    </Key>
+    <Property Name="SumRptCfgTierSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptCfgSK" Type="bigint" Nullable="false" />
+    <Property Name="FrmlryTierSK" Type="bigint" />
+    <Property Name="DsplyTierDesc" Type="varchar" MaxLength="240" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptCol">
+    <Key>
+      <PropertyRef Name="SumRptColSK" />
+    </Key>
+    <Property Name="SumRptColSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptColDisplayName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="SumRptColFieldName" Type="varchar" MaxLength="80" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptDrugSortBy">
+    <Key>
+      <PropertyRef Name="SumRptDrugSortBySK" />
+    </Key>
+    <Property Name="SumRptDrugSortBySK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptDrugSortByName" Type="varchar" MaxLength="80" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptOrgBy">
+    <Key>
+      <PropertyRef Name="SumRptOrgBySK" />
+    </Key>
+    <Property Name="SumRptOrgBySK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptOrgByName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptOTC">
+    <Key>
+      <PropertyRef Name="SumRptOTCSK" />
+    </Key>
+    <Property Name="SumRptOTCSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptOTCName" Type="varchar" MaxLength="80" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptRollUp">
+    <Key>
+      <PropertyRef Name="SumRptRollUpSK" />
+    </Key>
+    <Property Name="SumRptRollUpSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptRollUpName" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="SumRptSctn">
+    <Key>
+      <PropertyRef Name="SumRptSctnSK" />
+    </Key>
+    <Property Name="SumRptSctnSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SumRptSctnName" Type="varchar" MaxLength="80" />
+    <Property Name="SSRSTemplName" Type="varchar" MaxLength="80" />
+    <Property Name="SctnCfgJSON" Type="varchar" MaxLength="2048" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TierDispl">
+    <Key>
+      <PropertyRef Name="TierDisplSK" />
+    </Key>
+    <Property Name="TierDisplSK" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TierDisplName" Type="varchar" MaxLength="50" />
+    <Property Name="EfctvStartDt" Type="date" Nullable="false" />
+    <Property Name="EfctvEndDt" Type="date" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="LastModfdBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastModfdTs" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="InctvTs" Type="datetimeoffset" Precision="7" />
+    <Property Name="DelTs" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="tmpCustomNDC">
+    <Key>
+      <PropertyRef Name="NDC" />
+    </Key>
+    <Property Name="NDC" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="LN" Type="nvarchar" MaxLength="255" />
+    <Property Name="GCN_SeqNo" Type="varchar" MaxLength="10" />
+    <Property Name="Hicl_SeqNo" Type="int" />
+    <Property Name="ETCId" Type="int" />
+    <Property Name="ETCName" Type="varchar" MaxLength="255" />
+    <Property Name="NPT_TYPE" Type="int" />
+    <Property Name="NPT_DATEC" Type="datetime" />
+    <Property Name="NPT_PRICEX" Type="money" />
+  </EntityType>
+  <EntityType Name="tmpUserDrugCatgPage">
+    <Key>
+      <PropertyRef Name="UserRowId" />
+    </Key>
+    <Property Name="UserRowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="RowId" Type="int" Nullable="false" />
+    <Property Name="DrugCatgSK" Type="bigint" />
+    <Property Name="DrugCatgName" Type="varchar" MaxLength="255" />
+    <Property Name="CvrdInd" Type="bit" />
+    <Property Name="FrmlryTierSK" Type="bigint" />
+    <Property Name="FrmlryTierName" Type="varchar" MaxLength="80" />
+    <Property Name="NDCCount" Type="int" />
+    <Property Name="FrmlrySK" Type="bigint" />
+    <Property Name="SessionId" Type="uniqueidentifier" />
+    <Property Name="TotalCount" Type="int" />
+  </EntityType>
+  <EntityType Name="tmpUserDrugListDtlPage">
+    <Key>
+      <PropertyRef Name="UserRowId" />
+    </Key>
+    <Property Name="UserRowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="RowId" Type="int" Nullable="false" />
+    <Property Name="DrugListDtlSK" Type="bigint" />
+    <Property Name="DrugListDtlName" Type="varchar" MaxLength="240" />
+    <Property Name="NDCCount" Type="int" />
+    <Property Name="DrugListSK" Type="bigint" />
+    <Property Name="SessionId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="tmpUserDrugSearch">
+    <Key>
+      <PropertyRef Name="UserRowId" />
+    </Key>
+    <Property Name="UserRowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="RowId" Type="int" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="ETC_ID" Type="int" />
+    <Property Name="ETC_NAME" Type="varchar" MaxLength="70" />
+    <Property Name="HICL_SEQNO" Type="int" />
+    <Property Name="BrandName" Type="varchar" MaxLength="30" />
+    <Property Name="GCN_SEQNO" Type="int" />
+    <Property Name="LabelName" Type="varchar" MaxLength="60" />
+    <Property Name="MedId" Type="varchar" MaxLength="10" />
+    <Property Name="DrugType" Type="varchar" MaxLength="10" />
+    <Property Name="OTC" Type="bit" />
+    <Property Name="DrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="DosageForm" Type="varchar" MaxLength="40" />
+    <Property Name="RouteAdministration" Type="varchar" MaxLength="40" />
+    <Property Name="PackageSize" Type="numeric" Precision="11" Scale="3" />
+    <Property Name="IsObsolete" Type="bit" />
+    <Property Name="ObsoleteDate" Type="datetime" />
+    <Property Name="GenericName" Type="varchar" MaxLength="60" />
+    <Property Name="GTC" Type="int" />
+    <Property Name="GTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="IsCovered" Type="bit" />
+    <Property Name="TierCode" Type="varchar" MaxLength="10" />
+    <Property Name="CvrgPrptySummary" Type="varchar(max)" />
+    <Property Name="IsSpecialtyDrug" Type="bit" />
+    <Property Name="DrugCatgSK" Type="bigint" />
+    <Property Name="DrugCatgName" Type="varchar" MaxLength="255" />
+    <Property Name="FrmlryTierSK" Type="bigint" />
+    <Property Name="RowCount" Type="bigint" />
+    <Property Name="PriceFedUprLimit" Type="money" />
+    <Property Name="PriceSugWhlUnit" Type="money" />
+    <Property Name="PriceSugWhlPkg" Type="money" />
+    <Property Name="PriceAWPUnit" Type="money" />
+    <Property Name="PriceAWPPkg" Type="money" />
+    <Property Name="PriceWACUnit" Type="money" />
+    <Property Name="PriceWACPkg" Type="money" />
+    <Property Name="IsMaintDrug" Type="bit" />
+    <Property Name="DateToMarket" Type="datetime" />
+    <Property Name="DEA" Type="char" MaxLength="1" />
+    <Property Name="HCFA_FDA" Type="varchar" MaxLength="2" />
+    <Property Name="FedRebateDrug" Type="bit" />
+    <Property Name="SessionId" Type="uniqueidentifier" />
+    <Property Name="DrugLists" Type="varchar(max)" />
+    <Property Name="MSGenericIndicator" Type="char" MaxLength="1" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" />
+    <Property Name="DateAdded" Type="datetime" />
+    <Property Name="MarketStartDate" Type="datetime" />
+    <Property Name="MarketEndDate" Type="datetime" />
+    <Property Name="MarketCategory" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tmpUserDrugSearchMS">
+    <Key>
+      <PropertyRef Name="UserRowId" />
+    </Key>
+    <Property Name="UserRowId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="RowId" Type="int" Nullable="false" />
+    <Property Name="NDC" Type="varchar" MaxLength="11" />
+    <Property Name="EffectiveDate" Type="datetime" />
+    <Property Name="GPI" Type="varchar" MaxLength="14" />
+    <Property Name="GPIName" Type="varchar" MaxLength="70" />
+    <Property Name="GenericName" Type="varchar" MaxLength="60" />
+    <Property Name="LabelName" Type="varchar" MaxLength="60" />
+    <Property Name="DrugType" Type="varchar" MaxLength="10" />
+    <Property Name="OTC" Type="bit" />
+    <Property Name="DrugStrength" Type="varchar" MaxLength="60" />
+    <Property Name="DosageForm" Type="varchar" MaxLength="40" />
+    <Property Name="RouteAdministration" Type="varchar" MaxLength="60" />
+    <Property Name="PackageSize" Type="varchar" MaxLength="60" />
+    <Property Name="IsObsolete" Type="bit" />
+    <Property Name="ObsoleteDate" Type="datetime" />
+    <Property Name="AHFS" Type="varchar" MaxLength="8" />
+    <Property Name="IsCovered" Type="bit" />
+    <Property Name="TierCode" Type="varchar" MaxLength="10" />
+    <Property Name="CvrgPrptySummary" Type="varchar(max)" />
+    <Property Name="IsSpecialtyDrug" Type="bit" />
+    <Property Name="DrugCatgSK" Type="bigint" />
+    <Property Name="DrugCatgName" Type="varchar" MaxLength="255" />
+    <Property Name="FrmlryTierSK" Type="bigint" />
+    <Property Name="RowCount" Type="bigint" />
+    <Property Name="PriceFedUprLimit" Type="money" />
+    <Property Name="PriceSugWhlUnit" Type="money" />
+    <Property Name="PriceSugWhlPkg" Type="money" />
+    <Property Name="PriceAWPUnit" Type="money" />
+    <Property Name="PriceAWPPkg" Type="money" />
+    <Property Name="PriceWACUnit" Type="money" />
+    <Property Name="PriceWACPkg" Type="money" />
+    <Property Name="IsMaintDrug" Type="bit" />
+    <Property Name="DateToMarket" Type="datetime" />
+    <Property Name="DEA" Type="varchar" MaxLength="5" />
+    <Property Name="TEECode" Type="varchar" MaxLength="2" />
+    <Property Name="FedRebateDrug" Type="bit" />
+    <Property Name="SessionId" Type="uniqueidentifier" />
+    <Property Name="DrugLists" Type="varchar(max)" />
+    <Property Name="DateAdded" Type="datetime" />
+    <Property Name="ETC_ID" Type="int" />
+    <Property Name="ETC_NAME" Type="varchar" MaxLength="70" />
+    <Property Name="HICL_SEQNO" Type="int" />
+    <Property Name="BrandName" Type="varchar" MaxLength="60" />
+    <Property Name="GCN_SEQNO" Type="varchar" MaxLength="10" />
+    <Property Name="MedId" Type="varchar" MaxLength="10" />
+    <Property Name="GTC" Type="int" />
+    <Property Name="GTC_DESC" Type="varchar" MaxLength="50" />
+    <Property Name="MarketStartDate" Type="datetime" />
+    <Property Name="MarketEndDate" Type="datetime" />
+    <Property Name="MarketCategory" Type="varchar" MaxLength="255" />
+    <Property Name="MSGenericIndicator" Type="char" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK_SumRptCfgCol_SumRptCfg">
+    <End Role="SumRptCfg" Type="Self.SumRptCfg" Multiplicity="1" />
+    <End Role="SumRptCfgCol" Type="Self.SumRptCfgCol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SumRptCfg">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Principal>
+      <Dependent Role="SumRptCfgCol">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SumRptCfgCol_SumRptCol">
+    <End Role="SumRptCol" Type="Self.SumRptCol" Multiplicity="1" />
+    <End Role="SumRptCfgCol" Type="Self.SumRptCfgCol" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SumRptCol">
+        <PropertyRef Name="SumRptColSK" />
+      </Principal>
+      <Dependent Role="SumRptCfgCol">
+        <PropertyRef Name="SumRptColSK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SumRptCfgCvrgPrptyType_SumRptCfg">
+    <End Role="SumRptCfg" Type="Self.SumRptCfg" Multiplicity="1" />
+    <End Role="SumRptCfgCvrgPrptyType" Type="Self.SumRptCfgCvrgPrptyType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SumRptCfg">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Principal>
+      <Dependent Role="SumRptCfgCvrgPrptyType">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SumRptCfgSctn_SumRptCfg">
+    <End Role="SumRptCfg" Type="Self.SumRptCfg" Multiplicity="1" />
+    <End Role="SumRptCfgSctn" Type="Self.SumRptCfgSctn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SumRptCfg">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Principal>
+      <Dependent Role="SumRptCfgSctn">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SumRptCfgSctn_SumRptSctn">
+    <End Role="SumRptSctn" Type="Self.SumRptSctn" Multiplicity="1" />
+    <End Role="SumRptCfgSctn" Type="Self.SumRptCfgSctn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SumRptSctn">
+        <PropertyRef Name="SumRptSctnSK" />
+      </Principal>
+      <Dependent Role="SumRptCfgSctn">
+        <PropertyRef Name="SumRptSctnSK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SumRptCfgTier_SumRptCfg">
+    <End Role="SumRptCfg" Type="Self.SumRptCfg" Multiplicity="1" />
+    <End Role="SumRptCfgTier" Type="Self.SumRptCfgTier" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SumRptCfg">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Principal>
+      <Dependent Role="SumRptCfgTier">
+        <PropertyRef Name="SumRptCfgSK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="fnRuleSummary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="IsCovered" Type="bit" Mode="In" />
+    <Parameter Name="TierNbr" Type="int" Mode="In" />
+    <Parameter Name="CvrgPrptySum" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="AtlasReferenceDALModelsStoreContainer">
+    <EntitySet Name="AHFS" EntityType="Self.AHFS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AppSettings" EntityType="Self.AppSettings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CacheStatus" EntityType="Self.CacheStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DrugCatgRule" EntityType="Self.DrugCatgRule" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DrugListCache" EntityType="Self.DrugListCache" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DrugTypeFn" EntityType="Self.DrugTypeFn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ETC" EntityType="Self.ETC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FDBClinicalData" EntityType="Self.FDBClinicalData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FDBDrugChangeList" EntityType="Self.FDBDrugChangeList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FDBDrugChangeSummary" EntityType="Self.FDBDrugChangeSummary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FDBDrugList" EntityType="Self.FDBDrugList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FDBPatEdMstr" EntityType="Self.FDBPatEdMstr" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FDBPECXRef" EntityType="Self.FDBPECXRef" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FileFmt" EntityType="Self.FileFmt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FontSize" EntityType="Self.FontSize" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FormularyCache" EntityType="Self.FormularyCache" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FrmlryCacheStatus" EntityType="Self.FrmlryCacheStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FrmlryPendingFeed" EntityType="Self.FrmlryPendingFeed" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FrmlryPlanSubType" EntityType="Self.FrmlryPlanSubType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FrmlryPlanType" EntityType="Self.FrmlryPlanType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FrmlryReview" EntityType="Self.FrmlryReview" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GCN" EntityType="Self.GCN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GPI" EntityType="Self.GPI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lang" EntityType="Self.Lang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedId" EntityType="Self.MedId" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedispanBrandProb" EntityType="Self.MedispanBrandProb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedispanBrandProbChangeList" EntityType="Self.MedispanBrandProbChangeList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedispanDrugChangeList" EntityType="Self.MedispanDrugChangeList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedispanDrugChangeSummary" EntityType="Self.MedispanDrugChangeSummary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MedispanDrugList" EntityType="Self.MedispanDrugList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MSDrugType" EntityType="Self.MSDrugType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NDCNote" EntityType="Self.NDCNote" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NDCType" EntityType="Self.NDCType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewDrugNotToDrugList" EntityType="Self.NewDrugNotToDrugList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewDrugNotToFrmlry" EntityType="Self.NewDrugNotToFrmlry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewDrugToDrugList" EntityType="Self.NewDrugToDrugList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewDrugToFrmlry" EntityType="Self.NewDrugToFrmlry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NSDEDrugChangeList" EntityType="Self.NSDEDrugChangeList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NSDEDrugList" EntityType="Self.NSDEDrugList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PatEdMonoTextType" EntityType="Self.PatEdMonoTextType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PDFMessage" EntityType="Self.PDFMessage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RptFmt" EntityType="Self.RptFmt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RptFmtSection" EntityType="Self.RptFmtSection" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SmartSearchField" EntityType="Self.SmartSearchField" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SmartSearchGroup" EntityType="Self.SmartSearchGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptCfg" EntityType="Self.SumRptCfg" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptCfgCol" EntityType="Self.SumRptCfgCol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptCfgCvrgPrptyType" EntityType="Self.SumRptCfgCvrgPrptyType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptCfgSctn" EntityType="Self.SumRptCfgSctn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptCfgTier" EntityType="Self.SumRptCfgTier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptCol" EntityType="Self.SumRptCol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptDrugSortBy" EntityType="Self.SumRptDrugSortBy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptOrgBy" EntityType="Self.SumRptOrgBy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptOTC" EntityType="Self.SumRptOTC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptRollUp" EntityType="Self.SumRptRollUp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SumRptSctn" EntityType="Self.SumRptSctn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TierDispl" EntityType="Self.TierDispl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tmpCustomNDC" EntityType="Self.tmpCustomNDC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tmpUserDrugCatgPage" EntityType="Self.tmpUserDrugCatgPage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tmpUserDrugListDtlPage" EntityType="Self.tmpUserDrugListDtlPage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tmpUserDrugSearch" EntityType="Self.tmpUserDrugSearch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tmpUserDrugSearchMS" EntityType="Self.tmpUserDrugSearchMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AHFSChangeList" EntityType="Self.AHFSChangeList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AHFSChangeList].[BatchId] AS [BatchId], 
+    [AHFSChangeList].[AHFS_Id] AS [AHFS_Id], 
+    [AHFSChangeList].[ChangeAction] AS [ChangeAction], 
+    [AHFSChangeList].[AHFS_NAME] AS [AHFS_NAME], 
+    [AHFSChangeList].[AHFS_ParentId] AS [AHFS_ParentId], 
+    [AHFSChangeList].[PREV_AHFS_NAME] AS [PREV_AHFS_NAME], 
+    [AHFSChangeList].[PREV_AHFS_ParentId] AS [PREV_AHFS_ParentId]
+    FROM [dbo].[AHFSChangeList] AS [AHFSChangeList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ETCChangeList" EntityType="Self.ETCChangeList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ETCChangeList].[BatchId] AS [BatchId], 
+    [ETCChangeList].[ETC_ID] AS [ETC_ID], 
+    [ETCChangeList].[ChangeAction] AS [ChangeAction], 
+    [ETCChangeList].[ETC_NAME] AS [ETC_NAME], 
+    [ETCChangeList].[ETC_PARENT_ETC_ID] AS [ETC_PARENT_ETC_ID], 
+    [ETCChangeList].[PREV_ETC_NAME] AS [PREV_ETC_NAME], 
+    [ETCChangeList].[PREV_ETC_PARENT_ETC_ID] AS [PREV_ETC_PARENT_ETC_ID]
+    FROM [dbo].[ETCChangeList] AS [ETCChangeList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GCNChangeList" EntityType="Self.GCNChangeList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GCNChangeList].[BatchId] AS [BatchId], 
+    [GCNChangeList].[GCN_SEQNO] AS [GCN_SEQNO], 
+    [GCNChangeList].[HICL_SEQNO] AS [HICL_SEQNO], 
+    [GCNChangeList].[GNN] AS [GNN], 
+    [GCNChangeList].[GNN60] AS [GNN60], 
+    [GCNChangeList].[ChangeAction] AS [ChangeAction], 
+    [GCNChangeList].[PREV_HICL_SEQNO] AS [PREV_HICL_SEQNO], 
+    [GCNChangeList].[PREV_GNN] AS [PREV_GNN], 
+    [GCNChangeList].[PREV_GNN60] AS [PREV_GNN60]
+    FROM [dbo].[GCNChangeList] AS [GCNChangeList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GPIChangeList" EntityType="Self.GPIChangeList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GPIChangeList].[BatchId] AS [BatchId], 
+    [GPIChangeList].[GPI] AS [GPI], 
+    [GPIChangeList].[ChangeAction] AS [ChangeAction], 
+    [GPIChangeList].[GPI_Name] AS [GPI_Name], 
+    [GPIChangeList].[GPI_Parent] AS [GPI_Parent], 
+    [GPIChangeList].[Prev_GPI_Name] AS [Prev_GPI_Name], 
+    [GPIChangeList].[PREV_GPI_Parent] AS [PREV_GPI_Parent]
+    FROM [dbo].[GPIChangeList] AS [GPIChangeList]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MedIdChangeList" EntityType="Self.MedIdChangeList" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MedIdChangeList].[BatchId] AS [BatchId], 
+    [MedIdChangeList].[MedId] AS [MedId], 
+    [MedIdChangeList].[ChangeAction] AS [ChangeAction], 
+    [MedIdChangeList].[MedIdDesc] AS [MedIdDesc], 
+    [MedIdChangeList].[PREV_MedIdDesc] AS [PREV_MedIdDesc]
+    FROM [dbo].[MedIdChangeList] AS [MedIdChangeList]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_SumRptCfgCol_SumRptCfg" Association="Self.FK_SumRptCfgCol_SumRptCfg">
+      <End Role="SumRptCfg" EntitySet="SumRptCfg" />
+      <End Role="SumRptCfgCol" EntitySet="SumRptCfgCol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SumRptCfgCol_SumRptCol" Association="Self.FK_SumRptCfgCol_SumRptCol">
+      <End Role="SumRptCol" EntitySet="SumRptCol" />
+      <End Role="SumRptCfgCol" EntitySet="SumRptCfgCol" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SumRptCfgCvrgPrptyType_SumRptCfg" Association="Self.FK_SumRptCfgCvrgPrptyType_SumRptCfg">
+      <End Role="SumRptCfg" EntitySet="SumRptCfg" />
+      <End Role="SumRptCfgCvrgPrptyType" EntitySet="SumRptCfgCvrgPrptyType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SumRptCfgSctn_SumRptCfg" Association="Self.FK_SumRptCfgSctn_SumRptCfg">
+      <End Role="SumRptCfg" EntitySet="SumRptCfg" />
+      <End Role="SumRptCfgSctn" EntitySet="SumRptCfgSctn" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SumRptCfgSctn_SumRptSctn" Association="Self.FK_SumRptCfgSctn_SumRptSctn">
+      <End Role="SumRptSctn" EntitySet="SumRptSctn" />
+      <End Role="SumRptCfgSctn" EntitySet="SumRptCfgSctn" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SumRptCfgTier_SumRptCfg" Association="Self.FK_SumRptCfgTier_SumRptCfg">
+      <End Role="SumRptCfg" EntitySet="SumRptCfg" />
+      <End Role="SumRptCfgTier" EntitySet="SumRptCfgTier" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,19 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Areas/HelpPage/ModelDescriptions
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796794
+CollectionModelDescription.cs;4048416201;1;1492524684;|248434|479525
+ComplexTypeModelDescription.cs;219542528;1;1492524684;|248435|479526
+DictionaryModelDescription.cs;650403028;1;1492524684;|248436|479527
+EnumTypeModelDescription.cs;358995497;1;1492524684;|248437|479528
+EnumValueDescription.cs;2574051398;1;1492524684;|248438|479529
+IModelDocumentationProvider.cs;2404083643;1;1492524684;|248439|479530
+KeyValuePairModelDescription.cs;3310671002;1;1492524684;|248440|479531
+ModelDescription.cs;613666365;1;1492524684;|248441|479532
+ModelDescriptionGenerator.cs;977661766;1;1492524684;|248442|479533
+ModelDescriptionGenerator.cs.bak;742535393;1;1492524685;|248443|479534
+ModelNameAttribute.cs;2452376113;1;1492524685;|248444|479535
+ModelNameHelper.cs;1265714876;1;1492524685;|248445|479536
+ParameterAnnotation.cs;1046675562;1;1492524685;|248446|479537
+ParameterDescription.cs;238622134;1;1492524685;|248447|479538
+SimpleTypeModelDescription.cs;117000489;1;1492524685;|248448|479539

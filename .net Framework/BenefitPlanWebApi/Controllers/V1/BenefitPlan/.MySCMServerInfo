@@ -1,0 +1,15 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Controllers/V1/BenefitPlan
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796825
+ConfigurationController.cs;3058312905;1;1492524450;|246886|477977
+FrequencyQualifierTypeController.cs;1115669214;1;1492524450;|246887|477978
+GenderController.cs;39134702;1;1492524450;|246888|477979
+IndustryIdentifierTypeController.cs;1036226825;1;1492524450;|246890|477981
+ISOCountryCodeController.cs;672384584;1;1492524450;|246889|477980
+LineOfBusinessController.cs;31577385;1;1492524450;|246891|477982
+MonthController.cs;339302782;1;1492524450;|246892|477983
+NavigationBreadCrumbController.cs;4118523128;1;1492524450;|246893|477984
+PrescriberController.cs;2242024814;1;1492524450;|246894|477985
+StateProvinceCodeController.cs;4052456638;1;1492524450;|246895|477986
+TenantFamilyHierarchyTypeController.cs;2851569994;1;1492524451;|246896|477987

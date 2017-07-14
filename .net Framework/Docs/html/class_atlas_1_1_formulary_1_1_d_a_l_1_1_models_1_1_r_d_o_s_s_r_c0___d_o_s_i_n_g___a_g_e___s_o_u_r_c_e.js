@@ -1,0 +1,6 @@
+var class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_o_s_s_r_c0___d_o_s_i_n_g___a_g_e___s_o_u_r_c_e =
+[
+    [ "DOSING_AGE_SOURCE_DESC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_o_s_s_r_c0___d_o_s_i_n_g___a_g_e___s_o_u_r_c_e.html#a9d1992049da47e369f4bd3467429b468", null ],
+    [ "DOSING_AGE_SOURCE_ID", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_o_s_s_r_c0___d_o_s_i_n_g___a_g_e___s_o_u_r_c_e.html#a2534910c3fd0382914018634d95489bd", null ],
+    [ "RDOSSRC0_DOSING_AGE_SOURCEIdentifier", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_o_s_s_r_c0___d_o_s_i_n_g___a_g_e___s_o_u_r_c_e.html#a0fc94a1624b10e10f983d71e1d6259df", null ]
+];

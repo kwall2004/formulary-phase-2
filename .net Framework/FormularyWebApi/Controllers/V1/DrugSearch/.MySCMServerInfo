@@ -1,0 +1,23 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/DrugSearch
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796776
+FormularyTreeController.cs;1722831949;1;1492524686;|248518|518182
+MissingNDCGCNSearchController.cs;2978066870;1;1492524686;|248519|479610
+MissingNDCMedispanSearchController.cs;12065294;1;1492524686;|248520|479611
+NewDrugsToMarketController.cs;3409153618;1;1492524686;|248521|479612
+GpiTreeController.cs;785762094;2;1493317688;|280965|570359
+SmartDrugSearchController.cs;246172257;4;1493747661;|248522|608925
+SmartDrugSearchFdbFieldController.cs;2805757552;1;1493907253;|347941|608997
+SmartDrugSearchMedispanFieldController.cs;211811004;1;1493907253;|347942|608998
+DrugListConfigSmartDrugSearchController.cs;3165094831;3;1494520352;|278108|609615
+DrugListConfigSmartDrugSearchMedispanController.cs;3073179118;2;1494520352;|348083|609616
+FormularyConfigSmartDrugSearchController.cs;1720215478;3;1494520352;|248516|609617
+FormularyConfigSmartDrugSearchMedispanController.cs;1148894977;2;1494520352;|347979|609618
+SmartDrugSearchMedispanController.cs;53639292;2;1494520352;|347932|609619
+MissingNDCFdbSearchController.cs;3846896260;1;1496252021;|403699|666808
+MissingNDCGpiSearchController.cs;526827941;1;1496252021;|403700|666809
+DrugSearchController.cs;3371063997;4;1499709488;|248515|669607
+DrugValidationController.cs;4098716339;2;1499709488;|404012|669514
+MedispanDrugSearchController.cs;3393972224;2;1499709488;|310515|669608
+NewDrugsToMarketMedispanController.cs;3876847339;2;1499963514;|348122|670178

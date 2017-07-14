@@ -1,0 +1,8 @@
+config
+    -file
+        .sencha/app/local2dotnet.properties
+and
+app
+    build
+        atlastheme
+            development

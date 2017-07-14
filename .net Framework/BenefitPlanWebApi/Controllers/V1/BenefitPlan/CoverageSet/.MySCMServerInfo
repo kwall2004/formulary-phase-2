@@ -1,0 +1,11 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Controllers/V1/BenefitPlan/CoverageSet
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796838
+BenefitCoverageSetDetailsController.cs;3613116144;1;1492524452;|246961|513308
+BenefitPlanBenefitCoverageSetNetworkTierController.cs;4106065360;1;1492524452;|246962|478053
+CoverageSetConfigurationController.cs;1795149124;1;1492524452;|246963|478054
+CoverageSetController.cs;3899022694;1;1492524452;|246964|478055
+CoverageSetThresholdController.cs;22666973;1;1492524452;|246965|478056
+ThresholdController.cs;1285417451;1;1492524452;|246966|478057
+ThresholdQualifierTypeController.cs;2631946309;1;1492524452;|246967|478058

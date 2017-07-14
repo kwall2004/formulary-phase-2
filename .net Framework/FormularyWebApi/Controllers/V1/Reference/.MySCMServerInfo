@@ -1,0 +1,12 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/Reference
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796771
+DrugThrputcClsTypeController.cs;2121304735;1;1492524687;|248561|479652
+FormularyPlanSubTypeController.cs;68479864;1;1492524687;|248563|534107
+FormularyPlanTypeController.cs;424584905;1;1492524687;|248564|479655
+FormularyStatTypeController.cs;3628981947;1;1492524687;|288722|544255
+LOBController.cs;1193716604;1;1492524687;|248565|479656
+DrugTypeFnController.cs;1231392475;2;1492526521;|248562|546793
+DrugRefDbController.cs;2978746244;2;1497976728;|248560|668621
+DrugRefDbValQulfrTypeController.cs;2628926285;1;1497979256;|404013|4294967295

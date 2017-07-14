@@ -1,0 +1,5 @@
+var class_atlas_web_api_1_1_controllers_1_1_v1_1_1_formulary_1_1_drug_category_1_1_drug_category_prior_authorization_controller =
+[
+    [ "DrugCategoryPriorAuth", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_formulary_1_1_drug_category_1_1_drug_category_prior_authorization_controller.html#a36032f15e87795c4b5a47c11d3c68bc3", null ],
+    [ "DrugCategoryPriorAuth", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_formulary_1_1_drug_category_1_1_drug_category_prior_authorization_controller.html#a2c956da6ebea4c42d1b102d1e83c57c9", null ]
+];

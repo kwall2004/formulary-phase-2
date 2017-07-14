@@ -1,0 +1,206 @@
+{
+    "name": "Atlas",
+    "version": "0.0.0.1",
+    "indexHtmlPath": "index.html",
+    "classpath": [
+        "app",
+        "${toolkit.name}/src"
+    ],
+    "overrides": [
+        "overrides",
+        "${toolkit.name}/overrides"
+    ],
+    "framework": "ext",
+    "requires": [
+        "localize",
+        "exporter",
+        "font-awesome",
+        "font-pictos",
+        "common",
+        "plan",
+        "benefitplan",//new module - not merlin
+        "atlasformulary",//new module - not merlin
+        "admin",
+        "claims",
+        "member",
+        "pharmacy",
+        "provider",
+        "authorization",
+        "casemanagement",
+        "letter",
+        "grievances",
+        "encounter",
+        "rebate",
+        "prescriber",
+        "finance",
+        "reports",
+        "fwa",
+        "macprice",
+        "obiee",
+        "portals",
+        "home",
+        "formulary"
+    ],
+    "fashion": {
+        "inliner": {
+            "enable": false
+        }
+    },
+    "sass": {
+        "namespace": "Atlas",
+        "etc": [
+            "sass/etc/all.scss",
+            "${toolkit.name}/sass/etc/all.scss"
+        ],
+        "var": [
+            "sass/var/all.scss",
+            "sass/var",
+            "${toolkit.name}/sass/var"
+        ],
+        "src": [
+            "sass/src",
+            "${toolkit.name}/sass/src"
+        ]
+    },
+    "js": [
+        {
+            "path": "app.js",
+            "bundle": true
+        },
+        {
+            "path": "aes.js",
+            "includeInBundle": true
+        }
+    ],
+    "classic": {
+        "requires": [
+            "locale"
+   	],
+        "js": [
+            {
+                "path": "${framework.dir}/build/ext-all-debug.js"
+            }
+        ]
+    },
+    "modern": {
+        "js": [
+            {}
+        ]
+    },
+    "css": [
+        {
+            "path": "${build.out.css.path}",
+            "bundle": true,
+            "exclude": [
+                "fashion"
+            ]
+        }
+    ],
+    "loader": {
+        "cache": false,
+        "cacheParam": "_dc"
+    },
+    "production": {
+        "output": {
+            "appCache": {
+                "enable": false,
+                "path": "cache.appcache"
+            }
+        },
+        "loader": {
+            "cache": "${build.timestamp}"
+        },
+        "cache": {
+            "enable": false
+        },
+        "compressor": {
+            "type": "yui"
+        },
+        "productionMode": true
+    },
+    "testing": {},
+    "development": {
+        "tags": [],
+        "tests": {
+            "path": "test/project.json"
+        }
+    },
+    "bootstrap": {
+        "base": "${app.dir}",
+        "manifest": "${build.id}.json",
+        "microloader": "bootstrap.js",
+        "css": "bootstrap.css"
+    },
+    "output": {
+        "base": "${workspace.build.dir}/${build.environment}/${app.name}",
+        "page": "index.html",
+        "manifest": "${build.id}.json",
+        "js": "${build.id}/app.js",
+        "appCache": {
+            "enable": false
+        },
+        "resources": {
+            "path": "${build.id}/resources",
+            "shared": "resources"
+        }
+    },
+    "cache": {
+        "enable": false,
+        "deltas": "${build.id}/deltas"
+    },
+    "appCache": {
+        "cache": [
+            "index.html"
+        ],
+        "network": [
+            "*"
+        ],
+        "fallback": []
+    },
+    "resources": [
+        {
+            "path": "resources",
+            "output": "shared"
+        },
+        {
+            "path": "${toolkit.name}/resources"
+        },
+        {
+            "path": "${build.id}/resources"
+        }
+    ],
+    "ignore": [
+        "(^|/)CVS(/?$|/.*?$)"
+    ],
+    "archivePath": "archive/${build.id}",
+    "builds": {
+        "atlastheme": {
+            "toolkit": "classic",
+            "theme": "AtlasTheme",
+            "locales": [
+                "en"
+                // "es"
+            ],
+            "sass": {}
+        },
+        "hp": {
+            "toolkit": "classic",
+            "theme": "choice",
+            "locales": [
+                "en"
+                // "es"
+            ],
+            "sass": {}
+        },
+        "rx": {
+            "toolkit": "classic",
+            "theme": "rx",
+            "locales": [
+                "en"
+                // "es"
+            ],
+            "sass": {}
+        }
+    },
+    "id": "89c2e620-e6d6-4f3a-b1f0-3ce3d1296e92"
+}

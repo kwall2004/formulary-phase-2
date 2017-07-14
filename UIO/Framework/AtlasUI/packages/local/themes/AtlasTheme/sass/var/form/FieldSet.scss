@@ -1,0 +1,37 @@
+$form-field-border-width: dynamic(1px);
+$form-field-border-color: dynamic(#d3d3d3);
+$form-field-background-color: dynamic(#fff);
+$form-field-color: dynamic(#232323);
+$form-field-focus-border-color: dynamic(#d3d3d3);
+$form-field-invalid-background-color: dynamic(#fff);
+$form-field-invalid-border-color: dynamic(#C30);
+$form-field-padding: dynamic(1px 6px 2px);
+$form-field-height:dynamic(22px); //member, prescriber label spacing
+//form-label
+$form-display-field-font-size: dynamic(12px);
+$form-label-font-color:dynamic(#000);
+$form-label-font-size: dynamic(13px);
+$form-label-font-weight:dynamic(bolder);
+$form-label-line-height:dynamic(18px);
+$form-label-horizontal-spacing:dynamic(5px);
+$form-label-font-size:dynamic(13px);
+$form-text-field-padding: dynamic(0px 0px 4px);
+$form-text-field-height:dynamic(26px);
+//form-trigger
+$form-trigger-background-color:dynamic(#b8c8d2);
+// Field Set
+$fieldset-header-color:dynamic(#5aadd1);
+$fieldset-background-color:dynamic(#ffffff);
+$fieldset-header-font-size:dynamic(14px);
+$fieldset-header-font-weight:dynamic(700);
+$fieldset-header-padding:dynamic(2px);
+$fieldset-tool-glyph-color:dynamic(#1d9d15);
+$fieldset-margin: dynamic(10px); // Fieldset Margin
+$fieldset-padding: dynamic(5px 5px 5px 5px); // Fieldset Padding
+$fieldset-border-radius: dynamic(0px); // Fieldset Border Radius
+$fieldset-header-text-font-color:dynamic(#3e4752);
+$form-text-field-padding : dynamic($form-field-padding);
+$form-item-margin-bottom: dynamic(2px);
+
+//disabled opacity
+$form-field-disabled-opacity : dynamic(.6);

@@ -1,0 +1,8 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796766
+AccountController.cs;238291114;1;1492524685;|248486|479577
+AtlasBaseController.cs;3939835185;1;1492524685;|248487|479578
+HomeController.cs;1559573084;1;1492524686;|248488|479579
+ValuesController.cs;3530847498;1;1492524686;|248489|479580

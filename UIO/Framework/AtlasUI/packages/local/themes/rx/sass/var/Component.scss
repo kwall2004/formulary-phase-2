@@ -1,0 +1,194 @@
+$include-ie: false;
+$include-rtl: false;
+
+// Base Theme: Neptune
+
+// Gradient
+$base_gradient: 'matte'; // Matte, Bevel, Glossy, or Recessed <--- This doesn't seem to work. I Need to find another way.
+
+//logo display none
+.main-logo {//display:none;
+}
+
+// Top Toolbar Buttons
+.top-toolbar-button {padding: 3px;}
+.x-toolbar-item > div { // Changes the "Atlas User #1" text color in the top toolbar
+color: #eaeaea; font-weight:500;}
+.x-tab-bar-default-top > .x-tab-bar-body-default {padding: 2px 4px 0 8px !important;}
+.x-tab-default-top{border:1px solid #999 !important;}
+
+.x-toolbar-default{background-color: #fff !important;}
+
+.x-tab-over{background: rgba(127,103,65,0.7)!important; border:1px solid#eee !important;}
+
+.x-tab-1200-closeEl{display:none;}
+
+//body color
+body.x-border-layout-ct, div.x-border-layout-ct { background-color: #f4f4f4 !important;/*border-bottom:5px solid #8397a3!important;*/}
+
+//panel
+.x-panel-body-default {background-color:#f6f6ee!important;}//F5F6FA main BKG
+.x-panel-header-title-default-framed{font-size:16px !important; font-family:'Museo-Sans',sans-serif !important; font-style: normal;
+font-weight:500;padding:0px 0px 0px 4px;}
+.x-panel-header-default {border: none !important;}
+.x-panel-header-default-framed-top{padding:2px !important;}
+.x-panel{border:1px solid #999!important;}
+//.x-dashboard-panel {margin-top: 0px !important;} 
+.x-tabpanel-child{border-bottom: 2px solid #fff !important;}
+.x-dashboard-panel > div > div > div > div > div > .x-autocontainer-outerCt {background-color: #fff;}
+//.x-panel-default {border: 2px solid; border-radius: 3px;}
+
+//drop shadow for card panel
+.card-panel { box-shadow: 0 0 5px #dddddd;margin: 20px; border:1px solid #999 !important;}
+.card-panel > div > div >div {background-color:#fff !important;}
+.card-panel > div > div > .x-box-target{background-color:#C85F25 !important;} // to fix the white line on panel header
+//.card-panel .x-autocontainer-outerCt{padding-left:8px;}
+
+//buttons
+.x-btn-icon-el-default-toolbar-small {color: #8d734a !important;font-weight:normal;}
+.x-btn { margin:0px 6px 0px 0px !important;}
+.x-btn-default-small{padding:0px !important;}
+.x-btn-inner-default-small {padding:2px 4px !important;font-size:12px !important; }
+.x-btn-inner-default-toolbar-small{font-size:12px !important;}
+.x-btn-default-toolbar-small{padding:4px !important;}
+.x-btn-wrap-default-toolbar-small.x-btn-arrow-right:after {color: #eee !important;}
+
+//tree-navigation text
+.x-tree-node-text{color:#354358; font-size:13px; font-weight:bolder;}
+//$tree-elbow-width:5px;
+
+div.x-tree-elbow-img.x-tree-elbow-empty{display:none;}
+
+//menu dropdown
+.x-menu-item-text-default {line-height:23px !important;}
+
+//background-color for tree navigation
+.x-grid-cell-treecolumn{background-color:#E4E5E0;} //E3E2DE
+.panelNavigation .x-panel-bodyWrap .x-panel-body-default{ background-color: #E4E5E0 !important;}
+
+//different treelist 
+.panelNavigation.x-treelist-item-selected > .x-treelist-row {background-color: #dedbcc;}
+
+//expanded icon
+.x-grid-tree-node-expanded .x-tree-elbow-plus, .x-grid-tree-node-expanded .x-tree-elbow-end-plus{color:#8d734a !important;font-size:13px !important;}
+.x-tree-elbow-plus, .x-tree-elbow-end-plus {color:#8d734a !important;font-size:13px !important;}
+
+//font-awesome icon
+.x-tree-icon{color:#8d734a !important;font-size:13px !important;}
+.x-tree-icon-parent{color:#8d734a !important;}
+.x-tree-icon-parent-expanded{color:#8d734a !important; font-size:13px !important;}
+.x-tree-icon-leaf{color:#8d734a !important;font-size:13px !important;}
+//.x-tree-icon, .x-tree-icon-parent, .x-tree-icon-parent-expanded, .x-tree-icon-leaf {transition: color #702111 1.1s;}
+.x-title-text{font-weight:bold;} 
+
+//fieldset
+.x-fieldset-header-default > .x-fieldset-header-text {font-weight: 600!important;color: #2D4452 !important;}
+.x-fieldset{background-color:#fff !important;}
+
+//grid
+.x-grid-td{border-bottom: 1px solid #333 !important;  /*box-shadow: 10px 10px 5px #888888 !important;*/}
+.x-grid-item { border-color: #333; font-weight: 500 !important;}
+.x-grid-with-row-lines .x-grid-item.x-grid-item-selected {border-color: #333 !important;}
+.x-grid-with-row-lines .x-grid-item-selected  .x-grid-item { border-color: #333 !important;}
+.x-grid-item-selected { background-color: #D0D0D0 !important; }
+.x-grid-item-over{background-color:#D0D0D0 !important}
+.x-grid-cell-inner{color: #333; padding: 9px 10px 10px !important;min-height: 35px !important;}
+.overflowGrid .x-grid-cell-inner{padding:initial !important; height:initial !important;}
+.pagingToolbarButton {
+    top: 0px !important;
+    background-color: #8d734a !important;
+}
+
+//form field
+.formPanel {border: none !important;}
+.formPanel > div > div {background: none !important;}
+.x-field {  margin: 5px;} // Field Margin
+.x-form-item-label-inner { width: 100% !important; white-space:nowrap;} // <--- Sencha has inline styling for width. I have to override it.
+.x-field .x-form-item .x-form-item-default .x-form-type-checkbox .x-box-item .x-field-default .x-hbox-form-item .x-form-item-no-label{left:0px !important;}
+.x-form-item { margin: 2px;}
+.x-form-item-label-default {padding-left:5px; padding-top:5px !important;font-weight:600!important; font-size:13px!important;}
+.x-form-field{padding:0px !important; min-height:0px !important; margin-left:3px !important;border-radius:2px !important;} 
+.x-form-trigger-default {font:13px/15px FontAwesome !important; width:26px !important;}
+.x-form-text-field-body-default {padding-left: 10px;}
+.x-form-textarea{min-height:80px!important; line-height:22px!important; margin:0px !important;}
+.disabledText {color: #232323 !important; opacity:1 !important;}
+.disabledText .x-form-text-default{color:#777 !important;}
+
+//button font awesome icons colors
+.x-btn-icon-left > .x-btn-icon-el-default-toolbar-small, .x-btn-icon-right > .x-btn-icon-el-default-toolbar-small {color: #fff!important;}
+
+//boundlist and combobox
+#combobox-1013-inputEl{background-color:#b8c8d2 !important; color:#fff; font-size:14px;font-weight:bold;}
+.x-form-trigger-default{color:#333 !important;}
+.x-boundlist-selected {color: #fff; background-color: #8d734a !important;border-color: #fff !important;}
+/*.x-boundlist-item:hover { color: #fff; background-color: #81d4fa !important; border-color: #81d4fa !important;}
+.x-boundlist-item:focus{ color: #fff; background-color: #81d4fa !important; border-color: #81d4fa !important;}*/
+.x-boundlist-item {line-height:23px !important; color:#fff;}
+.x-boundlist-item-over{background-color:#8d734a !important; color:#fff !important;}
+.x-boundlist-item-focus{background-color:#8d734a !important; color:#fff !important;}
+.x-boundlist-item-active{   background-color:#8d734a !important;color:#fff !important;}
+
+//pagination
+/*.x-docked-bottom{background-color: #b8c8d2 !important; }*/
+//menu-item dropdown 
+.x-menu-item-default.x-menu-item-focus,.x-menu-item-default.x-menu-item-active {background-color: #8397a3 !important;font-weight:bold}
+.x-menu-item{line-height:23px!important;font-weight:bold;}
+
+//datepicker
+$datepicker-background-color: dynamic(#ffffff);
+
+$datepicker-arrow-glyph-color:dynamic(#232323);
+$datepicker-column-header-background-gradient:glossy;
+$datepicker-column-header-border-style:solid;
+$datepicker-column-header-font-size:13px;
+
+$datepicker-column-header-color: dynamic(#232323);
+$datepicker-column-header-border-color: dynamic($neutral-color);
+$datepicker-column-header-background-color: #ffffff;
+$datepicker-footer-background-color:#b8c8d2;
+$datepicker-footer-background-gradient:glossy;
+$datepicker-header-background-gradient:glossy;
+$datepicker-item-font-size:13px;
+
+$datepicker-item-selected-background-color: #4d4d4d;
+$datepicker-item-selected-border-color:#404040;
+$datepicker-item-today-background-color:#4d4d4d;
+
+$datepicker-monthpicker-yearnav-color:#ffffff;
+$datepicker-border-color: dynamic($neutral-color);
+
+$datepicker-arrow-opacity: dynamic(.7);
+$datepicker-arrow-opacity-over: dynamic(1);
+$datepicker-header-background-color: #fff;
+$datepicker-item-today-background-color:#d3d3d3;
+$datepicker-item-selected-background-color:#1371b5;
+$datepicker-item-selected-border-color:#10629e;
+$datepicker-item-hover-background-color:#1371b5;
+$datepicker-item-hover-color:#ffffff;
+
+//claims search - MemberRx
+.red-row .x-grid-cell-inner{color:red;}
+
+.triStatePicker .x-grid-cell-inner-treecolumn{
+    background-color:#fff !important;
+}
+
+//tab bar scroller arroww
+.x-box-scroller-tab-bar-default{color: #c85f25 !important;opacity:.8 !important;}
+.x-box-scroller-tab-bar-default.x-box-scroller-left, .x-box-scroller-tab-bar-default.x-box-scroller-right{top: 35% !important;}
+body.x-border-layout-ct,div.x-border-layout-ct {background-color: #fff!important;;}
+
+//mandatory field asterisk
+.x-form-required-field {color: red;}
+
+//drug to drug interaction msg
+.x-lbl-dtd-none-found {color:green;font-weight:bold;font-size:20px;}
+.x-lbl-dtd-unexpected-err {color:red;font-weight:bold;font-size:20px}
+
+.x-grid-dtd-sLevelInd-severe {background-color:#F44336;color:#ffffff;font-weight:bold}
+.x-grid-dtd-sLevelInd-moderate {background-color:#FF9800;color:#ffffff;font-weight:bold}
+.x-grid-dtd-sLevelInd-minimal {background-color:#CDDC39;color:#ffffff;font-weight:bold}
+
+.x-grid-dtd-severe {color:#F44336;font-weight:bold}
+.x-grid-dtd-moderate {color:#FF9800}
+.x-grid-dtd-minimal {color:#CDDC39}

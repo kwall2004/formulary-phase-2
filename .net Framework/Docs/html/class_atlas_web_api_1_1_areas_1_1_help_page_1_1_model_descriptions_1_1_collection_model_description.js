@@ -1,0 +1,4 @@
+var class_atlas_web_api_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_collection_model_description =
+[
+    [ "ElementDescription", "class_atlas_web_api_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_collection_model_description.html#aaeeed3910832db01698d68d1fa5861ff", null ]
+];

@@ -1,0 +1,24 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/Summary
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=946140
+SummaryConfigFileFormatController.cs;1273285469;1;1495193160;|348147|610178
+SummaryConfigFontSizeController.cs;3506118105;1;1495193160;|348148|610179
+SummaryConfigLanguageController.cs;702373568;1;1495193160;|348149|610180
+SummaryConfigTierController.cs;499540759;1;1495193160;|348151|610182
+SummaryConfigTierDisplayController.cs;2235917500;1;1495193160;|348152|610183
+SummaryDrugSortByController.cs;1187977670;1;1495193160;|348153|610184
+SummaryOrganizeByController.cs;3568048239;1;1495193160;|348154|610185
+SummaryRollUpByController.cs;1053043876;1;1495193160;|348155|610186
+SummaryOtcByController.cs;2417755593;1;1495638102;|348233|610670
+SummaryConfigPaStController.cs;2358243516;1;1496228927;|403690|666709
+SummaryConfigTableOfContentsController.cs;3509532057;1;1496228927;|403691|666712
+SummaryConfigDrugListSectionController.cs;2547100212;2;1496228927;|348225|666682
+SummaryConfigSectionSelectionController.cs;1837201539;2;1496747026;|348219|667247
+SummaryConfigController.cs;575909392;2;1497290380;|348145|667710
+SummaryConfigFormularyController.cs;3126050326;1;1497888674;|403956|668326
+SummaryConfigCoveragePropertyController.cs;2271122027;4;1497888674;|348156|668228
+SummaryConfigHeaderFooterController.cs;770928239;2;1498129890;|403681|668682
+SummaryConfigTitlePageController.cs;1634527074;3;1498129890;|403686|668683
+SummaryConfigBackTextController.cs;314029838;7;1498648042;|403684|668967
+SummaryConfigFrontTextController.cs;2804547174;8;1498648042;|403685|668968

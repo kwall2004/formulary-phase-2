@@ -1,0 +1,58 @@
+$root-color: dynamic(#404040);
+$base-color: dynamic(lighten($root-color,30%));
+
+//Exclude legacy IE
+$include-ie: false; // Will lead to theme artifacts in Calendar picker, filed ticket with Sencha
+
+$font-size: dynamic(12px);
+
+$base-highlight-color: dynamic(mix(#fff, $base-color, 20%));
+$base-light-color: dynamic(mix(#fff, $base-color, 60%));
+$base-dark-color: dynamic(mix(#000, $base-color, 20%));
+$neutral-color: dynamic(#d0d0d0);
+$neutral-light-color: dynamic(mix(#fff, $neutral-color, 80%));
+$neutral-highlight-color: dynamic(mix(#fff, $neutral-color, 60%));
+$neutral-medium-dark-color: dynamic(mix(#000, $neutral-color, 15.2%));
+$neutral-dark-color: dynamic(mix(#000, $neutral-color, 30.4%));
+$font-weight: dynamic(300);
+$font-weight-bold: dynamic(400);
+$font-family: dynamic('Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif);
+
+// text color
+$color: dynamic(#404040);
+// lighter text color for use on light backgrounds
+$highlight-color: dynamic(#606060);
+// light text color for use on dark backgrounds
+$light-color: dynamic(#f0f0f0);
+$enable-font-icons: dynamic(true);
+
+
+//Colors
+
+$atlas-white: dynamic(#fff);
+
+//Red
+$atlas-red: dynamic(#bd3f26);
+$atlas-red-darker: dynamic(darken($atlas-red, 20%));
+$atlas-red-lighter: dynamic(lighten($atlas-red, 20%));
+
+//Green
+$atlas-green: dynamic(#33993c);
+$atlas-green-darker: dynamic(darken($atlas-green, 20%));
+$atlas-green-lighter: dynamic(lighten($atlas-green, 20%));
+
+//BLue
+$atlas-blue: dynamic(#23aedb);
+
+//Gray tones
+$atlas-smoke-white: dynamic(#e5e5e5);
+$atlas-gray: dynamic(#aaacaf);
+$atlas-light-gray: dynamic(#ebebeb);
+$atlas-super-light-gray: dynamic(#f3f3f9);
+$atlas-medium-gray: dynamic(#b7b7b7);
+$atlas-dark-gray: dynamic(#484848);
+$atlas-pale-gray: dynamic(mix($atlas-white, $atlas-dark-gray, 20%));
+/*
+.#{$prefix}tab-inner-default{
+    color: dynamic(#000000);
+}*/

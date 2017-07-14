@@ -1,0 +1,11 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Controllers/V1/BenefitPlan/CriteriaGroup
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796837
+CriteriaConditionTypeController.cs;2795179610;1;1492524452;|246968|478059
+CriteriaOperatorTypeController.cs;792678240;1;1492524452;|246969|478060
+CriteriaSetController.cs;1286708322;1;1492524452;|278017|525017
+CriteriaSetTypeController.cs;32788664;1;1492524453;|246970|478061
+RuleDetailController.cs;1343300392;1;1492524453;|246971|524784
+RuleSetController.cs;2289365371;1;1492524453;|246972|478063
+ValueQualifierTypeController.cs;976524312;1;1492524453;|246973|478064

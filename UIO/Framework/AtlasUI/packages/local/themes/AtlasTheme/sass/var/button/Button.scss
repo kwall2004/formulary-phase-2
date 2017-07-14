@@ -1,0 +1,92 @@
+//button default color
+$button-default-color: dynamic(#666666);
+$button-default-font-weight:dynamic(600);
+$button-default-color-focus: dynamic(#125e0c);
+$button-default-color-focus-over:  dynamic(#125e0c);
+$button-default-color-focus-pressed:  dynamic(#2ca853);
+$button-default-color-over:  dynamic(#125e0c);
+$button-default-color-pressed:  dynamic(#2ca853);
+//button default border color
+$button-default-border-color:  dynamic(#d0d0d0);// Button Border Color
+$button-default-border-color-focus:  dynamic(#125e0c);
+$button-default-border-color-focus-over:  dynamic(#125e0c);
+$button-default-border-color-focus-pressed:  dynamic(#2ca853);
+$button-default-border-color-over:  dynamic(#125e0c);
+$button-default-border-color-pressed:  dynamic(#2ca853);
+//button default background color
+$button-default-background-color:  dynamic(#EAF6FF);//  Button Color
+$button-default-background-color-focus:  dynamic(#f2f9ff);
+$button-default-background-color-focus-over:  dynamic(#f2f9ff);
+$button-default-background-color-focus-pressed:  dynamic(#EAF6FF);
+$button-default-background-color-over:  dynamic(#f2f9ff);
+$button-default-background-color-pressed:  dynamic(#EAF6FF);
+$button-default-font-weight:  dynamic(600);
+//button default disabled
+$button-default-color-disabled: dynamic(#444);
+$button-default-border-color-disabled: dynamic( #d3d3d3);
+$button-default-background-color-disabled:  dynamic(#ececec);
+$button-default-base-color-disabled: dynamic( #ececec);
+
+//button toolbar disabled
+$button-toolbar-color-disabled: dynamic( #444);//disabled
+$button-toolbar-border-color-disabled: dynamic( #d3d3d3);//disabled
+$button-toolbar-background-color-disabled:dynamic(#ececec);//disabled
+//button toolbar
+$button-toolbar-color:  dynamic(#fff);
+$button-toolbar-color-focus:  dynamic(#125e0c);
+$button-toolbar-color-focus-over:  dynamic(#125e0c);
+$button-toolbar-color-focus-pressed:  dynamic(#125e0c);
+$button-toolbar-color-over:  dynamic(#125e0c);
+$button-toolbar-color-pressed:  dynamic(#125e0c);
+//toolbar button border color
+$button-toolbar-border-color:  dynamic(#125e0c);// Button Border Color
+$button-toolbar-border-color-focus:  dynamic(#2ca853);
+$button-toolbar-border-color-focus-over:  dynamic(#2ca853);
+$button-toolbar-border-color-focus-pressed: dynamic( #125e0c);
+$button-toolbar-border-color-over:  dynamic(#2ca853);
+$button-toolbar-border-color-pressed:  dynamic(#125e0c);
+//button toolbar background color
+$button-toolbar-background-color:  dynamic(#2ca853);// Toolbar Button Color
+$button-toolbar-background-color-focus:  dynamic(#fff);
+$button-toolbar-background-color-focus-over:  dynamic(#fff);
+$button-toolbar-background-color-focus-pressed: dynamic( #fff);
+$button-toolbar-background-color-over:  dynamic(#fff);
+$button-toolbar-background-color-pressed:  dynamic(#fff);
+//button toolbar glyph color
+$button-toolbar-arrow-glyph-color:  dynamic(#fff);
+$button-toolbar-glyph-color:  dynamic(#fff);
+$button-toolbar-glyph-color-over:  dynamic(#2ca853);
+$button-toolbar-arrow-glyph-color-over:  dynamic(#3e4752);
+$button-toolbar-font-weight: dynamic(700);
+
+
+//btn base
+$button-default-base-color:  dynamic(#8fd7d4); // Button  Color
+$button-default-base-color-over:  dynamic(#fff);
+$button-default-base-color-pressed:  dynamic(#8ece8a);
+$button-default-base-color-focus-over:  dynamic(#3e4752);
+$button-default-base_color-focus-pressed:  dynamic(#fff);
+$button-default-base-font-weight: dynamic(600);
+//radius, font size and font-weight
+$button-small-border-radius:  dynamic(3px); // Small Button Border Radius
+$button-medium-border-radius: dynamic( 3px); // Medium Button Border Radius
+$button-large-border-radius:  dynamic(3px); // Large Button Border Radius
+$button-grid-cell-border-radius:  dynamic(0px); // Button Grid CellBorder Radius
+$button-small-font-weight: dynamic(normal);
+$buttonsmall-line-height:  dynamic(18px);
+$button-small-padding:dynamic(3px 0px 4px 0px);
+$button-small-split-height:  dynamic(12px);
+$button-small-text-padding:  dynamic(2px);
+$button-split-height:  dynamic(14px);
+$button-small-font-size:  dynamic(12px);
+$button-small-glyph-font-size:  dynamic(14px);
+$button-small-font-weight: dynamic(500);
+//button inner
+$button-default-inner-border-color:  dynamic(#3e4752);// Button Border Color
+$button-default-inner-border-color-disabled:  dynamic(#777);
+$button-default-inner-border-color-focus:  dynamic(#3e4752);
+$button-default-inner-border-color-focus-over: dynamic( #3e4752);
+$button-default-inner-border-color-focus-pressed:  dynamic(#d3d3d3);
+$button-default-inner-border-color-over:  dynamic(#3e4752);
+$button-default-inner-border-color-pressed:  dynamic(#d3d3d3);
+$button-default-inner-font-weight: dynamic(600);

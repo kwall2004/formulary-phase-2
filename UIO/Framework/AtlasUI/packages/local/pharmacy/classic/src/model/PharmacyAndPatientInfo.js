@@ -1,0 +1,53 @@
+/**
+ * This Class is the Model created for Pharmacy/Credentialing Module
+ */
+
+Ext.define('Atlas.pharmacy.model.PharmacyAndPatientInfo', {
+    extend: 'Atlas.common.model.Base',
+    fields: [
+        {name: 'PatCnslng', type: 'boolean'},
+        {name: 'OtherSvcsProvided', type: 'string'},
+        {name: 'PhyLocDelSrv', type: 'boolean'},
+        {name: 'LegalBusinessNAME', type: 'string'},
+        {name: 'CompLicensed', type: 'boolean'},
+        {name: 'busPctIHS', default : null, type: 'string'},
+        {name: 'IVFusBusPct', default : null, type: 'string'},
+        {name: 'FederalTaxID', type: 'string'},
+        {name: 'InternetBusPct', default : null, type: 'string'},
+        {name: 'RetLicensed', type: 'boolean'},
+        {name: 'PharHrSun', type: 'string'},
+        {name: 'CompBusPct', default : null, type: 'string'},
+        {name: 'MailSrvLicensed', type: 'boolean'},
+        {name: 'SpecDspnsrBusPct', default : null, type: 'string'},
+        {name: 'LonTrmBusPct', default : null, type: 'string'},
+        {name: 'MailSrvBusPct', default : null, type: 'string'},
+        {name: 'busPctITU', default : null, type: 'string'},
+        {name: 'busPct340B', default : null, type: 'string'},
+        {name: 'licensedIHS', type: 'boolean'},
+        {name: 'threeFortyBPharm', type: 'boolean'},
+        {name: 'InternetLicensed', type: 'boolean'},
+        {name: 'Literature', type: 'boolean'},
+        {name: 'PhyLocLang', type: 'boolean'},
+        {name: 'IVFusLicensed', type: 'boolean'},
+        {name: 'NamePost', type: 'boolean'},
+        {name: 'Litigation', type: 'boolean'},
+        {name: 'BusFail', type: 'boolean'},
+        {name: 'LegalViolations', type: 'boolean'},
+        {name: 'DispenserClass', type: 'string'},
+        {name: 'PhyLocCompSrv', type: 'boolean'},
+        {name: 'PhyLoc', type: 'boolean'},
+        {name: 'PharmacyName', type: 'string'},
+        {name: 'licensed340B', type: 'boolean'},
+        {name: 'SpecDspnsrLicensed', type: 'boolean'},
+        {name: 'SepChrDelSrv', type: 'boolean'},
+        {name: 'PrepWait', type: 'boolean'},
+        {name: 'licensedITU', type: 'boolean'},
+        {name: 'RetBusPct', default : null, type: 'string'},
+        {name: 'deliveryServProv', type: 'boolean'},
+        {name: 'PharHrM-F', type: 'string'},
+        {name: 'PharHrSat', type: 'string'},
+        {name: 'LonTrmLicensed', type: 'boolean'},
+        {name: 'mailService', type: 'boolean'},
+        {name: 'Allegations', type: 'boolean'}
+    ]
+});

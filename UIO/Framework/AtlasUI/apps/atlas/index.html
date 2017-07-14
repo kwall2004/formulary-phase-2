@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="resources/images/MHP.ico">
+
+    <title>Atlas</title>
+    <style>
+        #css-preloader {
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+            padding: 0;
+            top: 50%;
+            left: 49%;
+            position: absolute;
+            border-radius: 100%;
+            border: 2px solid;
+            border-top-color: rgba(0, 0, 0, 0.65);
+            border-bottom-color: rgba(0, 0, 0, 0.15);
+            border-left-color: rgba(0, 0, 0, 0.65);
+            border-right-color: rgba(0, 0, 0, 0.15);
+            -webkit-animation: preloader 0.8s linear infinite;
+            animation: preloader 0.8s linear infinite;
+        }
+
+        @keyframes preloader {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes preloader {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+
+    </style>
+
+    <script type="text/javascript">
+        var Ext = Ext || {}; // Ext namespace won't be defined yet...
+        var Atlas = Atlas || {};
+
+        Atlas.user = Atlas.user || {}; //Setup Atlas for user cookie prep
+
+        //fake session cookie
+        Atlas.user.SessionID = null;
+
+        // This function is called by the Microloader after it has performed basic
+        // device detection. The results are provided in the "tags" object. You can
+        // use these tags here or even add custom tags. These can be used by platform
+        // filters in your manifest or by platformConfig expressions in your app.
+        //
+        Ext.beforeLoad = function (tags) {
+            var profile,
+                    lang,
+                    parts = location.hostname.split('.'),
+                    has = function (prop) {
+                        return obj.hasOwnProperty(prop);
+                    },
+                    obj = location.search.substring(1).split("&").reduce(function (prev, curr) {
+                        var p = curr.split("=");
+                        prev[decodeURIComponent(p[0])] = p[1] === undefined ? '' : decodeURIComponent(p[1]);
+                        return prev;
+                    }, {});
+
+            // For testing look for "?classic" or "?modern" in the URL to override
+            // device detection default.
+            //
+            if (parts[0] === 'rxmember' || !!location.href.match(/rxmember/g) || parts[0] === 'rxpharmacy' || !!location.href.match(/rxpharmacy/g) || parts[0] === 'rxprescriber' || !!location.href.match(/rxprescriber/g)) {
+                profile = 'rx';
+            }
+            else if (parts[0] === 'hpmember' || !!location.href.match(/hpmember/g) || parts[0] === 'hpprovider' || !!location.href.match(/hpprovider/g)) {
+                profile = 'hp';
+            }
+            else {
+                profile = 'atlastheme';
+            }
+
+            if (parts[0] === 'hpmember' || !!location.href.match(/hpmember/g)) {
+                window.lpTag = window.lpTag || {}; if (typeof window.lpTag._tagCount === 'undefined') { window.lpTag = { site: '56663249' || '', section: lpTag.section || '', autoStart: lpTag.autoStart === false ? false : true, ovr: lpTag.ovr || {}, _v: '1.5.1', _tagCount: 1, protocol: location.protocol, events: { bind: function (app, ev, fn) { lpTag.defer(function () { lpTag.events.bind(app, ev, fn); }, 0); }, trigger: function (app, ev, json) { lpTag.defer(function () { lpTag.events.trigger(app, ev, json); }, 1); } }, defer: function (fn, fnType) { if (fnType == 0) { this._defB = this._defB || []; this._defB.push(fn); } else if (fnType == 1) { this._defT = this._defT || []; this._defT.push(fn); } else { this._defL = this._defL || []; this._defL.push(fn); } }, load: function (src, chr, id) { var t = this; setTimeout(function () { t._load(src, chr, id); }, 0); }, _load: function (src, chr, id) { var url = src; if (!src) { url = this.protocol + '//' + ((this.ovr && this.ovr.domain) ? this.ovr.domain : 'lptag.liveperson.net') + '/tag/tag.js?site=' + this.site; } var s = document.createElement('script'); s.setAttribute('charset', chr ? chr : 'UTF-8'); if (id) { s.setAttribute('id', id); } s.setAttribute('src', url); document.getElementsByTagName('head').item(0).appendChild(s); }, init: function () { this._timing = this._timing || {}; this._timing.start = (new Date()).getTime(); var that = this; if (window.attachEvent) { window.attachEvent('onload', function () { that._domReady('domReady'); }); } else { window.addEventListener('DOMContentLoaded', function () { that._domReady('contReady'); }, false); window.addEventListener('load', function () { that._domReady('domReady'); }, false); } if (typeof (window._lptStop) == 'undefined') { this.load(); } }, start: function () { this.autoStart = true; }, _domReady: function (n) { if (!this.isDom) { this.isDom = true; this.events.trigger('LPT', 'DOM_READY', { t: n }); } this._timing[n] = (new Date()).getTime(); }, vars: lpTag.vars || [], dbs: lpTag.dbs || [], ctn: lpTag.ctn || [], sdes: lpTag.sdes || [], ev: lpTag.ev || [] }; lpTag.init(); } else { window.lpTag._tagCount += 1; }
+            }
+
+            Ext.USE_NATIVE_JSON = true; //speeds up JSON encode/decode
+            Ext.singlePage = has('single'); //hold the value of single page to determine what application base page to laod
+
+            if (has('qa')) {
+                profile = profile + '-qa';
+            }
+
+            // Example auto detection
+            // Priority:
+            // overridden language - parameter: lang
+            // browser auto detection
+            // Fallback to 'en-US'
+
+            lang = obj.lang || navigator.language || navigator.browserLanguage || navigator.userLanguage || 'en-US';
+
+            // Ensure we have the uppercase 'script' part if only language is defined
+            if (lang.length === 2) {
+                lang = lang === 'en' ? 'en-US' : lang + '-' + lang.toUpperCase();
+            }
+
+            Ext.manifest = profile + '-' + lang.substr(0, 2); // this name must match a build profile name, plus Ext native class localization
+
+            // This function is called once the manifest is available but before
+            // any data is pulled from it.
+            //
+            return function (manifest) {
+                manifest.content.localize = {
+                    //detected or overridden language
+                    language: lang,
+
+                    // Url Tpl to use when construction resource PATH name
+                    // For american english resource URL will be defined as 'data/locale-en-US.json'
+                    urlTpl: 'data/locale-{0}.json',
+
+                    // If true will attempt to load locale resources from each defined package
+                    // To signify if package has to be localized, add the following line to the package.json
+                    // "localize": true,
+                    // Localizing strings per package has it's own benefits, as you don't have to include any prefixes or other mechanisms.
+                    // All Strings will be resolved only within it's own package
+                    // You can access localizations from main application via foreign package notation appName|variableName
+                    usePackages: true,
+                    // All but production builds will have useful warnings/ debug information
+                    debug: !manifest.content.productionMode
+                };
+            };
+        };
+    </script>
+
+
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="89c2e620-e6d6-4f3a-b1f0-3ce3d1296e92" type="text/javascript"
+            src="bootstrap.js"></script>
+
+    <script type="text/javascript">
+        //Used to test against the layer7 sandbox
+        if(!!location.search.match(/sandbox/g)){
+            Atlas.apiURL = 'http://MICAGW01-SVA:8080/atlas/';
+            Atlas.newapiURL = 'http://MICAGW01-SVA:8080/atlas/';
+        }
+    </script>
+</head>
+<body>
+<div id="LP_DIV_1476298118206"></div>
+<div id="css-preloader"></div>
+
+</body>
+</html>

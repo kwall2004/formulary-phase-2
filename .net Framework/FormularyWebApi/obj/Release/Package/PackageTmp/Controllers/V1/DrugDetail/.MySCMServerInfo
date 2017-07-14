@@ -1,0 +1,12 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/DrugDetail
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796778
+CustomNdcHistoryController.cs;2644576359;1;1492524686;|248505|479596
+MedispanDrugController.cs;4066470729;1;1492524686;|248506|479597
+NDCNotesController.cs;561302149;1;1492524686;|248508|479599
+MissingNdcController.cs;1110950299;1;1494414967;|248507|511914
+FdbClinicalDataController.cs;4085806095;1;1495193160;|348144|610174
+MissingNdcFdbController.cs;146950119;4;1497626814;|347939|668212
+MissingNdcMedispanController.cs;3282929710;4;1497626767;|347940|668213
+CustomNdcController.cs;265289355;2;1498069110;|248504|668675

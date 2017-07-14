@@ -1,0 +1,47 @@
+//Atlas Nav
+.x-tab-icon-el-navigation {
+	color: $tab-color-active;
+}
+
+//Atlas Nav
+.x-tab.x-tab-active.x-tab-navigation {
+	border-color: $atlas-menu-active;
+	background-color: $atlas-menu-active;
+}
+
+//Atlas Nav
+.x-tab-focus.x-tab-active.x-tab-navigation {
+	border-color: $atlas-menu-active;
+	background-color: $atlas-menu-active;
+}
+
+// GRID HEADER TEXT
+.x-tab-bar-plain .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: $atlas-menu-text;
+}
+
+// GRID HEADER ICON
+.x-tab-bar-plain .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+    color: $atlas-menu-text;
+}
+
+// ATLAS NAV ICON
+.x-tab-inner-navigation {
+    color: $atlas-menu-text !important;
+}
+
+// ATLAS NAV TEXT
+.x-tab-icon-el-navigation {
+    color: $atlas-menu-text !important;
+}
+
+// ATLAS NAV ACTIVE
+.x-tab.x-tab-active.x-tab-navigation {
+    border-color: $atlas-menu-active !important;
+	background-color: $atlas-menu-active !important;
+}
+
+// ATLAS NAV HOVER
+.x-tab-over.x-tab-navigation {
+    background-color: $atlas-menu-active !important;
+}

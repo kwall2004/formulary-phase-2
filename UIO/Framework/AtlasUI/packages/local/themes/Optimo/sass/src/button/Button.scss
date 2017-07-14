@@ -1,0 +1,9 @@
+@include extjs-button-small-ui(
+    $ui: 'hot',
+    $background-color: darken($base-color,10%)
+);
+
+@include extjs-button-small-ui(
+    $ui: 'hotred',
+    $background-color: adjust-color($base-color, $red: 15, $blue: -15)
+);

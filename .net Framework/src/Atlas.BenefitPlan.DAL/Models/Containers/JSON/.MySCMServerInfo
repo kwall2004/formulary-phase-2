@@ -1,0 +1,8 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.BenefitPlan.DAL/Models/Containers/JSON
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796739
+AddUpdateResponse.cs;1800099001;1;1492524697;|248848|519091
+BaseResponse.cs;446673010;1;1492524697;|248849|479940
+Message.cs;2110345298;1;1492524697;|248850|479941
+ValidationResponse.cs;2724279742;1;1492524697;|248851|479942

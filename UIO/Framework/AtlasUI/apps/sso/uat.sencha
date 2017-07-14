@@ -1,0 +1,7 @@
+config
+    -file
+        .sencha/app/uat.properties
+and
+app
+    build
+        production

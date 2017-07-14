@@ -1,0 +1,23 @@
+
+$panel-base-color:dynamic(#e9e9e9);
+$panel-body-color:dynamic(#232323);
+$panel-header-color: dynamic(#fff); // Panel Header Text Color
+$panel-frame-border-radius:dynamic(1px); // Panel Frame Border Radius <--- Making it 0px removes the border completely.
+$panel-header-background-color:dynamic(#5aadd1);
+$panel-header-border-color: dynamic(#8a8581);
+$panel-header-font-size:dynamic(12px);
+$panel-header-font-weight:dynamic(700);
+$panel-header-line-height:dynamic(22px);
+$panel-header-icon-height:dynamic(16px);
+$panel-header-padding: dynamic(2px);
+$panel-light-border-color: dynamic(#f2eee6);
+$splitter-active-background-color: dynamic(#dadada);
+$panel-body-default-font-weight:dynamic(normal);
+$panel-header-glyph-opacity:dynamic(1);
+$panel-frame-header-padding:dynamic(3px 5px 4px 5px);
+$panel-frame-header-border-radius:dynamic(5px 5px 4px 5px);
+$panel-frame-header-title-padding:dynamic(0px 0px 0px 4px);
+$panel-body-background-color: dynamic(#f8f8f8);
+$panel-border-color:dynamic(#e9e9e9);
+$panel-border-width:dynamic(1px);
+.#{$prefix}panel{border:1px solid #e9e9e9!important;}

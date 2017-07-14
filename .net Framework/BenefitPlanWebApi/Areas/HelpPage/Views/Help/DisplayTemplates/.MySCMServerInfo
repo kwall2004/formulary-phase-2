@@ -1,0 +1,18 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Areas/HelpPage/Views/Help/DisplayTemplates
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796850
+ApiGroup.cshtml;2138485285;1;1492524450;|246866|477957
+CollectionModelDescription.cshtml;1227187730;1;1492524450;|246867|477958
+ComplexTypeModelDescription.cshtml;905322627;1;1492524450;|246868|477959
+DictionaryModelDescription.cshtml;4160249802;1;1492524450;|246869|477960
+EnumTypeModelDescription.cshtml;3667825605;1;1492524450;|246870|477961
+HelpPageApiModel.cshtml;4120093176;1;1492524450;|246871|477962
+ImageSample.cshtml;2989132890;1;1492524450;|246872|477963
+InvalidSample.cshtml;4236695744;1;1492524450;|246873|477964
+KeyValuePairModelDescription.cshtml;3484062342;1;1492524450;|246874|477965
+ModelDescriptionLink.cshtml;1579395121;1;1492524450;|246875|477966
+Parameters.cshtml;3254925481;1;1492524450;|246876|477967
+Samples.cshtml;3049984904;1;1492524450;|246877|477968
+SimpleTypeModelDescription.cshtml;1899493031;1;1492524450;|246878|477969
+TextSample.cshtml;3745341523;1;1492524450;|246879|477970

@@ -1,0 +1,32 @@
+
+.prosvc-ux-tabpanelactivator-tab-panel {
+  border: 1px solid #dedede !important;
+  border-right: 2px solid #dedede !important;
+}
+
+.prosvc-ux-tabpanelactivator-tab-panel-active {
+  // box-shadow: 2px 0px 2px 0px  darken($base-color,20) !important;;
+  border-right-color: darken($base-color, 20) !important;
+}
+
+/* ExtJs6 styling for tri-state tree column */
+.x-tree-checkbox {
+}
+
+.x-tree-checkbox-checked-disabled .x-tree-checkbox:before {
+  font-family: FontAwesome;
+  content: "\f068";
+}
+
+/*
+.x-tree-checkbox-checked-disabled .x-tree-checkbox {
+    border: 1px solid #fe2e2e !important;
+}
+*/
+
+//Fix Font Awesome icon rendering
+.x-fa:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+}

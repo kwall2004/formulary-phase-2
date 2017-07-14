@@ -1,0 +1,6 @@
+var class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_d0___p_i_c_k_l_i_s_t___c_o_n___t_y_p___d_e_s_c =
+[
+    [ "DAM_CONCEPT_ID_TYP", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_d0___p_i_c_k_l_i_s_t___c_o_n___t_y_p___d_e_s_c.html#a0377260e9759d2a89e42f434d59dfcf7", null ],
+    [ "DAM_CONCEPT_ID_TYP_DESC", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_d0___p_i_c_k_l_i_s_t___c_o_n___t_y_p___d_e_s_c.html#a94fb661854fc2d514b347a35ab8999fa", null ],
+    [ "RDAMCD0_PICKLIST_CON_TYP_DESCIdentifier", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_d_a_m_c_d0___p_i_c_k_l_i_s_t___c_o_n___t_y_p___d_e_s_c.html#ae7966879ebe892c4166557bf9d4afc94", null ]
+];

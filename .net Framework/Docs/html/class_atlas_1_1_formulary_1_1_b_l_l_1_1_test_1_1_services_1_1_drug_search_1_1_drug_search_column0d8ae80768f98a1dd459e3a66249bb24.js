@@ -1,0 +1,5 @@
+var class_atlas_1_1_formulary_1_1_b_l_l_1_1_test_1_1_services_1_1_drug_search_1_1_drug_search_column0d8ae80768f98a1dd459e3a66249bb24 =
+[
+    [ "ShouldRemoveAllExcludesFromQueries", "class_atlas_1_1_formulary_1_1_b_l_l_1_1_test_1_1_services_1_1_drug_search_1_1_drug_search_column0d8ae80768f98a1dd459e3a66249bb24.html#ad29e007ac77d9e3b2bafb9ef512e2625", null ],
+    [ "ShoulHaveCorrectValueWhenPassedInCollectionOfColumns", "class_atlas_1_1_formulary_1_1_b_l_l_1_1_test_1_1_services_1_1_drug_search_1_1_drug_search_column0d8ae80768f98a1dd459e3a66249bb24.html#a24becc7ff04beac39bf5aec7b81b77d2", null ]
+];

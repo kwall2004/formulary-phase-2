@@ -1,0 +1,4 @@
+var class_atlas_1_1_benefit_plan_1_1_d_a_l_1_1_repositories_1_1_contact_tenant_family_repository =
+[
+    [ "ContactTenantFamilyRepository", "class_atlas_1_1_benefit_plan_1_1_d_a_l_1_1_repositories_1_1_contact_tenant_family_repository.html#adf9f39ff9be692920580e87cd85d7e9a", null ]
+];

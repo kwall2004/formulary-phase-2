@@ -1,0 +1,82 @@
+[
+  {
+    "menuTitle": "My Claims",
+    "menuID": 1,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-stethoscope",
+    "route": "rxmember/portals/rxmember_MyClaimsMember",
+    "leaf": true
+  },
+  {
+    "menuTitle": "Claims Search",
+    "menuID": 2,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-search",
+    "route": "rxmember/portals/rxmember_ClaimsSearch",
+    "leaf": true
+  },
+  {
+    "menuTitle": "My Benefits & Coverage",
+    "menuID": 3,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-list-alt",
+    "route": "rxmember/portals/rxmember_MyBenefitsAndCoverage",
+    "leaf": true
+  },
+  {
+    "menuTitle": "Formulary",
+    "menuID": 4,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-file-text",
+    "route": "rxmember/portals/rxmember_Formulary",
+    "leaf": true
+  },
+  {
+    "menuTitle": "Pharmacy Search",
+    "menuID": 5,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-h-square",
+    "route": "rxmember/portals/rxmember_PharmacySearch",
+    "leaf": true
+  },
+  {
+    "menuTitle": "Drug Search",
+    "menuID": 6,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-medkit",
+    "route": "rxmember/portals/rxmember_DrugSearch",
+    "leaf": true
+  },
+  {
+    "menuTitle": "Documents & Forms",
+    "menuID": 7,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-file-text",
+    "route": "rxmember/portals/rxmember_Forms",
+    "leaf": true
+  },
+  {
+    "menuTitle": "Contact Us",
+    "menuID": 8,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-phone",
+    "route": "rxmember/portals/rxmember_ContactUs",
+    "leaf": true
+  },
+  {
+    "menuTitle": "Request ID Card",
+    "menuID": 9,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-file-text",
+    "route": "rxmember/portals/rxmember_RequestIDCard",
+    "leaf": true
+  },
+    {
+    "menuTitle": "User Guide",
+    "menuID": 10,
+    "parentMenuID": 2,
+    "iconCls": "x-fa fa-file-text",
+    "route": "rxmember/portals/rxmember_RxMemberUserGuide",
+    "leaf": true
+  }
+]

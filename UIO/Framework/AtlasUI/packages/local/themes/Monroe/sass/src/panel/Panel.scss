@@ -1,0 +1,24 @@
+// GRID HEADER BACKGROUND
+.x-panel-header-default {
+	background-color: $atlas-grid-header;
+}
+
+// GRID HEADER TITLE
+.x-panel-header-title-default {
+	color: $atlas-menu-text;
+}
+
+// GRID HEADER ICON BACKGROUND
+.x-panel-header-default .x-tool-img {
+    background-color: $atlas-grid-header;
+}
+
+// GRID HEADER ICON BACKGROUND 2
+.x-panel-header-default-framed .x-tool-img {
+    background-color: $atlas-grid-header;
+}
+
+// FORM HEADER TEXT
+.x-panel-header-title-default-framed {
+    color: $atlas-menu-text;
+}

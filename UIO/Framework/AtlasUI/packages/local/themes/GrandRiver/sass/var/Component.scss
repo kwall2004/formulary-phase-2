@@ -1,0 +1,134 @@
+// Base
+$base-color: #f0f0f0;
+
+// Font
+$font-family: dynamic('Open Sans');
+
+// Button
+$button-default-base-color: dynamic(#a4754d);
+$button-small-border-radius: dynamic(0px);
+$button-medium-border-radius: dynamic(0px);
+$button-large-border-radius: dynamic(0px);
+$button-grid-cell-border-radius: dynamic(0px);
+
+// Tab
+$tab-base-color-active: dynamic(#232323);
+$tab-color: dynamic(#404040);
+$tab-color-active: dynamic(#fff);
+
+// Tree
+$tree-glyph-color: dynamic($base-color);
+$tree-checkbox-glyph-color: dynamic($base-color);
+
+// Window Color
+$window-base-color: dynamic($base-color);
+
+// Logo
+$atlas-logo-color: dynamic(#fff);
+
+// Nav Tree
+$atlas-menu-background: dynamic(#9a6248);
+$atlas-menu-active: dynamic(#a4754d);
+$atlas-menu-hover: dynamic(#a4754d);
+$atlas-menu-text: dynamic(#fff);
+
+.x-tab.x-tab-active.x-tab-navigation {
+    border-color: #9a6248;
+    background-color: #9a6248;
+}
+
+// Grid
+$panel-light-header-color: dynamic(#404040);
+
+// Grid Header
+$atlas-grid-header: dynamic(#232323);
+
+h2 {
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 1.2;
+	font-family:'PT Sans';
+	color: #9a6248;
+	padding: 10px;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+h4 {
+	margin: 0px;
+}
+
+/* Using !important now until I find a way to override without
+using the ext folder */
+// FORMS HEADER BACKGROUND
+.x-window-header-default-top {
+    background-color: $atlas-grid-header !important;
+}
+
+.x-panel-header-default-framed-top {
+    background-color: $atlas-grid-header !important;
+}
+
+// LEFT NAV BACKGROUND
+.x-treelist-navigation {
+    background-color: $atlas-menu-background !important;
+}
+
+// LEFT NAV ACTIVE PART 1
+.x-treelist-navigation .x-treelist-item-selected > .x-treelist-row:before {
+    background-color: $atlas-menu-active !important;
+}
+
+// LEFT NAV ACTIVE PART 2
+.x-treelist-navigation .x-treelist-item-selected > .x-treelist-row {
+    background-color: $atlas-menu-active !important;
+}
+
+// LEFT NAV HOVER
+.x-treelist-row.x-treelist-row-over {
+    background-color: $atlas-menu-active !important;
+}
+
+// LEFT NAV TEXT
+.x-treelist-navigation .x-treelist-item-text {
+    color: $atlas-menu-text !important;
+}
+
+// LEFT NAV ICON
+.x-treelist-navigation .x-treelist-item-icon,
+.x-treelist-navigation .x-treelist-item-tool {
+    color: $atlas-menu-text !important;
+}
+
+// LEFT NAV SMALL ACTIVE
+.x-treelist-navigation .x-treelist-item-selected.x-treelist-item-tool {
+    background-color: $atlas-menu-active !important;
+}
+
+.x-treelist-navigation .x-treelist-item-selected.x-treelist-item-tool:after {
+    background-color: $atlas-menu-active !important;
+}
+
+.x-treelist-navigation .x-treelist-item-tool-floated {
+    background-color: $atlas-menu-active !important;
+}
+
+.x-treelist-navigation .x-treelist-item-tool-floated:after {
+    background-color: $atlas-menu-active !important;
+}
+.x-treelist-item-tool.x-fa fa-user.x-treelist-item-floated {
+    background-color: $atlas-menu-background !important;
+}
+// LEFT NAV SMALL
+.x-treelist-navigation .x-treelist-toolstrip {
+    background-color: $atlas-menu-background !important;
+}
+
+x-treelist-item x-treelist-item-leaf x-treelist-item-with-icon {
+    background-color: $atlas-menu-active !important;
+}
+
+// WINDOW TITLE CRISP
+.x-window-header-title-default {
+	color: #fff !important;
+}

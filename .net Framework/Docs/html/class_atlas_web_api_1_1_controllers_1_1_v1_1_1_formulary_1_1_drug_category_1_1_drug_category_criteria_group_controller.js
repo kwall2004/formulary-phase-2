@@ -1,0 +1,5 @@
+var class_atlas_web_api_1_1_controllers_1_1_v1_1_1_formulary_1_1_drug_category_1_1_drug_category_criteria_group_controller =
+[
+    [ "DrugCategoryCriteriaGroup", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_formulary_1_1_drug_category_1_1_drug_category_criteria_group_controller.html#a6384b38c4d4a4949ecd126ec129f483a", null ],
+    [ "DrugCategoryCriteriaGroup", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_formulary_1_1_drug_category_1_1_drug_category_criteria_group_controller.html#aca15e868c896e35197ab4311bbdf03e8", null ]
+];

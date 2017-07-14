@@ -1,0 +1,20 @@
+{
+  "add": "Add",
+  "edit": "Edit",
+  "delete": "Delete",
+  "createTime": "Create Time",
+  "completedDate": "completedDate",
+  "subject": "Subject",
+  "description": "Description",
+  "account": "Account",
+  "reason": "Reason",
+  "refresh": "Refresh",
+  "load": "Load",
+  "save": "Save",
+  "search": "Search",
+  "exportPDF": "Export To PDF",
+  "exportExcel": "Export To Excel",
+  "status": "Status",
+  "task": "Task"
+
+}

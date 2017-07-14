@@ -1,0 +1,8 @@
+config
+    --file
+        .sencha/app/formulary.properties
+and
+app
+    build
+        atlastheme 
+            production

@@ -1,0 +1,7 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanCompare/BenefitPlanCompare/App_Start
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796871
+BundleConfig.cs;1534419658;1;1492524446;|280984|534650
+FilterConfig.cs;1177646464;1;1492524446;|280985|534651
+RouteConfig.cs;963283905;1;1492524446;|280986|534652

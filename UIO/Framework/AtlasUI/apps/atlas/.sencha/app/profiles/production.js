@@ -1,0 +1,13 @@
+var Atlas = Atlas || {};
+Atlas.apiURL = 'https://api.atlascomplete.com/atlas/';
+Atlas.apidotnetURL = 'https://api.atlascomplete.com/atlas/';
+Atlas.paymentURL = 'https://www.paybill.com/V2/meridianhealthplan/login.aspx';
+Atlas.paymentCallbackURL = 'https://secure.mhplan.com/portal/payment/portal/payment.php';
+Atlas.nurseUrl = 'https://sso.mhplan.com/idp/startSSO.ping?PartnerSpId=mrdmembersso.careenhance.com';
+Atlas.healthyHabitsUrl = 'https://coaching.healthmedia.com/mhmsite?hash=1ba6d7867b539d750c2c016d11f56357f5e2450a1ebd8d8413e97eeb7ec79469';
+Atlas.patientUrl = 'https://ssotest.mhplan.com/idp/startSSO.ping?PartnerSpId=stgp360.concertohealth.com';
+Atlas.docServiceNodeJS = "http://mindjs01a-pvl.caidan.local:3000/api/merlinviewdoc";
+Atlas.docServiceRESTRead = "http://mirxdb01-pvl.caidan.local/atlasrxshared/rest/atlasrxshared/getDocument";
+Atlas.docServiceRESTUpdate = "http://mirxdb01-pvl.caidan.local/atlasrxshared/rest/atlasrxshared/setDocument";
+Atlas.apiReportServiceURL = "http://SQLRS2014P/ReportServer_INST01P";
+Atlas.apiReportURL = Atlas.apiReportServiceURL + '/Pages/ReportViewer.aspx';

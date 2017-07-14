@@ -1,0 +1,18 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Areas/HelpPage/ModelDescriptions
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796853
+CollectionModelDescription.cs;1091698805;1;1492524449;|246839|477930
+ComplexTypeModelDescription.cs;2674103494;1;1492524449;|246840|477931
+DictionaryModelDescription.cs;3401835280;1;1492524449;|246841|477932
+EnumTypeModelDescription.cs;1506342540;1;1492524449;|246842|477933
+EnumValueDescription.cs;859668871;1;1492524449;|246843|477934
+IModelDocumentationProvider.cs;4254512798;1;1492524449;|246844|477935
+KeyValuePairModelDescription.cs;844167852;1;1492524449;|246845|477936
+ModelDescription.cs;95607845;1;1492524449;|246846|477937
+ModelDescriptionGenerator.cs;1588764750;1;1492524449;|246847|477938
+ModelNameAttribute.cs;4144440015;1;1492524449;|246848|477939
+ModelNameHelper.cs;887950906;1;1492524450;|246849|477940
+ParameterAnnotation.cs;1007340063;1;1492524450;|246850|477941
+ParameterDescription.cs;2442415599;1;1492524450;|246851|477942
+SimpleTypeModelDescription.cs;689560061;1;1492524450;|246852|477943

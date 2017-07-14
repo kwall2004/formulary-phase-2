@@ -1,0 +1,60 @@
+@import '_icons';
+
+$enable-font-open-sans: dynamic(true);
+
+.unknownlogin {
+  background-image: url('../../resources/images/lock-screen-background.jpg') !important;
+  background-position: center center !important;
+  background-color: #000000 !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.rx-member-login {
+  background-image: url('../../resources/images/MeridianRX_LogIn_bckgnd.jpg') !important;
+  background-position: center center !important;
+  background-color: #000000 !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.rx-prescriber-login {
+  background-image: url('../../resources/images/MeridianRX_Prescriber_LogIn_bckgnd.jpg') !important;
+  background-position: center center !important;
+  background-color: #000000 !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.rx-pharmacy-login {
+  background-image: url('../../resources/images/MeridianRX_Pharmacy_LogIn_bckgnd.jpg') !important;
+  background-position: center center !important;
+  background-color: #000000 !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/*
+Only change the tree node on the selected tree
+*/
+.#{$prefix}grid-item-selected {
+  .#{$prefix}tree-node-text{
+    font-weight: 500;
+  }
+}

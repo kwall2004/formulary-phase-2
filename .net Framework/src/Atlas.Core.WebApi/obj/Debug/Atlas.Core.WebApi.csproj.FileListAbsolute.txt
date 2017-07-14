@@ -1,0 +1,19 @@
+D:\Users\r6385\Repos\.net Framework\Atlas.Core.WebApi\bin\Debug\Atlas.Core.WebApi.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Core.WebApi\bin\Debug\Atlas.Core.WebApi.pdb
+D:\Users\r6385\Repos\.net Framework\Atlas.Core.WebApi\bin\Debug\Newtonsoft.Json.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Core.WebApi\bin\Debug\Newtonsoft.Json.xml
+D:\Users\r6385\Repos\.net Framework\Atlas.Core.WebApi\obj\Debug\Atlas.Core.WebApi.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Core.WebApi\obj\Debug\Atlas.Core.WebApi.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Core.WebApi\bin\Debug\Atlas.Core.WebApi.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Core.WebApi\bin\Debug\Atlas.Core.WebApi.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Core.WebApi\obj\Debug\Atlas.Core.WebApi.csprojResolveAssemblyReference.cache
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Core.WebApi\obj\Debug\Atlas.Core.WebApi.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Core.WebApi\obj\Debug\Atlas.Core.WebApi.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\bin\Debug\Atlas.Core.WebApi.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\bin\Debug\Atlas.Core.WebApi.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\bin\Debug\Newtonsoft.Json.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\bin\Debug\NLog.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\bin\Debug\Newtonsoft.Json.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\bin\Debug\NLog.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\obj\Debug\Atlas.Core.WebApi.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Core.WebApi\obj\Debug\Atlas.Core.WebApi.pdb

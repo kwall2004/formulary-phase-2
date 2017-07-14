@@ -1,0 +1,15 @@
+@include extjs-toolbar-ui(
+    $ui: 'rxheader',
+    $background-color: lighten($base-color,30%)
+);
+.#{$prefix}toolbar-rxheader{
+    border-bottom: solid 1px #aaa !important;
+    /*margin-bottom: 2px;*/
+    box-shadow: 0px 2px 2px #aaa;
+}
+
+@include extjs-toolbar-ui(
+    $ui: 'info',
+    $background-color: lighten($base-color,30%),
+    $text-font-size: 14px
+);

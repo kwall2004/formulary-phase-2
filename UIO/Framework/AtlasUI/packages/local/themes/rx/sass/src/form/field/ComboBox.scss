@@ -1,0 +1,19 @@
+.common-key-value-boundlist {
+  .x-boundlist-item {
+    padding: 8px;
+
+    h4 {
+      margin: 2px 0 2px 0;
+    }
+
+    h5 {
+      margin: 0;
+      line-height: 16px;
+
+      span {
+        font-weight: 200;
+        margin-left: 5px;
+      }
+    }
+  }
+}

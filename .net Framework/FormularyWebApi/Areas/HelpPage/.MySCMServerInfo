@@ -1,0 +1,9 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Areas/HelpPage
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796787
+ApiDescriptionExtensions.cs;1691814815;1;1492524684;|248427|479518
+HelpPage.css;169390451;1;1492524684;|248428|479519
+HelpPageAreaRegistration.cs;475286299;1;1492524684;|248429|479520
+HelpPageConfigurationExtensions.cs;945118290;1;1492524684;|248430|479521
+XmlDocumentationProvider.cs;768690602;1;1492524684;|248431|479522

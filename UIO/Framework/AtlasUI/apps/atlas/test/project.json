@@ -1,0 +1,16 @@
+{
+    "framework": "jasmine",
+    "libs": [],
+    "coverageFilters": [],
+    "scenarios": [
+        {
+            "libs": [],
+            "coverageFilters": [],
+            "directory": "unit",
+            "name": "Unit Tests",
+            "launch": true,
+            "page": "apps/atlas/"
+        }
+    ],
+    "subjectUrl": "http://localhost:1841/"
+}

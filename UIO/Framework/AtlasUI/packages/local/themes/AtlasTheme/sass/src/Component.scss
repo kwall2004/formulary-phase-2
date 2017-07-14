@@ -1,0 +1,178 @@
+
+/*@if $enable-font-open-sans {
+$atlas-font-path: get-resource-path('fonts', 'shared');
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-Light.ttf') format('truetype');
+        src: url('#{$atlas-font-path}/OpenSans-Light.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-Light.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-Light.otf') format('opentype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-LightItalic.ttf')format('truetype');
+          src: url('#{$atlas-font-path}/OpenSans-LightItalic.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-LightItalic.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-LightItalic.otf') format('opentype');
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-Regular.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-Regular.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-Regular.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-Regular.otf') format('opentype');
+        
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-Italic.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-Italic.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-Italic.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-Italic.otf') format('opentype');
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-Semibold.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-Semibold.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-Semibold.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-Semibold.otf') format('opentype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-SemiboldItalic.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-SemiboldItalic.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-SemiboldItalic.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-SemiboldItalic.otf') format('opentype');
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-Bold.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-Bold.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-Bold.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-Bold.otf') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-BoldItalic.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-BoldItalic.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-BoldItalic.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-BoldItalic.otf') format('opentype');
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-ExtraBold.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-ExtraBold.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-ExtraBold.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-ExtraBold.otf') format('opentype');
+        font-weight: 800;
+        font-style: normal;
+    }
+
+ @font-face {
+        font-family: 'Open Sans';
+        src: url('#{$atlas-font-path}/OpenSans-ExtraBoldItalic.ttf')format('truetype');
+            src: url('#{$atlas-font-path}/OpenSans-ExtraBoldItalic.woff') format('woff');
+         src: url('#{$atlas-font-path}/OpenSans-ExtraBoldItalic.eot') format('eot');
+         src: url('#{$atlas-font-path}/OpenSans-ExtraBoldItalic.otf') format('opentype');
+        font-weight: 800;
+        font-style: italic;
+    }
+}*/
+
+.fieldset-override {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.border-none {
+    border: none !important;
+}
+
+.x-form-trigger {
+  vertical-align: middle;
+}
+
+//@Sencha
+//TODO Remove once the theme has properly aligned buttons
+//Used in Pharmacy module
+.temp-fix-inline-bt {
+  margin: 2px 0 0 1px !important;
+  top: 1px !important;
+  // ensure buttons are the same height with the fields adjacent to it
+  .x-btn-wrap {
+    padding: 1px;
+  }
+}
+
+//Reduce whitespace in Fieldset headers
+.x-fieldset .x-fieldset-header {
+  padding: 5px !important;
+}
+
+.x-fieldset-default {
+  padding: 0 15px 15px 15px !important;
+}
+
+//-end reduce
+
+//Field Container have extra 2px margin because of the rule .x-form-item{margin:2px}
+//Removing.
+.x-form-fieldcontainer {
+  margin: 0;
+}
+
+//For some reason body has 10px padding on the left, removing
+//Used in Pharmacy module
+.temp-textarea-fix {
+  .x-form-text-field-body-default {
+    padding-left: 0;
+  }
+}
+//CLAIMS DETAIL TOOLBAR
+.claims{background-color:#ebf8fb !important; border-bottom:1px solid #ececec !important; }
+.claims .x-form-item-label-default{color:#3e4752 !important; font-weight:bold !important;}
+.claims  .x-form-display-field-default {color:#3e4752 !important; font-size: 12px !important; }
+.claimsBtn a{background:none !important; border:none !important;}
+.claimsBtn a:hover{background-color: #3e7992 !important; border:1px solid #232323 !important;}
+.claimsBtn .x-btn-inner-default-small{color:#5aadd1 !important; font-weight:700 !important;}
+.claimsBtn a:hover .x-btn-inner-default-small{color:#fff !important;}
+.claims .claimsSplitbtn{background:none!important; border:none !important; }
+.claims .claimsSplitbtn:hover{background:#3e7992!important; border:1px solid #232323 !important;}
+.claims .claimsSplitbtn:hover .x-btn-inner-default-toolbar-small{color:#fff !important; }
+.claims .claimsSplitbtn .x-btn-inner-default-toolbar-small{color:#5aadd1 !important; font-weight:700 !important;}
+.claims .claimsSplitbtn .x-btn-wrap-default-toolbar-small.x-btn-split-right > .x-btn-button:after{border-right:none !important;}
+.claims .claimsSplitbtn .x-btn-wrap-default-toolbar-small.x-btn-split-right:after{color :#3e4752 !important;}
+.claimsBtn .x-form-type-text{padding:0px !important; /*top:-4px !important;*/}
+.claims .claimsToolbarBtn {background-color:#1e9d15 !important}
+.claims .claimsToolbarBtn  span{color:#fff !important}
+.claims .claimsToolbarBtn:hover  span{color:#1e9d15 !important}
+//button focus box-shadow issue
+.x-btn-focus .x-btn-over .x-btn-default-small{box-shadow: none !important;}
+//cdagmain toolbar alignment
+// .cdagMain .x-form-display-field-default{padding-top:10px !important;}
+// .x-autocontainer-form-item, .x-anchor-form-item, .x-vbox-form-item, .x-table-form-item{margin-bottom:5px !important;}
+

@@ -1,0 +1,12 @@
+@import '_icons';
+
+$enable-font-open-sans: dynamic(true);
+
+/*
+Only change the tree node on the selected tree
+*/
+.#{$prefix}grid-item-selected {
+  .#{$prefix}tree-node-text{
+    font-weight: 500;
+  }
+}

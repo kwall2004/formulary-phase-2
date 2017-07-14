@@ -1,0 +1,8 @@
+config
+    --file
+        .sencha/app/development.properties
+and
+app
+    build
+        choice
+            production

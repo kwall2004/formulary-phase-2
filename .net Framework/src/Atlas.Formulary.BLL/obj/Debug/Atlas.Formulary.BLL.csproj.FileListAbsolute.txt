@@ -1,0 +1,101 @@
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.pdb
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\EntityFramework.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.pdb
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\bin\Debug\EntityFramework.xml
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.csprojResolveAssemblyReference.cache
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.dll
+D:\Users\r6385\Repos\.net Framework\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.pdb
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.pdb
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.dll
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.dll
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.dll
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.pdb
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.pdb
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.xml
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.csprojResolveAssemblyReference.cache
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.dll
+J:\Code\Surround\AtlasUIDevelopment\dotNetFramework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll.config
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Newtonsoft.Json.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\NLog.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Core.DAL.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Newtonsoft.Json.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\NLog.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Core.DAL.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.csprojResolveAssemblyReference.cache
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll.config
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Newtonsoft.Json.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\NLog.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Core.DAL.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Newtonsoft.Json.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\NLog.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Core.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.csprojResolveAssemblyReference.cache
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll.config
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.BLL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Core.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Newtonsoft.Json.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\NLog.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Reference.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\EntityFrameworkExtras.EF6.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Core.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Formulary.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Newtonsoft.Json.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\NLog.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\EntityFramework.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Configuration.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\Atlas.Reference.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\bin\Debug\EntityFrameworkExtras.EF6.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.csprojResolveAssemblyReference.cache
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Formulary.BLL\obj\Debug\Atlas.Formulary.BLL.pdb

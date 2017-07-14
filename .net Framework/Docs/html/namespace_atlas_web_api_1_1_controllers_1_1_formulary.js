@@ -1,0 +1,8 @@
+var namespace_atlas_web_api_1_1_controllers_1_1_formulary =
+[
+    [ "FormularyController", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_controller.html", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_controller" ],
+    [ "FormularyCopayExceptionController", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_copay_exception_controller.html", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_copay_exception_controller" ],
+    [ "FormularyDataSourceController", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_data_source_controller.html", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_data_source_controller" ],
+    [ "FormularyRuleController", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_rule_controller.html", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_rule_controller" ],
+    [ "FormularyTierController", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_tier_controller.html", "class_atlas_web_api_1_1_controllers_1_1_formulary_1_1_formulary_tier_controller" ]
+];

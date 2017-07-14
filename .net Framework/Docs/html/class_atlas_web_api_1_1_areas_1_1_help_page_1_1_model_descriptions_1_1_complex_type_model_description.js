@@ -1,0 +1,5 @@
+var class_atlas_web_api_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_complex_type_model_description =
+[
+    [ "ComplexTypeModelDescription", "class_atlas_web_api_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_complex_type_model_description.html#a9157fb50881f1e6d479f2a68b37021d4", null ],
+    [ "Properties", "class_atlas_web_api_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_complex_type_model_description.html#ae00cc6ba28b5faf711bda1f332131e2c", null ]
+];

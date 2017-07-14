@@ -1,0 +1,407 @@
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\ApplicationInsights.config
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\csc.exe
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\vbc.exe
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\VBCSCompiler.exe
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\App_Data\XmlDocument.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\NLog.config
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AtlasWebApi.dll.config
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AtlasWebApi.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AtlasWebApi.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\XmlDocument.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Antlr3.Runtime.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Core.DAL.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Core.WebApi.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Formulary.BLL.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Formulary.DAL.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Reference.BLL.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Reference.DAL.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AtlasFramework.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AtlasHelpers.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AutoMapper.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\EntityFramework.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\EntityFramework.SqlServer.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.Web.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.ApplicationInsights.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Authorization.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.JsonPatch.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Routing.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.StaticFiles.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.DotNet.InternalAbstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.DependencyModel.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Localization.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Localization.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.ObjectPool.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Options.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Primitives.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.WebEncoders.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Net.Http.Headers.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Google.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.Interception.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Newtonsoft.Json.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\NLog.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Owin.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Buffers.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.ComponentModel.Primitives.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.ComponentModel.TypeConverter.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Net.Http.Formatting.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Text.Encodings.Web.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Cors.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Helpers.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.Cors.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.Owin.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.WebHost.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Mvc.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Optimization.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Razor.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.WebPages.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.WebPages.Razor.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Unity.WebApi.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\WebActivatorEx.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\WebGrease.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Core.WebApi.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Configuration.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Core.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Formulary.BLL.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Formulary.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Reference.BLL.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Atlas.Reference.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AtlasFramework.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AtlasHelpers.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Antlr3.Runtime.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\AutoMapper.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\EntityFramework.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\EntityFramework.SqlServer.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.Web.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.ApplicationInsights.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Authorization.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.JsonPatch.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.Core.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Routing.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.StaticFiles.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.FileProviders.Embedded.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Localization.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Localization.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.ObjectPool.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Options.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.PlatformAbstractions.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.Primitives.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Extensions.WebEncoders.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Net.Http.Headers.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Google.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.Interception.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\Newtonsoft.Json.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\NLog.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Net.Http.Formatting.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Text.Encodings.Web.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Helpers.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.Cors.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.Owin.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Http.WebHost.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Mvc.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Optimization.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.Razor.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.WebPages.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\bin\System.Web.WebPages.Razor.xml
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\obj\Debug\FormularyWebApi.csprojResolveAssemblyReference.cache
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\obj\Debug\AtlasWebApi.dll
+D:\Users\r6385\Repos\.net Framework\AtlasWebAPI\obj\Debug\AtlasWebApi.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\ApplicationInsights.config
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\csc.exe
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\vbc.exe
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\VBCSCompiler.exe
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\App_Data\XmlDocument.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\NLog.config
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\AtlasWebApi.dll.config
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\AtlasWebApi.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\AtlasWebApi.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Antlr3.Runtime.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Configuration.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Core.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Core.WebApi.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Formulary.BLL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Formulary.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Reference.BLL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Reference.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\AutoMapper.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\EntityFramework.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\EntityFramework.SqlServer.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.Web.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.WindowsServer.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.ApplicationInsights.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Authorization.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.Extensions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.Features.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.JsonPatch.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.Core.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Routing.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.StaticFiles.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.WebUtilities.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.DotNet.InternalAbstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.DependencyModel.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Localization.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Localization.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.ObjectPool.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Options.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Primitives.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.WebEncoders.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Net.Http.Headers.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Google.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.Interception.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Newtonsoft.Json.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\NLog.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\nunit.framework.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Owin.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Buffers.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.ComponentModel.Primitives.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.ComponentModel.TypeConverter.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Net.Http.Formatting.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Text.Encodings.Web.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Cors.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Helpers.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.Cors.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.Owin.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.WebHost.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Mvc.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Optimization.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Razor.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.WebPages.Deployment.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.WebPages.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.WebPages.Razor.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Unity.WebApi.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\WebActivatorEx.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\WebGrease.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\EntityFrameworkExtras.EF6.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Configuration.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Core.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Core.WebApi.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Formulary.BLL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Formulary.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Reference.BLL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Atlas.Reference.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Antlr3.Runtime.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\AutoMapper.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\EntityFramework.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\EntityFramework.SqlServer.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.Web.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AI.WindowsServer.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.ApplicationInsights.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Authorization.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.Extensions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Http.Features.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.JsonPatch.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.ApiExplorer.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.Core.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.DataAnnotations.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Mvc.Formatters.Json.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Routing.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.StaticFiles.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.AspNetCore.WebUtilities.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.FileProviders.Embedded.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Localization.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Localization.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.ObjectPool.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Options.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.PlatformAbstractions.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.Primitives.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Extensions.WebEncoders.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Net.Http.Headers.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Google.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.Interception.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\Newtonsoft.Json.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\NLog.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\nunit.framework.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Net.Http.Formatting.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Text.Encodings.Web.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Helpers.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.Cors.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.Owin.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Http.WebHost.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Mvc.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Optimization.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.Razor.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.WebPages.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.WebPages.Deployment.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\System.Web.WebPages.Razor.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\bin\EntityFrameworkExtras.EF6.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\obj\Debug\FormularyWebApi.csprojResolveAssemblyReference.cache
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\obj\Debug\AtlasWebApi.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\FormularyWebApi\obj\Debug\AtlasWebApi.pdb

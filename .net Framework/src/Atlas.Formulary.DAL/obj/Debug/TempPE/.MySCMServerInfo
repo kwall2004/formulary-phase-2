@@ -1,0 +1,10 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.Formulary.DAL/obj/Debug/TempPE
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796679
+Atlas.cs.dll;1951419217;1;1492524718;|249577|480668
+Atlas.Designer.cs.dll;2311019879;1;1492524719;|249576|480667
+Models.Reference.cs.dll;1669421320;1;1492524719;|249581|480672
+Models.Reference.Designer.cs.dll;7313670;1;1492524719;|249580|480671
+Models.Formulary.cs.dll;3345280110;1;1498049177;|249579|480670
+Models.Formulary.Designer.cs.dll;2626913560;1;1498049177;|249578|480669

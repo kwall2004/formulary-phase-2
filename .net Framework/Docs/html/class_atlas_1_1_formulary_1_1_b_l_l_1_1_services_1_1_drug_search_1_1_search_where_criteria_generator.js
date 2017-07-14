@@ -1,0 +1,4 @@
+var class_atlas_1_1_formulary_1_1_b_l_l_1_1_services_1_1_drug_search_1_1_search_where_criteria_generator =
+[
+    [ "BuildDrugSearchWhereQuery", "class_atlas_1_1_formulary_1_1_b_l_l_1_1_services_1_1_drug_search_1_1_search_where_criteria_generator.html#a22d75b812b88f68c2916f71a6e722224", null ]
+];

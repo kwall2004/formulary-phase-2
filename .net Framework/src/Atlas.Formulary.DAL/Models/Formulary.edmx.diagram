@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="baf68abab13f438a99d4d7b2ce07259f" Name="Diagram1">
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.Alert" Width="1.5" PointX="14.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.AlertType" Width="1.5" PointX="12" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.Aprvl" Width="1.5" PointX="11.25" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.AprvlType" Width="1.5" PointX="9" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CrtriaDtl" Width="1.5" PointX="13.5" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CrtriaGrp" Width="1.5" PointX="11.5" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CrtriaGrpCrtriaSet" Width="1.5" PointX="15.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CrtriaGrpType" Width="1.5" PointX="9.25" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CrtriaOperType" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CrtriaSet" Width="1.5" PointX="13.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CvrgPrptyType" Width="1.5" PointX="11.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugAttrType" Width="1.5" PointX="8.25" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugCatg" Width="1.5" PointX="8.5" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugCatgCrtriaGrp" Width="1.5" PointX="13.75" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugCatgCvrgPrpty" Width="1.5" PointX="13.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugList" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugListAccessCtl" Width="1.5" PointX="11.25" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugListDtl" Width="1.5" PointX="5.25" PointY="32.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugListDtlCrtriaGrp" Width="1.5" PointX="7.5" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugListDtlDrugAttr" Width="1.5" PointX="10.5" PointY="32.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugRefDb" Width="1.5" PointX="0.75" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugRefDbValQulfrType" Width="1.5" PointX="6" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.DrugThrputcClsType" Width="1.5" PointX="0.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.Frmlry" Width="1.5" PointX="3" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.FrmlryAccessCtl" Width="1.5" PointX="5.25" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.FrmlryConfgPrpty" Width="1.5" PointX="8.25" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.FrmlryConfgPrptyType" Width="1.5" PointX="6" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.FrmlryDrugList" Width="1.5" PointX="11.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.FrmlryStat" Width="1.5" PointX="8.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.FrmlryTier" Width="1.5" PointX="5.25" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.Job" Width="1.5" PointX="5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.JobJobStatType" Width="1.5" PointX="7.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.JobStatType" Width="1.5" PointX="5" PointY="41.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.JobType" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.LOB" Width="1.5" PointX="0.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.StatType" Width="1.5" PointX="6" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.User" Width="1.5" PointX="9" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.UserGrp" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.UserGrpType" Width="1.5" PointX="0.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.UserRole" Width="1.5" PointX="6.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.UserUserGrp" Width="1.5" PointX="11.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.UserUserRole" Width="1.5" PointX="11.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.ValQulfrType" Width="1.5" PointX="8.25" PointY="45.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.systranschemas" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.vwDrugCatgCvrgPrpty" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefAlertType124" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserGrp125" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefAprvlType149" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugList128" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry129" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUser141" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefLOB140" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserRole142" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaOperType61" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaSet55" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefValQulfrType95" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaGrp110" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaGrp53" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaGrp92" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaGrpType76" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaOperType75" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCrtriaSet56" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCvrgPrptyType34" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugAttrType51" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugCatg123" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugCatg81" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry122" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlryTier94" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugList114" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugList41" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugList48" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugRefDb150" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefLOB42" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserGrp119" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugListDtl49" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugListDtl50" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefValQulfrType111" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugRefDb144" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugRefDb71" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefValQulfrType143" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefDrugThrputcClsType69" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry113" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry127" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry40" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry93" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry98" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefLOB19" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserGrp120" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlryConfgPrptyType90" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefStatType126" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefJob146" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefJobType145" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefJobStatType147" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUser131" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUser133" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserGrp118" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserGrp134" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserGrpType116" ManuallyRouted="false" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefUserRole132" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.FrmlryNotes" Width="1.5" PointX="3.375" PointY="8.75" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CvrgPrptyPgm" Width="1.5" PointX="3" PointY="30.75" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CvrgPrptyPgmDtl" Width="1.5" PointX="5.25" PointY="45.875" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CvrgPrptyPgmDtlCrtriaGrp" Width="1.5" PointX="13.75" PointY="41.625" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.CvrgPrptyPgmType" Width="1.5" PointX="0.75" PointY="31.25" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.PAPgm" Width="1.5" PointX="5.25" PointY="53.875" />
+        <EntityTypeShape EntityType="Atlas.Formulary.DAL.Models.StepThrpyPgm" Width="1.5" PointX="5.25" PointY="50.25" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.FK_FormularyNotes_ApprovalTyp_" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.FK_CoveragePrptyPgmDe_" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.FK_CoveragePrptyProgram_Co_" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.FK_CoveragePrptyProgram_Dr_" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.FK_PriorAuthztnProgram__" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.FK_StepThrpyProgram_Coverag_" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCvrgPrptyPgm263" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefCvrgPrptyPgmDtl262" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.FK_FormularyNotes_FormularySu_" />
+        <AssociationConnector Association="Atlas.Formulary.DAL.Models.RefFrmlry293" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

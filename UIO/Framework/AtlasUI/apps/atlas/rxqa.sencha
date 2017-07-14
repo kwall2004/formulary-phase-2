@@ -1,0 +1,8 @@
+config
+    -file
+        .sencha/app/qa.properties
+and
+app
+    build
+        rx
+            production

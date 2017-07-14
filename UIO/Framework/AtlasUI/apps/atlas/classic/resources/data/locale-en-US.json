@@ -1,0 +1,6 @@
+{
+  "test": "Something",
+  "nestedTest": {
+    "one": "One"
+  }
+}

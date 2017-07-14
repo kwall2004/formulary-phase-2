@@ -1,0 +1,10 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/ProxyDataAccessTests
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796746
+app.config;2576082906;1;1492524690;|248620|479711
+NLog.xsd;1674269268;1;1492524690;|248616|479707
+packages.config;2021639501;1;1492524690;|248621|479712
+ProxyDataAccessSystemTests.cs;2254709755;1;1492524690;|248617|479708
+ProxyDataAccessTests.csproj;2493547004;1;1492524690;|248618|479709
+ProxyDataAccessTests.csproj.vspscc;4251315233;1;1492524690;|248619|479710

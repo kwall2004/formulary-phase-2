@@ -1,0 +1,254 @@
+$include-ie: false;
+$include-rtl: false;
+// Base Theme: Neptune
+$base-color:#51bdf3;
+$color:#3e4752;
+//logo display none
+.main-logo {display:none;}
+// Top Toolbar Buttons
+.top-toolbar-button { padding: 3px;}
+.#{$prefix}toolbar-item > div {color: #fff; font-weight:600;}// Changes the "Atlas User #1" text color in the top toolbar
+.#{$prefix}tab-bar-default-top > .#{$prefix}tab-bar-body-default {padding: 2px 4px 0 8px !important;}
+.#{$prefix}toolbar-text-default{font-weight:600 !important;}
+.shadow{background-color: #fff !important;border:none !important; padding: 0px !important;}
+.shadow .fa-user{/*padding: 8px;*/ margin-right: 11px !important;}
+.shadow .#{$prefix}form-trigger-default{background: #5aadd1 !important;color:#fff !important;} 
+.panelBorder{border-bottom: 4px solid #5aadd1 !important;} //main viewport border
+//Button toolbar and normal button styling
+.#{$prefix}btn-default-toolbar-small{background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e9d15), color-stop(1, #45782b));background:-moz-linear-gradient(top, #1e9d15 5%, #45782b 100%);background:-webkit-linear-gradient(top, #1e9d15 5%, #45782b 100%);background:-o-linear-gradient(top, #1e9d15 5%, #45782b 100%);background:-ms-linear-gradient(top, #1d9d15 5%, #45782b 100%);background:linear-gradient(to bottom, #1e9d15 5%, #45782b 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e9d15', endColorstr='#45782b',GradientType=0);background-color:#1e9d15;
+-moz-border-radius:3px; -webkit-border-radius:3px;border-radius:3px;border:1px solid #4b8f29;display:inline-block;font-size:13px;}
+.#{$prefix}btn-default-toolbar-small:hover {background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #45782b), color-stop(1, #1e9d15));background:-moz-linear-gradient(top, #45782b 5%, #1e9d15 100%);background:-webkit-linear-gradient(top, #45782b 5%, #1e9d15 100%);background:-o-linear-gradient(top, #45782b 5%, #1e9d15 100%);background:-ms-linear-gradient(top, #45782b 5%, #1e9d15 100%);background:linear-gradient(to bottom, #45782b 5%, #1e9d15 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#45782b', endColorstr='#1e9d15',GradientType=0);background-color:#45782b;}
+.#{$prefix}btn-disabled{opacity:0.5!important;}//disabled button opacity
+.#{$prefix}btn-icon-el-plain-toolbar-small{color:#3e4752 !important;}
+.#{$prefix}btn-icon-el-default-toolbar-small{height:13px !important; color:#fff !important;font-size:13px !important;}//toolbar button icons
+//btn hover and focus states
+.x-btn-default-toolbar-small:hover span{color:#125e0c !important;}
+.x-btn-default-toolbar-small:focus span{color:#125e0c !important;}
+.x-btn-focus .x-btn-over .x-btn-default-small{box-shadow: none !important;}
+.x-btn-inner-default-toolbar-small{font-weight:600 !important;}
+//drop shadow for card panel
+.card-panel { box-shadow: 0 0 5px #8a8581;margin: 8px; border:1px solid #5aadd1 !important;}
+.card-panel > div > div >div {background-color:#fff !important;}
+.card-panel > div > div > .#{$prefix}box-target{background-color:#5aadd1 !important;} // to fix the white line on panel header
+.card-panel .#{$prefix}autocontainer-outerCt{padding-left:8px;}
+// //tab styling
+.#{$prefix}tab-active{border-bottom:4px solid #1d9d15 !important;}
+.#{$prefix}toolbar-docked-bottom{background: #ebf8fb !important;}//docked toolbar bg color
+//button font awesome icons colors
+ .#{$prefix}btn-icon-left > .#{$prefix}btn-icon-el-default-toolbar-small, .#{$prefix}btn-icon-right > .#{$prefix}btn-icon-el-default-toolbar-small {color: #fff!important;}
+//icon colors
+.#{$prefix}action-col-icon .fa-star:before{color: #d4b36a  !important;}
+.#{$prefix}action-col-icon {color:#1d9d15 !important;}
+//Main tree menu styling
+.panelNavigation .#{$prefix}panel-header{background: #5aadd1 !important; color: #fff !important;}//menu tree header bg
+.panelNavigation .#{$prefix}tree-view{background-color: #f8f8f8 !important;border-right: 2px solid #f8f8f8 !important; box-shadow: 5px 5px 5px #619fd5 !important;}//menu bg color
+.panelNavigation .#{$prefix}grid-cell-inner{color: #000000; font-size:12px; font-weight:600; padding:4px !important;}
+.panelNavigation .#{$prefix}grid-item{padding: 2px 0px 2px 0px !important;}
+.panelNavigation .#{$prefix}grid-td{border-bottom: .45px solid #8ece8a !important; padding:2px !important;}
+.panelNavigation .#{$prefix}grid-item-selected { background-color: #c1e6f6 !important; }//selected color
+.panelNavigation .#{$prefix}grid-item-over{background-color:#c1e6f6 !important;}//hover color
+.panelNavigation .#{$prefix}grid-tree-node-expanded .#{$prefix}tree-elbow-end-plus {color:#1d9d15 !important;}
+.icon-rebate, .icon-fwa{color:#1d9d15 !important;}//custom icon colors
+.overflowGrid .#{$prefix}grid-cell-inner{padding:initial !important; height:initial !important;}
+//fieldset and form fields
+.#{$prefix}fieldset{background-color:#ffffff !important;}
+.#{$prefix}form-item-label-inner { width: 100% !important; white-space: nowrap; } // <--- Sencha has inline styling for width. I have to override it.
+.#{$prefix}form-item { margin: 2px;}
+.#{$prefix}form-item-label-default {padding-left:5px; padding-top:5px !important;font-weight:600!important; font-size:12px!important; white-space:nowrap;}
+.#{$prefix}form-field{background-color:#fff !important;/*padding:0px 0px 3px 0px !important;*/ min-height:20px !important; line-height:18px !important; /*margin-left:3px !important;*/border-radius:2px !important;} 
+.#{prefix}form-text-default{line-height:18px !important; min-height:20px !important;padding: 0px 3px 3px 0px !important;}
+.#{$prefix}form-trigger-default {font:13px/18px FontAwesome !important; width:24px !important; color:#3e4752 !important;border-left:1px solid #5aadd1 !important;color:#3e4752 !important;background-color: #c5ebf3 !important;}
+.#{$prefix}form-text-field-body-default {padding-left: 10px;}
+.#{$prefix}form-textarea{min-height:80px!important; line-height:22px!important; /*margin:0px 0px 0px 5px !important;*/} //commenting margin for scroller issue in IE   
+.disabledText {color: #000000 !important; opacity:.9 !important;}
+.disabledText .#{$prefix}form-text-default{color:#777 !important;}
+.#{$prefix}form-text-wrap{background-color: #fff!important;}
+.#{$prefix}form-cb-label-default{font-weight:500 !important;}
+.#{$prefix}form-display-field-default, .#{$prefix}form-text-default{font-weight:500 !important;}
+//tree picker (data access list on header)
+.headerTriState  .#{$prefix}tree-view{background-color:#ebf8fb !important;}
+.headerTriState .#{$prefix}grid-tree-node-expanded .#{$prefix}tree-elbow-plus, .#{$prefix}grid-tree-node-expanded .#{$prefix}tree-elbow-end-plus {color: #5aadd1 !important;}
+.headerTriState .#{$prefix}tree-expander {color:#5aadd1 !important;}
+.headerTriState .#{$prefix}tree-node-text {color: #3e4752 !important;line-height:20px !important;}
+.headerTriState .#{$prefix}tree-checkbox{color:#1d9d15 !important;}
+.headerTriState .#{$prefix}tree-checkbox-checked{color:#1d9d15 !important;}
+.headerTriState .#{$prefix}tree-checkbox .#{$prefix}tree-checkbox-checked .#{$prefix}tree-node-text{color:#1d9d15 !important;}
+.headerTriState .#{$prefix}grid-item-over .#{$prefix}tree-elbow-img{color:#5aadd1 !important;}
+.#{$prefix}tree-checkbox .#{$prefix}tree-checkbox-checked{color:#3e4752 !important;font-size:13px !important;} 
+.#{$prefix}tree-checkbox {font-size:13px !important;}
+.headerTriState .#{$prefix}grid-tree-node-expanded :before{color:#5aadd1 !important;}
+//Reports table
+.comboGrid th{text-align: left; background-color:#8a97a8 !important; color:#fff;}
+.comboGrid td, th{border:1px solid #d3d3d3;text-align: left;padding: 8px;}
+.comboGrid tr:nth-child(even){background-color: #f2f2f2;}
+//star color is yellow when is active on reports
+.fa-star:before{color: #d4b36a  !important;}
+//progress bar for benefit plan
+.atlasprogress {list-style: none;margin: 1.5em 0; padding: 0;display: table;table-layout: fixed; width: 100%;color: #3e4752;}
+.atlasprogress > li {position: relative;display: table-cell; text-align: center; font-size: .9em;font-weight: 600;}
+.atlasprogress > li:before {content: attr(data-step); display: block;  margin: 0 auto; background-color: #8397a3;color:#fff; width: 3em; height: 3em; text-align: center; margin-bottom: 0.25em; line-height: 3em; border-radius: 100%; position: relative; z-index: 1000;}
+.atlasprogress > li:after { content: ""; position: absolute; display: block; background-color: #8397a3; width: 100%; height: 0.5em; top: 1.25em;left: 50%;margin-left: 1.5em\9;  z-index: -1;}
+.atlasprogress > li:last-child:after {display: none;}
+.atlasprogress > li.is-complete {color: #1e9d15;}
+.atlasprogress > li.is-complete:before, .atlasprogress > li.is-complete:after {color: #FFF; background: #1e9d15;}
+.atlasprogress > li.is-active {color: #488aa7; font-weight:bold;}
+.atlasprogress > li.is-active:before {color: #FFF;background: #5aadd1;}
+.atlasprogress__last:after { display: none !important;} /* Needed for IE8*/
+.atlasprogress--medium {font-size: 1.5em;} /* Size Extensions*/
+//File uploader module
+.fileupload:before{content:"Drop Files";position:absolute;top:0;bottom:0;left:0;right:0;border:dashed 4px #929292;color:#929292;z-index:9999;background:#fff;text-align:center;font-size:30px;padding:20px}
+.#{$prefix}boundlist-item span.chkCombo:before{height:16px;width:16px;font-family:FontAwesome;content:"\f096"}
+.#{$prefix}boundlist-selected span.chkCombo:before{height:16px;width:16px;font-family:FontAwesome;content:"\f14a"}
+//Red and green color labels
+.m-red-color {color: #ff0000 !important;}
+.m-green-color{color:green !important;}
+.m-blue-color{color:#46577d !important;}
+.m-red-color-displayfield {.#{$prefix}form-display-field{color: #ff0000 !important;}}
+.m-red-cell{.#{$prefix}grid-cell-inner{color: #ff0000;}}
+.red-row .#{$prefix}grid-cell-inner{color:#ff0000;}//claims search - MemberRx
+.auditBtn .x-btn-inner-default-small{color: #ff0000 !important;} //Finance/Audit red color text in button 
+.errorStatus{background-color:#ff0000 !important;} // formulary error status
+.m-yellow-color{background-color: yellow !important;}
+//Formats DIV based table data
+.m-displayfield-table {.#{$prefix}form-display-field {div:first-child {font-weight: bold;} span {display: inline-block;width: 150px;text-align: center;font-size: 12px;}}}
+.m-pharmacy-ownership {.#{$prefix}form-display-field {div > span:first-child, div > span:nth-child(2) {width: 90px;}}}
+.m-store-hours {.#{$prefix}form-display-field {span:nth-child(n+1) {width: 50px;text-align: left;} span:nth-child(n+2), span:nth-child(n+3) {width: 100px;text-align: center;}}}
+//toolbar docked top and bottom
+.#{$prefix}toolbar-docked-top a{background:#EAF6FF !important; border: 1px solid #d0d0d0; }
+.#{$prefix}toolbar-docked-top a .#{$prefix}btn-icon-el{color:#5aadd1 !important;}
+.#{$prefix}toolbar-docked-top a .#{$prefix}btn-inner-default-toolbar-small{color:#3e4752 !important;}
+.#{$prefix}toolbar-docked-top a .#{$prefix}btn-wrap-default-toolbar-small.#{$prefix}btn-arrow-right:after{color:#666 !important;}
+.#{$prefix}toolbar-docked-top a:hover{background-color:#f2f9ff !important;}
+.#{$prefix}toolbar-docked-top a .#{$prefix}btn-wrap-default-toolbar-small.#{$prefix}btn-split-right:after{color:#666 !important;}
+.#{$prefix}btn-icon-el-default-small{color:#5aadd1 !important;}
+//accordion
+.#{$prefix}accordion-item .#{$prefix}accordion-hd {padding:5px 8px !important};
+.#{$prefix}accordion-item .#{$prefix}accordion-hd-over{background:#5aadd1 !important;}
+//buttonicons
+.#{$prefix}btn-text.#{$prefix}btn-icon-left > .#{$prefix}btn-icon-el-default-toolbar-small {margin-right: 4px !important;}
+.#{$prefix}btn-icon-el-default-toolbar-small{height:15px !important;}
+.#{$prefix}datepicker-month .#{$prefix}btn{background-color:#5aadd1 !important;}
+.#{$prefix}btn-disabled .#{$prefix}btn-icon-left > .#{$prefix}btn-icon-el-default-toolbar-small, .#{$prefix}btn-icon-right > .#{$prefix}btn-icon-el-default-toolbar-small{color:#555 !important;}
+//tab bar scroller arroww
+.x-box-scroller-tab-bar-default{color: #5aadd1 !important;opacity:.8 !important;}
+.x-box-scroller-tab-bar-default.x-box-scroller-left, .x-box-scroller-tab-bar-default.x-box-scroller-right{top: 35% !important;}
+body.x-border-layout-ct,div.x-border-layout-ct {background-color: #fff!important;;}
+.x-form-display-field-body {vertical-align: initial !important}
+//formulary error and process status
+.processStatus{background-color:#3bd37b !important;} 
+.x-grid-row-expander, .x-grid-group-hd-collapsible .x-grid-group-title:before{color:#1e9d15 !important;}
+//plan documents plain-toolbar button issue
+.x-btn-plain-toolbar-small{background-color:#fff !important; border: 1px solid #125e0c !important;}
+.x-btn-inner-plain-toolbar-small {color:#125e0c !important;}
+//login screen styling
+.loginWindow .x-toolbar-docked-bottom{background-color:none !important;}
+.loginToolbar{background: none !important;}
+.mFooter{position: fixed;bottom: 0;text-align: center;background-color: rgba(255,255,255,.6)!important;color: #000000;padding: 34px;width: 100%;font-weight: 700;font-size: 13px;}
+.mLogo{height:60px !important;background-color: rgba(255,255,255,.7)!important;border:1px solid #fff !important;  
+background-image: url('../../resources/images/MeridianRx_logo_color.png') !important;
+background-repeat: no-repeat !important; }
+.mHeader{border:1px solid #fff !important;position: fixed;top:0;background-color: rgba(255,255,255,.7)!important;color: #000000;padding: 20px;width: 100%;font-weight: 700;font-size: 12px;line-height:18px;}
+.mHeader div{float: right;right: 20px;font-size: 12px;font-weight: 700;line-height: 18px;margin-right:15px !important;}
+// .mHeader:before{content:"Welcome to MeridianRx</br>Tech Support: 1-866-984-6462</br>Help Desk Email: pharmacist@meridianrx.com"}
+.mFooter div {font-size: 12px;font-weight: 700;line-height: 18px;}
+.mFooter a{color:#46577d !important;}
+.menuFilter{white-space:inherit !important;max-width: 400px !important;}
+//toolbar pagination
+.x-toolbar-docked-bottom .x-btn-plain-toolbar-small {padding:0px !important;}
+.x-toolbar-docked-bottom .x-btn-icon-el.x-tbar-page-first{font-size:12px !important;}
+.x-toolbar-docked-bottom .x-btn-icon-el.x-tbar-page-prev{font-size:12px !important;}
+.x-toolbar-docked-bottom .x-btn-icon-el.x-tbar-page-next{font-size:12px !important;}
+.x-toolbar-docked-bottom .x-btn-icon-el.x-tbar-page-last{font-size:12px !important;}
+.x-toolbar-default {padding:2px !important;border:1px solid #d0d0d0 !important;}
+.x-message-box-question, .x-message-box-error{font-size:33px !important;top:2px !important;} //error message icon
+.x-menu-item-default{max-width:300px !important;white-space: inherit !important;} //menu filter width
+.readonly-opacity{opacity:.6 !important;} //read only 
+//cdag screen styling
+.cdagCheckbox .x-form-checkbox{left:10px !important; top:3px !important; position:relative;}
+.x-btn-inner-default-small{padding:0px !important; font-weight:600 !important;}
+.cdagTextarea textarea{padding:10px !important;}
+.borderNone{border: none !important;}//to remove the panel borders
+.borderNone .x-panel{border:none !important;}
+.boxLabelFont .#{$prefix}form-cb-label-default{font-size:12px !important; font-weight:600 !important;} //box label under overrides
+.boxLabelFont .#{$prefix}form-item-body-default{line-height:0px !important;} // lineheight fix for overrides
+.cdagFont .#{$prefix}form-display-field-default{font-size:12px !important;} //cdag-overides font
+.cdagStatus .#{$prefix}form-display-field{font-weight:700 !important;} //cdag-overides font
+//menu active and hover state
+.x-menu-item-default.x-menu-item-focus {background-color:#6ab5d5!important; border:1px solid #6ab5d5;}
+.x-menu-item-default.x-menu-item-active{background-color:#488aa7!important;border:1px solid #488aa7;}
+.x-menu-item-default.x-menu-item-focus,.x-menu-item-default.x-menu-item-active {background-image: none;background-color:none !important;border-color: none !important;}
+//to make the font bold
+.fontBold{font-weight:bold !important;}
+//disabled grid row
+.disabled-row{opacity:.7 !important; background-color:#d4d4d4 !important}
+//claim Test displayfield alignment under member info/drug info/ pharmacy info
+.mClaimTest .#{$prefix}form-display-field-default{padding: 3px 0px 0px 11px !important;}
+.mPharmContract{color:#fff!important;}
+//IE fixes
+.x-ie10p .x-btn-inner-default-small{max-width:calc(100% - 0px) !important;}//IE claims grid buttons and all other default small buttons
+.#{$prefix}form-display-field-default{line-height:22px !important; padding:3px 0px 0px 5px !important;min-height:0px !important;} //IE form field fix and adding min-height:0px for the member demographics spacing issue
+.mLetter-displayfield .#{$prefix}form-display-field-default{min-height:22px !important;}
+.#{$prefix}form-item-body-default{line-height:28px !important;} //IE form field fix
+//benefitplan search progress buttons
+.aBenefitPlanBtn {background:#fff !important; border:1px solid #125e0c; }// class added onclick to chnage the button state styling to active
+.aBenefitPlanBtn .x-btn-inner-default-toolbar-small{color:#125e0c !important;}// class added onclick to chnage the button state styling to active
+//member status screen
+.m-flag-icon{margin:2px 0px 0px 0px!important;}
+.m-flag-status{margin:0 0 0 3px !important;}
+//text color changes
+.x-form-item-label,           //labels
+.x-form-text-default,         //text typed inside of forms
+.x-form-item-body,            //text at the top of claims detail
+.x-form-text-wrap-default,    //text inside of forms and comboboxes
+.x-column-header-text-inner,  //grid column headers
+.x-form-item-body-default,
+.x-boundlist-item,            //typeAhead elements
+.x-toolbar-text-default,      //toolbar items including typeAhead bottom toolbar
+.x-grid-cell-inner{color: #000000 !important;} //grid data
+.m-red-color{color: red !important;}
+//word-wrapping
+.forceWrap{
+  word-wrap: break-word;
+  //word-wrap: break-all;
+}
+
+//screen size 1280 by 960
+/*
+@media (max-width: 1280px){
+
+   //textfield
+   label[id^='textfield-'],.x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='textfield-'].x-form-item-body.x-form-item-body-default.x-form-text-field-body.x-form-text-field-body-default,
+    //combobox
+   label[id^='combobox-'],.x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='combobox-'].x-form-item-body.x-form-item-body-default.x-form-text-field-body.x-form-text-field-body-default,
+    //timefield
+   label[id^='timefield-'].x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='timefield-'].x-form-item-body.x-form-item-body-default.x-form-text-field-body.x-form-text-field-body-default,
+    //datefield
+   label[id^='datefield-'].x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='datefield-'].x-form-item-body.x-form-item-body-default.x-form-text-field-body.x-form-text-field-body-default,
+    //displayfield
+   label[id^='displayfield-'].x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='displayfield-'].x-form-item-body.x-form-item-body-default.x-form-display-field-body.x-form-display-field-body-default,
+    //textarea
+   label[id^='textareafield-'].x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='textareafield-'].x-form-item-body.x-form-item-body-default.x-form-text-field-body.x-form-text-field-body-default,
+    //radiogroup
+   span[id^='radiofield-'].x-form-field.x-form-radio.x-form-radio-default.x-form-cb.x-form-cb-default,
+   label[id^='radiofield-'].x-form-cb-label.x-form-cb-label-default.x-form-cb-label-after,
+    //checkbox
+   label[id^='checkboxfield-'].x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='checkboxfield-'].x-form-item-body.x-form-item-body-default.x-form-cb-wrap.x-form-cb-wrap-default,
+    //numberfield
+   label[id^='numberfield-'].x-form-item-label.x-form-item-label-default.x-unselectable,
+   div[id^='numberfield-'].x-form-item-body.x-form-item-body-default.x-form-text-field-body.x-form-text-field-body-default{
+      //leave the below commented lines commented; they are for testing purposes
+      //float: none;
+      //width: 100%;
+      //clear: both;
+      //color:blue;
+      //border: 1px solid;
+      display: flex;
+   }
+}*/

@@ -1,0 +1,6 @@
+var class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_h_c0___h_i_c___a_l_r_g_n___x_s_e_n_s_e___l_i_n_k =
+[
+    [ "DAM_ALRGN_XSENSE", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_h_c0___h_i_c___a_l_r_g_n___x_s_e_n_s_e___l_i_n_k.html#aafc380c911fe0c12c2c05deacd7dd5a3", null ],
+    [ "HIC_SEQN", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_h_c0___h_i_c___a_l_r_g_n___x_s_e_n_s_e___l_i_n_k.html#ab22341c149fd558ff892d2e86cb4321c", null ],
+    [ "RDAMXHC0_HIC_ALRGN_XSENSE_LINKIdentifier", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_d_a_m_x_h_c0___h_i_c___a_l_r_g_n___x_s_e_n_s_e___l_i_n_k.html#a93d0aadcc88b1f9da5db98ae9c71bcd3", null ]
+];

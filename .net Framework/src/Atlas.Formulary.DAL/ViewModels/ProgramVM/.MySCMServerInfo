@@ -1,0 +1,6 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.Formulary.DAL/ViewModels/ProgramVM
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=1169971
+StepTherapyProgramVM.cs;1350766086;1;1498475332;|404027|668718
+PriorAuthorizationProgramVM.cs;3350888579;2;1499709489;|404041|669605

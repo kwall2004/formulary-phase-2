@@ -1,0 +1,45 @@
+
+//tab base color
+$tab-base-color: dynamic(#c5ebf3); // Inactive Tab Background Color
+$tab-base-color-focus: dynamic(#c5ebf3);
+$tab-base-color-over: dynamic(#c5ebf3); // Tab Hover Color
+$tab-base-color-active: dynamic(#51bdf3); // Active Tab Color
+$tab-base-color-focus-over: dynamic(#85d0f6);
+$tab-base-color-focus-active:dynamic (#85d0f6);
+$tab-base-color-disabled: dynamic(#d3d3d3);
+//tab border
+$tab-border-color: dynamic(#666666);
+$tab-border-width:dynamic(1px);
+$tab-border-color-active:dynamic(#1d9d15);
+$tab-border-width-active:dynamic(12px 1px 12px 1px);
+$tab-border-style-active:dynamic(solid);
+$tab-border-color-focus: dynamic(#204b61);
+$tab-border-color-over: dynamic(#204b61);
+$tab-border-color-disabled: dynamic($tab-border-color);
+
+//tab color
+$tab-color: dynamic(#3e4752); // Inactive Tab Text Color
+$tab-color-active: dynamic(#ffffff); // Active Tab Text Color
+$tab-color-focus: dynamic($tab-color);
+$tab-color-over: dynamic($tab-color);
+$tab-color-focus-over: dynamic($tab-color-over);
+$tab-color-focus-active: dynamic($tab-color-active);
+//gradient,font and close icon
+$tab-background-gradient: dynamic('none');
+$tab-background-gradient-over: dynamic('none');
+$tab-background-gradient-active: dynamic('none');
+$tab-background-gradient-disabled: dynamic('none');
+$tab-font-size:dynamic(12px);
+$tab-font-size-active:dynamic(12px);
+$tab-font-weight-active:dynamic(700);
+$tab-font-weight:dynamic(normal);
+$tab-padding:dynamic(3px);
+$tab-margin: dynamic(0 1px 0 0);
+$tab-border-radius: dynamic(3px 3px 0 0);
+$tab-icon-spacing: dynamic(6px);
+$tab-text-opacity-disabled: dynamic(.6);
+//glyph icon styling
+$tab-closable-icon-width: dynamic(12px);
+$tab-closable-icon-height: dynamic(12px);
+$tab-closable-icon-glyph-color:dynamic(#5aadd1);
+$tab-closable-icon-glyph-color-active: dynamic(#fff);

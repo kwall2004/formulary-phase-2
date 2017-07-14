@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['request',['Request',['../namespace_atlas_web_api_1_1_areas_1_1_help_page.html#a5793dadf4d635494b3ad0cfdefa2413da15c2d85f1fae22a3c3a0594510a1f611',1,'AtlasWebApi.Areas.HelpPage.Request()'],['../namespace_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_containers.html#af92978ce0af0c69f67f15eeb0fba3315a15c2d85f1fae22a3c3a0594510a1f611',1,'Atlas.Formulary.DAL.Models.Containers.Request()'],['../namespace_atlas_1_1_framework_1_1_containers.html#adbc6843075ac96a7e598c925ef4b284ca15c2d85f1fae22a3c3a0594510a1f611',1,'Atlas.Framework.Containers.Request()']]],
+  ['response',['Response',['../namespace_atlas_web_api_1_1_areas_1_1_help_page.html#a5793dadf4d635494b3ad0cfdefa2413dad64ed3e9c10229648e069f56e32f4c8e',1,'AtlasWebApi.Areas.HelpPage.Response()'],['../namespace_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_containers.html#af92978ce0af0c69f67f15eeb0fba3315ad64ed3e9c10229648e069f56e32f4c8e',1,'Atlas.Formulary.DAL.Models.Containers.Response()'],['../namespace_atlas_1_1_framework_1_1_containers.html#adbc6843075ac96a7e598c925ef4b284cad64ed3e9c10229648e069f56e32f4c8e',1,'Atlas.Framework.Containers.Response()']]]
+];

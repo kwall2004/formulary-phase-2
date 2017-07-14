@@ -1,0 +1,7 @@
+var class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_tenant_family_controller =
+[
+    [ "ContactTenantFamilyController", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_tenant_family_controller.html#ab304f4f748d555966c4949e75d07b286", null ],
+    [ "GetAllTenantFamilyContacts", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_tenant_family_controller.html#a2ad49fc52351cc8dfc000f910d9044aa", null ],
+    [ "GetSingleTenantFamilyContact", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_tenant_family_controller.html#afc7454a75df92d2ea07b327bf706e6b7", null ],
+    [ "NotValidHttpGet", "class_atlas_web_api_1_1_controllers_1_1_v1_1_1_benefit_plan_1_1_contact_1_1_contact_tenant_family_controller.html#af23ad43927f3b525c6ead95383908325", null ]
+];

@@ -1,0 +1,9 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Controllers/V1/BenefitPlan/PlanBenefitPackage
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796832
+HealthCareFinancialAccountTypeController.cs;3330676934;1;1492524453;|246980|478071
+PlanBenefitPackageBusinessRuleController.cs;3551831005;1;1492524453;|246981|535602
+PlanBenefitPackageController.cs;2874455860;1;1492524453;|246982|478073
+PlanBenefitPackageSavingsAccountController.cs;3433450464;1;1492524453;|246983|478074
+ServiceAreaConfigurationController.cs;3480710505;1;1492524453;|246984|478075

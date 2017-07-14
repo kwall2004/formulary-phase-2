@@ -1,0 +1,10 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/DrugCategory
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796781
+CoveragePropertiesController.cs;1862776267;1;1492524686;|248491|528350
+DrugCategoryCacheController.cs;2217064811;1;1492524686;|248492|479583
+DrugCategoryController.cs;2214519406;1;1492524686;|248493|512324
+DrugCategoryCriteriaGroupController.cs;812132508;1;1492524686;|248494|479585
+DrugCategoryPriorAuthorizationController.cs;2618210739;1;1492524686;|248495|479586
+DrugCategoryStepTherapyProgramController.cs;3966773432;1;1492524686;|248496|479587

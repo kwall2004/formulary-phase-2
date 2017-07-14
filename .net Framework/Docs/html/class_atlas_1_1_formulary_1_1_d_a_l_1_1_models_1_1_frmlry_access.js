@@ -1,0 +1,27 @@
+var class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access =
+[
+    [ "Acct", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a8e9fbfa58df74e56213c51a6b36dae05", null ],
+    [ "AcctSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a3eae4c9acf49eaccab30754854385b69", null ],
+    [ "CreatedBy", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a9145cd9e118212f8767b41d60d7d6c33", null ],
+    [ "CreatedTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#af7c825e8fcd9f08c9af14a0eccaecd55", null ],
+    [ "DelAccessInd", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#add42171f274cd6d4c8506262e3b8f344", null ],
+    [ "DelTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a1ab0f772f15b225a3c309202563f66ba", null ],
+    [ "EfctvEndDt", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a4c43b83a313555f58964071ddfe1d2f3", null ],
+    [ "EfctvStartDt", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#acc4ea2a74f1988503230c8d4888603d1", null ],
+    [ "Frmlry", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#acbea51fae5af1f4593166db364e7d473", null ],
+    [ "FrmlryAccessSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a0539c1aed36c7ff4e5119e439851efaf", null ],
+    [ "FrmlrySK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a9e2a34011c1a6cd03ab032d2cf524e8f", null ],
+    [ "Grp", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a198a8534a06a18988e2f4886891f0c3a", null ],
+    [ "GrpSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a87dfde83ab305be99373938802f99b10", null ],
+    [ "InctvTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#ab92cbc8c0f8f051f52ce794b5d6c07b2", null ],
+    [ "LastModfdBy", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a9b479f51f49b318498c7b539d7cb3771", null ],
+    [ "LastModfdTs", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a557215a3a7da6b0d4948ed45aec9688a", null ],
+    [ "OwnerInd", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a00a59e16e1f6ca30d13ccdca6e7ee7dd", null ],
+    [ "PopGrp", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a1b104086701dbb9c42d3b8c2e2a314b8", null ],
+    [ "PopGrpSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a5d9156a5bbf679ae166a45e5262d9b94", null ],
+    [ "Tenant", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a60839fbff2f8db04517359548e0b276c", null ],
+    [ "TenantFam", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a19219bff97c270db627af23b20260c67", null ],
+    [ "TenantFamSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#aecd2fa8b4bed94dee0893a667c11c501", null ],
+    [ "TenantSK", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#ab0651e68acc19684c71f06b51095da9e", null ],
+    [ "WriteAccessInd", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_frmlry_access.html#a6ac38f09ce85de4ce083e9dec5aed423", null ]
+];

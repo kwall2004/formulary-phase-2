@@ -1,0 +1,185 @@
+/**
+ * Created by agupta on 9/14/2016.
+ */
+Ext.define('Atlas.authorization.model.cdag.CoverageDeterminationModel', {
+    extend: 'Atlas.common.model.Base',
+    //extend: 'Atlas.common.model.StaticBase',
+    fields: [
+        { name: 'DeterminationType'},
+        { name: 'AuthStatus', type : 'string'},
+        { name: 'AuthStatusDesc', type : 'string'},
+        { name: 'EnrollmentStatus', type : 'string'},
+        { name: 'CreateDateTime', type : 'string'},
+        { name: 'CreateUserName', type : 'string'},
+        { name: 'LastModified', type : 'string'},
+        { name: 'ApprovedDateTime', type : 'string'},
+        { name: 'ApprovedBy', type : 'string'},
+        { name: 'MemberID', type : 'string'},
+        { name: 'PrescriberID', type : 'string'},
+        { name: 'UrgencyType', type : 'string'},
+        { name: 'RejectionCodeOverride', type : 'string'},
+        { name: 'PendDischrgHospital', type : 'string'},
+        { name: 'Firstname', type : 'string'},
+        { name: 'Middlename', type : 'string'},
+        { name: 'Lastname', type : 'string'},
+        { name: 'Gender', type : 'string'},
+        { name: 'BirthDate', type : 'string'},
+        { name: 'StrBirthDate', type : 'string'},
+        { name: 'CoCMember', type : 'string'},
+        { name: 'PrescriberName', type : 'string'},
+        { name: 'PrescriberAddress', type : 'string'},
+        { name: 'NDC', type : 'string'},
+        { name: 'LN', type : 'string'},
+        { name: 'SOURCE', type : 'string'},
+        { name: 'EffectiveDateTime', type : 'string'},
+        { name: 'TermDateTime', type : 'string'},
+        { name: 'CompoundGCN', type : 'string'},
+        { name: 'PAtypeFlag', type : 'string'},
+        { name: 'ProviderNABP', type : 'string'},
+        { name: 'ProviderRelationshipId', type : 'string'},
+        { name: 'ReceivedDateTime', type : 'string'},
+        { name: 'ClockStartDateTime', type : 'string'},
+        { name: 'ProviderName', type : 'string'},
+        { name: 'LockedWith', type : 'string'},
+        { name: 'LockedWithFullName', type : 'string'},
+        { name: 'InTake', type : 'string'},
+        { name: 'Requestor', type : 'string'},
+        { name: 'SupportStmtReceivedDate', type : 'string'},
+        { name: 'SupportStmtType', type : 'string'},
+        { name: 'ServiceDate', type : 'string'},
+        { name: 'RxNum', type : 'string'},
+        { name: 'PharServiceType', type : 'string'},
+        { name: 'SubClarificationCode', type : 'string'},
+        { name: 'Residence', type : 'string'},
+        { name: 'ReasonForRequest', type : 'string'},
+        { name: 'CheckDate', type : 'string'},
+        { name: 'CheckSentDate', type : 'string'},
+        { name: 'QtyLimit', type : 'string'},
+        { name: 'ReqFullName', type : 'string'},
+        { name: 'ReqRelationship', type : 'string'},
+        { name: 'ReqAddress', type : 'string'},
+        { name: 'ReqCity', type : 'string'},
+        { name: 'ReqState', type : 'string'},
+        { name: 'ReqZip', type : 'string'},
+        { name: 'ReqPhone', type : 'string'},
+        { name: 'ReqEmail', type : 'string'},
+        { name: 'ReqFax', type : 'string'},
+        { name: 'AORDateTime', type : 'string'},
+        { name: 'ReasonCode', type : 'string'},
+        { name: 'ReviewNotes', type : 'string'},
+        { name: 'Reason', type : 'string'},
+        { name: 'PrescriberFax', type : 'string'},
+        { name: 'oldAuthStatus', type : 'string'},
+        { name: 'FWAPharmacyLockLOB', type : 'string'},
+        { name: 'HICL_SeqNoDisplay', type : 'string'},
+        { name: 'GCN_SeqNoDisplay', type : 'string'},
+        { name: 'OIGSacntioned', type : 'string'},
+        { name: 'FWAPrescriberLockLOB', type : 'string'},
+        { name: 'UpdateEffectuationdate', type : 'string'},
+        { name: 'CheckNum', type : 'string'},
+        { name: 'HrsRemToProcess', type : 'string'},
+        { name: 'LastModified', type : 'string'},
+        { name: 'CompoundGCNDesc', type : 'string'},
+        { name: 'ReqCreateDateTime', type : 'string'},
+        { name: 'DeterminationTypeDesc', type : 'string'},
+        { name: 'InTakeDesc', type : 'string'},
+        { name: 'PAtypeFlagDesc', type : 'string'},
+        { name: 'RequestorDesc', type : 'string'},
+        { name: 'UrgencyTypeDesc', type : 'string'},
+        { name: 'ReasonForRequestDesc', type : 'string'},
+        { name: 'SupportStmtTypeDesc', type : 'string'},
+        { name: 'ResidenceDesc', type : 'string'},
+        { name: 'PharServiceTypeDesc', type : 'string'},
+        { name: 'MemberAddress1', type : 'string'},
+        { name: 'MemberAddress2', type : 'string'},
+        { name: 'MemberCity', type : 'string'},
+        { name: 'MemberState', type : 'string'},
+        { name: 'MemberZip', type : 'string'},
+        { name: 'InitialDecisionBy', type : 'string'},
+        { name: 'DataSource', type : 'string'},
+        { name: 'GPICode', type : 'string'},
+        { name: 'GPI10', type : 'string'},
+        { name: 'compoundGPI', type : 'string'},
+        { name: 'GPICodeDisplay', type : 'string'},
+        { name: 'GPI10Display', type : 'string'},
+        { name: 'compoundGPIDesc', type : 'string'},
+
+        { name: 'QtyMin',  type : 'int'},
+        { name: 'QtyMax',  type : 'int'},
+        { name: 'DaysSupplyMin',  type : 'int'},
+        { name: 'DaysSupplyMax', type : 'int'},
+        { name: 'MaxNumFills', type : 'int'},
+        { name: 'PriceMax', type : 'int'},
+        { name: 'CopayOverrideAmt', type : 'int'},
+        { name: 'MaxCostMAx', type : 'int'},
+        { name: 'RecipientID', type : 'int'},
+        { name: 'CarrierID', type : 'int'},
+        { name: 'PlanGroupId', type : 'int'},
+        { name: 'GCN_SEQNO', type : 'int'},
+        { name: 'MedicarePlanGroupId', type : 'int'},
+        { name: 'HICL_SEQNO', type : 'int'},
+        { name: 'Quantity', type : 'int'},
+        { name: 'DaysSupply', type : 'int'},
+        { name: 'TransactionId', type : 'int'},
+        { name: 'DocumentId', type : 'int'},
+        { name: 'DaysSupplyMax', type : 'int'},
+        { name: 'DaysSupplyMin', type : 'int'},
+        { name: 'MaxCostMAx', type : 'int'},
+        { name: 'MaxNumFills', type : 'int'},
+        { name: 'PriceMax', type : 'int'},
+        { name: 'QtyMax', type : 'int'},
+        { name: 'QtyMin', type : 'int'},
+        { name: 'CarrierLobID', type : 'int'},
+        { name: 'CopayOverrideAmt', type : 'int'},
+        { name: 'SystemID', type : 'int'},
+        { name: 'PlanGroupId', type : 'int'},
+        { name: 'PendDischrgNotify', type : 'int'},
+        { name: 'Quantity', type : 'int'},
+        { name: 'DaysSupply', type : 'int'},
+        { name: 'AmtPaid', type : 'int'},
+
+        { name: 'PartialApproval', type : 'boolean'},
+        { name: 'EmergencySupply', type : 'boolean'},
+        { name: 'MbrInititated', type : 'boolean'},
+        { name: 'PrescStmtRcvd', type : 'boolean'},
+        { name: 'PendDischrgNotify', type : 'boolean'},
+        { name: 'DiscardPA', type : 'boolean'},
+        { name: 'ResolvedInFirstCall', type : 'boolean'},
+        { name: 'ESRDInd', type : 'boolean'},
+        { name: 'HospiceInd', type : 'boolean'},
+        { name: 'TransplantIndicator', type : 'boolean'},
+        { name: 'ProtectedClassDrug', type : 'boolean'},
+        { name: 'CarveOut', type : 'boolean'}
+
+    ],
+
+    proxy: {
+        extraParams: {
+            pAuthID: ''
+        },
+        url: 'claims/{0}/coveragedetermination',
+        /*reader: {
+            type    : 'json',
+            root    : 'data'
+        }*/
+        reader: {
+            //Specify metadata property
+            metaProperty: 'metadata',
+            //Optionally specify root of the data if it's other than 'data'
+            rootProperty: function(payload) {
+                if(payload.data.length > 0) {
+                    var result = '{"result":[{ "data" : ' + JSON.stringify(payload.data[0]) + ' } , { "otherData" : ' + JSON.stringify(payload.metadata) + '  }]}';
+                    var jsonResult = JSON.parse(result);
+                    return jsonResult;
+                }
+            }
+        }
+    }
+    /*proxy: {
+        url: 'resources/data/dummydata/authorization/cdagmain.json'
+    }*/
+});
+
+
+
+

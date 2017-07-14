@@ -1,0 +1,23 @@
+.claimdetail_button {
+    margin: 11px 0px 11px 5px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.claimdetail_advSearch .x-btn-inner-default-small {
+    @extend .claimdetail_button;
+    padding: 0px 5px;
+    color: blue;
+    max-width: 100%;
+    background-color: white;
+    border-color: white;
+    &:hover {
+        background-color: darken(white, 10%);
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+    }
+}

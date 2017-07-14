@@ -1,0 +1,2829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AtlasReferenceDALModelsStoreContainer" CdmEntityContainer="ReferenceEntities">
+    <EntitySetMapping Name="AHFSClass">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.AHFSClass">
+        <MappingFragment StoreEntitySet="AHFSClass">
+          <ScalarProperty Name="AHFSClassIdentifier" ColumnName="AHFSClassIdentifier" />
+          <ScalarProperty Name="AHFSClassID" ColumnName="AHFSClassID" />
+          <ScalarProperty Name="AHFSClassNum" ColumnName="AHFSClassNum" />
+          <ScalarProperty Name="AHFSClass6" ColumnName="AHFSClass6" />
+          <ScalarProperty Name="AHFSClass8" ColumnName="AHFSClass8" />
+          <ScalarProperty Name="AHFSClassText" ColumnName="AHFSClassText" />
+          <ScalarProperty Name="AHFSClassParentID" ColumnName="AHFSClassParentID" />
+          <ScalarProperty Name="AHFSClassHasSubclass" ColumnName="AHFSClassHasSubclass" />
+          <ScalarProperty Name="AHFSRootParentID" ColumnName="AHFSRootParentID" />
+          <ScalarProperty Name="AHFSSeqNum" ColumnName="AHFSSeqNum" />
+          <ScalarProperty Name="AHFSHierarchyLevel" ColumnName="AHFSHierarchyLevel" />
+          <ScalarProperty Name="AHFSPrint" ColumnName="AHFSPrint" />
+          <ScalarProperty Name="AHFSPrintOrder" ColumnName="AHFSPrintOrder" />
+          <ScalarProperty Name="AHFSRetired" ColumnName="AHFSRetired" />
+          <ScalarProperty Name="AHFSRetiredDate" ColumnName="AHFSRetiredDate" />
+          <ScalarProperty Name="AHFSAddDate" ColumnName="AHFSAddDate" />
+          <ScalarProperty Name="AHFSCxDate" ColumnName="AHFSCxDate" />
+          <ScalarProperty Name="AHFSCxDesc" ColumnName="AHFSCxDesc" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AHFSDrugs">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.AHFSDrugs">
+        <MappingFragment StoreEntitySet="AHFSDrugs">
+          <ScalarProperty Name="AHFSDrugsIdentifier" ColumnName="AHFSDrugsIdentifier" />
+          <ScalarProperty Name="AHFSClassID" ColumnName="AHFSClassID" />
+          <ScalarProperty Name="UN" ColumnName="UN" />
+          <ScalarProperty Name="GenDrugName" ColumnName="GenDrugName" />
+          <ScalarProperty Name="PrintClass" ColumnName="PrintClass" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AHFSMapNDCClass">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.AHFSMapNDCClass">
+        <MappingFragment StoreEntitySet="AHFSMapNDCClass">
+          <ScalarProperty Name="AHFSMapNDCClassIdentifier" ColumnName="AHFSMapNDCClassIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="AHFSClassNum" ColumnName="AHFSClassNum" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AHFSMapNDCRxNorm">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.AHFSMapNDCRxNorm">
+        <MappingFragment StoreEntitySet="AHFSMapNDCRxNorm">
+          <ScalarProperty Name="AHFSMapNDCRxNormIdentifier" ColumnName="AHFSMapNDCRxNormIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="RxNorm_CUI" ColumnName="RxNorm_CUI" />
+          <ScalarProperty Name="AHFSClassNum" ColumnName="AHFSClassNum" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AHFSTradeNames">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.AHFSTradeNames">
+        <MappingFragment StoreEntitySet="AHFSTradeNames">
+          <ScalarProperty Name="AHFSTradeNamesIdentifier" ColumnName="AHFSTradeNamesIdentifier" />
+          <ScalarProperty Name="UN" ColumnName="UN" />
+          <ScalarProperty Name="TradeName" ColumnName="TradeName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyAlternatives">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyAlternatives">
+        <MappingFragment StoreEntitySet="formularyAlternatives">
+          <ScalarProperty Name="formularyAlternativesIdentifier" ColumnName="formularyAlternativesIdentifier" />
+          <ScalarProperty Name="FormularyID" ColumnName="FormularyID" />
+          <ScalarProperty Name="FormularyAltID" ColumnName="FormularyAltID" />
+          <ScalarProperty Name="FormularyAltName" ColumnName="FormularyAltName" />
+          <ScalarProperty Name="Stat" ColumnName="Stat" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyCopayList">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyCopayList">
+        <MappingFragment StoreEntitySet="formularyCopayList">
+          <ScalarProperty Name="formularyCopayListIdentifier" ColumnName="formularyCopayListIdentifier" />
+          <ScalarProperty Name="FormularyCopayID" ColumnName="FormularyCopayID" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyCoverageList">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyCoverageList">
+        <MappingFragment StoreEntitySet="formularyCoverageList">
+          <ScalarProperty Name="formularyCoverageListIdentifier" ColumnName="formularyCoverageListIdentifier" />
+          <ScalarProperty Name="FormularyCoverageID" ColumnName="FormularyCoverageID" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyDetails">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyDetails">
+        <MappingFragment StoreEntitySet="formularyDetails">
+          <ScalarProperty Name="formularyDetailsIdentifier" ColumnName="formularyDetailsIdentifier" />
+          <ScalarProperty Name="FormularyID" ColumnName="FormularyID" />
+          <ScalarProperty Name="DrugCode" ColumnName="DrugCode" />
+          <ScalarProperty Name="DrugCodeID" ColumnName="DrugCodeID" />
+          <ScalarProperty Name="NewDrug" ColumnName="NewDrug" />
+          <ScalarProperty Name="LoadDateTime" ColumnName="LoadDateTime" />
+          <ScalarProperty Name="DrugCodeAddDate" ColumnName="DrugCodeAddDate" />
+          <ScalarProperty Name="DrugCodeObsolete" ColumnName="DrugCodeObsolete" />
+          <ScalarProperty Name="DrugCodeObsoleteDate" ColumnName="DrugCodeObsoleteDate" />
+          <ScalarProperty Name="ETCHierarchyLevel" ColumnName="ETCHierarchyLevel" />
+          <ScalarProperty Name="UltChildInd" ColumnName="UltChildInd" />
+          <ScalarProperty Name="Covered" ColumnName="Covered" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="GenericMedID" ColumnName="GenericMedID" />
+          <ScalarProperty Name="CMS_RxCUI" ColumnName="CMS_RxCUI" />
+          <ScalarProperty Name="NDDF_RxCUI" ColumnName="NDDF_RxCUI" />
+          <ScalarProperty Name="LN" ColumnName="LN" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="OTC_IND" ColumnName="OTC_IND" />
+          <ScalarProperty Name="OBC" ColumnName="OBC" />
+          <ScalarProperty Name="DCC" ColumnName="DCC" />
+          <ScalarProperty Name="DEA" ColumnName="DEA" />
+          <ScalarProperty Name="DrugType" ColumnName="DrugType" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_NAME" ColumnName="ETC_NAME" />
+          <ScalarProperty Name="PARENT_ETC_ID" ColumnName="PARENT_ETC_ID" />
+          <ScalarProperty Name="PARENT_ETC_NAME" ColumnName="PARENT_ETC_NAME" />
+          <ScalarProperty Name="ULTIMATE_PARENT_ETC_ID" ColumnName="ULTIMATE_PARENT_ETC_ID" />
+          <ScalarProperty Name="ULTIMATE_PARENT_ETC_NAME" ColumnName="ULTIMATE_PARENT_ETC_NAME" />
+          <ScalarProperty Name="GCDF_DESC" ColumnName="GCDF_DESC" />
+          <ScalarProperty Name="GCRT_DESC" ColumnName="GCRT_DESC" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="GNN60" ColumnName="GNN60" />
+          <ScalarProperty Name="GTC" ColumnName="GTC" />
+          <ScalarProperty Name="GTC_DESC" ColumnName="GTC_DESC" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="SpecialtyDrugInd" ColumnName="SpecialtyDrugInd" />
+          <ScalarProperty Name="MaxCopayAmt" ColumnName="MaxCopayAmt" />
+          <ScalarProperty Name="HundredPctCopay" ColumnName="HundredPctCopay" />
+          <ScalarProperty Name="CopayLimit" ColumnName="CopayLimit" />
+          <ScalarProperty Name="CopayLimitNotes" ColumnName="CopayLimitNotes" />
+          <ScalarProperty Name="TierCode" ColumnName="TierCode" />
+          <ScalarProperty Name="GenderRestriction" ColumnName="GenderRestriction" />
+          <ScalarProperty Name="MinAge" ColumnName="MinAge" />
+          <ScalarProperty Name="MaxAge" ColumnName="MaxAge" />
+          <ScalarProperty Name="AgeType" ColumnName="AgeType" />
+          <ScalarProperty Name="PAInd" ColumnName="PAInd" />
+          <ScalarProperty Name="PAName" ColumnName="PAName" />
+          <ScalarProperty Name="PAGenderCode" ColumnName="PAGenderCode" />
+          <ScalarProperty Name="LimitedAccess" ColumnName="LimitedAccess" />
+          <ScalarProperty Name="DollarAmount" ColumnName="DollarAmount" />
+          <ScalarProperty Name="DollarAmtTimePeriod" ColumnName="DollarAmtTimePeriod" />
+          <ScalarProperty Name="DaysSupply" ColumnName="DaysSupply" />
+          <ScalarProperty Name="DaysSupplyTimePeriod" ColumnName="DaysSupplyTimePeriod" />
+          <ScalarProperty Name="Fills" ColumnName="Fills" />
+          <ScalarProperty Name="FillsTimePeriod" ColumnName="FillsTimePeriod" />
+          <ScalarProperty Name="QtyLimit2" ColumnName="QtyLimit2" />
+          <ScalarProperty Name="QtyLmtTimePeriod" ColumnName="QtyLmtTimePeriod" />
+          <ScalarProperty Name="QLNotes" ColumnName="QLNotes" />
+          <ScalarProperty Name="StepTherapyInd" ColumnName="StepTherapyInd" />
+          <ScalarProperty Name="StepTherapyName" ColumnName="StepTherapyName" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="EffectiveDateTime" ColumnName="EffectiveDateTime" />
+          <ScalarProperty Name="TermDateTime" ColumnName="TermDateTime" />
+          <ScalarProperty Name="TextMessage" ColumnName="TextMessage" />
+          <ScalarProperty Name="ResourceLink" ColumnName="ResourceLink" />
+          <ScalarProperty Name="createDateTime" ColumnName="createDateTime" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="lastUpdateDateTime" ColumnName="lastUpdateDateTime" />
+          <ScalarProperty Name="lastUpdateBy" ColumnName="lastUpdateBy" />
+          <ScalarProperty Name="FormularyVersion" ColumnName="FormularyVersion" />
+          <ScalarProperty Name="CopayAmt" ColumnName="CopayAmt" />
+          <ScalarProperty Name="CopayType" ColumnName="CopayType" />
+          <ScalarProperty Name="PartDExcludedDrug" ColumnName="PartDExcludedDrug" />
+          <ScalarProperty Name="MedicaidCarveOutDrug" ColumnName="MedicaidCarveOutDrug" />
+          <ScalarProperty Name="Maint" ColumnName="Maint" />
+          <ScalarProperty Name="HCFA_FDA" ColumnName="HCFA_FDA" />
+          <ScalarProperty Name="RuleLevelID" ColumnName="RuleLevelID" />
+          <ScalarProperty Name="LevelType" ColumnName="LevelType" />
+          <ScalarProperty Name="MedicaidFeeScreen" ColumnName="MedicaidFeeScreen" />
+          <ScalarProperty Name="MedicarePAType" ColumnName="MedicarePAType" />
+          <ScalarProperty Name="MedicareSTGrpCount" ColumnName="MedicareSTGrpCount" />
+          <ScalarProperty Name="MedicareSTGrpDesc1" ColumnName="MedicareSTGrpDesc1" />
+          <ScalarProperty Name="MedicareSTStepValue1" ColumnName="MedicareSTStepValue1" />
+          <ScalarProperty Name="MedicareSTGrpDesc2" ColumnName="MedicareSTGrpDesc2" />
+          <ScalarProperty Name="MedicareSTStepValue2" ColumnName="MedicareSTStepValue2" />
+          <ScalarProperty Name="MedicareSTGrpDesc3" ColumnName="MedicareSTGrpDesc3" />
+          <ScalarProperty Name="MedicareSTStepValue3" ColumnName="MedicareSTStepValue3" />
+          <ScalarProperty Name="QtyLimit" ColumnName="QtyLimit" />
+          <ScalarProperty Name="PAMinAge" ColumnName="PAMinAge" />
+          <ScalarProperty Name="PAMaxAge" ColumnName="PAMaxAge" />
+          <ScalarProperty Name="OTCInd" ColumnName="OTCInd" />
+          <ScalarProperty Name="NDCFI" ColumnName="NDCFI" />
+          <ScalarProperty Name="InReview" ColumnName="InReview" />
+          <ScalarProperty Name="sequence" ColumnName="sequence" />
+          <ScalarProperty Name="labelerCode" ColumnName="labelerCode" />
+          <ScalarProperty Name="genericIDType" ColumnName="genericIDType" />
+          <ScalarProperty Name="genericIDNum" ColumnName="genericIDNum" />
+          <ScalarProperty Name="therapeuticClass" ColumnName="therapeuticClass" />
+          <ScalarProperty Name="itemStatus" ColumnName="itemStatus" />
+          <ScalarProperty Name="localSystem" ColumnName="localSystem" />
+          <ScalarProperty Name="TEE" ColumnName="TEE" />
+          <ScalarProperty Name="IDNum" ColumnName="IDNum" />
+          <ScalarProperty Name="restricted" ColumnName="restricted" />
+          <ScalarProperty Name="dispenseUnit" ColumnName="dispenseUnit" />
+          <ScalarProperty Name="unitDose" ColumnName="unitDose" />
+          <ScalarProperty Name="adminRoute" ColumnName="adminRoute" />
+          <ScalarProperty Name="formType" ColumnName="formType" />
+          <ScalarProperty Name="dollarRank" ColumnName="dollarRank" />
+          <ScalarProperty Name="RxRank" ColumnName="RxRank" />
+          <ScalarProperty Name="numSysChar" ColumnName="numSysChar" />
+          <ScalarProperty Name="secondIDForm" ColumnName="secondIDForm" />
+          <ScalarProperty Name="secondIDNum" ColumnName="secondIDNum" />
+          <ScalarProperty Name="multiSource" ColumnName="multiSource" />
+          <ScalarProperty Name="brandName" ColumnName="brandName" />
+          <ScalarProperty Name="reimburseInd" ColumnName="reimburseInd" />
+          <ScalarProperty Name="intExt" ColumnName="intExt" />
+          <ScalarProperty Name="singleComb" ColumnName="singleComb" />
+          <ScalarProperty Name="storageCond" ColumnName="storageCond" />
+          <ScalarProperty Name="stability" ColumnName="stability" />
+          <ScalarProperty Name="lastChange" ColumnName="lastChange" />
+          <ScalarProperty Name="nameExt" ColumnName="nameExt" />
+          <ScalarProperty Name="allergyPattern" ColumnName="allergyPattern" />
+          <ScalarProperty Name="PPGInd" ColumnName="PPGInd" />
+          <ScalarProperty Name="HFPGInd" ColumnName="HFPGInd" />
+          <ScalarProperty Name="labelerType" ColumnName="labelerType" />
+          <ScalarProperty Name="pricingSpread" ColumnName="pricingSpread" />
+          <ScalarProperty Name="dosageForm" ColumnName="dosageForm" />
+          <ScalarProperty Name="packageUM" ColumnName="packageUM" />
+          <ScalarProperty Name="packageQty" ColumnName="packageQty" />
+          <ScalarProperty Name="repackage" ColumnName="repackage" />
+          <ScalarProperty Name="DESI" ColumnName="DESI" />
+          <ScalarProperty Name="packageDesc" ColumnName="packageDesc" />
+          <ScalarProperty Name="nxtSmallSuffix" ColumnName="nxtSmallSuffix" />
+          <ScalarProperty Name="nxtLargSuffix" ColumnName="nxtLargSuffix" />
+          <ScalarProperty Name="innerPack" ColumnName="innerPack" />
+          <ScalarProperty Name="clinicPack" ColumnName="clinicPack" />
+          <ScalarProperty Name="GPPC" ColumnName="GPPC" />
+          <ScalarProperty Name="descAbbr" ColumnName="descAbbr" />
+          <ScalarProperty Name="drugName" ColumnName="drugName" />
+          <ScalarProperty Name="recordCode" ColumnName="recordCode" />
+          <ScalarProperty Name="packageSize" ColumnName="packageSize" />
+          <ScalarProperty Name="ttlPackQty" ColumnName="ttlPackQty" />
+          <ScalarProperty Name="TransFillExcluded" ColumnName="TransFillExcluded" />
+          <ScalarProperty Name="GPICode" ColumnName="GPICode" />
+          <ScalarProperty Name="restrictToPkgSize" ColumnName="restrictToPkgSize" />
+          <ScalarProperty Name="ovrGenericCheck" ColumnName="ovrGenericCheck" />
+          <ScalarProperty Name="preferred" ColumnName="preferred" />
+          <ScalarProperty Name="PDLFlag" ColumnName="PDLFlag" />
+          <ScalarProperty Name="partDDrug" ColumnName="partDDrug" />
+          <ScalarProperty Name="extendedDaysSupply" ColumnName="extendedDaysSupply" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyDrugClassificationList">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyDrugClassificationList">
+        <MappingFragment StoreEntitySet="formularyDrugClassificationList">
+          <ScalarProperty Name="formularyDrugClassificationListIdentifier" ColumnName="formularyDrugClassificationListIdentifier" />
+          <ScalarProperty Name="FormularyDrugClassificationID" ColumnName="FormularyDrugClassificationID" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyMaster">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyMaster">
+        <MappingFragment StoreEntitySet="formularyMaster">
+          <ScalarProperty Name="formularyMasterIdentifier" ColumnName="formularyMasterIdentifier" />
+          <ScalarProperty Name="FormularyID" ColumnName="FormularyID" />
+          <ScalarProperty Name="FormularyName" ColumnName="FormularyName" />
+          <ScalarProperty Name="FormularyVersion" ColumnName="FormularyVersion" />
+          <ScalarProperty Name="Stat" ColumnName="Stat" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="TerminationDate" ColumnName="TerminationDate" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="LastUpdateDateTime" ColumnName="LastUpdateDateTime" />
+          <ScalarProperty Name="LastUpdateBy" ColumnName="LastUpdateBy" />
+          <ScalarProperty Name="PDApprovedBy" ColumnName="PDApprovedBy" />
+          <ScalarProperty Name="PDApprovedDate" ColumnName="PDApprovedDate" />
+          <ScalarProperty Name="MDApprovedBy" ColumnName="MDApprovedBy" />
+          <ScalarProperty Name="MDApprovedDate" ColumnName="MDApprovedDate" />
+          <ScalarProperty Name="formularyType" ColumnName="formularyType" />
+          <ScalarProperty Name="dataSource" ColumnName="dataSource" />
+          <ScalarProperty Name="incTPARestrictionCodes" ColumnName="incTPARestrictionCodes" />
+          <ScalarProperty Name="excTPARestrictionCodes" ColumnName="excTPARestrictionCodes" />
+          <ScalarProperty Name="incRouteOfAdminCodes" ColumnName="incRouteOfAdminCodes" />
+          <ScalarProperty Name="excRouteOfAdminCodes" ColumnName="excRouteOfAdminCodes" />
+          <ScalarProperty Name="incExcOTC" ColumnName="incExcOTC" />
+          <ScalarProperty Name="incExcPresc" ColumnName="incExcPresc" />
+          <ScalarProperty Name="genMandatory" ColumnName="genMandatory" />
+          <ScalarProperty Name="activeDays" ColumnName="activeDays" />
+          <ScalarProperty Name="pdfPrintFunction" ColumnName="pdfPrintFunction" />
+          <ScalarProperty Name="drugTypeFunction" ColumnName="drugTypeFunction" />
+          <ScalarProperty Name="cmsApprIdVer" ColumnName="cmsApprIdVer" />
+          <ScalarProperty Name="autoAddNewDrugs" ColumnName="autoAddNewDrugs" />
+          <ScalarProperty Name="cmsSubmissionId" ColumnName="cmsSubmissionId" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyRuleSetup">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyRuleSetup">
+        <MappingFragment StoreEntitySet="formularyRuleSetup">
+          <ScalarProperty Name="formularyRuleSetupIdentifier" ColumnName="formularyRuleSetupIdentifier" />
+          <ScalarProperty Name="FormularyID" ColumnName="FormularyID" />
+          <ScalarProperty Name="RuleLevelID" ColumnName="RuleLevelID" />
+          <ScalarProperty Name="LevelType" ColumnName="LevelType" />
+          <ScalarProperty Name="Covered" ColumnName="Covered" />
+          <ScalarProperty Name="SpecialtyDrugInd" ColumnName="SpecialtyDrugInd" />
+          <ScalarProperty Name="MaxCopayAmt" ColumnName="MaxCopayAmt" />
+          <ScalarProperty Name="HundredPctCopay" ColumnName="HundredPctCopay" />
+          <ScalarProperty Name="CopayLimit" ColumnName="CopayLimit" />
+          <ScalarProperty Name="CopayLimitNotes" ColumnName="CopayLimitNotes" />
+          <ScalarProperty Name="TierCode" ColumnName="TierCode" />
+          <ScalarProperty Name="GenderRestriction" ColumnName="GenderRestriction" />
+          <ScalarProperty Name="MinAge" ColumnName="MinAge" />
+          <ScalarProperty Name="MaxAge" ColumnName="MaxAge" />
+          <ScalarProperty Name="AgeType" ColumnName="AgeType" />
+          <ScalarProperty Name="PAInd" ColumnName="PAInd" />
+          <ScalarProperty Name="PAName" ColumnName="PAName" />
+          <ScalarProperty Name="LimitedAccess" ColumnName="LimitedAccess" />
+          <ScalarProperty Name="DollarAmount" ColumnName="DollarAmount" />
+          <ScalarProperty Name="DollarAmtTimePeriod" ColumnName="DollarAmtTimePeriod" />
+          <ScalarProperty Name="DaysSupply" ColumnName="DaysSupply" />
+          <ScalarProperty Name="DaysSupplyTimePeriod" ColumnName="DaysSupplyTimePeriod" />
+          <ScalarProperty Name="Fills" ColumnName="Fills" />
+          <ScalarProperty Name="FillsTimePeriod" ColumnName="FillsTimePeriod" />
+          <ScalarProperty Name="qtyLimit2" ColumnName="qtyLimit2" />
+          <ScalarProperty Name="QtyLmtTimePeriod" ColumnName="QtyLmtTimePeriod" />
+          <ScalarProperty Name="QLNotes" ColumnName="QLNotes" />
+          <ScalarProperty Name="StepTherapyInd" ColumnName="StepTherapyInd" />
+          <ScalarProperty Name="StepTherapyName" ColumnName="StepTherapyName" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="EffectiveDateTime" ColumnName="EffectiveDateTime" />
+          <ScalarProperty Name="TermDateTime" ColumnName="TermDateTime" />
+          <ScalarProperty Name="TextMessage" ColumnName="TextMessage" />
+          <ScalarProperty Name="ResourceLink" ColumnName="ResourceLink" />
+          <ScalarProperty Name="createDateTime" ColumnName="createDateTime" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="lastUpdateDateTime" ColumnName="lastUpdateDateTime" />
+          <ScalarProperty Name="lastUpdateBy" ColumnName="lastUpdateBy" />
+          <ScalarProperty Name="FormularyVersion" ColumnName="FormularyVersion" />
+          <ScalarProperty Name="CopayAmt" ColumnName="CopayAmt" />
+          <ScalarProperty Name="CopayType" ColumnName="CopayType" />
+          <ScalarProperty Name="PAGenderCode" ColumnName="PAGenderCode" />
+          <ScalarProperty Name="DrugType" ColumnName="DrugType" />
+          <ScalarProperty Name="OTCind" ColumnName="OTCind" />
+          <ScalarProperty Name="PartDExcludedDrug" ColumnName="PartDExcludedDrug" />
+          <ScalarProperty Name="MedicaidCarveOutDrug" ColumnName="MedicaidCarveOutDrug" />
+          <ScalarProperty Name="MedicaidFeeScreen" ColumnName="MedicaidFeeScreen" />
+          <ScalarProperty Name="MedicarePAType" ColumnName="MedicarePAType" />
+          <ScalarProperty Name="MedicareSTGrpCount" ColumnName="MedicareSTGrpCount" />
+          <ScalarProperty Name="MedicareSTGrpDesc1" ColumnName="MedicareSTGrpDesc1" />
+          <ScalarProperty Name="MedicareSTStepValue1" ColumnName="MedicareSTStepValue1" />
+          <ScalarProperty Name="MedicareSTGrpDesc2" ColumnName="MedicareSTGrpDesc2" />
+          <ScalarProperty Name="MedicareSTStepValue2" ColumnName="MedicareSTStepValue2" />
+          <ScalarProperty Name="MedicareSTGrpDesc3" ColumnName="MedicareSTGrpDesc3" />
+          <ScalarProperty Name="MedicareSTStepValue3" ColumnName="MedicareSTStepValue3" />
+          <ScalarProperty Name="QtyLimit" ColumnName="QtyLimit" />
+          <ScalarProperty Name="PAMinAge" ColumnName="PAMinAge" />
+          <ScalarProperty Name="PAMaxAge" ColumnName="PAMaxAge" />
+          <ScalarProperty Name="CMS_RxCUI" ColumnName="CMS_RxCUI" />
+          <ScalarProperty Name="NDDF_RxCUI" ColumnName="NDDF_RxCUI" />
+          <ScalarProperty Name="NDCFI" ColumnName="NDCFI" />
+          <ScalarProperty Name="InReview" ColumnName="InReview" />
+          <ScalarProperty Name="sequence" ColumnName="sequence" />
+          <ScalarProperty Name="labelerCode" ColumnName="labelerCode" />
+          <ScalarProperty Name="genericIDType" ColumnName="genericIDType" />
+          <ScalarProperty Name="genericIDNum" ColumnName="genericIDNum" />
+          <ScalarProperty Name="therapeuticClass" ColumnName="therapeuticClass" />
+          <ScalarProperty Name="itemStatus" ColumnName="itemStatus" />
+          <ScalarProperty Name="localSystem" ColumnName="localSystem" />
+          <ScalarProperty Name="TEE" ColumnName="TEE" />
+          <ScalarProperty Name="IDNum" ColumnName="IDNum" />
+          <ScalarProperty Name="restricted" ColumnName="restricted" />
+          <ScalarProperty Name="dispenseUnit" ColumnName="dispenseUnit" />
+          <ScalarProperty Name="unitDose" ColumnName="unitDose" />
+          <ScalarProperty Name="adminRoute" ColumnName="adminRoute" />
+          <ScalarProperty Name="formType" ColumnName="formType" />
+          <ScalarProperty Name="dollarRank" ColumnName="dollarRank" />
+          <ScalarProperty Name="RxRank" ColumnName="RxRank" />
+          <ScalarProperty Name="numSysChar" ColumnName="numSysChar" />
+          <ScalarProperty Name="secondIDForm" ColumnName="secondIDForm" />
+          <ScalarProperty Name="secondIDNum" ColumnName="secondIDNum" />
+          <ScalarProperty Name="multiSource" ColumnName="multiSource" />
+          <ScalarProperty Name="brandName" ColumnName="brandName" />
+          <ScalarProperty Name="reimburseInd" ColumnName="reimburseInd" />
+          <ScalarProperty Name="intExt" ColumnName="intExt" />
+          <ScalarProperty Name="singleComb" ColumnName="singleComb" />
+          <ScalarProperty Name="storageCond" ColumnName="storageCond" />
+          <ScalarProperty Name="stability" ColumnName="stability" />
+          <ScalarProperty Name="lastChange" ColumnName="lastChange" />
+          <ScalarProperty Name="nameExt" ColumnName="nameExt" />
+          <ScalarProperty Name="allergyPattern" ColumnName="allergyPattern" />
+          <ScalarProperty Name="PPGInd" ColumnName="PPGInd" />
+          <ScalarProperty Name="HFPGInd" ColumnName="HFPGInd" />
+          <ScalarProperty Name="labelerType" ColumnName="labelerType" />
+          <ScalarProperty Name="pricingSpread" ColumnName="pricingSpread" />
+          <ScalarProperty Name="dosageForm" ColumnName="dosageForm" />
+          <ScalarProperty Name="packageUM" ColumnName="packageUM" />
+          <ScalarProperty Name="packageQty" ColumnName="packageQty" />
+          <ScalarProperty Name="repackage" ColumnName="repackage" />
+          <ScalarProperty Name="DESI" ColumnName="DESI" />
+          <ScalarProperty Name="packageDesc" ColumnName="packageDesc" />
+          <ScalarProperty Name="nxtSmallSuffix" ColumnName="nxtSmallSuffix" />
+          <ScalarProperty Name="nxtLargSuffix" ColumnName="nxtLargSuffix" />
+          <ScalarProperty Name="innerPack" ColumnName="innerPack" />
+          <ScalarProperty Name="clinicPack" ColumnName="clinicPack" />
+          <ScalarProperty Name="GPPC" ColumnName="GPPC" />
+          <ScalarProperty Name="descAbbr" ColumnName="descAbbr" />
+          <ScalarProperty Name="drugName" ColumnName="drugName" />
+          <ScalarProperty Name="recordCode" ColumnName="recordCode" />
+          <ScalarProperty Name="packageSize" ColumnName="packageSize" />
+          <ScalarProperty Name="ttlPackQty" ColumnName="ttlPackQty" />
+          <ScalarProperty Name="TransFillExcluded" ColumnName="TransFillExcluded" />
+          <ScalarProperty Name="restrictToPkgSize" ColumnName="restrictToPkgSize" />
+          <ScalarProperty Name="ovrGenericCheck" ColumnName="ovrGenericCheck" />
+          <ScalarProperty Name="PDLFlag" ColumnName="PDLFlag" />
+          <ScalarProperty Name="partDDrug" ColumnName="partDDrug" />
+          <ScalarProperty Name="extendedDaysSupply" ColumnName="extendedDaysSupply" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyTiers">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyTiers">
+        <MappingFragment StoreEntitySet="formularyTiers">
+          <ScalarProperty Name="formularyTiersIdentifier" ColumnName="formularyTiersIdentifier" />
+          <ScalarProperty Name="FormularyID" ColumnName="FormularyID" />
+          <ScalarProperty Name="formularyTierID" ColumnName="formularyTierID" />
+          <ScalarProperty Name="TierCode" ColumnName="TierCode" />
+          <ScalarProperty Name="TierDesc" ColumnName="TierDesc" />
+          <ScalarProperty Name="exceptionTiercode" ColumnName="exceptionTiercode" />
+          <ScalarProperty Name="nonPartDTierCode" ColumnName="nonPartDTierCode" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formularyXREF">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.formularyXREF">
+        <MappingFragment StoreEntitySet="formularyXREF">
+          <ScalarProperty Name="formularyXREFIdentifier" ColumnName="formularyXREFIdentifier" />
+          <ScalarProperty Name="FormularyID" ColumnName="FormularyID" />
+          <ScalarProperty Name="FormularyVersion" ColumnName="FormularyVersion" />
+          <ScalarProperty Name="FormularyAltID" ColumnName="FormularyAltID" />
+          <ScalarProperty Name="FormularyCoverageID" ColumnName="FormularyCoverageID" />
+          <ScalarProperty Name="FormularyDrugClassificationID" ColumnName="FormularyDrugClassificationID" />
+          <ScalarProperty Name="FormularyCopayID" ColumnName="FormularyCopayID" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCPDPProviderAdd">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NCPDPProviderAdd">
+        <MappingFragment StoreEntitySet="NCPDPProviderAdd">
+          <ScalarProperty Name="NCPDPProviderAddIdentifier" ColumnName="NCPDPProviderAddIdentifier" />
+          <ScalarProperty Name="ProviderLink" ColumnName="ProviderLink" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="Add1" ColumnName="Add1" />
+          <ScalarProperty Name="Add2" ColumnName="Add2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Zip4" ColumnName="Zip4" />
+          <ScalarProperty Name="DPV" ColumnName="DPV" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="Long" ColumnName="Long" />
+          <ScalarProperty Name="CoCnt" ColumnName="CoCnt" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="VerCode" ColumnName="VerCode" />
+          <ScalarProperty Name="VerDate" ColumnName="VerDate" />
+          <ScalarProperty Name="MedicaidID" ColumnName="MedicaidID" />
+          <ScalarProperty Name="MedicaidSt" ColumnName="MedicaidSt" />
+          <ScalarProperty Name="recordType" ColumnName="recordType" />
+          <ScalarProperty Name="GEO" ColumnName="GEO" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="PhoneType" ColumnName="PhoneType" />
+          <ScalarProperty Name="HCID" ColumnName="HCID" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCPDPProviderDEA">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NCPDPProviderDEA">
+        <MappingFragment StoreEntitySet="NCPDPProviderDEA">
+          <ScalarProperty Name="NCPDPProviderDEAIdentifier" ColumnName="NCPDPProviderDEAIdentifier" />
+          <ScalarProperty Name="DEA" ColumnName="DEA" />
+          <ScalarProperty Name="ReNew" ColumnName="ReNew" />
+          <ScalarProperty Name="ProviderLink" ColumnName="ProviderLink" />
+          <ScalarProperty Name="recordType" ColumnName="recordType" />
+          <ScalarProperty Name="DEAstaCode" ColumnName="DEAstaCode" />
+          <ScalarProperty Name="CoCnt" ColumnName="CoCnt" />
+          <ScalarProperty Name="DrugSch" ColumnName="DrugSch" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="VerCode" ColumnName="VerCode" />
+          <ScalarProperty Name="VerDate" ColumnName="VerDate" />
+          <ScalarProperty Name="HCID" ColumnName="HCID" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCPDPProviderLic">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NCPDPProviderLic">
+        <MappingFragment StoreEntitySet="NCPDPProviderLic">
+          <ScalarProperty Name="NCPDPProviderLicIdentifier" ColumnName="NCPDPProviderLicIdentifier" />
+          <ScalarProperty Name="ProviderLink" ColumnName="ProviderLink" />
+          <ScalarProperty Name="StLic" ColumnName="StLic" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="LicIss" ColumnName="LicIss" />
+          <ScalarProperty Name="LicExp" ColumnName="LicExp" />
+          <ScalarProperty Name="recordType" ColumnName="recordType" />
+          <ScalarProperty Name="CoCnt" ColumnName="CoCnt" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="VerCode" ColumnName="VerCode" />
+          <ScalarProperty Name="VerDate" ColumnName="VerDate" />
+          <ScalarProperty Name="HCID" ColumnName="HCID" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCPDPProviderMaster">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NCPDPProviderMaster">
+        <MappingFragment StoreEntitySet="NCPDPProviderMaster">
+          <ScalarProperty Name="NCPDPProviderMasterIdentifier" ColumnName="NCPDPProviderMasterIdentifier" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UPIN" ColumnName="UPIN" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="ProviderLink" ColumnName="ProviderLink" />
+          <ScalarProperty Name="recordType" ColumnName="recordType" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="HCID" ColumnName="HCID" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="CoCnt" ColumnName="CoCnt" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCPDPProviderNPI">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NCPDPProviderNPI">
+        <MappingFragment StoreEntitySet="NCPDPProviderNPI">
+          <ScalarProperty Name="NCPDPProviderNPIIdentifier" ColumnName="NCPDPProviderNPIIdentifier" />
+          <ScalarProperty Name="ProviderLink" ColumnName="ProviderLink" />
+          <ScalarProperty Name="NPI" ColumnName="NPI" />
+          <ScalarProperty Name="recordType" ColumnName="recordType" />
+          <ScalarProperty Name="CoCnt" ColumnName="CoCnt" />
+          <ScalarProperty Name="DeceasedDate" ColumnName="DeceasedDate" />
+          <ScalarProperty Name="DeceasedIndicator" ColumnName="DeceasedIndicator" />
+          <ScalarProperty Name="VerCode" ColumnName="VerCode" />
+          <ScalarProperty Name="VerDate" ColumnName="VerDate" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="HCID" ColumnName="HCID" />
+          <ScalarProperty Name="deactivationDate" ColumnName="deactivationDate" />
+          <ScalarProperty Name="reactivationDate" ColumnName="reactivationDate" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCPDPProviderSpec">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NCPDPProviderSpec">
+        <MappingFragment StoreEntitySet="NCPDPProviderSpec">
+          <ScalarProperty Name="NCPDPProviderSpecIdentifier" ColumnName="NCPDPProviderSpecIdentifier" />
+          <ScalarProperty Name="ProviderLink" ColumnName="ProviderLink" />
+          <ScalarProperty Name="SpecDesc" ColumnName="SpecDesc" />
+          <ScalarProperty Name="CoCnt" ColumnName="CoCnt" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="VerCode" ColumnName="VerCode" />
+          <ScalarProperty Name="recordType" ColumnName="recordType" />
+          <ScalarProperty Name="VerDate" ColumnName="VerDate" />
+          <ScalarProperty Name="HCID" ColumnName="HCID" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NCPDPProviderTax">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NCPDPProviderTax">
+        <MappingFragment StoreEntitySet="NCPDPProviderTax">
+          <ScalarProperty Name="NCPDPProviderTaxIdentifier" ColumnName="NCPDPProviderTaxIdentifier" />
+          <ScalarProperty Name="PTI" ColumnName="PTI" />
+          <ScalarProperty Name="Taxonomy" ColumnName="Taxonomy" />
+          <ScalarProperty Name="TaxonomyDesc" ColumnName="TaxonomyDesc" />
+          <ScalarProperty Name="ProviderLink" ColumnName="ProviderLink" />
+          <ScalarProperty Name="recordType" ColumnName="recordType" />
+          <ScalarProperty Name="CoCnt" ColumnName="CoCnt" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="VerCode" ColumnName="VerCode" />
+          <ScalarProperty Name="VerDate" ColumnName="VerDate" />
+          <ScalarProperty Name="HCID" ColumnName="HCID" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NDCStripeMgmt">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NDCStripeMgmt">
+        <MappingFragment StoreEntitySet="NDCStripeMgmt">
+          <ScalarProperty Name="NDCStripeMgmtIdentifier" ColumnName="NDCStripeMgmtIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="drugType" ColumnName="drugType" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="OTCInd" ColumnName="OTCInd" />
+          <ScalarProperty Name="ETC_1" ColumnName="ETC_1" />
+          <ScalarProperty Name="ETC_2" ColumnName="ETC_2" />
+          <ScalarProperty Name="ETC_3" ColumnName="ETC_3" />
+          <ScalarProperty Name="ETC_4" ColumnName="ETC_4" />
+          <ScalarProperty Name="ETC_5" ColumnName="ETC_5" />
+          <ScalarProperty Name="ETC_6" ColumnName="ETC_6" />
+          <ScalarProperty Name="ETC_7" ColumnName="ETC_7" />
+          <ScalarProperty Name="ETC_8" ColumnName="ETC_8" />
+          <ScalarProperty Name="ETC_9" ColumnName="ETC_9" />
+          <ScalarProperty Name="ETC_10" ColumnName="ETC_10" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NSDEDrugs">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NSDEDrugs">
+        <MappingFragment StoreEntitySet="NSDEDrugs">
+          <ScalarProperty Name="NSDEDrugsIdentifier" ColumnName="NSDEDrugsIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="proprietaryName" ColumnName="proprietaryName" />
+          <ScalarProperty Name="dosageForm" ColumnName="dosageForm" />
+          <ScalarProperty Name="marketingCategory" ColumnName="marketingCategory" />
+          <ScalarProperty Name="ApplNumber" ColumnName="ApplNumber" />
+          <ScalarProperty Name="productType" ColumnName="productType" />
+          <ScalarProperty Name="effDate" ColumnName="effDate" />
+          <ScalarProperty Name="termDate" ColumnName="termDate" />
+          <ScalarProperty Name="createDate" ColumnName="createDate" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NTISDEAMaster">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.NTISDEAMaster">
+        <MappingFragment StoreEntitySet="NTISDEAMaster">
+          <ScalarProperty Name="NTISDEAMasterIdentifier" ColumnName="NTISDEAMasterIdentifier" />
+          <ScalarProperty Name="DEANum" ColumnName="DEANum" />
+          <ScalarProperty Name="businessActCode" ColumnName="businessActCode" />
+          <ScalarProperty Name="businessActSubCode" ColumnName="businessActSubCode" />
+          <ScalarProperty Name="expirationDate" ColumnName="expirationDate" />
+          <ScalarProperty Name="drugSchedule" ColumnName="drugSchedule" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="addlCompanyInfo" ColumnName="addlCompanyInfo" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="paymentInd" ColumnName="paymentInd" />
+          <ScalarProperty Name="activity" ColumnName="activity" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RADIMEF0_CLIN_EFFECT">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RADIMEF0_CLIN_EFFECT">
+        <MappingFragment StoreEntitySet="RADIMEF0_CLIN_EFFECT">
+          <ScalarProperty Name="RADIMEF0_CLIN_EFFECTIdentifier" ColumnName="RADIMEF0_CLIN_EFFECTIdentifier" />
+          <ScalarProperty Name="ADI_EFFTC" ColumnName="ADI_EFFTC" />
+          <ScalarProperty Name="ADI_EFFTXT" ColumnName="ADI_EFFTXT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RADIMGC4_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RADIMGC4_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RADIMGC4_GCNSEQNO_LINK">
+          <ScalarProperty Name="RADIMGC4_GCNSEQNO_LINKIdentifier" ColumnName="RADIMGC4_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="DDI_CODEX" ColumnName="DDI_CODEX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RADIMIE4_CLIN_EFFECTS_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RADIMIE4_CLIN_EFFECTS_LINK">
+        <MappingFragment StoreEntitySet="RADIMIE4_CLIN_EFFECTS_LINK">
+          <ScalarProperty Name="RADIMIE4_CLIN_EFFECTS_LINKIdentifier" ColumnName="RADIMIE4_CLIN_EFFECTS_LINKIdentifier" />
+          <ScalarProperty Name="DDI_CODEX" ColumnName="DDI_CODEX" />
+          <ScalarProperty Name="ADI_EFFTC" ColumnName="ADI_EFFTC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RADIMMA5_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RADIMMA5_MSTR">
+        <MappingFragment StoreEntitySet="RADIMMA5_MSTR">
+          <ScalarProperty Name="RADIMMA5_MSTRIdentifier" ColumnName="RADIMMA5_MSTRIdentifier" />
+          <ScalarProperty Name="DDI_CODEX" ColumnName="DDI_CODEX" />
+          <ScalarProperty Name="DDI_DES" ColumnName="DDI_DES" />
+          <ScalarProperty Name="DDI_SL" ColumnName="DDI_SL" />
+          <ScalarProperty Name="DDI_MONOX" ColumnName="DDI_MONOX" />
+          <ScalarProperty Name="DDI_PGEDI" ColumnName="DDI_PGEDI" />
+          <ScalarProperty Name="DDI_TREE" ColumnName="DDI_TREE" />
+          <ScalarProperty Name="DDI_MFGI" ColumnName="DDI_MFGI" />
+          <ScalarProperty Name="DDI_TRIALI" ColumnName="DDI_TRIALI" />
+          <ScalarProperty Name="DDI_CASEI" ColumnName="DDI_CASEI" />
+          <ScalarProperty Name="DDI_ABSI" ColumnName="DDI_ABSI" />
+          <ScalarProperty Name="DDI_IVASI" ColumnName="DDI_IVASI" />
+          <ScalarProperty Name="DDI_REVI" ColumnName="DDI_REVI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RADIMMO5_MONO">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RADIMMO5_MONO">
+        <MappingFragment StoreEntitySet="RADIMMO5_MONO">
+          <ScalarProperty Name="RADIMMO5_MONOIdentifier" ColumnName="RADIMMO5_MONOIdentifier" />
+          <ScalarProperty Name="DDI_MONOX" ColumnName="DDI_MONOX" />
+          <ScalarProperty Name="ADI_MONOSN" ColumnName="ADI_MONOSN" />
+          <ScalarProperty Name="IAMIDENTN" ColumnName="IAMIDENTN" />
+          <ScalarProperty Name="IAMTEXTN" ColumnName="IAMTEXTN" />
+          <ScalarProperty Name="IAMREFCAT" ColumnName="IAMREFCAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RADIMSL1_SEVER_LEVEL">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RADIMSL1_SEVER_LEVEL">
+        <MappingFragment StoreEntitySet="RADIMSL1_SEVER_LEVEL">
+          <ScalarProperty Name="RADIMSL1_SEVER_LEVELIdentifier" ColumnName="RADIMSL1_SEVER_LEVELIdentifier" />
+          <ScalarProperty Name="DDI_SL" ColumnName="DDI_SL" />
+          <ScalarProperty Name="DDI_SLSN" ColumnName="DDI_SLSN" />
+          <ScalarProperty Name="DDI_SLTXT" ColumnName="DDI_SLTXT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RAHFSD1_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RAHFSD1_DESC">
+        <MappingFragment StoreEntitySet="RAHFSD1_DESC">
+          <ScalarProperty Name="RAHFSD1_DESCIdentifier" ColumnName="RAHFSD1_DESCIdentifier" />
+          <ScalarProperty Name="AHFS8" ColumnName="AHFS8" />
+          <ScalarProperty Name="AHFS_DESC" ColumnName="AHFS_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RAHFSGC1_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RAHFSGC1_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RAHFSGC1_GCNSEQNO_LINK">
+          <ScalarProperty Name="RAHFSGC1_GCNSEQNO_LINKIdentifier" ColumnName="RAHFSGC1_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="AHFS8" ColumnName="AHFS8" />
+          <ScalarProperty Name="AHFS_REL" ColumnName="AHFS_REL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RAPPLNA0_FDA_NDC_APPL">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RAPPLNA0_FDA_NDC_APPL">
+        <MappingFragment StoreEntitySet="RAPPLNA0_FDA_NDC_APPL">
+          <ScalarProperty Name="RAPPLNA0_FDA_NDC_APPLIdentifier" ColumnName="RAPPLNA0_FDA_NDC_APPLIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="APPL_NO" ColumnName="APPL_NO" />
+          <ScalarProperty Name="APPL_TYPE_CD" ColumnName="APPL_TYPE_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RAPPLSL0_FDA_NDC_NDA_ANDA">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RAPPLSL0_FDA_NDC_NDA_ANDA">
+        <MappingFragment StoreEntitySet="RAPPLSL0_FDA_NDC_NDA_ANDA">
+          <ScalarProperty Name="RAPPLSL0_FDA_NDC_NDA_ANDAIdentifier" ColumnName="RAPPLSL0_FDA_NDC_NDA_ANDAIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="NDA_IND" ColumnName="NDA_IND" />
+          <ScalarProperty Name="ANDA_IND" ColumnName="ANDA_IND" />
+          <ScalarProperty Name="LISTING_SEQ_NO" ColumnName="LISTING_SEQ_NO" />
+          <ScalarProperty Name="TRADENAME" ColumnName="TRADENAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RAPPLTD0_FDA_APPL_TYPE">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RAPPLTD0_FDA_APPL_TYPE">
+        <MappingFragment StoreEntitySet="RAPPLTD0_FDA_APPL_TYPE">
+          <ScalarProperty Name="RAPPLTD0_FDA_APPL_TYPEIdentifier" ColumnName="RAPPLTD0_FDA_APPL_TYPEIdentifier" />
+          <ScalarProperty Name="APPL_TYPE_CD" ColumnName="APPL_TYPE_CD" />
+          <ScalarProperty Name="APPL_TYPE_CD_DESC" ColumnName="APPL_TYPE_CD_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RATCD0_ATC_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RATCD0_ATC_DESC">
+        <MappingFragment StoreEntitySet="RATCD0_ATC_DESC">
+          <ScalarProperty Name="RATCD0_ATC_DESCIdentifier" ColumnName="RATCD0_ATC_DESCIdentifier" />
+          <ScalarProperty Name="ATC" ColumnName="ATC" />
+          <ScalarProperty Name="ATC_DESC" ColumnName="ATC_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RATCGC0_ATC_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RATCGC0_ATC_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RATCGC0_ATC_GCNSEQNO_LINK">
+          <ScalarProperty Name="RATCGC0_ATC_GCNSEQNO_LINKIdentifier" ColumnName="RATCGC0_ATC_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="ATC" ColumnName="ATC" />
+          <ScalarProperty Name="ATC_VER" ColumnName="ATC_VER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RBDPGC0_REF_PRICE_DIR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RBDPGC0_REF_PRICE_DIR">
+        <MappingFragment StoreEntitySet="RBDPGC0_REF_PRICE_DIR">
+          <ScalarProperty Name="RBDPGC0_REF_PRICE_DIRIdentifier" ColumnName="RBDPGC0_REF_PRICE_DIRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PS" ColumnName="PS" />
+          <ScalarProperty Name="BDP_DATEC" ColumnName="BDP_DATEC" />
+          <ScalarProperty Name="BDP_PRICE" ColumnName="BDP_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RBLP0_PRICE_GCN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RBLP0_PRICE_GCN_LINK">
+        <MappingFragment StoreEntitySet="RBLP0_PRICE_GCN_LINK">
+          <ScalarProperty Name="RBLP0_PRICE_GCN_LINKIdentifier" ColumnName="RBLP0_PRICE_GCN_LINKIdentifier" />
+          <ScalarProperty Name="GCN" ColumnName="GCN" />
+          <ScalarProperty Name="PS" ColumnName="PS" />
+          <ScalarProperty Name="BLP_DATEC" ColumnName="BLP_DATEC" />
+          <ScalarProperty Name="BLP_PRICE" ColumnName="BLP_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RBLPGC0_BLP_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RBLPGC0_BLP_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RBLPGC0_BLP_GCNSEQNO_LINK">
+          <ScalarProperty Name="RBLPGC0_BLP_GCNSEQNO_LINKIdentifier" ColumnName="RBLPGC0_BLP_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PS" ColumnName="PS" />
+          <ScalarProperty Name="BLP_DATEC" ColumnName="BLP_DATEC" />
+          <ScalarProperty Name="BLP_PRICE" ColumnName="BLP_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RBWPGC0_REF_PRICE_WHN">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RBWPGC0_REF_PRICE_WHN">
+        <MappingFragment StoreEntitySet="RBWPGC0_REF_PRICE_WHN">
+          <ScalarProperty Name="RBWPGC0_REF_PRICE_WHNIdentifier" ColumnName="RBWPGC0_REF_PRICE_WHNIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PS" ColumnName="PS" />
+          <ScalarProperty Name="BWP_DATEC" ColumnName="BWP_DATEC" />
+          <ScalarProperty Name="BWP_PRICE" ColumnName="BWP_PRICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCMMD0_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RCMMD0_DESC">
+        <MappingFragment StoreEntitySet="RCMMD0_DESC">
+          <ScalarProperty Name="RCMMD0_DESCIdentifier" ColumnName="RCMMD0_DESCIdentifier" />
+          <ScalarProperty Name="CMMC" ColumnName="CMMC" />
+          <ScalarProperty Name="CMRPH1" ColumnName="CMRPH1" />
+          <ScalarProperty Name="CMRPH2" ColumnName="CMRPH2" />
+          <ScalarProperty Name="CMPAT1" ColumnName="CMPAT1" />
+          <ScalarProperty Name="CMPAT2" ColumnName="CMPAT2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCMMGC0_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RCMMGC0_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RCMMGC0_GCNSEQNO_LINK">
+          <ScalarProperty Name="RCMMGC0_GCNSEQNO_LINKIdentifier" ColumnName="RCMMGC0_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="CMMC" ColumnName="CMMC" />
+          <ScalarProperty Name="CMMC_RN" ColumnName="CMMC_RN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMAGD1_ALRGN_GRP_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMAGD1_ALRGN_GRP_DESC">
+        <MappingFragment StoreEntitySet="RDAMAGD1_ALRGN_GRP_DESC">
+          <ScalarProperty Name="RDAMAGD1_ALRGN_GRP_DESCIdentifier" ColumnName="RDAMAGD1_ALRGN_GRP_DESCIdentifier" />
+          <ScalarProperty Name="DAM_ALRGN_GRP" ColumnName="DAM_ALRGN_GRP" />
+          <ScalarProperty Name="DAM_ALRGN_GRP_DESC" ColumnName="DAM_ALRGN_GRP_DESC" />
+          <ScalarProperty Name="DAM_GRP_POTENTIALLY_INACTV_IND" ColumnName="DAM_GRP_POTENTIALLY_INACTV_IND" />
+          <ScalarProperty Name="DAM_ALRGN_GRP_STATUS_CD" ColumnName="DAM_ALRGN_GRP_STATUS_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMAPM0_ALRGN_PICKLIST_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMAPM0_ALRGN_PICKLIST_MSTR">
+        <MappingFragment StoreEntitySet="RDAMAPM0_ALRGN_PICKLIST_MSTR">
+          <ScalarProperty Name="RDAMAPM0_ALRGN_PICKLIST_MSTRIdentifier" ColumnName="RDAMAPM0_ALRGN_PICKLIST_MSTRIdentifier" />
+          <ScalarProperty Name="DAM_CONCEPT_ID" ColumnName="DAM_CONCEPT_ID" />
+          <ScalarProperty Name="DAM_CONCEPT_ID_TYP" ColumnName="DAM_CONCEPT_ID_TYP" />
+          <ScalarProperty Name="DAM_CONCEPT_ID_DESC" ColumnName="DAM_CONCEPT_ID_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMCD0_PICKLIST_CON_TYP_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMCD0_PICKLIST_CON_TYP_DESC">
+        <MappingFragment StoreEntitySet="RDAMCD0_PICKLIST_CON_TYP_DESC">
+          <ScalarProperty Name="RDAMCD0_PICKLIST_CON_TYP_DESCIdentifier" ColumnName="RDAMCD0_PICKLIST_CON_TYP_DESCIdentifier" />
+          <ScalarProperty Name="DAM_CONCEPT_ID_TYP" ColumnName="DAM_CONCEPT_ID_TYP" />
+          <ScalarProperty Name="DAM_CONCEPT_ID_TYP_DESC" ColumnName="DAM_CONCEPT_ID_TYP_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMCSD1_XSENSIT_ALLERGY_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMCSD1_XSENSIT_ALLERGY_DESC">
+        <MappingFragment StoreEntitySet="RDAMCSD1_XSENSIT_ALLERGY_DESC">
+          <ScalarProperty Name="RDAMCSD1_XSENSIT_ALLERGY_DESCIdentifier" ColumnName="RDAMCSD1_XSENSIT_ALLERGY_DESCIdentifier" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE" ColumnName="DAM_ALRGN_XSENSE" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE_DESC" ColumnName="DAM_ALRGN_XSENSE_DESC" />
+          <ScalarProperty Name="DAM_XSENSE_POTENTIAL_INCTV_IND" ColumnName="DAM_XSENSE_POTENTIAL_INCTV_IND" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE_STATUS_CD" ColumnName="DAM_ALRGN_XSENSE_STATUS_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMGHC0_HIC_ALRGN_GRP_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMGHC0_HIC_ALRGN_GRP_LINK">
+        <MappingFragment StoreEntitySet="RDAMGHC0_HIC_ALRGN_GRP_LINK">
+          <ScalarProperty Name="RDAMGHC0_HIC_ALRGN_GRP_LINKIdentifier" ColumnName="RDAMGHC0_HIC_ALRGN_GRP_LINKIdentifier" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+          <ScalarProperty Name="DAM_ALRGN_GRP" ColumnName="DAM_ALRGN_GRP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMGRH0_ALRGN_GRP_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMGRH0_ALRGN_GRP_HIST">
+        <MappingFragment StoreEntitySet="RDAMGRH0_ALRGN_GRP_HIST">
+          <ScalarProperty Name="RDAMGRH0_ALRGN_GRP_HISTIdentifier" ColumnName="RDAMGRH0_ALRGN_GRP_HISTIdentifier" />
+          <ScalarProperty Name="REPL_DAM_ALRGN_GRP" ColumnName="REPL_DAM_ALRGN_GRP" />
+          <ScalarProperty Name="PREV_DAM_ALRGN_GRP" ColumnName="PREV_DAM_ALRGN_GRP" />
+          <ScalarProperty Name="DAM_ALRGN_GRP_REPL_EFF_DT" ColumnName="DAM_ALRGN_GRP_REPL_EFF_DT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMGSD0_GRP_STATUS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMGSD0_GRP_STATUS_DESC">
+        <MappingFragment StoreEntitySet="RDAMGSD0_GRP_STATUS_DESC">
+          <ScalarProperty Name="RDAMGSD0_GRP_STATUS_DESCIdentifier" ColumnName="RDAMGSD0_GRP_STATUS_DESCIdentifier" />
+          <ScalarProperty Name="DAM_ALRGN_GRP_STATUS_CD" ColumnName="DAM_ALRGN_GRP_STATUS_CD" />
+          <ScalarProperty Name="DAM_ALRGN_GRP_STATUS_CD_DESC" ColumnName="DAM_ALRGN_GRP_STATUS_CD_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMGX0_ALRGN_GRP_XSENSE_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMGX0_ALRGN_GRP_XSENSE_LINK">
+        <MappingFragment StoreEntitySet="RDAMGX0_ALRGN_GRP_XSENSE_LINK">
+          <ScalarProperty Name="RDAMGX0_ALRGN_GRP_XSENSE_LINKIdentifier" ColumnName="RDAMGX0_ALRGN_GRP_XSENSE_LINKIdentifier" />
+          <ScalarProperty Name="DAM_ALRGN_GRP" ColumnName="DAM_ALRGN_GRP" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE" ColumnName="DAM_ALRGN_XSENSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMXHC0_HIC_ALRGN_XSENSE_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMXHC0_HIC_ALRGN_XSENSE_LINK">
+        <MappingFragment StoreEntitySet="RDAMXHC0_HIC_ALRGN_XSENSE_LINK">
+          <ScalarProperty Name="RDAMXHC0_HIC_ALRGN_XSENSE_LINKIdentifier" ColumnName="RDAMXHC0_HIC_ALRGN_XSENSE_LINKIdentifier" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE" ColumnName="DAM_ALRGN_XSENSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMXSD0_XSENSE_STATUS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMXSD0_XSENSE_STATUS_DESC">
+        <MappingFragment StoreEntitySet="RDAMXSD0_XSENSE_STATUS_DESC">
+          <ScalarProperty Name="RDAMXSD0_XSENSE_STATUS_DESCIdentifier" ColumnName="RDAMXSD0_XSENSE_STATUS_DESCIdentifier" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE_STATUS_CD" ColumnName="DAM_ALRGN_XSENSE_STATUS_CD" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE_STATUS_CD_DSC" ColumnName="DAM_ALRGN_XSENSE_STATUS_CD_DSC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDAMXSH0_ALRGN_XSENSE_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDAMXSH0_ALRGN_XSENSE_HIST">
+        <MappingFragment StoreEntitySet="RDAMXSH0_ALRGN_XSENSE_HIST">
+          <ScalarProperty Name="RDAMXSH0_ALRGN_XSENSE_HISTIdentifier" ColumnName="RDAMXSH0_ALRGN_XSENSE_HISTIdentifier" />
+          <ScalarProperty Name="REPL_DAM_ALRGN_XSENSE" ColumnName="REPL_DAM_ALRGN_XSENSE" />
+          <ScalarProperty Name="PREV_DAM_ALRGN_XSENSE" ColumnName="PREV_DAM_ALRGN_XSENSE" />
+          <ScalarProperty Name="DAM_ALRGN_XSENSE_REPL_EFF_DT" ColumnName="DAM_ALRGN_XSENSE_REPL_EFF_DT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDCCD0_DRUG_CAT_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDCCD0_DRUG_CAT_DESC">
+        <MappingFragment StoreEntitySet="RDCCD0_DRUG_CAT_DESC">
+          <ScalarProperty Name="RDCCD0_DRUG_CAT_DESCIdentifier" ColumnName="RDCCD0_DRUG_CAT_DESCIdentifier" />
+          <ScalarProperty Name="DCC" ColumnName="DCC" />
+          <ScalarProperty Name="DCC_DESC" ColumnName="DCC_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDCMDD0_CONTRA_DRUG_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDCMDD0_CONTRA_DRUG_DESC">
+        <MappingFragment StoreEntitySet="RDDCMDD0_CONTRA_DRUG_DESC">
+          <ScalarProperty Name="RDDCMDD0_CONTRA_DRUG_DESCIdentifier" ColumnName="RDDCMDD0_CONTRA_DRUG_DESCIdentifier" />
+          <ScalarProperty Name="DDXCN" ColumnName="DDXCN" />
+          <ScalarProperty Name="DDXCN_DRUG_DESC" ColumnName="DDXCN_DRUG_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDCMGC0_CONTRA_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDCMGC0_CONTRA_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RDDCMGC0_CONTRA_GCNSEQNO_LINK">
+          <ScalarProperty Name="RDDCMGC0_CONTRA_GCNSEQNO_LINKIdentifier" ColumnName="RDDCMGC0_CONTRA_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="DDXCN" ColumnName="DDXCN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDCMMA1_CONTRA_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDCMMA1_CONTRA_MSTR">
+        <MappingFragment StoreEntitySet="RDDCMMA1_CONTRA_MSTR">
+          <ScalarProperty Name="RDDCMMA1_CONTRA_MSTRIdentifier" ColumnName="RDDCMMA1_CONTRA_MSTRIdentifier" />
+          <ScalarProperty Name="DDXCN" ColumnName="DDXCN" />
+          <ScalarProperty Name="DDXCN_SN" ColumnName="DDXCN_SN" />
+          <ScalarProperty Name="FDBDX" ColumnName="FDBDX" />
+          <ScalarProperty Name="DDXCN_SL" ColumnName="DDXCN_SL" />
+          <ScalarProperty Name="DDXCN_REF" ColumnName="DDXCN_REF" />
+          <ScalarProperty Name="DXID" ColumnName="DXID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDCMRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDCMRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RDDCMRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RDDCMRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RDDCMRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="DDXCN" ColumnName="DDXCN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDCMRM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDCMRM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RDDCMRM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RDDCMRM0_ROUTED_MED_LINKIdentifier" ColumnName="RDDCMRM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="DDXCN" ColumnName="DDXCN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDIMAG0_AGENT">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDIMAG0_AGENT">
+        <MappingFragment StoreEntitySet="RDDIMAG0_AGENT">
+          <ScalarProperty Name="RDDIMAG0_AGENTIdentifier" ColumnName="RDDIMAG0_AGENTIdentifier" />
+          <ScalarProperty Name="DDI_CODEX" ColumnName="DDI_CODEX" />
+          <ScalarProperty Name="DDI_AGSN" ColumnName="DDI_AGSN" />
+          <ScalarProperty Name="DDI_AGD" ColumnName="DDI_AGD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDIMIN0_NDC_INACTV_DDIM_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDIMIN0_NDC_INACTV_DDIM_LINK">
+        <MappingFragment StoreEntitySet="RDDIMIN0_NDC_INACTV_DDIM_LINK">
+          <ScalarProperty Name="RDDIMIN0_NDC_INACTV_DDIM_LINKIdentifier" ColumnName="RDDIMIN0_NDC_INACTV_DDIM_LINKIdentifier" />
+          <ScalarProperty Name="DDI_NDC" ColumnName="DDI_NDC" />
+          <ScalarProperty Name="DDI_CODEX" ColumnName="DDI_CODEX" />
+          <ScalarProperty Name="DDI_NDC_HICSEQN" ColumnName="DDI_NDC_HICSEQN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDIMRD0_REF_CATEGORY">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDIMRD0_REF_CATEGORY">
+        <MappingFragment StoreEntitySet="RDDIMRD0_REF_CATEGORY">
+          <ScalarProperty Name="RDDIMRD0_REF_CATEGORYIdentifier" ColumnName="RDDIMRD0_REF_CATEGORYIdentifier" />
+          <ScalarProperty Name="IAMREFCAT" ColumnName="IAMREFCAT" />
+          <ScalarProperty Name="IAMREFCATD" ColumnName="IAMREFCATD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDIMRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDIMRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RDDIMRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RDDIMRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RDDIMRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="DDI_CODEX" ColumnName="DDI_CODEX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDDIMRM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDDIMRM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RDDIMRM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RDDIMRM0_ROUTED_MED_LINKIdentifier" ColumnName="RDDIMRM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="DDI_CODEX" ColumnName="DDI_CODEX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDOSED2_DOSE_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDOSED2_DOSE_DESC">
+        <MappingFragment StoreEntitySet="RDOSED2_DOSE_DESC">
+          <ScalarProperty Name="RDOSED2_DOSE_DESCIdentifier" ColumnName="RDOSED2_DOSE_DESCIdentifier" />
+          <ScalarProperty Name="GCDF" ColumnName="GCDF" />
+          <ScalarProperty Name="DOSE" ColumnName="DOSE" />
+          <ScalarProperty Name="GCDF_DESC" ColumnName="GCDF_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDOSSRC0_DOSING_AGE_SOURCE">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDOSSRC0_DOSING_AGE_SOURCE">
+        <MappingFragment StoreEntitySet="RDOSSRC0_DOSING_AGE_SOURCE">
+          <ScalarProperty Name="RDOSSRC0_DOSING_AGE_SOURCEIdentifier" ColumnName="RDOSSRC0_DOSING_AGE_SOURCEIdentifier" />
+          <ScalarProperty Name="DOSING_AGE_SOURCE_ID" ColumnName="DOSING_AGE_SOURCE_ID" />
+          <ScalarProperty Name="DOSING_AGE_SOURCE_DESC" ColumnName="DOSING_AGE_SOURCE_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDPTCL0_CLASS_ID">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDPTCL0_CLASS_ID">
+        <MappingFragment StoreEntitySet="RDPTCL0_CLASS_ID">
+          <ScalarProperty Name="RDPTCL0_CLASS_IDIdentifier" ColumnName="RDPTCL0_CLASS_IDIdentifier" />
+          <ScalarProperty Name="DPT_CLASS_ID" ColumnName="DPT_CLASS_ID" />
+          <ScalarProperty Name="DPT_CLASS_DESC" ColumnName="DPT_CLASS_DESC" />
+          <ScalarProperty Name="DPT_ALLOWANCE" ColumnName="DPT_ALLOWANCE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDPTGC0_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDPTGC0_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RDPTGC0_GCNSEQNO_LINK">
+          <ScalarProperty Name="RDPTGC0_GCNSEQNO_LINKIdentifier" ColumnName="RDPTGC0_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="DPT_CLASS_ID" ColumnName="DPT_CLASS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDPTRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDPTRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RDPTRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RDPTRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RDPTRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="DPT_CLASS_ID" ColumnName="DPT_CLASS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDPTRTM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDPTRTM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RDPTRTM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RDPTRTM0_ROUTED_MED_LINKIdentifier" ColumnName="RDPTRTM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="DPT_CLASS_ID" ColumnName="DPT_CLASS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCCD0_CALC_REQ_TYPE_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCCD0_CALC_REQ_TYPE_DESC">
+        <MappingFragment StoreEntitySet="RDRCCD0_CALC_REQ_TYPE_DESC">
+          <ScalarProperty Name="RDRCCD0_CALC_REQ_TYPE_DESCIdentifier" ColumnName="RDRCCD0_CALC_REQ_TYPE_DESCIdentifier" />
+          <ScalarProperty Name="UNITS_CTYP" ColumnName="UNITS_CTYP" />
+          <ScalarProperty Name="UNITS_CTYP_DESC" ColumnName="UNITS_CTYP_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCCVU0_UNITS_CONVERSION">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCCVU0_UNITS_CONVERSION">
+        <MappingFragment StoreEntitySet="RDRCCVU0_UNITS_CONVERSION">
+          <ScalarProperty Name="RDRCCVU0_UNITS_CONVERSIONIdentifier" ColumnName="RDRCCVU0_UNITS_CONVERSIONIdentifier" />
+          <ScalarProperty Name="DCNV_PUI" ColumnName="DCNV_PUI" />
+          <ScalarProperty Name="UNITS_RUI" ColumnName="UNITS_RUI" />
+          <ScalarProperty Name="DCNV_MTHI" ColumnName="DCNV_MTHI" />
+          <ScalarProperty Name="DCNV_CNVF" ColumnName="DCNV_CNVF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCDD0_DOSE_CALC_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCDD0_DOSE_CALC_DESC">
+        <MappingFragment StoreEntitySet="RDRCDD0_DOSE_CALC_DESC">
+          <ScalarProperty Name="RDRCDD0_DOSE_CALC_DESCIdentifier" ColumnName="RDRCDD0_DOSE_CALC_DESCIdentifier" />
+          <ScalarProperty Name="UNITS_DCC" ColumnName="UNITS_DCC" />
+          <ScalarProperty Name="UNITS_DCC_DESC" ColumnName="UNITS_DCC_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCDTD0_DOSE_TYPE_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCDTD0_DOSE_TYPE_DESC">
+        <MappingFragment StoreEntitySet="RDRCDTD0_DOSE_TYPE_DESC">
+          <ScalarProperty Name="RDRCDTD0_DOSE_TYPE_DESCIdentifier" ColumnName="RDRCDTD0_DOSE_TYPE_DESCIdentifier" />
+          <ScalarProperty Name="DR2_DOSTPI" ColumnName="DR2_DOSTPI" />
+          <ScalarProperty Name="DOSTPI_DES" ColumnName="DOSTPI_DES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCMA2_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCMA2_MSTR">
+        <MappingFragment StoreEntitySet="RDRCMA2_MSTR">
+          <ScalarProperty Name="RDRCMA2_MSTRIdentifier" ColumnName="RDRCMA2_MSTRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="DR2_RT" ColumnName="DR2_RT" />
+          <ScalarProperty Name="DR2_LOAGED" ColumnName="DR2_LOAGED" />
+          <ScalarProperty Name="DR2_HIAGED" ColumnName="DR2_HIAGED" />
+          <ScalarProperty Name="FDBDX" ColumnName="FDBDX" />
+          <ScalarProperty Name="DR2_DOSTPI" ColumnName="DR2_DOSTPI" />
+          <ScalarProperty Name="DR2_LODOSD" ColumnName="DR2_LODOSD" />
+          <ScalarProperty Name="DR2_LODOSU" ColumnName="DR2_LODOSU" />
+          <ScalarProperty Name="DR2_HIDOSD" ColumnName="DR2_HIDOSD" />
+          <ScalarProperty Name="DR2_HIDOSU" ColumnName="DR2_HIDOSU" />
+          <ScalarProperty Name="DR2_MXDOSD" ColumnName="DR2_MXDOSD" />
+          <ScalarProperty Name="DR2_MXDOSU" ColumnName="DR2_MXDOSU" />
+          <ScalarProperty Name="DR2_LOFREQ" ColumnName="DR2_LOFREQ" />
+          <ScalarProperty Name="DR2_HIFREQ" ColumnName="DR2_HIFREQ" />
+          <ScalarProperty Name="DR2_RENIMP" ColumnName="DR2_RENIMP" />
+          <ScalarProperty Name="DR2_CRCLTH" ColumnName="DR2_CRCLTH" />
+          <ScalarProperty Name="DR2_CRCLU" ColumnName="DR2_CRCLU" />
+          <ScalarProperty Name="DR2_LODOTX" ColumnName="DR2_LODOTX" />
+          <ScalarProperty Name="DR2_HIDOTX" ColumnName="DR2_HIDOTX" />
+          <ScalarProperty Name="DR2_MXDOTX" ColumnName="DR2_MXDOTX" />
+          <ScalarProperty Name="DR2_HEPIMP" ColumnName="DR2_HEPIMP" />
+          <ScalarProperty Name="DR2_THAFLO" ColumnName="DR2_THAFLO" />
+          <ScalarProperty Name="DR2_THAFHI" ColumnName="DR2_THAFHI" />
+          <ScalarProperty Name="DR2_THAFU" ColumnName="DR2_THAFU" />
+          <ScalarProperty Name="DR2_MX1DOS" ColumnName="DR2_MX1DOS" />
+          <ScalarProperty Name="DR2_MX1DSU" ColumnName="DR2_MX1DSU" />
+          <ScalarProperty Name="DR2_MXLIFD" ColumnName="DR2_MXLIFD" />
+          <ScalarProperty Name="DR2_MXLIFU" ColumnName="DR2_MXLIFU" />
+          <ScalarProperty Name="DXID" ColumnName="DXID" />
+          <ScalarProperty Name="NTE_SINGLE_DOSE" ColumnName="NTE_SINGLE_DOSE" />
+          <ScalarProperty Name="NTE_SINGLE_DOSE_UNIT_CODE" ColumnName="NTE_SINGLE_DOSE_UNIT_CODE" />
+          <ScalarProperty Name="DOSING_AGE_SOURCE_ID" ColumnName="DOSING_AGE_SOURCE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCMD0_MATH_PROCESS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCMD0_MATH_PROCESS_DESC">
+        <MappingFragment StoreEntitySet="RDRCMD0_MATH_PROCESS_DESC">
+          <ScalarProperty Name="RDRCMD0_MATH_PROCESS_DESCIdentifier" ColumnName="RDRCMD0_MATH_PROCESS_DESCIdentifier" />
+          <ScalarProperty Name="DCNV_MTHI" ColumnName="DCNV_MTHI" />
+          <ScalarProperty Name="DCNV_MTHI_DESC" ColumnName="DCNV_MTHI_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCNMA1_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCNMA1_MSTR">
+        <MappingFragment StoreEntitySet="RDRCNMA1_MSTR">
+          <ScalarProperty Name="RDRCNMA1_MSTRIdentifier" ColumnName="RDRCNMA1_MSTRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="DR2_RT" ColumnName="DR2_RT" />
+          <ScalarProperty Name="DR2_LOAGED" ColumnName="DR2_LOAGED" />
+          <ScalarProperty Name="DR2_HIAGED" ColumnName="DR2_HIAGED" />
+          <ScalarProperty Name="FDBDX" ColumnName="FDBDX" />
+          <ScalarProperty Name="DR2_DOSTPI" ColumnName="DR2_DOSTPI" />
+          <ScalarProperty Name="NEOM_LOW_GEST_BIRTH_AGE_WEEKS" ColumnName="NEOM_LOW_GEST_BIRTH_AGE_WEEKS" />
+          <ScalarProperty Name="NEOM_HIGH_GEST_BIRTH_AGE_WEEKS" ColumnName="NEOM_HIGH_GEST_BIRTH_AGE_WEEKS" />
+          <ScalarProperty Name="NEOM_LOW_CURRENT_WEIGHT_GRAMS" ColumnName="NEOM_LOW_CURRENT_WEIGHT_GRAMS" />
+          <ScalarProperty Name="NEOM_HIGH_CURRENT_WEIGHT_GRAMS" ColumnName="NEOM_HIGH_CURRENT_WEIGHT_GRAMS" />
+          <ScalarProperty Name="NEOM_GEST_BIRTH_AGE_REQ_IND" ColumnName="NEOM_GEST_BIRTH_AGE_REQ_IND" />
+          <ScalarProperty Name="NEOM_WEIGHT_REQ_IND" ColumnName="NEOM_WEIGHT_REQ_IND" />
+          <ScalarProperty Name="DR2_LODOSD" ColumnName="DR2_LODOSD" />
+          <ScalarProperty Name="DR2_LODOSU" ColumnName="DR2_LODOSU" />
+          <ScalarProperty Name="DR2_HIDOSD" ColumnName="DR2_HIDOSD" />
+          <ScalarProperty Name="DR2_HIDOSU" ColumnName="DR2_HIDOSU" />
+          <ScalarProperty Name="DR2_MXDOSD" ColumnName="DR2_MXDOSD" />
+          <ScalarProperty Name="DR2_MXDOSU" ColumnName="DR2_MXDOSU" />
+          <ScalarProperty Name="DR2_LOFREQ" ColumnName="DR2_LOFREQ" />
+          <ScalarProperty Name="DR2_HIFREQ" ColumnName="DR2_HIFREQ" />
+          <ScalarProperty Name="DR2_RENIMP" ColumnName="DR2_RENIMP" />
+          <ScalarProperty Name="DR2_CRCLTH" ColumnName="DR2_CRCLTH" />
+          <ScalarProperty Name="DR2_CRCLU" ColumnName="DR2_CRCLU" />
+          <ScalarProperty Name="DR2_LODOTX" ColumnName="DR2_LODOTX" />
+          <ScalarProperty Name="DR2_HIDOTX" ColumnName="DR2_HIDOTX" />
+          <ScalarProperty Name="DR2_MXDOTX" ColumnName="DR2_MXDOTX" />
+          <ScalarProperty Name="DR2_HEPIMP" ColumnName="DR2_HEPIMP" />
+          <ScalarProperty Name="DR2_THAFLO" ColumnName="DR2_THAFLO" />
+          <ScalarProperty Name="DR2_THAFHI" ColumnName="DR2_THAFHI" />
+          <ScalarProperty Name="DR2_THAFU" ColumnName="DR2_THAFU" />
+          <ScalarProperty Name="DR2_MX1DOS" ColumnName="DR2_MX1DOS" />
+          <ScalarProperty Name="DR2_MX1DSU" ColumnName="DR2_MX1DSU" />
+          <ScalarProperty Name="DR2_MXLIFD" ColumnName="DR2_MXLIFD" />
+          <ScalarProperty Name="DR2_MXLIFU" ColumnName="DR2_MXLIFU" />
+          <ScalarProperty Name="DXID" ColumnName="DXID" />
+          <ScalarProperty Name="NTE_SINGLE_DOSE" ColumnName="NTE_SINGLE_DOSE" />
+          <ScalarProperty Name="NTE_SINGLE_DOSE_UNIT_CODE" ColumnName="NTE_SINGLE_DOSE_UNIT_CODE" />
+          <ScalarProperty Name="DOSING_AGE_SOURCE_ID" ColumnName="DOSING_AGE_SOURCE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCRTD0_ROUTE_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCRTD0_ROUTE_DESC">
+        <MappingFragment StoreEntitySet="RDRCRTD0_ROUTE_DESC">
+          <ScalarProperty Name="RDRCRTD0_ROUTE_DESCIdentifier" ColumnName="RDRCRTD0_ROUTE_DESCIdentifier" />
+          <ScalarProperty Name="DR2_RT" ColumnName="DR2_RT" />
+          <ScalarProperty Name="ROUTES_DES" ColumnName="ROUTES_DES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCUND0_UNITS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCUND0_UNITS_DESC">
+        <MappingFragment StoreEntitySet="RDRCUND0_UNITS_DESC">
+          <ScalarProperty Name="RDRCUND0_UNITS_DESCIdentifier" ColumnName="RDRCUND0_UNITS_DESCIdentifier" />
+          <ScalarProperty Name="DR2_UNITS" ColumnName="DR2_UNITS" />
+          <ScalarProperty Name="UNITS_DESC" ColumnName="UNITS_DESC" />
+          <ScalarProperty Name="UNITS_CTYP" ColumnName="UNITS_CTYP" />
+          <ScalarProperty Name="UNITS_DCC" ColumnName="UNITS_DCC" />
+          <ScalarProperty Name="UNITS_RUI" ColumnName="UNITS_RUI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RDRCXRT0_XREF">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RDRCXRT0_XREF">
+        <MappingFragment StoreEntitySet="RDRCXRT0_XREF">
+          <ScalarProperty Name="RDRCXRT0_XREFIdentifier" ColumnName="RDRCXRT0_XREFIdentifier" />
+          <ScalarProperty Name="GCRT2" ColumnName="GCRT2" />
+          <ScalarProperty Name="DR2_RT" ColumnName="DR2_RT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCGC0_ETC_GCNSEQNO">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCGC0_ETC_GCNSEQNO">
+        <MappingFragment StoreEntitySet="RETCGC0_ETC_GCNSEQNO">
+          <ScalarProperty Name="RETCGC0_ETC_GCNSEQNOIdentifier" ColumnName="RETCGC0_ETC_GCNSEQNOIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_COMMON_USE_IND" ColumnName="ETC_COMMON_USE_IND" />
+          <ScalarProperty Name="ETC_DEFAULT_USE_IND" ColumnName="ETC_DEFAULT_USE_IND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCGCH0_ETC_GCNSEQNO_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCGCH0_ETC_GCNSEQNO_HIST">
+        <MappingFragment StoreEntitySet="RETCGCH0_ETC_GCNSEQNO_HIST">
+          <ScalarProperty Name="RETCGCH0_ETC_GCNSEQNO_HISTIdentifier" ColumnName="RETCGCH0_ETC_GCNSEQNO_HISTIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_REVISION_SEQNO" ColumnName="ETC_REVISION_SEQNO" />
+          <ScalarProperty Name="ETC_COMMON_USE_IND" ColumnName="ETC_COMMON_USE_IND" />
+          <ScalarProperty Name="ETC_DEFAULT_USE_IND" ColumnName="ETC_DEFAULT_USE_IND" />
+          <ScalarProperty Name="ETC_CHANGE_TYPE_CODE" ColumnName="ETC_CHANGE_TYPE_CODE" />
+          <ScalarProperty Name="ETC_EFFECTIVE_DATE" ColumnName="ETC_EFFECTIVE_DATE" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCHCH0_ETC_HICSEQN_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCHCH0_ETC_HICSEQN_HIST">
+        <MappingFragment StoreEntitySet="RETCHCH0_ETC_HICSEQN_HIST">
+          <ScalarProperty Name="RETCHCH0_ETC_HICSEQN_HISTIdentifier" ColumnName="RETCHCH0_ETC_HICSEQN_HISTIdentifier" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_REVISION_SEQNO" ColumnName="ETC_REVISION_SEQNO" />
+          <ScalarProperty Name="ETC_CHANGE_TYPE_CODE" ColumnName="ETC_CHANGE_TYPE_CODE" />
+          <ScalarProperty Name="ETC_EFFECTIVE_DATE" ColumnName="ETC_EFFECTIVE_DATE" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCHLH0_ETC_HICLSEQNO_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCHLH0_ETC_HICLSEQNO_HIST">
+        <MappingFragment StoreEntitySet="RETCHLH0_ETC_HICLSEQNO_HIST">
+          <ScalarProperty Name="RETCHLH0_ETC_HICLSEQNO_HISTIdentifier" ColumnName="RETCHLH0_ETC_HICLSEQNO_HISTIdentifier" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_REVISION_SEQNO" ColumnName="ETC_REVISION_SEQNO" />
+          <ScalarProperty Name="ETC_CHANGE_TYPE_CODE" ColumnName="ETC_CHANGE_TYPE_CODE" />
+          <ScalarProperty Name="ETC_EFFECTIVE_DATE" ColumnName="ETC_EFFECTIVE_DATE" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCMDH0_ETC_MEDID_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCMDH0_ETC_MEDID_HIST">
+        <MappingFragment StoreEntitySet="RETCMDH0_ETC_MEDID_HIST">
+          <ScalarProperty Name="RETCMDH0_ETC_MEDID_HISTIdentifier" ColumnName="RETCMDH0_ETC_MEDID_HISTIdentifier" />
+          <ScalarProperty Name="MEDID" ColumnName="MEDID" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_REVISION_SEQNO" ColumnName="ETC_REVISION_SEQNO" />
+          <ScalarProperty Name="ETC_COMMON_USE_IND" ColumnName="ETC_COMMON_USE_IND" />
+          <ScalarProperty Name="ETC_DEFAULT_USE_IND" ColumnName="ETC_DEFAULT_USE_IND" />
+          <ScalarProperty Name="ETC_CHANGE_TYPE_CODE" ColumnName="ETC_CHANGE_TYPE_CODE" />
+          <ScalarProperty Name="ETC_EFFECTIVE_DATE" ColumnName="ETC_EFFECTIVE_DATE" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCMED0_ETC_MEDID">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCMED0_ETC_MEDID">
+        <MappingFragment StoreEntitySet="RETCMED0_ETC_MEDID">
+          <ScalarProperty Name="RETCMED0_ETC_MEDIDIdentifier" ColumnName="RETCMED0_ETC_MEDIDIdentifier" />
+          <ScalarProperty Name="MEDID" ColumnName="MEDID" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_COMMON_USE_IND" ColumnName="ETC_COMMON_USE_IND" />
+          <ScalarProperty Name="ETC_DEFAULT_USE_IND" ColumnName="ETC_DEFAULT_USE_IND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCNDH0_ETC_NDC_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCNDH0_ETC_NDC_HIST">
+        <MappingFragment StoreEntitySet="RETCNDH0_ETC_NDC_HIST">
+          <ScalarProperty Name="RETCNDH0_ETC_NDC_HISTIdentifier" ColumnName="RETCNDH0_ETC_NDC_HISTIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_REVISION_SEQNO" ColumnName="ETC_REVISION_SEQNO" />
+          <ScalarProperty Name="ETC_COMMON_USE_IND" ColumnName="ETC_COMMON_USE_IND" />
+          <ScalarProperty Name="ETC_DEFAULT_USE_IND" ColumnName="ETC_DEFAULT_USE_IND" />
+          <ScalarProperty Name="ETC_CHANGE_TYPE_CODE" ColumnName="ETC_CHANGE_TYPE_CODE" />
+          <ScalarProperty Name="ETC_EFFECTIVE_DATE" ColumnName="ETC_EFFECTIVE_DATE" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCNMH0_ETC_MED_NAME_ID_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCNMH0_ETC_MED_NAME_ID_HIST">
+        <MappingFragment StoreEntitySet="RETCNMH0_ETC_MED_NAME_ID_HIST">
+          <ScalarProperty Name="RETCNMH0_ETC_MED_NAME_ID_HISTIdentifier" ColumnName="RETCNMH0_ETC_MED_NAME_ID_HISTIdentifier" />
+          <ScalarProperty Name="MED_NAME_ID" ColumnName="MED_NAME_ID" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_REVISION_SEQNO" ColumnName="ETC_REVISION_SEQNO" />
+          <ScalarProperty Name="ETC_CHANGE_TYPE_CODE" ColumnName="ETC_CHANGE_TYPE_CODE" />
+          <ScalarProperty Name="ETC_EFFECTIVE_DATE" ColumnName="ETC_EFFECTIVE_DATE" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETCTBL0_ETC_ID">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RETCTBL0_ETC_ID">
+        <MappingFragment StoreEntitySet="RETCTBL0_ETC_ID">
+          <ScalarProperty Name="RETCTBL0_ETC_IDIdentifier" ColumnName="RETCTBL0_ETC_IDIdentifier" />
+          <ScalarProperty Name="ETC_ID" ColumnName="ETC_ID" />
+          <ScalarProperty Name="ETC_NAME" ColumnName="ETC_NAME" />
+          <ScalarProperty Name="ETC_ULTIMATE_CHILD_IND" ColumnName="ETC_ULTIMATE_CHILD_IND" />
+          <ScalarProperty Name="ETC_DRUG_CONCEPT_LINK_IND" ColumnName="ETC_DRUG_CONCEPT_LINK_IND" />
+          <ScalarProperty Name="ETC_PARENT_ETC_ID" ColumnName="ETC_PARENT_ETC_ID" />
+          <ScalarProperty Name="ETC_FORMULARY_LEVEL_IND" ColumnName="ETC_FORMULARY_LEVEL_IND" />
+          <ScalarProperty Name="ETC_PRESENTATION_SEQNO" ColumnName="ETC_PRESENTATION_SEQNO" />
+          <ScalarProperty Name="ETC_ULTIMATE_PARENT_ETC_ID" ColumnName="ETC_ULTIMATE_PARENT_ETC_ID" />
+          <ScalarProperty Name="ETC_HIERARCHY_LEVEL" ColumnName="ETC_HIERARCHY_LEVEL" />
+          <ScalarProperty Name="ETC_SORT_NUMBER" ColumnName="ETC_SORT_NUMBER" />
+          <ScalarProperty Name="ETC_RETIRED_IND" ColumnName="ETC_RETIRED_IND" />
+          <ScalarProperty Name="ETC_RETIRED_DATE" ColumnName="ETC_RETIRED_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REVDEL0_EXT_VOCAB_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.REVDEL0_EXT_VOCAB_LINK">
+        <MappingFragment StoreEntitySet="REVDEL0_EXT_VOCAB_LINK">
+          <ScalarProperty Name="REVDEL0_EXT_VOCAB_LINKIdentifier" ColumnName="REVDEL0_EXT_VOCAB_LINKIdentifier" />
+          <ScalarProperty Name="EVD_FDB_VOCAB_ID" ColumnName="EVD_FDB_VOCAB_ID" />
+          <ScalarProperty Name="EVD_FDB_VOCAB_TYPE_ID" ColumnName="EVD_FDB_VOCAB_TYPE_ID" />
+          <ScalarProperty Name="EVD_EXT_VOCAB_ID" ColumnName="EVD_EXT_VOCAB_ID" />
+          <ScalarProperty Name="EVD_EXT_VOCAB_TYPE_ID" ColumnName="EVD_EXT_VOCAB_TYPE_ID" />
+          <ScalarProperty Name="EVD_LINK_TYPE_ID" ColumnName="EVD_LINK_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REVDLT0_LINK_TYPE_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.REVDLT0_LINK_TYPE_DESC">
+        <MappingFragment StoreEntitySet="REVDLT0_LINK_TYPE_DESC">
+          <ScalarProperty Name="REVDLT0_LINK_TYPE_DESCIdentifier" ColumnName="REVDLT0_LINK_TYPE_DESCIdentifier" />
+          <ScalarProperty Name="EVD_LINK_TYPE_ID" ColumnName="EVD_LINK_TYPE_ID" />
+          <ScalarProperty Name="EVD_SOURCE_ID" ColumnName="EVD_SOURCE_ID" />
+          <ScalarProperty Name="EVD_LINK_TYPE_DESC" ColumnName="EVD_LINK_TYPE_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REVDUR0_RXCUI_ULT_REPL">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.REVDUR0_RXCUI_ULT_REPL">
+        <MappingFragment StoreEntitySet="REVDUR0_RXCUI_ULT_REPL">
+          <ScalarProperty Name="REVDUR0_RXCUI_ULT_REPLIdentifier" ColumnName="REVDUR0_RXCUI_ULT_REPLIdentifier" />
+          <ScalarProperty Name="EVD_EXT_VOCAB_ID" ColumnName="EVD_EXT_VOCAB_ID" />
+          <ScalarProperty Name="EVD_EXT_ULT_REP_VOCAB_ID" ColumnName="EVD_EXT_ULT_REP_VOCAB_ID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REVDVS0_SOURCE_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.REVDVS0_SOURCE_DESC">
+        <MappingFragment StoreEntitySet="REVDVS0_SOURCE_DESC">
+          <ScalarProperty Name="REVDVS0_SOURCE_DESCIdentifier" ColumnName="REVDVS0_SOURCE_DESCIdentifier" />
+          <ScalarProperty Name="EVD_SOURCE_ID" ColumnName="EVD_SOURCE_ID" />
+          <ScalarProperty Name="EVD_SOURCE_DESC" ColumnName="EVD_SOURCE_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REVDVT0_VOCAB_TYPE_DEF">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.REVDVT0_VOCAB_TYPE_DEF">
+        <MappingFragment StoreEntitySet="REVDVT0_VOCAB_TYPE_DEF">
+          <ScalarProperty Name="REVDVT0_VOCAB_TYPE_DEFIdentifier" ColumnName="REVDVT0_VOCAB_TYPE_DEFIdentifier" />
+          <ScalarProperty Name="EVD_VOCAB_TYPE_ID" ColumnName="EVD_VOCAB_TYPE_ID" />
+          <ScalarProperty Name="EVD_VOCAB_TYPE_DESC" ColumnName="EVD_VOCAB_TYPE_DESC" />
+          <ScalarProperty Name="EVD_SOURCE_ID" ColumnName="EVD_SOURCE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RFFP0_FED_FIN_PARTICIPATION">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RFFP0_FED_FIN_PARTICIPATION">
+        <MappingFragment StoreEntitySet="RFFP0_FED_FIN_PARTICIPATION">
+          <ScalarProperty Name="RFFP0_FED_FIN_PARTICIPATIONIdentifier" ColumnName="RFFP0_FED_FIN_PARTICIPATIONIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="FFP_TYP" ColumnName="FFP_TYP" />
+          <ScalarProperty Name="FFP_DATEC" ColumnName="FFP_DATEC" />
+          <ScalarProperty Name="FFP_IND" ColumnName="FFP_IND" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RFMLDX0_DXID">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RFMLDX0_DXID">
+        <MappingFragment StoreEntitySet="RFMLDX0_DXID">
+          <ScalarProperty Name="RFMLDX0_DXIDIdentifier" ColumnName="RFMLDX0_DXIDIdentifier" />
+          <ScalarProperty Name="DXID" ColumnName="DXID" />
+          <ScalarProperty Name="DXID_DESC56" ColumnName="DXID_DESC56" />
+          <ScalarProperty Name="DXID_DESC100" ColumnName="DXID_DESC100" />
+          <ScalarProperty Name="DXID_STATUS" ColumnName="DXID_STATUS" />
+          <ScalarProperty Name="FDBDX" ColumnName="FDBDX" />
+          <ScalarProperty Name="DXID_DISEASE_DURATION_CD" ColumnName="DXID_DISEASE_DURATION_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGCNINH0_GCNSEQNO_INACTV_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGCNINH0_GCNSEQNO_INACTV_LINK">
+        <MappingFragment StoreEntitySet="RGCNINH0_GCNSEQNO_INACTV_LINK">
+          <ScalarProperty Name="RGCNINH0_GCNSEQNO_INACTV_LINKIdentifier" ColumnName="RGCNINH0_GCNSEQNO_INACTV_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+          <ScalarProperty Name="INACTV_NOT_PRES_CNT" ColumnName="INACTV_NOT_PRES_CNT" />
+          <ScalarProperty Name="INACTV_PRES_CNT" ColumnName="INACTV_PRES_CNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGCNINS0_STUDY_TABLE">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGCNINS0_STUDY_TABLE">
+        <MappingFragment StoreEntitySet="RGCNINS0_STUDY_TABLE">
+          <ScalarProperty Name="RGCNINS0_STUDY_TABLEIdentifier" ColumnName="RGCNINS0_STUDY_TABLEIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="TOTAL_PRODUCTS_CNT" ColumnName="TOTAL_PRODUCTS_CNT" />
+          <ScalarProperty Name="PRODUCTS_RESEARCHED_CNT" ColumnName="PRODUCTS_RESEARCHED_CNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGCNSEQ4_GCNSEQNO_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGCNSEQ4_GCNSEQNO_MSTR">
+        <MappingFragment StoreEntitySet="RGCNSEQ4_GCNSEQNO_MSTR">
+          <ScalarProperty Name="RGCNSEQ4_GCNSEQNO_MSTRIdentifier" ColumnName="RGCNSEQ4_GCNSEQNO_MSTRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="HIC3" ColumnName="HIC3" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="GCDF" ColumnName="GCDF" />
+          <ScalarProperty Name="GCRT" ColumnName="GCRT" />
+          <ScalarProperty Name="STR" ColumnName="STR" />
+          <ScalarProperty Name="GTC" ColumnName="GTC" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="DCC" ColumnName="DCC" />
+          <ScalarProperty Name="GCNSEQ_GI" ColumnName="GCNSEQ_GI" />
+          <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+          <ScalarProperty Name="HIC3_SEQN" ColumnName="HIC3_SEQN" />
+          <ScalarProperty Name="STR60" ColumnName="STR60" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGCNSTR0_INGREDIENT_STRENGTH">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGCNSTR0_INGREDIENT_STRENGTH">
+        <MappingFragment StoreEntitySet="RGCNSTR0_INGREDIENT_STRENGTH">
+          <ScalarProperty Name="RGCNSTR0_INGREDIENT_STRENGTHIdentifier" ColumnName="RGCNSTR0_INGREDIENT_STRENGTHIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+          <ScalarProperty Name="STRENGTH_STATUS_CODE" ColumnName="STRENGTH_STATUS_CODE" />
+          <ScalarProperty Name="STRENGTH" ColumnName="STRENGTH" />
+          <ScalarProperty Name="STRENGTH_UOM_ID" ColumnName="STRENGTH_UOM_ID" />
+          <ScalarProperty Name="STRENGTH_TYP_CODE" ColumnName="STRENGTH_TYP_CODE" />
+          <ScalarProperty Name="VOLUME" ColumnName="VOLUME" />
+          <ScalarProperty Name="VOLUME_UOM_ID" ColumnName="VOLUME_UOM_ID" />
+          <ScalarProperty Name="ALT_STRENGTH" ColumnName="ALT_STRENGTH" />
+          <ScalarProperty Name="ALT_STRENGTH_UOM_ID" ColumnName="ALT_STRENGTH_UOM_ID" />
+          <ScalarProperty Name="ALT_STRENGTH_TYP_CODE" ColumnName="ALT_STRENGTH_TYP_CODE" />
+          <ScalarProperty Name="TIME_VALUE" ColumnName="TIME_VALUE" />
+          <ScalarProperty Name="TIME_UOM_ID" ColumnName="TIME_UOM_ID" />
+          <ScalarProperty Name="RANGE_MAX" ColumnName="RANGE_MAX" />
+          <ScalarProperty Name="RANGE_MIN" ColumnName="RANGE_MIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGERIGC0_GERI_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGERIGC0_GERI_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RGERIGC0_GERI_GCNSEQNO_LINK">
+          <ScalarProperty Name="RGERIGC0_GERI_GCNSEQNO_LINKIdentifier" ColumnName="RGERIGC0_GERI_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="GERI_CODE" ColumnName="GERI_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGERIMA0_GERI_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGERIMA0_GERI_MSTR">
+        <MappingFragment StoreEntitySet="RGERIMA0_GERI_MSTR">
+          <ScalarProperty Name="RGERIMA0_GERI_MSTRIdentifier" ColumnName="RGERIMA0_GERI_MSTRIdentifier" />
+          <ScalarProperty Name="GERI_CODE" ColumnName="GERI_CODE" />
+          <ScalarProperty Name="GERI_DESC" ColumnName="GERI_DESC" />
+          <ScalarProperty Name="GERI_SL" ColumnName="GERI_SL" />
+          <ScalarProperty Name="GERI_RNL" ColumnName="GERI_RNL" />
+          <ScalarProperty Name="GERI_HEP" ColumnName="GERI_HEP" />
+          <ScalarProperty Name="GERI_CARD" ColumnName="GERI_CARD" />
+          <ScalarProperty Name="GERI_PULM" ColumnName="GERI_PULM" />
+          <ScalarProperty Name="GERI_NEUR" ColumnName="GERI_NEUR" />
+          <ScalarProperty Name="GERI_END" ColumnName="GERI_END" />
+          <ScalarProperty Name="GERI_CMNT" ColumnName="GERI_CMNT" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGERIRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGERIRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RGERIRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RGERIRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RGERIRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="GERI_CODE" ColumnName="GERI_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RGERIRM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RGERIRM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RGERIRM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RGERIRM0_ROUTED_MED_LINKIdentifier" ColumnName="RGERIRM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="GERI_CODE" ColumnName="GERI_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHIC1D2_HIC_ORGAN_SYS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHIC1D2_HIC_ORGAN_SYS_DESC">
+        <MappingFragment StoreEntitySet="RHIC1D2_HIC_ORGAN_SYS_DESC">
+          <ScalarProperty Name="RHIC1D2_HIC_ORGAN_SYS_DESCIdentifier" ColumnName="RHIC1D2_HIC_ORGAN_SYS_DESCIdentifier" />
+          <ScalarProperty Name="HIC1_SEQN" ColumnName="HIC1_SEQN" />
+          <ScalarProperty Name="HIC1" ColumnName="HIC1" />
+          <ScalarProperty Name="HIC1_DESC" ColumnName="HIC1_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHIC2D3_HIC_RX_CLASS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHIC2D3_HIC_RX_CLASS_DESC">
+        <MappingFragment StoreEntitySet="RHIC2D3_HIC_RX_CLASS_DESC">
+          <ScalarProperty Name="RHIC2D3_HIC_RX_CLASS_DESCIdentifier" ColumnName="RHIC2D3_HIC_RX_CLASS_DESCIdentifier" />
+          <ScalarProperty Name="HIC2_SEQN" ColumnName="HIC2_SEQN" />
+          <ScalarProperty Name="HIC2" ColumnName="HIC2" />
+          <ScalarProperty Name="HIC2_DESC" ColumnName="HIC2_DESC" />
+          <ScalarProperty Name="HIC2_ROOT" ColumnName="HIC2_ROOT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHIC3D3_HIC_THERAP_CLASS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHIC3D3_HIC_THERAP_CLASS_DESC">
+        <MappingFragment StoreEntitySet="RHIC3D3_HIC_THERAP_CLASS_DESC">
+          <ScalarProperty Name="RHIC3D3_HIC_THERAP_CLASS_DESCIdentifier" ColumnName="RHIC3D3_HIC_THERAP_CLASS_DESCIdentifier" />
+          <ScalarProperty Name="HIC3_SEQN" ColumnName="HIC3_SEQN" />
+          <ScalarProperty Name="HIC3" ColumnName="HIC3" />
+          <ScalarProperty Name="HIC3_DESC" ColumnName="HIC3_DESC" />
+          <ScalarProperty Name="HIC3_GRPN" ColumnName="HIC3_GRPN" />
+          <ScalarProperty Name="HIC3_ROOT" ColumnName="HIC3_ROOT" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHIC3L2_HIC3_HICLSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHIC3L2_HIC3_HICLSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RHIC3L2_HIC3_HICLSEQNO_LINK">
+          <ScalarProperty Name="RHIC3L2_HIC3_HICLSEQNO_LINKIdentifier" ColumnName="RHIC3L2_HIC3_HICLSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="HIC3_SEQN" ColumnName="HIC3_SEQN" />
+          <ScalarProperty Name="HIC3" ColumnName="HIC3" />
+          <ScalarProperty Name="HIC3_RELNO" ColumnName="HIC3_RELNO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHIC4D2_HIC_BASE_ING_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHIC4D2_HIC_BASE_ING_DESC">
+        <MappingFragment StoreEntitySet="RHIC4D2_HIC_BASE_ING_DESC">
+          <ScalarProperty Name="RHIC4D2_HIC_BASE_ING_DESCIdentifier" ColumnName="RHIC4D2_HIC_BASE_ING_DESCIdentifier" />
+          <ScalarProperty Name="HIC4_SEQN" ColumnName="HIC4_SEQN" />
+          <ScalarProperty Name="HIC4" ColumnName="HIC4" />
+          <ScalarProperty Name="HIC4_DESC" ColumnName="HIC4_DESC" />
+          <ScalarProperty Name="HIC4_ROOT" ColumnName="HIC4_ROOT" />
+          <ScalarProperty Name="HIC4_POTENTIALLY_INACTV_IND" ColumnName="HIC4_POTENTIALLY_INACTV_IND" />
+          <ScalarProperty Name="ING_STATUS_CD" ColumnName="ING_STATUS_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHICCAS1_HIC_CAS_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHICCAS1_HIC_CAS_LINK">
+        <MappingFragment StoreEntitySet="RHICCAS1_HIC_CAS_LINK">
+          <ScalarProperty Name="RHICCAS1_HIC_CAS_LINKIdentifier" ColumnName="RHICCAS1_HIC_CAS_LINKIdentifier" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+          <ScalarProperty Name="CAS9_TBL" ColumnName="CAS9_TBL" />
+          <ScalarProperty Name="HIC" ColumnName="HIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHICD5_HIC_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHICD5_HIC_DESC">
+        <MappingFragment StoreEntitySet="RHICD5_HIC_DESC">
+          <ScalarProperty Name="RHICD5_HIC_DESCIdentifier" ColumnName="RHICD5_HIC_DESCIdentifier" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+          <ScalarProperty Name="HIC" ColumnName="HIC" />
+          <ScalarProperty Name="HIC_DESC" ColumnName="HIC_DESC" />
+          <ScalarProperty Name="HIC_ROOT" ColumnName="HIC_ROOT" />
+          <ScalarProperty Name="HIC_POTENTIALLY_INACTV_IND" ColumnName="HIC_POTENTIALLY_INACTV_IND" />
+          <ScalarProperty Name="ING_STATUS_CD" ColumnName="ING_STATUS_CD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHICLSQ1_HICLSEQNO_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHICLSQ1_HICLSEQNO_MSTR">
+        <MappingFragment StoreEntitySet="RHICLSQ1_HICLSEQNO_MSTR">
+          <ScalarProperty Name="RHICLSQ1_HICLSEQNO_MSTRIdentifier" ColumnName="RHICLSQ1_HICLSEQNO_MSTRIdentifier" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="GNN" ColumnName="GNN" />
+          <ScalarProperty Name="GNN60" ColumnName="GNN60" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RHICRH0_ING_HIST">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RHICRH0_ING_HIST">
+        <MappingFragment StoreEntitySet="RHICRH0_ING_HIST">
+          <ScalarProperty Name="RHICRH0_ING_HISTIdentifier" ColumnName="RHICRH0_ING_HISTIdentifier" />
+          <ScalarProperty Name="REPL_HIC_SEQN" ColumnName="REPL_HIC_SEQN" />
+          <ScalarProperty Name="PREV_HIC_SEQN" ColumnName="PREV_HIC_SEQN" />
+          <ScalarProperty Name="HIC_REPL_EFF_DT" ColumnName="HIC_REPL_EFF_DT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RINDMDD0_INDCTS_DRUG_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RINDMDD0_INDCTS_DRUG_DESC">
+        <MappingFragment StoreEntitySet="RINDMDD0_INDCTS_DRUG_DESC">
+          <ScalarProperty Name="RINDMDD0_INDCTS_DRUG_DESCIdentifier" ColumnName="RINDMDD0_INDCTS_DRUG_DESCIdentifier" />
+          <ScalarProperty Name="INDCTS" ColumnName="INDCTS" />
+          <ScalarProperty Name="INDCTS_DRUG_DESC" ColumnName="INDCTS_DRUG_DESC" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RINDMGC0_INDCTS_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RINDMGC0_INDCTS_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RINDMGC0_INDCTS_GCNSEQNO_LINK">
+          <ScalarProperty Name="RINDMGC0_INDCTS_GCNSEQNO_LINKIdentifier" ColumnName="RINDMGC0_INDCTS_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="INDCTS" ColumnName="INDCTS" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RINDMLD0_LABELED_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RINDMLD0_LABELED_DESC">
+        <MappingFragment StoreEntitySet="RINDMLD0_LABELED_DESC">
+          <ScalarProperty Name="RINDMLD0_LABELED_DESCIdentifier" ColumnName="RINDMLD0_LABELED_DESCIdentifier" />
+          <ScalarProperty Name="INDCTS_LBL" ColumnName="INDCTS_LBL" />
+          <ScalarProperty Name="INDLBLDESC" ColumnName="INDLBLDESC" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RINDMMA2_INDCTS_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RINDMMA2_INDCTS_MSTR">
+        <MappingFragment StoreEntitySet="RINDMMA2_INDCTS_MSTR">
+          <ScalarProperty Name="RINDMMA2_INDCTS_MSTRIdentifier" ColumnName="RINDMMA2_INDCTS_MSTRIdentifier" />
+          <ScalarProperty Name="INDCTS" ColumnName="INDCTS" />
+          <ScalarProperty Name="INDCTS_SN" ColumnName="INDCTS_SN" />
+          <ScalarProperty Name="INDCTS_LBL" ColumnName="INDCTS_LBL" />
+          <ScalarProperty Name="FDBDX" ColumnName="FDBDX" />
+          <ScalarProperty Name="DXID" ColumnName="DXID" />
+          <ScalarProperty Name="PROXY_IND" ColumnName="PROXY_IND" />
+          <ScalarProperty Name="PRED_CODE" ColumnName="PRED_CODE" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RINDMPD0_PREDICTOR_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RINDMPD0_PREDICTOR_DESC">
+        <MappingFragment StoreEntitySet="RINDMPD0_PREDICTOR_DESC">
+          <ScalarProperty Name="RINDMPD0_PREDICTOR_DESCIdentifier" ColumnName="RINDMPD0_PREDICTOR_DESCIdentifier" />
+          <ScalarProperty Name="PRED_CODE" ColumnName="PRED_CODE" />
+          <ScalarProperty Name="PREDDESC" ColumnName="PREDDESC" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RINDMRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RINDMRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RINDMRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RINDMRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RINDMRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="INDCTS" ColumnName="INDCTS" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RINDMRM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RINDMRM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RINDMRM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RINDMRM0_ROUTED_MED_LINKIdentifier" ColumnName="RINDMRM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="INDCTS" ColumnName="INDCTS" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RLBLRID3_LBLR_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RLBLRID3_LBLR_DESC">
+        <MappingFragment StoreEntitySet="RLBLRID3_LBLR_DESC">
+          <ScalarProperty Name="RLBLRID3_LBLR_DESCIdentifier" ColumnName="RLBLRID3_LBLR_DESCIdentifier" />
+          <ScalarProperty Name="LBLRID" ColumnName="LBLRID" />
+          <ScalarProperty Name="MFG" ColumnName="MFG" />
+          <ScalarProperty Name="LBLRIND" ColumnName="LBLRIND" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="lastModifiedBy" ColumnName="lastModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMCRMA1_MEDICARE_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMCRMA1_MEDICARE_MSTR">
+        <MappingFragment StoreEntitySet="RMCRMA1_MEDICARE_MSTR">
+          <ScalarProperty Name="RMCRMA1_MEDICARE_MSTRIdentifier" ColumnName="RMCRMA1_MEDICARE_MSTRIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="MCR_REGION" ColumnName="MCR_REGION" />
+          <ScalarProperty Name="MCR_DATEC" ColumnName="MCR_DATEC" />
+          <ScalarProperty Name="MCR_REF" ColumnName="MCR_REF" />
+          <ScalarProperty Name="MCR_COV" ColumnName="MCR_COV" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMCRPB0_MEDICARE_HCPC_PB_PRICE">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMCRPB0_MEDICARE_HCPC_PB_PRICE">
+        <MappingFragment StoreEntitySet="RMCRPB0_MEDICARE_HCPC_PB_PRICE">
+          <ScalarProperty Name="RMCRPB0_MEDICARE_HCPC_PB_PRICEIdentifier" ColumnName="RMCRPB0_MEDICARE_HCPC_PB_PRICEIdentifier" />
+          <ScalarProperty Name="HCPC" ColumnName="HCPC" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="HCPC_PBC1" ColumnName="HCPC_PBC1" />
+          <ScalarProperty Name="HCPC_PBP1" ColumnName="HCPC_PBP1" />
+          <ScalarProperty Name="HCPC_PBC2" ColumnName="HCPC_PBC2" />
+          <ScalarProperty Name="HCPC_PBP2" ColumnName="HCPC_PBP2" />
+          <ScalarProperty Name="HCPC_PBC3" ColumnName="HCPC_PBC3" />
+          <ScalarProperty Name="HCPC_PBP3" ColumnName="HCPC_PBP3" />
+          <ScalarProperty Name="HCPC_PBC4" ColumnName="HCPC_PBC4" />
+          <ScalarProperty Name="HCPC_PBP4" ColumnName="HCPC_PBP4" />
+          <ScalarProperty Name="HCPC_PBC5" ColumnName="HCPC_PBC5" />
+          <ScalarProperty Name="HCPC_PBP5" ColumnName="HCPC_PBP5" />
+          <ScalarProperty Name="HCPC_PBC6" ColumnName="HCPC_PBC6" />
+          <ScalarProperty Name="HCPC_PBP6" ColumnName="HCPC_PBP6" />
+          <ScalarProperty Name="HCPC_PBC7" ColumnName="HCPC_PBC7" />
+          <ScalarProperty Name="HCPC_PBP7" ColumnName="HCPC_PBP7" />
+          <ScalarProperty Name="HCPC_PBC8" ColumnName="HCPC_PBC8" />
+          <ScalarProperty Name="HCPC_PBP8" ColumnName="HCPC_PBP8" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMCRRD1_MEDICARE_REG_REF_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMCRRD1_MEDICARE_REG_REF_DESC">
+        <MappingFragment StoreEntitySet="RMCRRD1_MEDICARE_REG_REF_DESC">
+          <ScalarProperty Name="RMCRRD1_MEDICARE_REG_REF_DESCIdentifier" ColumnName="RMCRRD1_MEDICARE_REG_REF_DESCIdentifier" />
+          <ScalarProperty Name="MCR_REF" ColumnName="MCR_REF" />
+          <ScalarProperty Name="MCR_REFSN" ColumnName="MCR_REFSN" />
+          <ScalarProperty Name="MCR_BC" ColumnName="MCR_BC" />
+          <ScalarProperty Name="MCR_BCDESC" ColumnName="MCR_BCDESC" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMD2_MEDICAID_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMD2_MEDICAID_MSTR">
+        <MappingFragment StoreEntitySet="RMD2_MEDICAID_MSTR">
+          <ScalarProperty Name="RMD2_MEDICAID_MSTRIdentifier" ColumnName="RMD2_MEDICAID_MSTRIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="MDT_ID" ColumnName="MDT_ID" />
+          <ScalarProperty Name="MDT_BC" ColumnName="MDT_BC" />
+          <ScalarProperty Name="MDT_BCDTE" ColumnName="MDT_BCDTE" />
+          <ScalarProperty Name="MDT_FI" ColumnName="MDT_FI" />
+          <ScalarProperty Name="MDT_FIDTE" ColumnName="MDT_FIDTE" />
+          <ScalarProperty Name="MDT_GBC" ColumnName="MDT_GBC" />
+          <ScalarProperty Name="MDT_GBCDTE" ColumnName="MDT_GBCDTE" />
+          <ScalarProperty Name="MDT_COV" ColumnName="MDT_COV" />
+          <ScalarProperty Name="MDT_PA" ColumnName="MDT_PA" />
+          <ScalarProperty Name="MDT_RFL" ColumnName="MDT_RFL" />
+          <ScalarProperty Name="MDT_COP" ColumnName="MDT_COP" />
+          <ScalarProperty Name="MDT_BU" ColumnName="MDT_BU" />
+          <ScalarProperty Name="MDT_PS" ColumnName="MDT_PS" />
+          <ScalarProperty Name="MDT_QBU" ColumnName="MDT_QBU" />
+          <ScalarProperty Name="MDT_MINC" ColumnName="MDT_MINC" />
+          <ScalarProperty Name="MDT_MIN" ColumnName="MDT_MIN" />
+          <ScalarProperty Name="MDT_MAXC" ColumnName="MDT_MAXC" />
+          <ScalarProperty Name="MDT_MAX" ColumnName="MDT_MAX" />
+          <ScalarProperty Name="MDT_FEE" ColumnName="MDT_FEE" />
+          <ScalarProperty Name="MDT_SLC10" ColumnName="MDT_SLC10" />
+          <ScalarProperty Name="MDT_LTC" ColumnName="MDT_LTC" />
+          <ScalarProperty Name="MDT_FREQ" ColumnName="MDT_FREQ" />
+          <ScalarProperty Name="MDT_CODE1" ColumnName="MDT_CODE1" />
+          <ScalarProperty Name="MDT_SUB" ColumnName="MDT_SUB" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMDCOPD0_MEDICAID_COPAY_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMDCOPD0_MEDICAID_COPAY_DESC">
+        <MappingFragment StoreEntitySet="RMDCOPD0_MEDICAID_COPAY_DESC">
+          <ScalarProperty Name="RMDCOPD0_MEDICAID_COPAY_DESCIdentifier" ColumnName="RMDCOPD0_MEDICAID_COPAY_DESCIdentifier" />
+          <ScalarProperty Name="MDT_ID" ColumnName="MDT_ID" />
+          <ScalarProperty Name="MDT_COP" ColumnName="MDT_COP" />
+          <ScalarProperty Name="MDT_COPD" ColumnName="MDT_COPD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMDCOV0_MEDICAID_COV_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMDCOV0_MEDICAID_COV_DESC">
+        <MappingFragment StoreEntitySet="RMDCOV0_MEDICAID_COV_DESC">
+          <ScalarProperty Name="RMDCOV0_MEDICAID_COV_DESCIdentifier" ColumnName="RMDCOV0_MEDICAID_COV_DESCIdentifier" />
+          <ScalarProperty Name="MDT_ID" ColumnName="MDT_ID" />
+          <ScalarProperty Name="MDT_COV" ColumnName="MDT_COV" />
+          <ScalarProperty Name="MDT_COVD" ColumnName="MDT_COVD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMDMAXC0_MEDICAID_MAX_QTY_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMDMAXC0_MEDICAID_MAX_QTY_DESC">
+        <MappingFragment StoreEntitySet="RMDMAXC0_MEDICAID_MAX_QTY_DESC">
+          <ScalarProperty Name="RMDMAXC0_MEDICAID_MAX_QTY_DESCIdentifier" ColumnName="RMDMAXC0_MEDICAID_MAX_QTY_DESCIdentifier" />
+          <ScalarProperty Name="MDT_ID" ColumnName="MDT_ID" />
+          <ScalarProperty Name="MDT_MAXC" ColumnName="MDT_MAXC" />
+          <ScalarProperty Name="MDT_MAXCD" ColumnName="MDT_MAXCD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMDMINC0_MEDICAID_MIN_QTY_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMDMINC0_MEDICAID_MIN_QTY_DESC">
+        <MappingFragment StoreEntitySet="RMDMINC0_MEDICAID_MIN_QTY_DESC">
+          <ScalarProperty Name="RMDMINC0_MEDICAID_MIN_QTY_DESCIdentifier" ColumnName="RMDMINC0_MEDICAID_MIN_QTY_DESCIdentifier" />
+          <ScalarProperty Name="MDT_ID" ColumnName="MDT_ID" />
+          <ScalarProperty Name="MDT_MINC" ColumnName="MDT_MINC" />
+          <ScalarProperty Name="MDT_MINCD" ColumnName="MDT_MINCD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMDP0_MEDICAID_PRICE">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMDP0_MEDICAID_PRICE">
+        <MappingFragment StoreEntitySet="RMDP0_MEDICAID_PRICE">
+          <ScalarProperty Name="RMDP0_MEDICAID_PRICEIdentifier" ColumnName="RMDP0_MEDICAID_PRICEIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="MDPT_ID" ColumnName="MDPT_ID" />
+          <ScalarProperty Name="MDPT_TYP" ColumnName="MDPT_TYP" />
+          <ScalarProperty Name="MDPT_DATEC" ColumnName="MDPT_DATEC" />
+          <ScalarProperty Name="MDPT_PRICE" ColumnName="MDPT_PRICE" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMDPA0_MEDICAID_PA_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMDPA0_MEDICAID_PA_DESC">
+        <MappingFragment StoreEntitySet="RMDPA0_MEDICAID_PA_DESC">
+          <ScalarProperty Name="RMDPA0_MEDICAID_PA_DESCIdentifier" ColumnName="RMDPA0_MEDICAID_PA_DESCIdentifier" />
+          <ScalarProperty Name="MDT_ID" ColumnName="MDT_ID" />
+          <ScalarProperty Name="MDT_PA" ColumnName="MDT_PA" />
+          <ScalarProperty Name="MDT_PAD" ColumnName="MDT_PAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMDRFLD0_MEDICAID_REFILL_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMDRFLD0_MEDICAID_REFILL_DESC">
+        <MappingFragment StoreEntitySet="RMDRFLD0_MEDICAID_REFILL_DESC">
+          <ScalarProperty Name="RMDRFLD0_MEDICAID_REFILL_DESCIdentifier" ColumnName="RMDRFLD0_MEDICAID_REFILL_DESCIdentifier" />
+          <ScalarProperty Name="MDT_ID" ColumnName="MDT_ID" />
+          <ScalarProperty Name="MDT_RFL" ColumnName="MDT_RFL" />
+          <ScalarProperty Name="MDT_RFLD" ColumnName="MDT_RFLD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMEDMHL0_MED_HICLSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMEDMHL0_MED_HICLSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RMEDMHL0_MED_HICLSEQNO_LINK">
+          <ScalarProperty Name="RMEDMHL0_MED_HICLSEQNO_LINKIdentifier" ColumnName="RMEDMHL0_MED_HICLSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="MED_CONCEPT_ID" ColumnName="MED_CONCEPT_ID" />
+          <ScalarProperty Name="MED_CONCEPT_ID_TYP" ColumnName="MED_CONCEPT_ID_TYP" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="MED_CONCEPT_HICL_SRC_CD" ColumnName="MED_CONCEPT_HICL_SRC_CD" />
+          <ScalarProperty Name="MED_CONCEPT_OBSDATEC" ColumnName="MED_CONCEPT_OBSDATEC" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMIGC1_MEDID_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMIGC1_MEDID_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RMIGC1_MEDID_GCNSEQNO_LINK">
+          <ScalarProperty Name="RMIGC1_MEDID_GCNSEQNO_LINKIdentifier" ColumnName="RMIGC1_MEDID_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="MEDID" ColumnName="MEDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMIID1_MED">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMIID1_MED">
+        <MappingFragment StoreEntitySet="RMIID1_MED">
+          <ScalarProperty Name="RMIID1_MEDIdentifier" ColumnName="RMIID1_MEDIdentifier" />
+          <ScalarProperty Name="MEDID" ColumnName="MEDID" />
+          <ScalarProperty Name="ROUTED_DOSAGE_FORM_MED_ID" ColumnName="ROUTED_DOSAGE_FORM_MED_ID" />
+          <ScalarProperty Name="MED_STRENGTH" ColumnName="MED_STRENGTH" />
+          <ScalarProperty Name="MED_STRENGTH_UOM" ColumnName="MED_STRENGTH_UOM" />
+          <ScalarProperty Name="MED_MEDID_DESC" ColumnName="MED_MEDID_DESC" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="MED_GCNSEQNO_ASSIGN_CD" ColumnName="MED_GCNSEQNO_ASSIGN_CD" />
+          <ScalarProperty Name="MED_NAME_SOURCE_CD" ColumnName="MED_NAME_SOURCE_CD" />
+          <ScalarProperty Name="MED_REF_FED_LEGEND_IND" ColumnName="MED_REF_FED_LEGEND_IND" />
+          <ScalarProperty Name="MED_REF_DEA_CD" ColumnName="MED_REF_DEA_CD" />
+          <ScalarProperty Name="MED_REF_MULTI_SOURCE_CD" ColumnName="MED_REF_MULTI_SOURCE_CD" />
+          <ScalarProperty Name="MED_REF_GEN_DRUG_NAME_CD" ColumnName="MED_REF_GEN_DRUG_NAME_CD" />
+          <ScalarProperty Name="MED_REF_GEN_COMP_PRICE_CD" ColumnName="MED_REF_GEN_COMP_PRICE_CD" />
+          <ScalarProperty Name="MED_REF_GEN_SPREAD_CD" ColumnName="MED_REF_GEN_SPREAD_CD" />
+          <ScalarProperty Name="MED_REF_INNOV_IND" ColumnName="MED_REF_INNOV_IND" />
+          <ScalarProperty Name="MED_REF_GEN_THERA_EQU_CD" ColumnName="MED_REF_GEN_THERA_EQU_CD" />
+          <ScalarProperty Name="MED_REF_DESI_IND" ColumnName="MED_REF_DESI_IND" />
+          <ScalarProperty Name="MED_REF_DESI2_IND" ColumnName="MED_REF_DESI2_IND" />
+          <ScalarProperty Name="MED_STATUS_CD" ColumnName="MED_STATUS_CD" />
+          <ScalarProperty Name="GENERIC_MEDID" ColumnName="GENERIC_MEDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMINDC1_NDC_MEDID">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMINDC1_NDC_MEDID">
+        <MappingFragment StoreEntitySet="RMINDC1_NDC_MEDID">
+          <ScalarProperty Name="RMINDC1_NDC_MEDIDIdentifier" ColumnName="RMINDC1_NDC_MEDIDIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="MEDID" ColumnName="MEDID" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMMADMA1_ADULT_DOSE_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMMADMA1_ADULT_DOSE_MSTR">
+        <MappingFragment StoreEntitySet="RMMADMA1_ADULT_DOSE_MSTR">
+          <ScalarProperty Name="RMMADMA1_ADULT_DOSE_MSTRIdentifier" ColumnName="RMMADMA1_ADULT_DOSE_MSTRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="MMA_MND" ColumnName="MMA_MND" />
+          <ScalarProperty Name="MMA_MNDU" ColumnName="MMA_MNDU" />
+          <ScalarProperty Name="MMA_MNU" ColumnName="MMA_MNU" />
+          <ScalarProperty Name="MMA_MNUF" ColumnName="MMA_MNUF" />
+          <ScalarProperty Name="MMA_MXD" ColumnName="MMA_MXD" />
+          <ScalarProperty Name="MMA_MXDU" ColumnName="MMA_MXDU" />
+          <ScalarProperty Name="MMA_MXU" ColumnName="MMA_MXU" />
+          <ScalarProperty Name="MMA_MXUF" ColumnName="MMA_MXUF" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMMARMA0_ADULT_RANGE_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMMARMA0_ADULT_RANGE_MSTR">
+        <MappingFragment StoreEntitySet="RMMARMA0_ADULT_RANGE_MSTR">
+          <ScalarProperty Name="RMMARMA0_ADULT_RANGE_MSTRIdentifier" ColumnName="RMMARMA0_ADULT_RANGE_MSTRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="MMAR_MND" ColumnName="MMAR_MND" />
+          <ScalarProperty Name="MMAR_MNDU" ColumnName="MMAR_MNDU" />
+          <ScalarProperty Name="MMAR_MNU" ColumnName="MMAR_MNU" />
+          <ScalarProperty Name="MMAR_MNUF" ColumnName="MMAR_MNUF" />
+          <ScalarProperty Name="MMAR_MXD" ColumnName="MMAR_MXD" />
+          <ScalarProperty Name="MMAR_MXDU" ColumnName="MMAR_MXDU" />
+          <ScalarProperty Name="MMAR_MXU" ColumnName="MMAR_MXU" />
+          <ScalarProperty Name="MMAR_MXUF" ColumnName="MMAR_MXUF" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMMGDMA0_GERI_DOSE_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMMGDMA0_GERI_DOSE_MSTR">
+        <MappingFragment StoreEntitySet="RMMGDMA0_GERI_DOSE_MSTR">
+          <ScalarProperty Name="RMMGDMA0_GERI_DOSE_MSTRIdentifier" ColumnName="RMMGDMA0_GERI_DOSE_MSTRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="MMG_MND" ColumnName="MMG_MND" />
+          <ScalarProperty Name="MMG_MNDU" ColumnName="MMG_MNDU" />
+          <ScalarProperty Name="MMG_MNU" ColumnName="MMG_MNU" />
+          <ScalarProperty Name="MMG_MNUF" ColumnName="MMG_MNUF" />
+          <ScalarProperty Name="MMG_MXD" ColumnName="MMG_MXD" />
+          <ScalarProperty Name="MMG_MXDU" ColumnName="MMG_MXDU" />
+          <ScalarProperty Name="MMG_MXU" ColumnName="MMG_MXU" />
+          <ScalarProperty Name="MMG_MXUF" ColumnName="MMG_MXUF" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RMMGRMA0_GERI_RANGE_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RMMGRMA0_GERI_RANGE_MSTR">
+        <MappingFragment StoreEntitySet="RMMGRMA0_GERI_RANGE_MSTR">
+          <ScalarProperty Name="RMMGRMA0_GERI_RANGE_MSTRIdentifier" ColumnName="RMMGRMA0_GERI_RANGE_MSTRIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="MMGR_MND" ColumnName="MMGR_MND" />
+          <ScalarProperty Name="MMGR_MNDU" ColumnName="MMGR_MNDU" />
+          <ScalarProperty Name="MMGR_MNU" ColumnName="MMGR_MNU" />
+          <ScalarProperty Name="MMGR_MNUF" ColumnName="MMGR_MNUF" />
+          <ScalarProperty Name="MMGR_MXD" ColumnName="MMGR_MXD" />
+          <ScalarProperty Name="MMGR_MXDU" ColumnName="MMGR_MXDU" />
+          <ScalarProperty Name="MMGR_MXU" ColumnName="MMGR_MXU" />
+          <ScalarProperty Name="MMGR_MXUF" ColumnName="MMGR_MXUF" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RNDC14_NDC_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RNDC14_NDC_MSTR">
+        <MappingFragment StoreEntitySet="RNDC14_NDC_MSTR">
+          <ScalarProperty Name="RNDC14_NDC_MSTRIdentifier" ColumnName="RNDC14_NDC_MSTRIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="LBLRID" ColumnName="LBLRID" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PS" ColumnName="PS" />
+          <ScalarProperty Name="DF" ColumnName="DF" />
+          <ScalarProperty Name="AD" ColumnName="AD" />
+          <ScalarProperty Name="LN" ColumnName="LN" />
+          <ScalarProperty Name="BN" ColumnName="BN" />
+          <ScalarProperty Name="PNDC" ColumnName="PNDC" />
+          <ScalarProperty Name="REPNDC" ColumnName="REPNDC" />
+          <ScalarProperty Name="NDCFI" ColumnName="NDCFI" />
+          <ScalarProperty Name="DADDNC" ColumnName="DADDNC" />
+          <ScalarProperty Name="DUPDC" ColumnName="DUPDC" />
+          <ScalarProperty Name="DESI" ColumnName="DESI" />
+          <ScalarProperty Name="DESDTEC" ColumnName="DESDTEC" />
+          <ScalarProperty Name="DESI2" ColumnName="DESI2" />
+          <ScalarProperty Name="DES2DTEC" ColumnName="DES2DTEC" />
+          <ScalarProperty Name="DEA" ColumnName="DEA" />
+          <ScalarProperty Name="CL" ColumnName="CL" />
+          <ScalarProperty Name="GPI" ColumnName="GPI" />
+          <ScalarProperty Name="HOSP" ColumnName="HOSP" />
+          <ScalarProperty Name="INNOV" ColumnName="INNOV" />
+          <ScalarProperty Name="IPI" ColumnName="IPI" />
+          <ScalarProperty Name="MINI" ColumnName="MINI" />
+          <ScalarProperty Name="MAINT" ColumnName="MAINT" />
+          <ScalarProperty Name="OBC" ColumnName="OBC" />
+          <ScalarProperty Name="OBSDTEC" ColumnName="OBSDTEC" />
+          <ScalarProperty Name="PPI" ColumnName="PPI" />
+          <ScalarProperty Name="STPK" ColumnName="STPK" />
+          <ScalarProperty Name="REPACK" ColumnName="REPACK" />
+          <ScalarProperty Name="TOP200" ColumnName="TOP200" />
+          <ScalarProperty Name="UD" ColumnName="UD" />
+          <ScalarProperty Name="CSP" ColumnName="CSP" />
+          <ScalarProperty Name="NDL_GDGE" ColumnName="NDL_GDGE" />
+          <ScalarProperty Name="NDL_LNGTH" ColumnName="NDL_LNGTH" />
+          <ScalarProperty Name="SYR_CPCTY" ColumnName="SYR_CPCTY" />
+          <ScalarProperty Name="SHLF_PCK" ColumnName="SHLF_PCK" />
+          <ScalarProperty Name="SHIPPER" ColumnName="SHIPPER" />
+          <ScalarProperty Name="HCFA_FDA" ColumnName="HCFA_FDA" />
+          <ScalarProperty Name="HCFA_UNIT" ColumnName="HCFA_UNIT" />
+          <ScalarProperty Name="HCFA_PS" ColumnName="HCFA_PS" />
+          <ScalarProperty Name="HCFA_APPC" ColumnName="HCFA_APPC" />
+          <ScalarProperty Name="HCFA_MRKC" ColumnName="HCFA_MRKC" />
+          <ScalarProperty Name="HCFA_TRMC" ColumnName="HCFA_TRMC" />
+          <ScalarProperty Name="HCFA_TYP" ColumnName="HCFA_TYP" />
+          <ScalarProperty Name="HCFA_DESC1" ColumnName="HCFA_DESC1" />
+          <ScalarProperty Name="HCFA_DESI1" ColumnName="HCFA_DESI1" />
+          <ScalarProperty Name="UU" ColumnName="UU" />
+          <ScalarProperty Name="PD" ColumnName="PD" />
+          <ScalarProperty Name="LN25" ColumnName="LN25" />
+          <ScalarProperty Name="LN25I" ColumnName="LN25I" />
+          <ScalarProperty Name="GPIDC" ColumnName="GPIDC" />
+          <ScalarProperty Name="BBDC" ColumnName="BBDC" />
+          <ScalarProperty Name="HOME" ColumnName="HOME" />
+          <ScalarProperty Name="INPCKI" ColumnName="INPCKI" />
+          <ScalarProperty Name="OUTPCKI" ColumnName="OUTPCKI" />
+          <ScalarProperty Name="OBC_EXP" ColumnName="OBC_EXP" />
+          <ScalarProperty Name="PS_EQUIV" ColumnName="PS_EQUIV" />
+          <ScalarProperty Name="PLBLR" ColumnName="PLBLR" />
+          <ScalarProperty Name="TOP50GEN" ColumnName="TOP50GEN" />
+          <ScalarProperty Name="OBC3" ColumnName="OBC3" />
+          <ScalarProperty Name="GMI" ColumnName="GMI" />
+          <ScalarProperty Name="GNI" ColumnName="GNI" />
+          <ScalarProperty Name="GSI" ColumnName="GSI" />
+          <ScalarProperty Name="GTI" ColumnName="GTI" />
+          <ScalarProperty Name="NDCGI1" ColumnName="NDCGI1" />
+          <ScalarProperty Name="HCFA_DC" ColumnName="HCFA_DC" />
+          <ScalarProperty Name="LN60" ColumnName="LN60" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RNDCAT0_NDC_ATTRIBUTE">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RNDCAT0_NDC_ATTRIBUTE">
+        <MappingFragment StoreEntitySet="RNDCAT0_NDC_ATTRIBUTE">
+          <ScalarProperty Name="RNDCAT0_NDC_ATTRIBUTEIdentifier" ColumnName="RNDCAT0_NDC_ATTRIBUTEIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="NDC_ATTRIBUTE_TYPE_CD" ColumnName="NDC_ATTRIBUTE_TYPE_CD" />
+          <ScalarProperty Name="NDC_ATTRIBUTE_SN" ColumnName="NDC_ATTRIBUTE_SN" />
+          <ScalarProperty Name="NDC_ATTRIBUTE_VALUE" ColumnName="NDC_ATTRIBUTE_VALUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RNDCINH0_NDC_INACTV_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RNDCINH0_NDC_INACTV_LINK">
+        <MappingFragment StoreEntitySet="RNDCINH0_NDC_INACTV_LINK">
+          <ScalarProperty Name="RNDCINH0_NDC_INACTV_LINKIdentifier" ColumnName="RNDCINH0_NDC_INACTV_LINKIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="HIC_SEQN" ColumnName="HIC_SEQN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RNDCINR0_INACTV_REVIEWED">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RNDCINR0_INACTV_REVIEWED">
+        <MappingFragment StoreEntitySet="RNDCINR0_INACTV_REVIEWED">
+          <ScalarProperty Name="RNDCINR0_INACTV_REVIEWEDIdentifier" ColumnName="RNDCINR0_INACTV_REVIEWEDIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RNP2_NDC_PRICE">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RNP2_NDC_PRICE">
+        <MappingFragment StoreEntitySet="RNP2_NDC_PRICE">
+          <ScalarProperty Name="RNP2_NDC_PRICEIdentifier" ColumnName="RNP2_NDC_PRICEIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="NPT_TYPE" ColumnName="NPT_TYPE" />
+          <ScalarProperty Name="NPT_DATEC" ColumnName="NPT_DATEC" />
+          <ScalarProperty Name="NPT_PRICEX" ColumnName="NPT_PRICEX" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROBCD0_OBC_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.ROBCD0_OBC_DESC">
+        <MappingFragment StoreEntitySet="ROBCD0_OBC_DESC">
+          <ScalarProperty Name="ROBCD0_OBC_DESCIdentifier" ColumnName="ROBCD0_OBC_DESCIdentifier" />
+          <ScalarProperty Name="OBC" ColumnName="OBC" />
+          <ScalarProperty Name="OBC_SN" ColumnName="OBC_SN" />
+          <ScalarProperty Name="OBC_DESC" ColumnName="OBC_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROBCNDC0_OBC_NDC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.ROBCNDC0_OBC_NDC">
+        <MappingFragment StoreEntitySet="ROBCNDC0_OBC_NDC">
+          <ScalarProperty Name="ROBCNDC0_OBC_NDCIdentifier" ColumnName="ROBCNDC0_OBC_NDCIdentifier" />
+          <ScalarProperty Name="NDC" ColumnName="NDC" />
+          <ScalarProperty Name="OBC3" ColumnName="OBC3" />
+          <ScalarProperty Name="GCN" ColumnName="GCN" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="GTI" ColumnName="GTI" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEDIGC0_PEDI_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEDIGC0_PEDI_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RPEDIGC0_PEDI_GCNSEQNO_LINK">
+          <ScalarProperty Name="RPEDIGC0_PEDI_GCNSEQNO_LINKIdentifier" ColumnName="RPEDIGC0_PEDI_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PEDI_CODE" ColumnName="PEDI_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEDIMA0_PEDI_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEDIMA0_PEDI_MSTR">
+        <MappingFragment StoreEntitySet="RPEDIMA0_PEDI_MSTR">
+          <ScalarProperty Name="RPEDIMA0_PEDI_MSTRIdentifier" ColumnName="RPEDIMA0_PEDI_MSTRIdentifier" />
+          <ScalarProperty Name="PEDI_CODE" ColumnName="PEDI_CODE" />
+          <ScalarProperty Name="PEDI_DESC" ColumnName="PEDI_DESC" />
+          <ScalarProperty Name="PEDI_SL" ColumnName="PEDI_SL" />
+          <ScalarProperty Name="PEDI_MINAG" ColumnName="PEDI_MINAG" />
+          <ScalarProperty Name="PEDI_MAXAG" ColumnName="PEDI_MAXAG" />
+          <ScalarProperty Name="PEDI_PRCTN" ColumnName="PEDI_PRCTN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEDIRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEDIRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RPEDIRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RPEDIRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RPEDIRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="PEDI_CODE" ColumnName="PEDI_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEDIRM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEDIRM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RPEDIRM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RPEDIRM0_ROUTED_MED_LINKIdentifier" ColumnName="RPEDIRM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="PEDI_CODE" ColumnName="PEDI_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEMGC0_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEMGC0_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RPEMGC0_GCNSEQNO_LINK">
+          <ScalarProperty Name="RPEMGC0_GCNSEQNO_LINKIdentifier" ColumnName="RPEMGC0_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PEC" ColumnName="PEC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEMMA5_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEMMA5_MSTR">
+        <MappingFragment StoreEntitySet="RPEMMA5_MSTR">
+          <ScalarProperty Name="RPEMMA5_MSTRIdentifier" ColumnName="RPEMMA5_MSTRIdentifier" />
+          <ScalarProperty Name="PEC" ColumnName="PEC" />
+          <ScalarProperty Name="DGNAME" ColumnName="DGNAME" />
+          <ScalarProperty Name="LBLMSG1" ColumnName="LBLMSG1" />
+          <ScalarProperty Name="LBLMSG2" ColumnName="LBLMSG2" />
+          <ScalarProperty Name="PEMONO" ColumnName="PEMONO" />
+          <ScalarProperty Name="AMACDE" ColumnName="AMACDE" />
+          <ScalarProperty Name="PHMXCDE" ColumnName="PHMXCDE" />
+          <ScalarProperty Name="USPCDE" ColumnName="USPCDE" />
+          <ScalarProperty Name="NARDCDE" ColumnName="NARDCDE" />
+          <ScalarProperty Name="ASHPCDE3" ColumnName="ASHPCDE3" />
+          <ScalarProperty Name="PEMONOS" ColumnName="PEMONOS" />
+          <ScalarProperty Name="PEMONOFRA" ColumnName="PEMONOFRA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEMMOE2_MONO">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEMMOE2_MONO">
+        <MappingFragment StoreEntitySet="RPEMMOE2_MONO">
+          <ScalarProperty Name="RPEMMOE2_MONOIdentifier" ColumnName="RPEMMOE2_MONOIdentifier" />
+          <ScalarProperty Name="PEMONO" ColumnName="PEMONO" />
+          <ScalarProperty Name="PEMONOE_SN" ColumnName="PEMONOE_SN" />
+          <ScalarProperty Name="PEMTXTEI" ColumnName="PEMTXTEI" />
+          <ScalarProperty Name="PEMTXTE" ColumnName="PEMTXTE" />
+          <ScalarProperty Name="PEMGNDR" ColumnName="PEMGNDR" />
+          <ScalarProperty Name="PEMAGE" ColumnName="PEMAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEMOGC0_MONO_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEMOGC0_MONO_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RPEMOGC0_MONO_GCNSEQNO_LINK">
+          <ScalarProperty Name="RPEMOGC0_MONO_GCNSEQNO_LINKIdentifier" ColumnName="RPEMOGC0_MONO_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PEMONO" ColumnName="PEMONO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEMORG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEMORG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RPEMORG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RPEMORG0_ROUTED_GEN_LINKIdentifier" ColumnName="RPEMORG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="PEMONO" ColumnName="PEMONO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPEMRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPEMRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RPEMRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RPEMRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RPEMRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="PEC" ColumnName="PEC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPREGGC0_PREG_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPREGGC0_PREG_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RPREGGC0_PREG_GCNSEQNO_LINK">
+          <ScalarProperty Name="RPREGGC0_PREG_GCNSEQNO_LINKIdentifier" ColumnName="RPREGGC0_PREG_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="PREG_CODE" ColumnName="PREG_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPREGMA0_PREG_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPREGMA0_PREG_MSTR">
+        <MappingFragment StoreEntitySet="RPREGMA0_PREG_MSTR">
+          <ScalarProperty Name="RPREGMA0_PREG_MSTRIdentifier" ColumnName="RPREGMA0_PREG_MSTRIdentifier" />
+          <ScalarProperty Name="PREG_CODE" ColumnName="PREG_CODE" />
+          <ScalarProperty Name="PREG_DESC" ColumnName="PREG_DESC" />
+          <ScalarProperty Name="PREG_SL" ColumnName="PREG_SL" />
+          <ScalarProperty Name="PREG_PRCTN" ColumnName="PREG_PRCTN" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPREGRG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPREGRG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RPREGRG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RPREGRG0_ROUTED_GEN_LINKIdentifier" ColumnName="RPREGRG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="PREG_CODE" ColumnName="PREG_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPREGRM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPREGRM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RPREGRM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RPREGRM0_ROUTED_MED_LINKIdentifier" ColumnName="RPREGRM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="PREG_CODE" ColumnName="PREG_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RPREGSL0_PREG_SEVER_LEVEL">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RPREGSL0_PREG_SEVER_LEVEL">
+        <MappingFragment StoreEntitySet="RPREGSL0_PREG_SEVER_LEVEL">
+          <ScalarProperty Name="RPREGSL0_PREG_SEVER_LEVELIdentifier" ColumnName="RPREGSL0_PREG_SEVER_LEVELIdentifier" />
+          <ScalarProperty Name="PREG_SL" ColumnName="PREG_SL" />
+          <ScalarProperty Name="PREG_SLSN" ColumnName="PREG_SLSN" />
+          <ScalarProperty Name="PREG_SLD" ColumnName="PREG_SLD" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RROUTED3_ROUTE_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RROUTED3_ROUTE_DESC">
+        <MappingFragment StoreEntitySet="RROUTED3_ROUTE_DESC">
+          <ScalarProperty Name="RROUTED3_ROUTE_DESCIdentifier" ColumnName="RROUTED3_ROUTE_DESCIdentifier" />
+          <ScalarProperty Name="GCRT" ColumnName="GCRT" />
+          <ScalarProperty Name="RT" ColumnName="RT" />
+          <ScalarProperty Name="GCRT2" ColumnName="GCRT2" />
+          <ScalarProperty Name="GCRT_DESC" ColumnName="GCRT_DESC" />
+          <ScalarProperty Name="SYSTEMIC" ColumnName="SYSTEMIC" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RRTGN0_ROUTED_GEN_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RRTGN0_ROUTED_GEN_MSTR">
+        <MappingFragment StoreEntitySet="RRTGN0_ROUTED_GEN_MSTR">
+          <ScalarProperty Name="RRTGN0_ROUTED_GEN_MSTRIdentifier" ColumnName="RRTGN0_ROUTED_GEN_MSTRIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="ROUTED_GEN_DESC" ColumnName="ROUTED_GEN_DESC" />
+          <ScalarProperty Name="GCRT" ColumnName="GCRT" />
+          <ScalarProperty Name="HICL_SEQNO" ColumnName="HICL_SEQNO" />
+          <ScalarProperty Name="ROUTED_GEN_STATUS_CD" ColumnName="ROUTED_GEN_STATUS_CD" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSIDEDD0_DRUG_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RSIDEDD0_DRUG_DESC">
+        <MappingFragment StoreEntitySet="RSIDEDD0_DRUG_DESC">
+          <ScalarProperty Name="RSIDEDD0_DRUG_DESCIdentifier" ColumnName="RSIDEDD0_DRUG_DESCIdentifier" />
+          <ScalarProperty Name="SIDE" ColumnName="SIDE" />
+          <ScalarProperty Name="SIDE_DRUG_DESC" ColumnName="SIDE_DRUG_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSIDEGC0_GCNSEQNO_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RSIDEGC0_GCNSEQNO_LINK">
+        <MappingFragment StoreEntitySet="RSIDEGC0_GCNSEQNO_LINK">
+          <ScalarProperty Name="RSIDEGC0_GCNSEQNO_LINKIdentifier" ColumnName="RSIDEGC0_GCNSEQNO_LINKIdentifier" />
+          <ScalarProperty Name="GCN_SEQNO" ColumnName="GCN_SEQNO" />
+          <ScalarProperty Name="SIDE" ColumnName="SIDE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSIDEMA3_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RSIDEMA3_MSTR">
+        <MappingFragment StoreEntitySet="RSIDEMA3_MSTR">
+          <ScalarProperty Name="RSIDEMA3_MSTRIdentifier" ColumnName="RSIDEMA3_MSTRIdentifier" />
+          <ScalarProperty Name="SIDE" ColumnName="SIDE" />
+          <ScalarProperty Name="SIDE_SN" ColumnName="SIDE_SN" />
+          <ScalarProperty Name="FDBDX" ColumnName="FDBDX" />
+          <ScalarProperty Name="SIDE_FREQ" ColumnName="SIDE_FREQ" />
+          <ScalarProperty Name="SIDE_SEV" ColumnName="SIDE_SEV" />
+          <ScalarProperty Name="SIDE_VISCD" ColumnName="SIDE_VISCD" />
+          <ScalarProperty Name="SIDE_LABCD" ColumnName="SIDE_LABCD" />
+          <ScalarProperty Name="SIDE_PHYS" ColumnName="SIDE_PHYS" />
+          <ScalarProperty Name="SIDE_HYPER" ColumnName="SIDE_HYPER" />
+          <ScalarProperty Name="DXID" ColumnName="DXID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSIDERG0_ROUTED_GEN_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RSIDERG0_ROUTED_GEN_LINK">
+        <MappingFragment StoreEntitySet="RSIDERG0_ROUTED_GEN_LINK">
+          <ScalarProperty Name="RSIDERG0_ROUTED_GEN_LINKIdentifier" ColumnName="RSIDERG0_ROUTED_GEN_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_GEN_ID" ColumnName="ROUTED_GEN_ID" />
+          <ScalarProperty Name="SIDE" ColumnName="SIDE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSIDERM0_ROUTED_MED_LINK">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RSIDERM0_ROUTED_MED_LINK">
+        <MappingFragment StoreEntitySet="RSIDERM0_ROUTED_MED_LINK">
+          <ScalarProperty Name="RSIDERM0_ROUTED_MED_LINKIdentifier" ColumnName="RSIDERM0_ROUTED_MED_LINKIdentifier" />
+          <ScalarProperty Name="ROUTED_MED_ID" ColumnName="ROUTED_MED_ID" />
+          <ScalarProperty Name="SIDE" ColumnName="SIDE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSTR1_STRNGTH_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RSTR1_STRNGTH_DESC">
+        <MappingFragment StoreEntitySet="RSTR1_STRNGTH_DESC">
+          <ScalarProperty Name="RSTR1_STRNGTH_DESCIdentifier" ColumnName="RSTR1_STRNGTH_DESCIdentifier" />
+          <ScalarProperty Name="STR60" ColumnName="STR60" />
+          <ScalarProperty Name="STRNUM" ColumnName="STRNUM" />
+          <ScalarProperty Name="VOLNUM" ColumnName="VOLNUM" />
+          <ScalarProperty Name="STRUN50" ColumnName="STRUN50" />
+          <ScalarProperty Name="VOLUN50" ColumnName="VOLUN50" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RSTRUOM0_STRENGTH_UOM">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RSTRUOM0_STRENGTH_UOM">
+        <MappingFragment StoreEntitySet="RSTRUOM0_STRENGTH_UOM">
+          <ScalarProperty Name="RSTRUOM0_STRENGTH_UOMIdentifier" ColumnName="RSTRUOM0_STRENGTH_UOMIdentifier" />
+          <ScalarProperty Name="UOM_ID" ColumnName="UOM_ID" />
+          <ScalarProperty Name="UOM_DESC" ColumnName="UOM_DESC" />
+          <ScalarProperty Name="UOM_ABBR" ColumnName="UOM_ABBR" />
+          <ScalarProperty Name="UOM_PREFERRED_DESC" ColumnName="UOM_PREFERRED_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RUNITSD0_UNITS_DESC">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RUNITSD0_UNITS_DESC">
+        <MappingFragment StoreEntitySet="RUNITSD0_UNITS_DESC">
+          <ScalarProperty Name="RUNITSD0_UNITS_DESCIdentifier" ColumnName="RUNITSD0_UNITS_DESCIdentifier" />
+          <ScalarProperty Name="DOSING_MODULE_UNIT_ABBREV" ColumnName="DOSING_MODULE_UNIT_ABBREV" />
+          <ScalarProperty Name="UNIT_DESC_ABBREV" ColumnName="UNIT_DESC_ABBREV" />
+          <ScalarProperty Name="UNIT_DESC_EXPANDED" ColumnName="UNIT_DESC_EXPANDED" />
+          <ScalarProperty Name="lastModifiedBy" ColumnName="lastModifiedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RXRGDFQ0_GCDF_SCRIPT_QQ">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RXRGDFQ0_GCDF_SCRIPT_QQ">
+        <MappingFragment StoreEntitySet="RXRGDFQ0_GCDF_SCRIPT_QQ">
+          <ScalarProperty Name="RXRGDFQ0_GCDF_SCRIPT_QQIdentifier" ColumnName="RXRGDFQ0_GCDF_SCRIPT_QQIdentifier" />
+          <ScalarProperty Name="GCDF" ColumnName="GCDF" />
+          <ScalarProperty Name="SCRIPT_QQ_ID" ColumnName="SCRIPT_QQ_ID" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RXRNCQQ0_QQ_MSTR">
+      <EntityTypeMapping TypeName="Atlas.Reference.DAL.Models.RXRNCQQ0_QQ_MSTR">
+        <MappingFragment StoreEntitySet="RXRNCQQ0_QQ_MSTR">
+          <ScalarProperty Name="RXRNCQQ0_QQ_MSTRIdentifier" ColumnName="RXRNCQQ0_QQ_MSTRIdentifier" />
+          <ScalarProperty Name="SCRIPT_QQ_ID" ColumnName="SCRIPT_QQ_ID" />
+          <ScalarProperty Name="SCRIPT_QQ_CD" ColumnName="SCRIPT_QQ_CD" />
+          <ScalarProperty Name="SCRIPT_QQ_DESC" ColumnName="SCRIPT_QQ_DESC" />
+          <ScalarProperty Name="XRF_SOURCE_ID" ColumnName="XRF_SOURCE_ID" />
+          <ScalarProperty Name="OBSOLETE_DATE" ColumnName="OBSOLETE_DATE" />
+          <ScalarProperty Name="recordVersion" ColumnName="recordVersion" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+          <ScalarProperty Name="systemID" ColumnName="systemID" />
+          <ScalarProperty Name="spareField01" ColumnName="spareField01" />
+          <ScalarProperty Name="spareField02" ColumnName="spareField02" />
+          <ScalarProperty Name="spareField03" ColumnName="spareField03" />
+          <ScalarProperty Name="spareIndexedField" ColumnName="spareIndexedField" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="deletedDate" ColumnName="deletedDate" />
+          <ScalarProperty Name="isV5" ColumnName="isV5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/DocumentationHelper/roslyn
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796800
+csc.exe;4280444277;1;1492524682;|280613|528460
+Microsoft.Build.Tasks.CodeAnalysis.dll;298192930;1;1492524682;|280603|528450
+Microsoft.CodeAnalysis.CSharp.dll;2658911531;1;1492524682;|280605|528452
+Microsoft.CodeAnalysis.dll;866920159;1;1492524682;|280607|528454
+Microsoft.CodeAnalysis.VisualBasic.dll;3292958581;1;1492524682;|280606|528453
+Microsoft.CSharp.Core.targets;2322480102;1;1492524682;|280604|528451
+Microsoft.VisualBasic.Core.targets;3943913710;1;1492524682;|280608|528455
+System.Collections.Immutable.dll;689569846;1;1492524682;|280609|528456
+System.Reflection.Metadata.dll;3309434941;1;1492524682;|280610|528457
+vbc.exe;1126537041;1;1492524683;|280614|528461
+VBCSCompiler.exe;1406803364;1;1492524683;|280611|528458
+VBCSCompiler.exe.config;336135587;1;1492524683;|280612|528459

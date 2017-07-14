@@ -1,0 +1,26 @@
+var class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r =
+[
+    [ "DCC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#ac91c0857be84623093572f83c5321f59", null ],
+    [ "deleted", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#aa49fc6a224849ef173891c2a8aed6bbf", null ],
+    [ "deletedDate", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#af0bdd5431a26d517b49a4d2db2f5511c", null ],
+    [ "GCDF", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a296437bb2863a9967c2dde2464e11882", null ],
+    [ "GCN_SEQNO", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a7f954f786f0b67a9cb72fd26dbcfd6d1", null ],
+    [ "GCNSEQ_GI", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#ac0e00b2f0706b5fa5ba11d620bdb8e57", null ],
+    [ "GCRT", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a002521f8867d60e8fd0b05412116166c", null ],
+    [ "GENDER", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a637a8275abab39d73dffe06fdef8076e", null ],
+    [ "GTC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a9a00a6b2e8abbc943ddab990cfa5e6ba", null ],
+    [ "HIC3", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a910057d544a1f091007e5805a6b7e364", null ],
+    [ "HIC3_SEQN", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#ab5a6e6410e93abc5630cd450f296928e", null ],
+    [ "HICL_SEQNO", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a855148e0973a379f7951fc62704631ec", null ],
+    [ "lastModified", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#ac80519722f830e9899b80dd758eeaed7", null ],
+    [ "recordVersion", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a1629df1be05c2a0e5e542cc465404518", null ],
+    [ "RGCNSEQ4_GCNSEQNO_MSTRIdentifier", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#adcde83a03cd0b03bc9d979d00a034c4b", null ],
+    [ "spareField01", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a2eb1605e3e27197f257bf08f09f49be7", null ],
+    [ "spareField02", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a27cad4fd6445b3b37b469009e3f0f15a", null ],
+    [ "spareField03", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a07fad404ce12d619602263c442c72068", null ],
+    [ "spareIndexedField", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a685baf19d413238618d911784c4f18e7", null ],
+    [ "STR", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#aff9afff8880b60dde135d3708e2bb9c4", null ],
+    [ "STR60", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a9dc9d75d7da8a966cc355041b4029fb4", null ],
+    [ "SystemID", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a8489bacc4b258f94ef224f1b9eaef52c", null ],
+    [ "TC", "class_atlas_1_1_formulary_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a6ba9372a70d4028391ac5c57ca05065a", null ]
+];

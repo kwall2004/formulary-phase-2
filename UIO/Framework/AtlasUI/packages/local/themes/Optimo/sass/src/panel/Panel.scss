@@ -1,0 +1,12 @@
+@include extjs-panel-ui(
+    $ui: 'boldheader',
+    $ui-header-background-color: lighten($base-color,15%),
+    $ui-header-border-width: 0px,
+    $ui-header-padding: 6px,
+    $ui-header-font-size: 16px
+);
+
+/*
+.#{$prefix}panel-boldheader{
+}
+*/

@@ -1,0 +1,8 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/Maintenance
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796772
+DrugSourceFileHistoryController.cs;2942328082;1;1492524687;|248558|509420
+JobQueueController.cs;1654297313;1;1492524687;|248559|479650
+JobStatTypeController.cs;1708348085;1;1498658270;|404064|4294967295
+JobTypeController.cs;890702123;1;1498664944;|404065|4294967295

@@ -1,0 +1,9 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.Core.DAL/obj/Release
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796710
+DesignTimeResolveAssemblyReferencesInput.cache;2917722955;1;1494461166;|249247|480338
+Atlas.Core.DAL.csproj.FileListAbsolute.txt;1491568976;1;1499709488;|249243|480334
+Atlas.Core.DAL.csprojResolveAssemblyReference.cache;3172730623;1;1499709488;|249244|480335
+Atlas.Core.DAL.dll;1661875162;1;1499709488;|249245|480336
+Atlas.Core.DAL.pdb;1805880564;1;1499709488;|249246|480337

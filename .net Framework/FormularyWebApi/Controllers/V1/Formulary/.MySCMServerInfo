@@ -1,0 +1,27 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/Formulary
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796773
+FormularyApprovalPriorityController.cs;4261698054;1;1492524686;|248531|479622
+FormularyApproveController.cs;21870295;1;1492524686;|248532|512744
+FormularyController.cs.bak;3045521812;1;1492524686;|248534|479625
+FormularyCopayExceptionController.cs;593829573;1;1492524686;|248535|479626
+FormularyDrugListController.cs;1053893091;1;1492524686;|248538|479629
+FormularyHeaderVersionCloneController.cs;21854269;1;1492524687;|248541|509418
+FormularyNDCController.cs;4239162981;1;1492524687;|248542|479633
+FormularyNotesController.cs;189156610;1;1492524687;|248544|479635
+FormularyRejectController.cs;2587355778;1;1492524687;|248545|479636
+FormularyReviewAHFSController.cs;3303261565;1;1492524687;|248546|479637
+FormularyReviewETCController.cs;4090347079;1;1492524687;|248548|479639
+FormularyReviewRulesController.cs;1919360372;1;1492524687;|248549|479640
+FormularyReviewTiersController.cs;1729023726;1;1492524687;|248550|479641
+FormularyRuleCombineController.cs;1019864875;1;1492524687;|248551|479642
+FormularyRuleController.cs;1910942153;1;1492524687;|248552|479643
+FormularyRuleImportController.cs;74115822;1;1492524687;|248553|479644
+FormularyRuleMedIdController.cs;1927979357;1;1492524687;|248554|479645
+FormularySearchController.cs;4144115365;1;1492524687;|248555|479646
+FormularyTierController.cs;3472486643;1;1492524687;|248556|509419
+FormularyCompareController.cs;2199353740;1;1494336267;|347988|609254
+FormularyReviewGPIController.cs;3344655186;1;1494336267;|347978|609224
+FormularyHeaderController.cs;2601698532;2;1494688725;|248539|609726
+FormularyReviewController.cs;1589710321;2;1494933611;|248547|609870

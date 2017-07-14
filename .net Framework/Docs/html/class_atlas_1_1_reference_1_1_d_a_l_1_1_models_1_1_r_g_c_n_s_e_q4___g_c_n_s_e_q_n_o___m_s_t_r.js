@@ -1,0 +1,26 @@
+var class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r =
+[
+    [ "DCC", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a234c61c305734f324a73c4c8c86dbe80", null ],
+    [ "deleted", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a6d7d8ba4e4b346affe8cfe93fdba8aee", null ],
+    [ "deletedDate", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a7923fd4b28f99ba6f5cac1901e7e0ffd", null ],
+    [ "GCDF", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a572188502f85c5fcf979bad0fc2becde", null ],
+    [ "GCN_SEQNO", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a8f0263791534533aba3d55de2e2b4416", null ],
+    [ "GCNSEQ_GI", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#af3fccbe27fa4c9228b6a0fd882dd5e2d", null ],
+    [ "GCRT", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a2011515ded8d05ae85a0fe78ffccadba", null ],
+    [ "GENDER", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#ae3906953d985e68b637da9e91809c0d3", null ],
+    [ "GTC", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a9df2a7a71a1b9b36c993b359c1cd71cd", null ],
+    [ "HIC3", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a412d048e0a5fdac55aa694f964b5f724", null ],
+    [ "HIC3_SEQN", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a30c942aa482e4e621499346e228a465a", null ],
+    [ "HICL_SEQNO", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a1dfa0e55eed57eae89865f17876fc81c", null ],
+    [ "lastModified", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a78f37a3a682f642c9ce83a7855f1d530", null ],
+    [ "recordVersion", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a21669ad06c594e844a576a1bf592bce1", null ],
+    [ "RGCNSEQ4_GCNSEQNO_MSTRIdentifier", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a21aa3c7f5b0ebbb63ca9572062053a99", null ],
+    [ "spareField01", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a25872ce25defaf41872d1562aaea483a", null ],
+    [ "spareField02", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#ae8b1438919a82024bd7a1defc91b9d4c", null ],
+    [ "spareField03", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a076b726032091cd30779cd0a029769cc", null ],
+    [ "spareIndexedField", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a0316bbb4eacc040f370f44cea7aff316", null ],
+    [ "STR", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a8ff36e6cbc63aed6266860150c26660e", null ],
+    [ "STR60", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#a543901d4fccb35fa23e2e00d91bde26c", null ],
+    [ "SystemID", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#aa35795b13b61d950e07790b24cd7b35b", null ],
+    [ "TC", "class_atlas_1_1_reference_1_1_d_a_l_1_1_models_1_1_r_g_c_n_s_e_q4___g_c_n_s_e_q_n_o___m_s_t_r.html#abd16f8fce8e207fc5da8d92c7994695e", null ]
+];

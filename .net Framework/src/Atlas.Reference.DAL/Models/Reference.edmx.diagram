@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a77c0e55feaf448b90f1fae1136141d0" Name="Diagram1" ZoomLevel="53">
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.AHFS" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.AppSettings" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.CacheStatus" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.DrugCatgRule" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.DrugListCache" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.DrugTypeFn" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.ETC" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FDBClinicalData" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FDBDrugChangeSummary" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FDBPatEdMstr" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FDBPECXRef" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FrmlryCacheStatus" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FrmlryPendingFeed" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FrmlryPlanType" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FrmlryReview" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.GCN" Width="1.5" PointX="12.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MedispanBrandProb" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MedispanBrandProbChangeList" Width="1.5" PointX="14.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MedispanDrugChangeSummary" Width="1.5" PointX="10.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MSDrugType" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NDCNote" Width="1.5" PointX="16.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NDCType" Width="1.5" PointX="16.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NewDrugNotToDrugList" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NewDrugNotToFrmlry" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NewDrugToDrugList" Width="1.5" PointX="14.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NewDrugToFrmlry" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.PatEdMonoTextType" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.PDFMessage" Width="1.5" PointX="18.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.RptFmt" Width="1.5" PointX="18.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.RptFmtSection" Width="1.5" PointX="18.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SmartSearchField" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SmartSearchGroup" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.sysdiagrams" Width="1.5" PointX="10.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.tmpCustomNDC" Width="1.5" PointX="12.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.tmpUserDrugCatgPage" Width="1.5" PointX="14.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.tmpUserDrugListDtlPage" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.tmpUserDrugSearchMS" Width="1.5" PointX="20.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.AHFSChangeList" Width="1.5" PointX="16.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.ETCChangeList" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.GCNChangeList" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.GPIChangeList" Width="1.5" PointX="22.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FileFmt" Width="1.5" PointX="3.375" PointY="23.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FontSize" Width="1.5" PointX="5.375" PointY="23.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.Lang" Width="1.5" PointX="11.375" PointY="23.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptCfg" Width="1.5" PointX="23.375" PointY="17.125" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptCfgCol" Width="1.5" PointX="25.625" PointY="17.625" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptCfgCvrgPrptyType" Width="1.5" PointX="25.625" PointY="24" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptCfgSctn" Width="1.5" PointX="28.625" PointY="17.5" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptCfgTier" Width="1.5" PointX="25.625" PointY="28" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptCol" Width="1.5" PointX="23.375" PointY="12.875" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptDrugSortBy" Width="1.5" PointX="13.375" PointY="23.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptOrgBy" Width="1.5" PointX="15.375" PointY="23.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptOTC" Width="1.5" PointX="17.375" PointY="23.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptRollUp" Width="1.5" PointX="19.375" PointY="24.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.SumRptSctn" Width="1.5" PointX="26.375" PointY="13.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.TierDispl" Width="1.5" PointX="21.375" PointY="24.75" />
+        <AssociationConnector Association="Atlas.Reference.DAL.Models.FK_SumRptCfgCol_SumRptCfg" />
+        <AssociationConnector Association="Atlas.Reference.DAL.Models.FK_SumRptCfgCvrgPrptyType_SumRptCfg" />
+        <AssociationConnector Association="Atlas.Reference.DAL.Models.FK_SumRptCfgSctn_SumRptCfg" />
+        <AssociationConnector Association="Atlas.Reference.DAL.Models.FK_SumRptCfgTier_SumRptCfg" />
+        <AssociationConnector Association="Atlas.Reference.DAL.Models.FK_SumRptCfgCol_SumRptCol" />
+        <AssociationConnector Association="Atlas.Reference.DAL.Models.FK_SumRptCfgSctn_SumRptSctn" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FormularyCache" Width="1.5" PointX="0.75" PointY="25.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MedispanDrugList" Width="1.5" PointX="0.75" PointY="15.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NSDEDrugChangeList" Width="1.5" PointX="25.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.NSDEDrugList" Width="1.5" PointX="25.375" PointY="4.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FDBDrugChangeList" Width="1.5" PointX="7.375" PointY="16.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FrmlryPlanSubType" Width="1.5" PointX="3.375" PointY="9.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MedispanDrugChangeList" Width="1.5" PointX="3.375" PointY="27.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.tmpUserDrugSearch" Width="1.5" PointX="27.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.FDBDrugList" Width="1.5" PointX="3.375" PointY="13.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MedId" Width="1.5" PointX="9.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.MedIdChangeList" Width="1.5" PointX="9.375" PointY="3.75" />
+        <EntityTypeShape EntityType="Atlas.Reference.DAL.Models.GPI" Width="1.5" PointX="9.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

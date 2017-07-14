@@ -1,0 +1,2829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Atlas.Reference.DAL.Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AHFSClass">
+    <Key>
+      <PropertyRef Name="AHFSClassIdentifier" />
+    </Key>
+    <Property Name="AHFSClassIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="AHFSClassID" Type="varchar(max)" />
+    <Property Name="AHFSClassNum" Type="varchar(max)" />
+    <Property Name="AHFSClass6" Type="varchar(max)" />
+    <Property Name="AHFSClass8" Type="varchar(max)" />
+    <Property Name="AHFSClassText" Type="varchar(max)" />
+    <Property Name="AHFSClassParentID" Type="varchar(max)" />
+    <Property Name="AHFSClassHasSubclass" Type="varchar(max)" />
+    <Property Name="AHFSRootParentID" Type="varchar(max)" />
+    <Property Name="AHFSSeqNum" Type="varchar(max)" />
+    <Property Name="AHFSHierarchyLevel" Type="varchar(max)" />
+    <Property Name="AHFSPrint" Type="varchar(max)" />
+    <Property Name="AHFSPrintOrder" Type="varchar(max)" />
+    <Property Name="AHFSRetired" Type="varchar(max)" />
+    <Property Name="AHFSRetiredDate" Type="varchar(max)" />
+    <Property Name="AHFSAddDate" Type="varchar(max)" />
+    <Property Name="AHFSCxDate" Type="varchar(max)" />
+    <Property Name="AHFSCxDesc" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="AHFSDrugs">
+    <Key>
+      <PropertyRef Name="AHFSDrugsIdentifier" />
+    </Key>
+    <Property Name="AHFSDrugsIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="AHFSClassID" Type="varchar(max)" />
+    <Property Name="UN" Type="varchar(max)" />
+    <Property Name="GenDrugName" Type="varchar(max)" />
+    <Property Name="PrintClass" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="AHFSMapNDCClass">
+    <Key>
+      <PropertyRef Name="AHFSMapNDCClassIdentifier" />
+    </Key>
+    <Property Name="AHFSMapNDCClassIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="AHFSClassNum" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="AHFSMapNDCRxNorm">
+    <Key>
+      <PropertyRef Name="AHFSMapNDCRxNormIdentifier" />
+    </Key>
+    <Property Name="AHFSMapNDCRxNormIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="RxNorm_CUI" Type="varchar(max)" />
+    <Property Name="AHFSClassNum" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="AHFSTradeNames">
+    <Key>
+      <PropertyRef Name="AHFSTradeNamesIdentifier" />
+    </Key>
+    <Property Name="AHFSTradeNamesIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="UN" Type="varchar(max)" />
+    <Property Name="TradeName" Type="varchar(max)" />
+    <Property Name="Type" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyAlternatives">
+    <Key>
+      <PropertyRef Name="formularyAlternativesIdentifier" />
+    </Key>
+    <Property Name="formularyAlternativesIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyID" Type="varchar(max)" />
+    <Property Name="FormularyAltID" Type="varchar(max)" />
+    <Property Name="FormularyAltName" Type="varchar(max)" />
+    <Property Name="Stat" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyCopayList">
+    <Key>
+      <PropertyRef Name="formularyCopayListIdentifier" />
+    </Key>
+    <Property Name="formularyCopayListIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyCopayID" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyCoverageList">
+    <Key>
+      <PropertyRef Name="formularyCoverageListIdentifier" />
+    </Key>
+    <Property Name="formularyCoverageListIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyCoverageID" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyDetails">
+    <Key>
+      <PropertyRef Name="formularyDetailsIdentifier" />
+    </Key>
+    <Property Name="formularyDetailsIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyID" Type="varchar(max)" />
+    <Property Name="DrugCode" Type="varchar(max)" />
+    <Property Name="DrugCodeID" Type="varchar(max)" />
+    <Property Name="NewDrug" Type="varchar(max)" />
+    <Property Name="LoadDateTime" Type="varchar(max)" />
+    <Property Name="DrugCodeAddDate" Type="varchar(max)" />
+    <Property Name="DrugCodeObsolete" Type="varchar(max)" />
+    <Property Name="DrugCodeObsoleteDate" Type="varchar(max)" />
+    <Property Name="ETCHierarchyLevel" Type="varchar(max)" />
+    <Property Name="UltChildInd" Type="varchar(max)" />
+    <Property Name="Covered" Type="varchar(max)" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="GenericMedID" Type="varchar(max)" />
+    <Property Name="CMS_RxCUI" Type="varchar(max)" />
+    <Property Name="NDDF_RxCUI" Type="varchar(max)" />
+    <Property Name="LN" Type="varchar(max)" />
+    <Property Name="BN" Type="varchar(max)" />
+    <Property Name="OTC_IND" Type="varchar(max)" />
+    <Property Name="OBC" Type="varchar(max)" />
+    <Property Name="DCC" Type="varchar(max)" />
+    <Property Name="DEA" Type="varchar(max)" />
+    <Property Name="DrugType" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_NAME" Type="varchar(max)" />
+    <Property Name="PARENT_ETC_ID" Type="varchar(max)" />
+    <Property Name="PARENT_ETC_NAME" Type="varchar(max)" />
+    <Property Name="ULTIMATE_PARENT_ETC_ID" Type="varchar(max)" />
+    <Property Name="ULTIMATE_PARENT_ETC_NAME" Type="varchar(max)" />
+    <Property Name="GCDF_DESC" Type="varchar(max)" />
+    <Property Name="GCRT_DESC" Type="varchar(max)" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="GNN60" Type="varchar(max)" />
+    <Property Name="GTC" Type="varchar(max)" />
+    <Property Name="GTC_DESC" Type="varchar(max)" />
+    <Property Name="Source" Type="varchar(max)" />
+    <Property Name="SpecialtyDrugInd" Type="varchar(max)" />
+    <Property Name="MaxCopayAmt" Type="varchar(max)" />
+    <Property Name="HundredPctCopay" Type="varchar(max)" />
+    <Property Name="CopayLimit" Type="varchar(max)" />
+    <Property Name="CopayLimitNotes" Type="varchar(max)" />
+    <Property Name="TierCode" Type="varchar(max)" />
+    <Property Name="GenderRestriction" Type="varchar(max)" />
+    <Property Name="MinAge" Type="varchar(max)" />
+    <Property Name="MaxAge" Type="varchar(max)" />
+    <Property Name="AgeType" Type="varchar(max)" />
+    <Property Name="PAInd" Type="varchar(max)" />
+    <Property Name="PAName" Type="varchar(max)" />
+    <Property Name="PAGenderCode" Type="varchar(max)" />
+    <Property Name="LimitedAccess" Type="varchar(max)" />
+    <Property Name="DollarAmount" Type="varchar(max)" />
+    <Property Name="DollarAmtTimePeriod" Type="varchar(max)" />
+    <Property Name="DaysSupply" Type="varchar(max)" />
+    <Property Name="DaysSupplyTimePeriod" Type="varchar(max)" />
+    <Property Name="Fills" Type="varchar(max)" />
+    <Property Name="FillsTimePeriod" Type="varchar(max)" />
+    <Property Name="QtyLimit2" Type="varchar(max)" />
+    <Property Name="QtyLmtTimePeriod" Type="varchar(max)" />
+    <Property Name="QLNotes" Type="varchar(max)" />
+    <Property Name="StepTherapyInd" Type="varchar(max)" />
+    <Property Name="StepTherapyName" Type="varchar(max)" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="EffectiveDateTime" Type="varchar(max)" />
+    <Property Name="TermDateTime" Type="varchar(max)" />
+    <Property Name="TextMessage" Type="varchar(max)" />
+    <Property Name="ResourceLink" Type="varchar(max)" />
+    <Property Name="createDateTime" Type="varchar(max)" />
+    <Property Name="createdBy" Type="varchar(max)" />
+    <Property Name="lastUpdateDateTime" Type="varchar(max)" />
+    <Property Name="lastUpdateBy" Type="varchar(max)" />
+    <Property Name="FormularyVersion" Type="varchar(max)" />
+    <Property Name="CopayAmt" Type="varchar(max)" />
+    <Property Name="CopayType" Type="varchar(max)" />
+    <Property Name="PartDExcludedDrug" Type="varchar(max)" />
+    <Property Name="MedicaidCarveOutDrug" Type="varchar(max)" />
+    <Property Name="Maint" Type="varchar(max)" />
+    <Property Name="HCFA_FDA" Type="varchar(max)" />
+    <Property Name="RuleLevelID" Type="varchar(max)" />
+    <Property Name="LevelType" Type="varchar(max)" />
+    <Property Name="MedicaidFeeScreen" Type="varchar(max)" />
+    <Property Name="MedicarePAType" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpCount" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpDesc1" Type="varchar(max)" />
+    <Property Name="MedicareSTStepValue1" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpDesc2" Type="varchar(max)" />
+    <Property Name="MedicareSTStepValue2" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpDesc3" Type="varchar(max)" />
+    <Property Name="MedicareSTStepValue3" Type="varchar(max)" />
+    <Property Name="QtyLimit" Type="varchar(max)" />
+    <Property Name="PAMinAge" Type="varchar(max)" />
+    <Property Name="PAMaxAge" Type="varchar(max)" />
+    <Property Name="OTCInd" Type="varchar(max)" />
+    <Property Name="NDCFI" Type="varchar(max)" />
+    <Property Name="InReview" Type="varchar(max)" />
+    <Property Name="sequence" Type="varchar(max)" />
+    <Property Name="labelerCode" Type="varchar(max)" />
+    <Property Name="genericIDType" Type="varchar(max)" />
+    <Property Name="genericIDNum" Type="varchar(max)" />
+    <Property Name="therapeuticClass" Type="varchar(max)" />
+    <Property Name="itemStatus" Type="varchar(max)" />
+    <Property Name="localSystem" Type="varchar(max)" />
+    <Property Name="TEE" Type="varchar(max)" />
+    <Property Name="IDNum" Type="varchar(max)" />
+    <Property Name="restricted" Type="varchar(max)" />
+    <Property Name="dispenseUnit" Type="varchar(max)" />
+    <Property Name="unitDose" Type="varchar(max)" />
+    <Property Name="adminRoute" Type="varchar(max)" />
+    <Property Name="formType" Type="varchar(max)" />
+    <Property Name="dollarRank" Type="varchar(max)" />
+    <Property Name="RxRank" Type="varchar(max)" />
+    <Property Name="numSysChar" Type="varchar(max)" />
+    <Property Name="secondIDForm" Type="varchar(max)" />
+    <Property Name="secondIDNum" Type="varchar(max)" />
+    <Property Name="multiSource" Type="varchar(max)" />
+    <Property Name="brandName" Type="varchar(max)" />
+    <Property Name="reimburseInd" Type="varchar(max)" />
+    <Property Name="intExt" Type="varchar(max)" />
+    <Property Name="singleComb" Type="varchar(max)" />
+    <Property Name="storageCond" Type="varchar(max)" />
+    <Property Name="stability" Type="varchar(max)" />
+    <Property Name="lastChange" Type="varchar(max)" />
+    <Property Name="nameExt" Type="varchar(max)" />
+    <Property Name="allergyPattern" Type="varchar(max)" />
+    <Property Name="PPGInd" Type="varchar(max)" />
+    <Property Name="HFPGInd" Type="varchar(max)" />
+    <Property Name="labelerType" Type="varchar(max)" />
+    <Property Name="pricingSpread" Type="varchar(max)" />
+    <Property Name="dosageForm" Type="varchar(max)" />
+    <Property Name="packageUM" Type="varchar(max)" />
+    <Property Name="packageQty" Type="varchar(max)" />
+    <Property Name="repackage" Type="varchar(max)" />
+    <Property Name="DESI" Type="varchar(max)" />
+    <Property Name="packageDesc" Type="varchar(max)" />
+    <Property Name="nxtSmallSuffix" Type="varchar(max)" />
+    <Property Name="nxtLargSuffix" Type="varchar(max)" />
+    <Property Name="innerPack" Type="varchar(max)" />
+    <Property Name="clinicPack" Type="varchar(max)" />
+    <Property Name="GPPC" Type="varchar(max)" />
+    <Property Name="descAbbr" Type="varchar(max)" />
+    <Property Name="drugName" Type="varchar(max)" />
+    <Property Name="recordCode" Type="varchar(max)" />
+    <Property Name="packageSize" Type="varchar(max)" />
+    <Property Name="ttlPackQty" Type="varchar(max)" />
+    <Property Name="TransFillExcluded" Type="varchar(max)" />
+    <Property Name="GPICode" Type="varchar(max)" />
+    <Property Name="restrictToPkgSize" Type="varchar(max)" />
+    <Property Name="ovrGenericCheck" Type="varchar(max)" />
+    <Property Name="preferred" Type="varchar(max)" />
+    <Property Name="PDLFlag" Type="varchar(max)" />
+    <Property Name="partDDrug" Type="varchar(max)" />
+    <Property Name="extendedDaysSupply" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyDrugClassificationList">
+    <Key>
+      <PropertyRef Name="formularyDrugClassificationListIdentifier" />
+    </Key>
+    <Property Name="formularyDrugClassificationListIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyDrugClassificationID" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyMaster">
+    <Key>
+      <PropertyRef Name="formularyMasterIdentifier" />
+    </Key>
+    <Property Name="formularyMasterIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyID" Type="varchar(max)" />
+    <Property Name="FormularyName" Type="varchar(max)" />
+    <Property Name="FormularyVersion" Type="varchar(max)" />
+    <Property Name="Stat" Type="varchar(max)" />
+    <Property Name="EffectiveDate" Type="varchar(max)" />
+    <Property Name="TerminationDate" Type="varchar(max)" />
+    <Property Name="CreateDateTime" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="varchar(max)" />
+    <Property Name="LastUpdateDateTime" Type="varchar(max)" />
+    <Property Name="LastUpdateBy" Type="varchar(max)" />
+    <Property Name="PDApprovedBy" Type="varchar(max)" />
+    <Property Name="PDApprovedDate" Type="varchar(max)" />
+    <Property Name="MDApprovedBy" Type="varchar(max)" />
+    <Property Name="MDApprovedDate" Type="varchar(max)" />
+    <Property Name="formularyType" Type="varchar(max)" />
+    <Property Name="dataSource" Type="varchar(max)" />
+    <Property Name="incTPARestrictionCodes" Type="varchar(max)" />
+    <Property Name="excTPARestrictionCodes" Type="varchar(max)" />
+    <Property Name="incRouteOfAdminCodes" Type="varchar(max)" />
+    <Property Name="excRouteOfAdminCodes" Type="varchar(max)" />
+    <Property Name="incExcOTC" Type="varchar(max)" />
+    <Property Name="incExcPresc" Type="varchar(max)" />
+    <Property Name="genMandatory" Type="varchar(max)" />
+    <Property Name="activeDays" Type="varchar(max)" />
+    <Property Name="pdfPrintFunction" Type="varchar(max)" />
+    <Property Name="drugTypeFunction" Type="varchar(max)" />
+    <Property Name="cmsApprIdVer" Type="varchar(max)" />
+    <Property Name="autoAddNewDrugs" Type="varchar(max)" />
+    <Property Name="cmsSubmissionId" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyRuleSetup">
+    <Key>
+      <PropertyRef Name="formularyRuleSetupIdentifier" />
+    </Key>
+    <Property Name="formularyRuleSetupIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyID" Type="varchar(max)" />
+    <Property Name="RuleLevelID" Type="varchar(max)" />
+    <Property Name="LevelType" Type="varchar(max)" />
+    <Property Name="Covered" Type="varchar(max)" />
+    <Property Name="SpecialtyDrugInd" Type="varchar(max)" />
+    <Property Name="MaxCopayAmt" Type="varchar(max)" />
+    <Property Name="HundredPctCopay" Type="varchar(max)" />
+    <Property Name="CopayLimit" Type="varchar(max)" />
+    <Property Name="CopayLimitNotes" Type="varchar(max)" />
+    <Property Name="TierCode" Type="varchar(max)" />
+    <Property Name="GenderRestriction" Type="varchar(max)" />
+    <Property Name="MinAge" Type="varchar(max)" />
+    <Property Name="MaxAge" Type="varchar(max)" />
+    <Property Name="AgeType" Type="varchar(max)" />
+    <Property Name="PAInd" Type="varchar(max)" />
+    <Property Name="PAName" Type="varchar(max)" />
+    <Property Name="LimitedAccess" Type="varchar(max)" />
+    <Property Name="DollarAmount" Type="varchar(max)" />
+    <Property Name="DollarAmtTimePeriod" Type="varchar(max)" />
+    <Property Name="DaysSupply" Type="varchar(max)" />
+    <Property Name="DaysSupplyTimePeriod" Type="varchar(max)" />
+    <Property Name="Fills" Type="varchar(max)" />
+    <Property Name="FillsTimePeriod" Type="varchar(max)" />
+    <Property Name="qtyLimit2" Type="varchar(max)" />
+    <Property Name="QtyLmtTimePeriod" Type="varchar(max)" />
+    <Property Name="QLNotes" Type="varchar(max)" />
+    <Property Name="StepTherapyInd" Type="varchar(max)" />
+    <Property Name="StepTherapyName" Type="varchar(max)" />
+    <Property Name="Notes" Type="varchar(max)" />
+    <Property Name="EffectiveDateTime" Type="varchar(max)" />
+    <Property Name="TermDateTime" Type="varchar(max)" />
+    <Property Name="TextMessage" Type="varchar(max)" />
+    <Property Name="ResourceLink" Type="varchar(max)" />
+    <Property Name="createDateTime" Type="varchar(max)" />
+    <Property Name="createdBy" Type="varchar(max)" />
+    <Property Name="lastUpdateDateTime" Type="varchar(max)" />
+    <Property Name="lastUpdateBy" Type="varchar(max)" />
+    <Property Name="FormularyVersion" Type="varchar(max)" />
+    <Property Name="CopayAmt" Type="varchar(max)" />
+    <Property Name="CopayType" Type="varchar(max)" />
+    <Property Name="PAGenderCode" Type="varchar(max)" />
+    <Property Name="DrugType" Type="varchar(max)" />
+    <Property Name="OTCind" Type="varchar(max)" />
+    <Property Name="PartDExcludedDrug" Type="varchar(max)" />
+    <Property Name="MedicaidCarveOutDrug" Type="varchar(max)" />
+    <Property Name="MedicaidFeeScreen" Type="varchar(max)" />
+    <Property Name="MedicarePAType" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpCount" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpDesc1" Type="varchar(max)" />
+    <Property Name="MedicareSTStepValue1" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpDesc2" Type="varchar(max)" />
+    <Property Name="MedicareSTStepValue2" Type="varchar(max)" />
+    <Property Name="MedicareSTGrpDesc3" Type="varchar(max)" />
+    <Property Name="MedicareSTStepValue3" Type="varchar(max)" />
+    <Property Name="QtyLimit" Type="varchar(max)" />
+    <Property Name="PAMinAge" Type="varchar(max)" />
+    <Property Name="PAMaxAge" Type="varchar(max)" />
+    <Property Name="CMS_RxCUI" Type="varchar(max)" />
+    <Property Name="NDDF_RxCUI" Type="varchar(max)" />
+    <Property Name="NDCFI" Type="varchar(max)" />
+    <Property Name="InReview" Type="varchar(max)" />
+    <Property Name="sequence" Type="varchar(max)" />
+    <Property Name="labelerCode" Type="varchar(max)" />
+    <Property Name="genericIDType" Type="varchar(max)" />
+    <Property Name="genericIDNum" Type="varchar(max)" />
+    <Property Name="therapeuticClass" Type="varchar(max)" />
+    <Property Name="itemStatus" Type="varchar(max)" />
+    <Property Name="localSystem" Type="varchar(max)" />
+    <Property Name="TEE" Type="varchar(max)" />
+    <Property Name="IDNum" Type="varchar(max)" />
+    <Property Name="restricted" Type="varchar(max)" />
+    <Property Name="dispenseUnit" Type="varchar(max)" />
+    <Property Name="unitDose" Type="varchar(max)" />
+    <Property Name="adminRoute" Type="varchar(max)" />
+    <Property Name="formType" Type="varchar(max)" />
+    <Property Name="dollarRank" Type="varchar(max)" />
+    <Property Name="RxRank" Type="varchar(max)" />
+    <Property Name="numSysChar" Type="varchar(max)" />
+    <Property Name="secondIDForm" Type="varchar(max)" />
+    <Property Name="secondIDNum" Type="varchar(max)" />
+    <Property Name="multiSource" Type="varchar(max)" />
+    <Property Name="brandName" Type="varchar(max)" />
+    <Property Name="reimburseInd" Type="varchar(max)" />
+    <Property Name="intExt" Type="varchar(max)" />
+    <Property Name="singleComb" Type="varchar(max)" />
+    <Property Name="storageCond" Type="varchar(max)" />
+    <Property Name="stability" Type="varchar(max)" />
+    <Property Name="lastChange" Type="varchar(max)" />
+    <Property Name="nameExt" Type="varchar(max)" />
+    <Property Name="allergyPattern" Type="varchar(max)" />
+    <Property Name="PPGInd" Type="varchar(max)" />
+    <Property Name="HFPGInd" Type="varchar(max)" />
+    <Property Name="labelerType" Type="varchar(max)" />
+    <Property Name="pricingSpread" Type="varchar(max)" />
+    <Property Name="dosageForm" Type="varchar(max)" />
+    <Property Name="packageUM" Type="varchar(max)" />
+    <Property Name="packageQty" Type="varchar(max)" />
+    <Property Name="repackage" Type="varchar(max)" />
+    <Property Name="DESI" Type="varchar(max)" />
+    <Property Name="packageDesc" Type="varchar(max)" />
+    <Property Name="nxtSmallSuffix" Type="varchar(max)" />
+    <Property Name="nxtLargSuffix" Type="varchar(max)" />
+    <Property Name="innerPack" Type="varchar(max)" />
+    <Property Name="clinicPack" Type="varchar(max)" />
+    <Property Name="GPPC" Type="varchar(max)" />
+    <Property Name="descAbbr" Type="varchar(max)" />
+    <Property Name="drugName" Type="varchar(max)" />
+    <Property Name="recordCode" Type="varchar(max)" />
+    <Property Name="packageSize" Type="varchar(max)" />
+    <Property Name="ttlPackQty" Type="varchar(max)" />
+    <Property Name="TransFillExcluded" Type="varchar(max)" />
+    <Property Name="restrictToPkgSize" Type="varchar(max)" />
+    <Property Name="ovrGenericCheck" Type="varchar(max)" />
+    <Property Name="PDLFlag" Type="varchar(max)" />
+    <Property Name="partDDrug" Type="varchar(max)" />
+    <Property Name="extendedDaysSupply" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyTiers">
+    <Key>
+      <PropertyRef Name="formularyTiersIdentifier" />
+    </Key>
+    <Property Name="formularyTiersIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyID" Type="varchar(max)" />
+    <Property Name="formularyTierID" Type="varchar(max)" />
+    <Property Name="TierCode" Type="varchar(max)" />
+    <Property Name="TierDesc" Type="varchar(max)" />
+    <Property Name="exceptionTiercode" Type="varchar(max)" />
+    <Property Name="nonPartDTierCode" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="formularyXREF">
+    <Key>
+      <PropertyRef Name="formularyXREFIdentifier" />
+    </Key>
+    <Property Name="formularyXREFIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FormularyID" Type="varchar(max)" />
+    <Property Name="FormularyVersion" Type="varchar(max)" />
+    <Property Name="FormularyAltID" Type="varchar(max)" />
+    <Property Name="FormularyCoverageID" Type="varchar(max)" />
+    <Property Name="FormularyDrugClassificationID" Type="varchar(max)" />
+    <Property Name="FormularyCopayID" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NCPDPProviderAdd">
+    <Key>
+      <PropertyRef Name="NCPDPProviderAddIdentifier" />
+    </Key>
+    <Property Name="NCPDPProviderAddIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ProviderLink" Type="varchar(max)" />
+    <Property Name="AddressID" Type="varchar(max)" />
+    <Property Name="Add1" Type="varchar(max)" />
+    <Property Name="Add2" Type="varchar(max)" />
+    <Property Name="City" Type="varchar(max)" />
+    <Property Name="State" Type="varchar(max)" />
+    <Property Name="County" Type="varchar(max)" />
+    <Property Name="Zip" Type="varchar(max)" />
+    <Property Name="Zip4" Type="varchar(max)" />
+    <Property Name="DPV" Type="varchar(max)" />
+    <Property Name="Lat" Type="varchar(max)" />
+    <Property Name="Long" Type="varchar(max)" />
+    <Property Name="CoCnt" Type="varchar(max)" />
+    <Property Name="TC" Type="varchar(max)" />
+    <Property Name="VerCode" Type="varchar(max)" />
+    <Property Name="VerDate" Type="varchar(max)" />
+    <Property Name="MedicaidID" Type="varchar(max)" />
+    <Property Name="MedicaidSt" Type="varchar(max)" />
+    <Property Name="recordType" Type="varchar(max)" />
+    <Property Name="GEO" Type="varchar(max)" />
+    <Property Name="Phone" Type="varchar(max)" />
+    <Property Name="PhoneType" Type="varchar(max)" />
+    <Property Name="HCID" Type="varchar(max)" />
+    <Property Name="rank" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NCPDPProviderDEA">
+    <Key>
+      <PropertyRef Name="NCPDPProviderDEAIdentifier" />
+    </Key>
+    <Property Name="NCPDPProviderDEAIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DEA" Type="varchar(max)" />
+    <Property Name="ReNew" Type="varchar(max)" />
+    <Property Name="ProviderLink" Type="varchar(max)" />
+    <Property Name="recordType" Type="varchar(max)" />
+    <Property Name="DEAstaCode" Type="varchar(max)" />
+    <Property Name="CoCnt" Type="varchar(max)" />
+    <Property Name="DrugSch" Type="varchar(max)" />
+    <Property Name="TC" Type="varchar(max)" />
+    <Property Name="VerCode" Type="varchar(max)" />
+    <Property Name="VerDate" Type="varchar(max)" />
+    <Property Name="HCID" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NCPDPProviderLic">
+    <Key>
+      <PropertyRef Name="NCPDPProviderLicIdentifier" />
+    </Key>
+    <Property Name="NCPDPProviderLicIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ProviderLink" Type="varchar(max)" />
+    <Property Name="StLic" Type="varchar(max)" />
+    <Property Name="State" Type="varchar(max)" />
+    <Property Name="LicIss" Type="varchar(max)" />
+    <Property Name="LicExp" Type="varchar(max)" />
+    <Property Name="recordType" Type="varchar(max)" />
+    <Property Name="CoCnt" Type="varchar(max)" />
+    <Property Name="TC" Type="varchar(max)" />
+    <Property Name="VerCode" Type="varchar(max)" />
+    <Property Name="VerDate" Type="varchar(max)" />
+    <Property Name="HCID" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NCPDPProviderMaster">
+    <Key>
+      <PropertyRef Name="NCPDPProviderMasterIdentifier" />
+    </Key>
+    <Property Name="NCPDPProviderMasterIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="FirstName" Type="varchar(max)" />
+    <Property Name="UPIN" Type="varchar(max)" />
+    <Property Name="Gender" Type="varchar(max)" />
+    <Property Name="ProviderLink" Type="varchar(max)" />
+    <Property Name="recordType" Type="varchar(max)" />
+    <Property Name="Degree" Type="varchar(max)" />
+    <Property Name="HCID" Type="varchar(max)" />
+    <Property Name="DOB" Type="varchar(max)" />
+    <Property Name="MiddleName" Type="varchar(max)" />
+    <Property Name="LastName" Type="varchar(max)" />
+    <Property Name="Suffix" Type="varchar(max)" />
+    <Property Name="CoCnt" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NCPDPProviderNPI">
+    <Key>
+      <PropertyRef Name="NCPDPProviderNPIIdentifier" />
+    </Key>
+    <Property Name="NCPDPProviderNPIIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ProviderLink" Type="varchar(max)" />
+    <Property Name="NPI" Type="varchar(max)" />
+    <Property Name="recordType" Type="varchar(max)" />
+    <Property Name="CoCnt" Type="varchar(max)" />
+    <Property Name="DeceasedDate" Type="varchar(max)" />
+    <Property Name="DeceasedIndicator" Type="varchar(max)" />
+    <Property Name="VerCode" Type="varchar(max)" />
+    <Property Name="VerDate" Type="varchar(max)" />
+    <Property Name="TC" Type="varchar(max)" />
+    <Property Name="HCID" Type="varchar(max)" />
+    <Property Name="deactivationDate" Type="varchar(max)" />
+    <Property Name="reactivationDate" Type="varchar(max)" />
+    <Property Name="rank" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NCPDPProviderSpec">
+    <Key>
+      <PropertyRef Name="NCPDPProviderSpecIdentifier" />
+    </Key>
+    <Property Name="NCPDPProviderSpecIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ProviderLink" Type="varchar(max)" />
+    <Property Name="SpecDesc" Type="varchar(max)" />
+    <Property Name="CoCnt" Type="varchar(max)" />
+    <Property Name="TC" Type="varchar(max)" />
+    <Property Name="VerCode" Type="varchar(max)" />
+    <Property Name="recordType" Type="varchar(max)" />
+    <Property Name="VerDate" Type="varchar(max)" />
+    <Property Name="HCID" Type="varchar(max)" />
+    <Property Name="rank" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NCPDPProviderTax">
+    <Key>
+      <PropertyRef Name="NCPDPProviderTaxIdentifier" />
+    </Key>
+    <Property Name="NCPDPProviderTaxIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="PTI" Type="varchar(max)" />
+    <Property Name="Taxonomy" Type="varchar(max)" />
+    <Property Name="TaxonomyDesc" Type="varchar(max)" />
+    <Property Name="ProviderLink" Type="varchar(max)" />
+    <Property Name="recordType" Type="varchar(max)" />
+    <Property Name="CoCnt" Type="varchar(max)" />
+    <Property Name="TC" Type="varchar(max)" />
+    <Property Name="VerCode" Type="varchar(max)" />
+    <Property Name="VerDate" Type="varchar(max)" />
+    <Property Name="HCID" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NDCStripeMgmt">
+    <Key>
+      <PropertyRef Name="NDCStripeMgmtIdentifier" />
+    </Key>
+    <Property Name="NDCStripeMgmtIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="drugType" Type="varchar(max)" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="OTCInd" Type="varchar(max)" />
+    <Property Name="ETC_1" Type="varchar(max)" />
+    <Property Name="ETC_2" Type="varchar(max)" />
+    <Property Name="ETC_3" Type="varchar(max)" />
+    <Property Name="ETC_4" Type="varchar(max)" />
+    <Property Name="ETC_5" Type="varchar(max)" />
+    <Property Name="ETC_6" Type="varchar(max)" />
+    <Property Name="ETC_7" Type="varchar(max)" />
+    <Property Name="ETC_8" Type="varchar(max)" />
+    <Property Name="ETC_9" Type="varchar(max)" />
+    <Property Name="ETC_10" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NSDEDrugs">
+    <Key>
+      <PropertyRef Name="NSDEDrugsIdentifier" />
+    </Key>
+    <Property Name="NSDEDrugsIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="proprietaryName" Type="varchar(max)" />
+    <Property Name="dosageForm" Type="varchar(max)" />
+    <Property Name="marketingCategory" Type="varchar(max)" />
+    <Property Name="ApplNumber" Type="varchar(max)" />
+    <Property Name="productType" Type="varchar(max)" />
+    <Property Name="effDate" Type="varchar(max)" />
+    <Property Name="termDate" Type="varchar(max)" />
+    <Property Name="createDate" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="NTISDEAMaster">
+    <Key>
+      <PropertyRef Name="NTISDEAMasterIdentifier" />
+    </Key>
+    <Property Name="NTISDEAMasterIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DEANum" Type="varchar(max)" />
+    <Property Name="businessActCode" Type="varchar(max)" />
+    <Property Name="businessActSubCode" Type="varchar(max)" />
+    <Property Name="expirationDate" Type="varchar(max)" />
+    <Property Name="drugSchedule" Type="varchar(max)" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="addlCompanyInfo" Type="varchar(max)" />
+    <Property Name="address1" Type="varchar(max)" />
+    <Property Name="address2" Type="varchar(max)" />
+    <Property Name="city" Type="varchar(max)" />
+    <Property Name="state" Type="varchar(max)" />
+    <Property Name="zip" Type="varchar(max)" />
+    <Property Name="paymentInd" Type="varchar(max)" />
+    <Property Name="activity" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RADIMEF0_CLIN_EFFECT">
+    <Key>
+      <PropertyRef Name="RADIMEF0_CLIN_EFFECTIdentifier" />
+    </Key>
+    <Property Name="RADIMEF0_CLIN_EFFECTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ADI_EFFTC" Type="varchar(max)" />
+    <Property Name="ADI_EFFTXT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RADIMGC4_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RADIMGC4_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RADIMGC4_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="DDI_CODEX" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RADIMIE4_CLIN_EFFECTS_LINK">
+    <Key>
+      <PropertyRef Name="RADIMIE4_CLIN_EFFECTS_LINKIdentifier" />
+    </Key>
+    <Property Name="RADIMIE4_CLIN_EFFECTS_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDI_CODEX" Type="varchar(max)" />
+    <Property Name="ADI_EFFTC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RADIMMA5_MSTR">
+    <Key>
+      <PropertyRef Name="RADIMMA5_MSTRIdentifier" />
+    </Key>
+    <Property Name="RADIMMA5_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDI_CODEX" Type="varchar(max)" />
+    <Property Name="DDI_DES" Type="varchar(max)" />
+    <Property Name="DDI_SL" Type="varchar(max)" />
+    <Property Name="DDI_MONOX" Type="varchar(max)" />
+    <Property Name="DDI_PGEDI" Type="varchar(max)" />
+    <Property Name="DDI_TREE" Type="varchar(max)" />
+    <Property Name="DDI_MFGI" Type="varchar(max)" />
+    <Property Name="DDI_TRIALI" Type="varchar(max)" />
+    <Property Name="DDI_CASEI" Type="varchar(max)" />
+    <Property Name="DDI_ABSI" Type="varchar(max)" />
+    <Property Name="DDI_IVASI" Type="varchar(max)" />
+    <Property Name="DDI_REVI" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RADIMMO5_MONO">
+    <Key>
+      <PropertyRef Name="RADIMMO5_MONOIdentifier" />
+    </Key>
+    <Property Name="RADIMMO5_MONOIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDI_MONOX" Type="varchar(max)" />
+    <Property Name="ADI_MONOSN" Type="varchar(max)" />
+    <Property Name="IAMIDENTN" Type="varchar(max)" />
+    <Property Name="IAMTEXTN" Type="varchar(max)" />
+    <Property Name="IAMREFCAT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RADIMSL1_SEVER_LEVEL">
+    <Key>
+      <PropertyRef Name="RADIMSL1_SEVER_LEVELIdentifier" />
+    </Key>
+    <Property Name="RADIMSL1_SEVER_LEVELIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDI_SL" Type="varchar(max)" />
+    <Property Name="DDI_SLSN" Type="varchar(max)" />
+    <Property Name="DDI_SLTXT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RAHFSD1_DESC">
+    <Key>
+      <PropertyRef Name="RAHFSD1_DESCIdentifier" />
+    </Key>
+    <Property Name="RAHFSD1_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="AHFS8" Type="varchar(max)" />
+    <Property Name="AHFS_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RAHFSGC1_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RAHFSGC1_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RAHFSGC1_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="AHFS8" Type="varchar(max)" />
+    <Property Name="AHFS_REL" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RAPPLNA0_FDA_NDC_APPL">
+    <Key>
+      <PropertyRef Name="RAPPLNA0_FDA_NDC_APPLIdentifier" />
+    </Key>
+    <Property Name="RAPPLNA0_FDA_NDC_APPLIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="APPL_NO" Type="varchar(max)" />
+    <Property Name="APPL_TYPE_CD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RAPPLSL0_FDA_NDC_NDA_ANDA">
+    <Key>
+      <PropertyRef Name="RAPPLSL0_FDA_NDC_NDA_ANDAIdentifier" />
+    </Key>
+    <Property Name="RAPPLSL0_FDA_NDC_NDA_ANDAIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="NDA_IND" Type="varchar(max)" />
+    <Property Name="ANDA_IND" Type="varchar(max)" />
+    <Property Name="LISTING_SEQ_NO" Type="varchar(max)" />
+    <Property Name="TRADENAME" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RAPPLTD0_FDA_APPL_TYPE">
+    <Key>
+      <PropertyRef Name="RAPPLTD0_FDA_APPL_TYPEIdentifier" />
+    </Key>
+    <Property Name="RAPPLTD0_FDA_APPL_TYPEIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="APPL_TYPE_CD" Type="varchar(max)" />
+    <Property Name="APPL_TYPE_CD_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RATCD0_ATC_DESC">
+    <Key>
+      <PropertyRef Name="RATCD0_ATC_DESCIdentifier" />
+    </Key>
+    <Property Name="RATCD0_ATC_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ATC" Type="varchar(max)" />
+    <Property Name="ATC_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RATCGC0_ATC_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RATCGC0_ATC_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RATCGC0_ATC_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="ATC" Type="varchar(max)" />
+    <Property Name="ATC_VER" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RBDPGC0_REF_PRICE_DIR">
+    <Key>
+      <PropertyRef Name="RBDPGC0_REF_PRICE_DIRIdentifier" />
+    </Key>
+    <Property Name="RBDPGC0_REF_PRICE_DIRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PS" Type="varchar(max)" />
+    <Property Name="BDP_DATEC" Type="varchar(max)" />
+    <Property Name="BDP_PRICE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RBLP0_PRICE_GCN_LINK">
+    <Key>
+      <PropertyRef Name="RBLP0_PRICE_GCN_LINKIdentifier" />
+    </Key>
+    <Property Name="RBLP0_PRICE_GCN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN" Type="varchar(max)" />
+    <Property Name="PS" Type="varchar(max)" />
+    <Property Name="BLP_DATEC" Type="varchar(max)" />
+    <Property Name="BLP_PRICE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RBLPGC0_BLP_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RBLPGC0_BLP_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RBLPGC0_BLP_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PS" Type="varchar(max)" />
+    <Property Name="BLP_DATEC" Type="varchar(max)" />
+    <Property Name="BLP_PRICE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RBWPGC0_REF_PRICE_WHN">
+    <Key>
+      <PropertyRef Name="RBWPGC0_REF_PRICE_WHNIdentifier" />
+    </Key>
+    <Property Name="RBWPGC0_REF_PRICE_WHNIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PS" Type="varchar(max)" />
+    <Property Name="BWP_DATEC" Type="varchar(max)" />
+    <Property Name="BWP_PRICE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RCMMD0_DESC">
+    <Key>
+      <PropertyRef Name="RCMMD0_DESCIdentifier" />
+    </Key>
+    <Property Name="RCMMD0_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="CMMC" Type="varchar(max)" />
+    <Property Name="CMRPH1" Type="varchar(max)" />
+    <Property Name="CMRPH2" Type="varchar(max)" />
+    <Property Name="CMPAT1" Type="varchar(max)" />
+    <Property Name="CMPAT2" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RCMMGC0_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RCMMGC0_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RCMMGC0_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="CMMC" Type="varchar(max)" />
+    <Property Name="CMMC_RN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMAGD1_ALRGN_GRP_DESC">
+    <Key>
+      <PropertyRef Name="RDAMAGD1_ALRGN_GRP_DESCIdentifier" />
+    </Key>
+    <Property Name="RDAMAGD1_ALRGN_GRP_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DAM_ALRGN_GRP" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_GRP_DESC" Type="varchar(max)" />
+    <Property Name="DAM_GRP_POTENTIALLY_INACTV_IND" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_GRP_STATUS_CD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMAPM0_ALRGN_PICKLIST_MSTR">
+    <Key>
+      <PropertyRef Name="RDAMAPM0_ALRGN_PICKLIST_MSTRIdentifier" />
+    </Key>
+    <Property Name="RDAMAPM0_ALRGN_PICKLIST_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DAM_CONCEPT_ID" Type="varchar(max)" />
+    <Property Name="DAM_CONCEPT_ID_TYP" Type="varchar(max)" />
+    <Property Name="DAM_CONCEPT_ID_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMCD0_PICKLIST_CON_TYP_DESC">
+    <Key>
+      <PropertyRef Name="RDAMCD0_PICKLIST_CON_TYP_DESCIdentifier" />
+    </Key>
+    <Property Name="RDAMCD0_PICKLIST_CON_TYP_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DAM_CONCEPT_ID_TYP" Type="varchar(max)" />
+    <Property Name="DAM_CONCEPT_ID_TYP_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMCSD1_XSENSIT_ALLERGY_DESC">
+    <Key>
+      <PropertyRef Name="RDAMCSD1_XSENSIT_ALLERGY_DESCIdentifier" />
+    </Key>
+    <Property Name="RDAMCSD1_XSENSIT_ALLERGY_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DAM_ALRGN_XSENSE" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_XSENSE_DESC" Type="varchar(max)" />
+    <Property Name="DAM_XSENSE_POTENTIAL_INCTV_IND" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_XSENSE_STATUS_CD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMGHC0_HIC_ALRGN_GRP_LINK">
+    <Key>
+      <PropertyRef Name="RDAMGHC0_HIC_ALRGN_GRP_LINKIdentifier" />
+    </Key>
+    <Property Name="RDAMGHC0_HIC_ALRGN_GRP_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_GRP" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMGRH0_ALRGN_GRP_HIST">
+    <Key>
+      <PropertyRef Name="RDAMGRH0_ALRGN_GRP_HISTIdentifier" />
+    </Key>
+    <Property Name="RDAMGRH0_ALRGN_GRP_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="REPL_DAM_ALRGN_GRP" Type="varchar(max)" />
+    <Property Name="PREV_DAM_ALRGN_GRP" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_GRP_REPL_EFF_DT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMGSD0_GRP_STATUS_DESC">
+    <Key>
+      <PropertyRef Name="RDAMGSD0_GRP_STATUS_DESCIdentifier" />
+    </Key>
+    <Property Name="RDAMGSD0_GRP_STATUS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DAM_ALRGN_GRP_STATUS_CD" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_GRP_STATUS_CD_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMGX0_ALRGN_GRP_XSENSE_LINK">
+    <Key>
+      <PropertyRef Name="RDAMGX0_ALRGN_GRP_XSENSE_LINKIdentifier" />
+    </Key>
+    <Property Name="RDAMGX0_ALRGN_GRP_XSENSE_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DAM_ALRGN_GRP" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_XSENSE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMXHC0_HIC_ALRGN_XSENSE_LINK">
+    <Key>
+      <PropertyRef Name="RDAMXHC0_HIC_ALRGN_XSENSE_LINKIdentifier" />
+    </Key>
+    <Property Name="RDAMXHC0_HIC_ALRGN_XSENSE_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_XSENSE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMXSD0_XSENSE_STATUS_DESC">
+    <Key>
+      <PropertyRef Name="RDAMXSD0_XSENSE_STATUS_DESCIdentifier" />
+    </Key>
+    <Property Name="RDAMXSD0_XSENSE_STATUS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DAM_ALRGN_XSENSE_STATUS_CD" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_XSENSE_STATUS_CD_DSC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDAMXSH0_ALRGN_XSENSE_HIST">
+    <Key>
+      <PropertyRef Name="RDAMXSH0_ALRGN_XSENSE_HISTIdentifier" />
+    </Key>
+    <Property Name="RDAMXSH0_ALRGN_XSENSE_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="REPL_DAM_ALRGN_XSENSE" Type="varchar(max)" />
+    <Property Name="PREV_DAM_ALRGN_XSENSE" Type="varchar(max)" />
+    <Property Name="DAM_ALRGN_XSENSE_REPL_EFF_DT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDCCD0_DRUG_CAT_DESC">
+    <Key>
+      <PropertyRef Name="RDCCD0_DRUG_CAT_DESCIdentifier" />
+    </Key>
+    <Property Name="RDCCD0_DRUG_CAT_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DCC" Type="varchar(max)" />
+    <Property Name="DCC_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDCMDD0_CONTRA_DRUG_DESC">
+    <Key>
+      <PropertyRef Name="RDDCMDD0_CONTRA_DRUG_DESCIdentifier" />
+    </Key>
+    <Property Name="RDDCMDD0_CONTRA_DRUG_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDXCN" Type="varchar(max)" />
+    <Property Name="DDXCN_DRUG_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDCMGC0_CONTRA_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RDDCMGC0_CONTRA_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RDDCMGC0_CONTRA_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="DDXCN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDCMMA1_CONTRA_MSTR">
+    <Key>
+      <PropertyRef Name="RDDCMMA1_CONTRA_MSTRIdentifier" />
+    </Key>
+    <Property Name="RDDCMMA1_CONTRA_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDXCN" Type="varchar(max)" />
+    <Property Name="DDXCN_SN" Type="varchar(max)" />
+    <Property Name="FDBDX" Type="varchar(max)" />
+    <Property Name="DDXCN_SL" Type="varchar(max)" />
+    <Property Name="DDXCN_REF" Type="varchar(max)" />
+    <Property Name="DXID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDCMRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RDDCMRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RDDCMRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="DDXCN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDCMRM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RDDCMRM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RDDCMRM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="DDXCN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDIMAG0_AGENT">
+    <Key>
+      <PropertyRef Name="RDDIMAG0_AGENTIdentifier" />
+    </Key>
+    <Property Name="RDDIMAG0_AGENTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDI_CODEX" Type="varchar(max)" />
+    <Property Name="DDI_AGSN" Type="varchar(max)" />
+    <Property Name="DDI_AGD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDIMIN0_NDC_INACTV_DDIM_LINK">
+    <Key>
+      <PropertyRef Name="RDDIMIN0_NDC_INACTV_DDIM_LINKIdentifier" />
+    </Key>
+    <Property Name="RDDIMIN0_NDC_INACTV_DDIM_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DDI_NDC" Type="varchar(max)" />
+    <Property Name="DDI_CODEX" Type="varchar(max)" />
+    <Property Name="DDI_NDC_HICSEQN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDIMRD0_REF_CATEGORY">
+    <Key>
+      <PropertyRef Name="RDDIMRD0_REF_CATEGORYIdentifier" />
+    </Key>
+    <Property Name="RDDIMRD0_REF_CATEGORYIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="IAMREFCAT" Type="varchar(max)" />
+    <Property Name="IAMREFCATD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDIMRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RDDIMRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RDDIMRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="DDI_CODEX" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDDIMRM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RDDIMRM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RDDIMRM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="DDI_CODEX" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDOSED2_DOSE_DESC">
+    <Key>
+      <PropertyRef Name="RDOSED2_DOSE_DESCIdentifier" />
+    </Key>
+    <Property Name="RDOSED2_DOSE_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCDF" Type="varchar(max)" />
+    <Property Name="DOSE" Type="varchar(max)" />
+    <Property Name="GCDF_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDOSSRC0_DOSING_AGE_SOURCE">
+    <Key>
+      <PropertyRef Name="RDOSSRC0_DOSING_AGE_SOURCEIdentifier" />
+    </Key>
+    <Property Name="RDOSSRC0_DOSING_AGE_SOURCEIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DOSING_AGE_SOURCE_ID" Type="varchar(max)" />
+    <Property Name="DOSING_AGE_SOURCE_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDPTCL0_CLASS_ID">
+    <Key>
+      <PropertyRef Name="RDPTCL0_CLASS_IDIdentifier" />
+    </Key>
+    <Property Name="RDPTCL0_CLASS_IDIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DPT_CLASS_ID" Type="varchar(max)" />
+    <Property Name="DPT_CLASS_DESC" Type="varchar(max)" />
+    <Property Name="DPT_ALLOWANCE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDPTGC0_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RDPTGC0_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RDPTGC0_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="DPT_CLASS_ID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDPTRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RDPTRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RDPTRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="DPT_CLASS_ID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDPTRTM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RDPTRTM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RDPTRTM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="DPT_CLASS_ID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCCD0_CALC_REQ_TYPE_DESC">
+    <Key>
+      <PropertyRef Name="RDRCCD0_CALC_REQ_TYPE_DESCIdentifier" />
+    </Key>
+    <Property Name="RDRCCD0_CALC_REQ_TYPE_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="UNITS_CTYP" Type="varchar(max)" />
+    <Property Name="UNITS_CTYP_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCCVU0_UNITS_CONVERSION">
+    <Key>
+      <PropertyRef Name="RDRCCVU0_UNITS_CONVERSIONIdentifier" />
+    </Key>
+    <Property Name="RDRCCVU0_UNITS_CONVERSIONIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DCNV_PUI" Type="varchar(max)" />
+    <Property Name="UNITS_RUI" Type="varchar(max)" />
+    <Property Name="DCNV_MTHI" Type="varchar(max)" />
+    <Property Name="DCNV_CNVF" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCDD0_DOSE_CALC_DESC">
+    <Key>
+      <PropertyRef Name="RDRCDD0_DOSE_CALC_DESCIdentifier" />
+    </Key>
+    <Property Name="RDRCDD0_DOSE_CALC_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="UNITS_DCC" Type="varchar(max)" />
+    <Property Name="UNITS_DCC_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCDTD0_DOSE_TYPE_DESC">
+    <Key>
+      <PropertyRef Name="RDRCDTD0_DOSE_TYPE_DESCIdentifier" />
+    </Key>
+    <Property Name="RDRCDTD0_DOSE_TYPE_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DR2_DOSTPI" Type="varchar(max)" />
+    <Property Name="DOSTPI_DES" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCMA2_MSTR">
+    <Key>
+      <PropertyRef Name="RDRCMA2_MSTRIdentifier" />
+    </Key>
+    <Property Name="RDRCMA2_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="DR2_RT" Type="varchar(max)" />
+    <Property Name="DR2_LOAGED" Type="varchar(max)" />
+    <Property Name="DR2_HIAGED" Type="varchar(max)" />
+    <Property Name="FDBDX" Type="varchar(max)" />
+    <Property Name="DR2_DOSTPI" Type="varchar(max)" />
+    <Property Name="DR2_LODOSD" Type="varchar(max)" />
+    <Property Name="DR2_LODOSU" Type="varchar(max)" />
+    <Property Name="DR2_HIDOSD" Type="varchar(max)" />
+    <Property Name="DR2_HIDOSU" Type="varchar(max)" />
+    <Property Name="DR2_MXDOSD" Type="varchar(max)" />
+    <Property Name="DR2_MXDOSU" Type="varchar(max)" />
+    <Property Name="DR2_LOFREQ" Type="varchar(max)" />
+    <Property Name="DR2_HIFREQ" Type="varchar(max)" />
+    <Property Name="DR2_RENIMP" Type="varchar(max)" />
+    <Property Name="DR2_CRCLTH" Type="varchar(max)" />
+    <Property Name="DR2_CRCLU" Type="varchar(max)" />
+    <Property Name="DR2_LODOTX" Type="varchar(max)" />
+    <Property Name="DR2_HIDOTX" Type="varchar(max)" />
+    <Property Name="DR2_MXDOTX" Type="varchar(max)" />
+    <Property Name="DR2_HEPIMP" Type="varchar(max)" />
+    <Property Name="DR2_THAFLO" Type="varchar(max)" />
+    <Property Name="DR2_THAFHI" Type="varchar(max)" />
+    <Property Name="DR2_THAFU" Type="varchar(max)" />
+    <Property Name="DR2_MX1DOS" Type="varchar(max)" />
+    <Property Name="DR2_MX1DSU" Type="varchar(max)" />
+    <Property Name="DR2_MXLIFD" Type="varchar(max)" />
+    <Property Name="DR2_MXLIFU" Type="varchar(max)" />
+    <Property Name="DXID" Type="varchar(max)" />
+    <Property Name="NTE_SINGLE_DOSE" Type="varchar(max)" />
+    <Property Name="NTE_SINGLE_DOSE_UNIT_CODE" Type="varchar(max)" />
+    <Property Name="DOSING_AGE_SOURCE_ID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCMD0_MATH_PROCESS_DESC">
+    <Key>
+      <PropertyRef Name="RDRCMD0_MATH_PROCESS_DESCIdentifier" />
+    </Key>
+    <Property Name="RDRCMD0_MATH_PROCESS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DCNV_MTHI" Type="varchar(max)" />
+    <Property Name="DCNV_MTHI_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCNMA1_MSTR">
+    <Key>
+      <PropertyRef Name="RDRCNMA1_MSTRIdentifier" />
+    </Key>
+    <Property Name="RDRCNMA1_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="DR2_RT" Type="varchar(max)" />
+    <Property Name="DR2_LOAGED" Type="varchar(max)" />
+    <Property Name="DR2_HIAGED" Type="varchar(max)" />
+    <Property Name="FDBDX" Type="varchar(max)" />
+    <Property Name="DR2_DOSTPI" Type="varchar(max)" />
+    <Property Name="NEOM_LOW_GEST_BIRTH_AGE_WEEKS" Type="varchar(max)" />
+    <Property Name="NEOM_HIGH_GEST_BIRTH_AGE_WEEKS" Type="varchar(max)" />
+    <Property Name="NEOM_LOW_CURRENT_WEIGHT_GRAMS" Type="varchar(max)" />
+    <Property Name="NEOM_HIGH_CURRENT_WEIGHT_GRAMS" Type="varchar(max)" />
+    <Property Name="NEOM_GEST_BIRTH_AGE_REQ_IND" Type="varchar(max)" />
+    <Property Name="NEOM_WEIGHT_REQ_IND" Type="varchar(max)" />
+    <Property Name="DR2_LODOSD" Type="varchar(max)" />
+    <Property Name="DR2_LODOSU" Type="varchar(max)" />
+    <Property Name="DR2_HIDOSD" Type="varchar(max)" />
+    <Property Name="DR2_HIDOSU" Type="varchar(max)" />
+    <Property Name="DR2_MXDOSD" Type="varchar(max)" />
+    <Property Name="DR2_MXDOSU" Type="varchar(max)" />
+    <Property Name="DR2_LOFREQ" Type="varchar(max)" />
+    <Property Name="DR2_HIFREQ" Type="varchar(max)" />
+    <Property Name="DR2_RENIMP" Type="varchar(max)" />
+    <Property Name="DR2_CRCLTH" Type="varchar(max)" />
+    <Property Name="DR2_CRCLU" Type="varchar(max)" />
+    <Property Name="DR2_LODOTX" Type="varchar(max)" />
+    <Property Name="DR2_HIDOTX" Type="varchar(max)" />
+    <Property Name="DR2_MXDOTX" Type="varchar(max)" />
+    <Property Name="DR2_HEPIMP" Type="varchar(max)" />
+    <Property Name="DR2_THAFLO" Type="varchar(max)" />
+    <Property Name="DR2_THAFHI" Type="varchar(max)" />
+    <Property Name="DR2_THAFU" Type="varchar(max)" />
+    <Property Name="DR2_MX1DOS" Type="varchar(max)" />
+    <Property Name="DR2_MX1DSU" Type="varchar(max)" />
+    <Property Name="DR2_MXLIFD" Type="varchar(max)" />
+    <Property Name="DR2_MXLIFU" Type="varchar(max)" />
+    <Property Name="DXID" Type="varchar(max)" />
+    <Property Name="NTE_SINGLE_DOSE" Type="varchar(max)" />
+    <Property Name="NTE_SINGLE_DOSE_UNIT_CODE" Type="varchar(max)" />
+    <Property Name="DOSING_AGE_SOURCE_ID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCRTD0_ROUTE_DESC">
+    <Key>
+      <PropertyRef Name="RDRCRTD0_ROUTE_DESCIdentifier" />
+    </Key>
+    <Property Name="RDRCRTD0_ROUTE_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DR2_RT" Type="varchar(max)" />
+    <Property Name="ROUTES_DES" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCUND0_UNITS_DESC">
+    <Key>
+      <PropertyRef Name="RDRCUND0_UNITS_DESCIdentifier" />
+    </Key>
+    <Property Name="RDRCUND0_UNITS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DR2_UNITS" Type="varchar(max)" />
+    <Property Name="UNITS_DESC" Type="varchar(max)" />
+    <Property Name="UNITS_CTYP" Type="varchar(max)" />
+    <Property Name="UNITS_DCC" Type="varchar(max)" />
+    <Property Name="UNITS_RUI" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RDRCXRT0_XREF">
+    <Key>
+      <PropertyRef Name="RDRCXRT0_XREFIdentifier" />
+    </Key>
+    <Property Name="RDRCXRT0_XREFIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCRT2" Type="varchar(max)" />
+    <Property Name="DR2_RT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCGC0_ETC_GCNSEQNO">
+    <Key>
+      <PropertyRef Name="RETCGC0_ETC_GCNSEQNOIdentifier" />
+    </Key>
+    <Property Name="RETCGC0_ETC_GCNSEQNOIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_COMMON_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_DEFAULT_USE_IND" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCGCH0_ETC_GCNSEQNO_HIST">
+    <Key>
+      <PropertyRef Name="RETCGCH0_ETC_GCNSEQNO_HISTIdentifier" />
+    </Key>
+    <Property Name="RETCGCH0_ETC_GCNSEQNO_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_REVISION_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_COMMON_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_DEFAULT_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_CHANGE_TYPE_CODE" Type="varchar(max)" />
+    <Property Name="ETC_EFFECTIVE_DATE" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCHCH0_ETC_HICSEQN_HIST">
+    <Key>
+      <PropertyRef Name="RETCHCH0_ETC_HICSEQN_HISTIdentifier" />
+    </Key>
+    <Property Name="RETCHCH0_ETC_HICSEQN_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_REVISION_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_CHANGE_TYPE_CODE" Type="varchar(max)" />
+    <Property Name="ETC_EFFECTIVE_DATE" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCHLH0_ETC_HICLSEQNO_HIST">
+    <Key>
+      <PropertyRef Name="RETCHLH0_ETC_HICLSEQNO_HISTIdentifier" />
+    </Key>
+    <Property Name="RETCHLH0_ETC_HICLSEQNO_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_REVISION_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_CHANGE_TYPE_CODE" Type="varchar(max)" />
+    <Property Name="ETC_EFFECTIVE_DATE" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCMDH0_ETC_MEDID_HIST">
+    <Key>
+      <PropertyRef Name="RETCMDH0_ETC_MEDID_HISTIdentifier" />
+    </Key>
+    <Property Name="RETCMDH0_ETC_MEDID_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MEDID" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_REVISION_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_COMMON_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_DEFAULT_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_CHANGE_TYPE_CODE" Type="varchar(max)" />
+    <Property Name="ETC_EFFECTIVE_DATE" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCMED0_ETC_MEDID">
+    <Key>
+      <PropertyRef Name="RETCMED0_ETC_MEDIDIdentifier" />
+    </Key>
+    <Property Name="RETCMED0_ETC_MEDIDIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MEDID" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_COMMON_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_DEFAULT_USE_IND" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCNDH0_ETC_NDC_HIST">
+    <Key>
+      <PropertyRef Name="RETCNDH0_ETC_NDC_HISTIdentifier" />
+    </Key>
+    <Property Name="RETCNDH0_ETC_NDC_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_REVISION_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_COMMON_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_DEFAULT_USE_IND" Type="varchar(max)" />
+    <Property Name="ETC_CHANGE_TYPE_CODE" Type="varchar(max)" />
+    <Property Name="ETC_EFFECTIVE_DATE" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCNMH0_ETC_MED_NAME_ID_HIST">
+    <Key>
+      <PropertyRef Name="RETCNMH0_ETC_MED_NAME_ID_HISTIdentifier" />
+    </Key>
+    <Property Name="RETCNMH0_ETC_MED_NAME_ID_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MED_NAME_ID" Type="varchar(max)" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_REVISION_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_CHANGE_TYPE_CODE" Type="varchar(max)" />
+    <Property Name="ETC_EFFECTIVE_DATE" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RETCTBL0_ETC_ID">
+    <Key>
+      <PropertyRef Name="RETCTBL0_ETC_IDIdentifier" />
+    </Key>
+    <Property Name="RETCTBL0_ETC_IDIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_NAME" Type="varchar(max)" />
+    <Property Name="ETC_ULTIMATE_CHILD_IND" Type="varchar(max)" />
+    <Property Name="ETC_DRUG_CONCEPT_LINK_IND" Type="varchar(max)" />
+    <Property Name="ETC_PARENT_ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_FORMULARY_LEVEL_IND" Type="varchar(max)" />
+    <Property Name="ETC_PRESENTATION_SEQNO" Type="varchar(max)" />
+    <Property Name="ETC_ULTIMATE_PARENT_ETC_ID" Type="varchar(max)" />
+    <Property Name="ETC_HIERARCHY_LEVEL" Type="varchar(max)" />
+    <Property Name="ETC_SORT_NUMBER" Type="varchar(max)" />
+    <Property Name="ETC_RETIRED_IND" Type="varchar(max)" />
+    <Property Name="ETC_RETIRED_DATE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="REVDEL0_EXT_VOCAB_LINK">
+    <Key>
+      <PropertyRef Name="REVDEL0_EXT_VOCAB_LINKIdentifier" />
+    </Key>
+    <Property Name="REVDEL0_EXT_VOCAB_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="EVD_FDB_VOCAB_ID" Type="varchar(max)" />
+    <Property Name="EVD_FDB_VOCAB_TYPE_ID" Type="varchar(max)" />
+    <Property Name="EVD_EXT_VOCAB_ID" Type="varchar(max)" />
+    <Property Name="EVD_EXT_VOCAB_TYPE_ID" Type="varchar(max)" />
+    <Property Name="EVD_LINK_TYPE_ID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="REVDLT0_LINK_TYPE_DESC">
+    <Key>
+      <PropertyRef Name="REVDLT0_LINK_TYPE_DESCIdentifier" />
+    </Key>
+    <Property Name="REVDLT0_LINK_TYPE_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="EVD_LINK_TYPE_ID" Type="varchar(max)" />
+    <Property Name="EVD_SOURCE_ID" Type="varchar(max)" />
+    <Property Name="EVD_LINK_TYPE_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="REVDUR0_RXCUI_ULT_REPL">
+    <Key>
+      <PropertyRef Name="REVDUR0_RXCUI_ULT_REPLIdentifier" />
+    </Key>
+    <Property Name="REVDUR0_RXCUI_ULT_REPLIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="EVD_EXT_VOCAB_ID" Type="varchar(max)" />
+    <Property Name="EVD_EXT_ULT_REP_VOCAB_ID" Type="varchar(max)" />
+    <Property Name="Deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="REVDVS0_SOURCE_DESC">
+    <Key>
+      <PropertyRef Name="REVDVS0_SOURCE_DESCIdentifier" />
+    </Key>
+    <Property Name="REVDVS0_SOURCE_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="EVD_SOURCE_ID" Type="varchar(max)" />
+    <Property Name="EVD_SOURCE_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="REVDVT0_VOCAB_TYPE_DEF">
+    <Key>
+      <PropertyRef Name="REVDVT0_VOCAB_TYPE_DEFIdentifier" />
+    </Key>
+    <Property Name="REVDVT0_VOCAB_TYPE_DEFIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="EVD_VOCAB_TYPE_ID" Type="varchar(max)" />
+    <Property Name="EVD_VOCAB_TYPE_DESC" Type="varchar(max)" />
+    <Property Name="EVD_SOURCE_ID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RFFP0_FED_FIN_PARTICIPATION">
+    <Key>
+      <PropertyRef Name="RFFP0_FED_FIN_PARTICIPATIONIdentifier" />
+    </Key>
+    <Property Name="RFFP0_FED_FIN_PARTICIPATIONIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="FFP_TYP" Type="varchar(max)" />
+    <Property Name="FFP_DATEC" Type="varchar(max)" />
+    <Property Name="FFP_IND" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RFMLDX0_DXID">
+    <Key>
+      <PropertyRef Name="RFMLDX0_DXIDIdentifier" />
+    </Key>
+    <Property Name="RFMLDX0_DXIDIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DXID" Type="varchar(max)" />
+    <Property Name="DXID_DESC56" Type="varchar(max)" />
+    <Property Name="DXID_DESC100" Type="varchar(max)" />
+    <Property Name="DXID_STATUS" Type="varchar(max)" />
+    <Property Name="FDBDX" Type="varchar(max)" />
+    <Property Name="DXID_DISEASE_DURATION_CD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGCNINH0_GCNSEQNO_INACTV_LINK">
+    <Key>
+      <PropertyRef Name="RGCNINH0_GCNSEQNO_INACTV_LINKIdentifier" />
+    </Key>
+    <Property Name="RGCNINH0_GCNSEQNO_INACTV_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+    <Property Name="INACTV_NOT_PRES_CNT" Type="varchar(max)" />
+    <Property Name="INACTV_PRES_CNT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGCNINS0_STUDY_TABLE">
+    <Key>
+      <PropertyRef Name="RGCNINS0_STUDY_TABLEIdentifier" />
+    </Key>
+    <Property Name="RGCNINS0_STUDY_TABLEIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="TOTAL_PRODUCTS_CNT" Type="varchar(max)" />
+    <Property Name="PRODUCTS_RESEARCHED_CNT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGCNSEQ4_GCNSEQNO_MSTR">
+    <Key>
+      <PropertyRef Name="RGCNSEQ4_GCNSEQNO_MSTRIdentifier" />
+    </Key>
+    <Property Name="RGCNSEQ4_GCNSEQNO_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="HIC3" Type="varchar(max)" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="GCDF" Type="varchar(max)" />
+    <Property Name="GCRT" Type="varchar(max)" />
+    <Property Name="STR" Type="varchar(max)" />
+    <Property Name="GTC" Type="varchar(max)" />
+    <Property Name="TC" Type="varchar(max)" />
+    <Property Name="DCC" Type="varchar(max)" />
+    <Property Name="GCNSEQ_GI" Type="varchar(max)" />
+    <Property Name="GENDER" Type="varchar(max)" />
+    <Property Name="HIC3_SEQN" Type="varchar(max)" />
+    <Property Name="STR60" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGCNSTR0_INGREDIENT_STRENGTH">
+    <Key>
+      <PropertyRef Name="RGCNSTR0_INGREDIENT_STRENGTHIdentifier" />
+    </Key>
+    <Property Name="RGCNSTR0_INGREDIENT_STRENGTHIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+    <Property Name="STRENGTH_STATUS_CODE" Type="varchar(max)" />
+    <Property Name="STRENGTH" Type="varchar(max)" />
+    <Property Name="STRENGTH_UOM_ID" Type="varchar(max)" />
+    <Property Name="STRENGTH_TYP_CODE" Type="varchar(max)" />
+    <Property Name="VOLUME" Type="varchar(max)" />
+    <Property Name="VOLUME_UOM_ID" Type="varchar(max)" />
+    <Property Name="ALT_STRENGTH" Type="varchar(max)" />
+    <Property Name="ALT_STRENGTH_UOM_ID" Type="varchar(max)" />
+    <Property Name="ALT_STRENGTH_TYP_CODE" Type="varchar(max)" />
+    <Property Name="TIME_VALUE" Type="varchar(max)" />
+    <Property Name="TIME_UOM_ID" Type="varchar(max)" />
+    <Property Name="RANGE_MAX" Type="varchar(max)" />
+    <Property Name="RANGE_MIN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGERIGC0_GERI_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RGERIGC0_GERI_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RGERIGC0_GERI_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="GERI_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGERIMA0_GERI_MSTR">
+    <Key>
+      <PropertyRef Name="RGERIMA0_GERI_MSTRIdentifier" />
+    </Key>
+    <Property Name="RGERIMA0_GERI_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GERI_CODE" Type="varchar(max)" />
+    <Property Name="GERI_DESC" Type="varchar(max)" />
+    <Property Name="GERI_SL" Type="varchar(max)" />
+    <Property Name="GERI_RNL" Type="varchar(max)" />
+    <Property Name="GERI_HEP" Type="varchar(max)" />
+    <Property Name="GERI_CARD" Type="varchar(max)" />
+    <Property Name="GERI_PULM" Type="varchar(max)" />
+    <Property Name="GERI_NEUR" Type="varchar(max)" />
+    <Property Name="GERI_END" Type="varchar(max)" />
+    <Property Name="GERI_CMNT" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGERIRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RGERIRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RGERIRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="GERI_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RGERIRM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RGERIRM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RGERIRM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="GERI_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHIC1D2_HIC_ORGAN_SYS_DESC">
+    <Key>
+      <PropertyRef Name="RHIC1D2_HIC_ORGAN_SYS_DESCIdentifier" />
+    </Key>
+    <Property Name="RHIC1D2_HIC_ORGAN_SYS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC1_SEQN" Type="varchar(max)" />
+    <Property Name="HIC1" Type="varchar(max)" />
+    <Property Name="HIC1_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHIC2D3_HIC_RX_CLASS_DESC">
+    <Key>
+      <PropertyRef Name="RHIC2D3_HIC_RX_CLASS_DESCIdentifier" />
+    </Key>
+    <Property Name="RHIC2D3_HIC_RX_CLASS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC2_SEQN" Type="varchar(max)" />
+    <Property Name="HIC2" Type="varchar(max)" />
+    <Property Name="HIC2_DESC" Type="varchar(max)" />
+    <Property Name="HIC2_ROOT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHIC3D3_HIC_THERAP_CLASS_DESC">
+    <Key>
+      <PropertyRef Name="RHIC3D3_HIC_THERAP_CLASS_DESCIdentifier" />
+    </Key>
+    <Property Name="RHIC3D3_HIC_THERAP_CLASS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC3_SEQN" Type="varchar(max)" />
+    <Property Name="HIC3" Type="varchar(max)" />
+    <Property Name="HIC3_DESC" Type="varchar(max)" />
+    <Property Name="HIC3_GRPN" Type="varchar(max)" />
+    <Property Name="HIC3_ROOT" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHIC3L2_HIC3_HICLSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RHIC3L2_HIC3_HICLSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RHIC3L2_HIC3_HICLSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="HIC3_SEQN" Type="varchar(max)" />
+    <Property Name="HIC3" Type="varchar(max)" />
+    <Property Name="HIC3_RELNO" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHIC4D2_HIC_BASE_ING_DESC">
+    <Key>
+      <PropertyRef Name="RHIC4D2_HIC_BASE_ING_DESCIdentifier" />
+    </Key>
+    <Property Name="RHIC4D2_HIC_BASE_ING_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC4_SEQN" Type="varchar(max)" />
+    <Property Name="HIC4" Type="varchar(max)" />
+    <Property Name="HIC4_DESC" Type="varchar(max)" />
+    <Property Name="HIC4_ROOT" Type="varchar(max)" />
+    <Property Name="HIC4_POTENTIALLY_INACTV_IND" Type="varchar(max)" />
+    <Property Name="ING_STATUS_CD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHICCAS1_HIC_CAS_LINK">
+    <Key>
+      <PropertyRef Name="RHICCAS1_HIC_CAS_LINKIdentifier" />
+    </Key>
+    <Property Name="RHICCAS1_HIC_CAS_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+    <Property Name="CAS9_TBL" Type="varchar(max)" />
+    <Property Name="HIC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHICD5_HIC_DESC">
+    <Key>
+      <PropertyRef Name="RHICD5_HIC_DESCIdentifier" />
+    </Key>
+    <Property Name="RHICD5_HIC_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+    <Property Name="HIC" Type="varchar(max)" />
+    <Property Name="HIC_DESC" Type="varchar(max)" />
+    <Property Name="HIC_ROOT" Type="varchar(max)" />
+    <Property Name="HIC_POTENTIALLY_INACTV_IND" Type="varchar(max)" />
+    <Property Name="ING_STATUS_CD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHICLSQ1_HICLSEQNO_MSTR">
+    <Key>
+      <PropertyRef Name="RHICLSQ1_HICLSEQNO_MSTRIdentifier" />
+    </Key>
+    <Property Name="RHICLSQ1_HICLSEQNO_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="GNN" Type="varchar(max)" />
+    <Property Name="GNN60" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RHICRH0_ING_HIST">
+    <Key>
+      <PropertyRef Name="RHICRH0_ING_HISTIdentifier" />
+    </Key>
+    <Property Name="RHICRH0_ING_HISTIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="REPL_HIC_SEQN" Type="varchar(max)" />
+    <Property Name="PREV_HIC_SEQN" Type="varchar(max)" />
+    <Property Name="HIC_REPL_EFF_DT" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RINDMDD0_INDCTS_DRUG_DESC">
+    <Key>
+      <PropertyRef Name="RINDMDD0_INDCTS_DRUG_DESCIdentifier" />
+    </Key>
+    <Property Name="RINDMDD0_INDCTS_DRUG_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="INDCTS" Type="varchar(max)" />
+    <Property Name="INDCTS_DRUG_DESC" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RINDMGC0_INDCTS_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RINDMGC0_INDCTS_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RINDMGC0_INDCTS_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="INDCTS" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RINDMLD0_LABELED_DESC">
+    <Key>
+      <PropertyRef Name="RINDMLD0_LABELED_DESCIdentifier" />
+    </Key>
+    <Property Name="RINDMLD0_LABELED_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="INDCTS_LBL" Type="varchar(max)" />
+    <Property Name="INDLBLDESC" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RINDMMA2_INDCTS_MSTR">
+    <Key>
+      <PropertyRef Name="RINDMMA2_INDCTS_MSTRIdentifier" />
+    </Key>
+    <Property Name="RINDMMA2_INDCTS_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="INDCTS" Type="varchar(max)" />
+    <Property Name="INDCTS_SN" Type="varchar(max)" />
+    <Property Name="INDCTS_LBL" Type="varchar(max)" />
+    <Property Name="FDBDX" Type="varchar(max)" />
+    <Property Name="DXID" Type="varchar(max)" />
+    <Property Name="PROXY_IND" Type="varchar(max)" />
+    <Property Name="PRED_CODE" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RINDMPD0_PREDICTOR_DESC">
+    <Key>
+      <PropertyRef Name="RINDMPD0_PREDICTOR_DESCIdentifier" />
+    </Key>
+    <Property Name="RINDMPD0_PREDICTOR_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="PRED_CODE" Type="varchar(max)" />
+    <Property Name="PREDDESC" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RINDMRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RINDMRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RINDMRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="INDCTS" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RINDMRM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RINDMRM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RINDMRM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="INDCTS" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RLBLRID3_LBLR_DESC">
+    <Key>
+      <PropertyRef Name="RLBLRID3_LBLR_DESCIdentifier" />
+    </Key>
+    <Property Name="RLBLRID3_LBLR_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="LBLRID" Type="varchar(max)" />
+    <Property Name="MFG" Type="varchar(max)" />
+    <Property Name="LBLRIND" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="lastModifiedBy" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMCRMA1_MEDICARE_MSTR">
+    <Key>
+      <PropertyRef Name="RMCRMA1_MEDICARE_MSTRIdentifier" />
+    </Key>
+    <Property Name="RMCRMA1_MEDICARE_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="MCR_REGION" Type="varchar(max)" />
+    <Property Name="MCR_DATEC" Type="varchar(max)" />
+    <Property Name="MCR_REF" Type="varchar(max)" />
+    <Property Name="MCR_COV" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMCRPB0_MEDICARE_HCPC_PB_PRICE">
+    <Key>
+      <PropertyRef Name="RMCRPB0_MEDICARE_HCPC_PB_PRICEIdentifier" />
+    </Key>
+    <Property Name="RMCRPB0_MEDICARE_HCPC_PB_PRICEIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="HCPC" Type="varchar(max)" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="HCPC_PBC1" Type="varchar(max)" />
+    <Property Name="HCPC_PBP1" Type="varchar(max)" />
+    <Property Name="HCPC_PBC2" Type="varchar(max)" />
+    <Property Name="HCPC_PBP2" Type="varchar(max)" />
+    <Property Name="HCPC_PBC3" Type="varchar(max)" />
+    <Property Name="HCPC_PBP3" Type="varchar(max)" />
+    <Property Name="HCPC_PBC4" Type="varchar(max)" />
+    <Property Name="HCPC_PBP4" Type="varchar(max)" />
+    <Property Name="HCPC_PBC5" Type="varchar(max)" />
+    <Property Name="HCPC_PBP5" Type="varchar(max)" />
+    <Property Name="HCPC_PBC6" Type="varchar(max)" />
+    <Property Name="HCPC_PBP6" Type="varchar(max)" />
+    <Property Name="HCPC_PBC7" Type="varchar(max)" />
+    <Property Name="HCPC_PBP7" Type="varchar(max)" />
+    <Property Name="HCPC_PBC8" Type="varchar(max)" />
+    <Property Name="HCPC_PBP8" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMCRRD1_MEDICARE_REG_REF_DESC">
+    <Key>
+      <PropertyRef Name="RMCRRD1_MEDICARE_REG_REF_DESCIdentifier" />
+    </Key>
+    <Property Name="RMCRRD1_MEDICARE_REG_REF_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MCR_REF" Type="varchar(max)" />
+    <Property Name="MCR_REFSN" Type="varchar(max)" />
+    <Property Name="MCR_BC" Type="varchar(max)" />
+    <Property Name="MCR_BCDESC" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMD2_MEDICAID_MSTR">
+    <Key>
+      <PropertyRef Name="RMD2_MEDICAID_MSTRIdentifier" />
+    </Key>
+    <Property Name="RMD2_MEDICAID_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="MDT_ID" Type="varchar(max)" />
+    <Property Name="MDT_BC" Type="varchar(max)" />
+    <Property Name="MDT_BCDTE" Type="varchar(max)" />
+    <Property Name="MDT_FI" Type="varchar(max)" />
+    <Property Name="MDT_FIDTE" Type="varchar(max)" />
+    <Property Name="MDT_GBC" Type="varchar(max)" />
+    <Property Name="MDT_GBCDTE" Type="varchar(max)" />
+    <Property Name="MDT_COV" Type="varchar(max)" />
+    <Property Name="MDT_PA" Type="varchar(max)" />
+    <Property Name="MDT_RFL" Type="varchar(max)" />
+    <Property Name="MDT_COP" Type="varchar(max)" />
+    <Property Name="MDT_BU" Type="varchar(max)" />
+    <Property Name="MDT_PS" Type="varchar(max)" />
+    <Property Name="MDT_QBU" Type="varchar(max)" />
+    <Property Name="MDT_MINC" Type="varchar(max)" />
+    <Property Name="MDT_MIN" Type="varchar(max)" />
+    <Property Name="MDT_MAXC" Type="varchar(max)" />
+    <Property Name="MDT_MAX" Type="varchar(max)" />
+    <Property Name="MDT_FEE" Type="varchar(max)" />
+    <Property Name="MDT_SLC10" Type="varchar(max)" />
+    <Property Name="MDT_LTC" Type="varchar(max)" />
+    <Property Name="MDT_FREQ" Type="varchar(max)" />
+    <Property Name="MDT_CODE1" Type="varchar(max)" />
+    <Property Name="MDT_SUB" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMDCOPD0_MEDICAID_COPAY_DESC">
+    <Key>
+      <PropertyRef Name="RMDCOPD0_MEDICAID_COPAY_DESCIdentifier" />
+    </Key>
+    <Property Name="RMDCOPD0_MEDICAID_COPAY_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MDT_ID" Type="varchar(max)" />
+    <Property Name="MDT_COP" Type="varchar(max)" />
+    <Property Name="MDT_COPD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMDCOV0_MEDICAID_COV_DESC">
+    <Key>
+      <PropertyRef Name="RMDCOV0_MEDICAID_COV_DESCIdentifier" />
+    </Key>
+    <Property Name="RMDCOV0_MEDICAID_COV_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MDT_ID" Type="varchar(max)" />
+    <Property Name="MDT_COV" Type="varchar(max)" />
+    <Property Name="MDT_COVD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMDMAXC0_MEDICAID_MAX_QTY_DESC">
+    <Key>
+      <PropertyRef Name="RMDMAXC0_MEDICAID_MAX_QTY_DESCIdentifier" />
+    </Key>
+    <Property Name="RMDMAXC0_MEDICAID_MAX_QTY_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MDT_ID" Type="varchar(max)" />
+    <Property Name="MDT_MAXC" Type="varchar(max)" />
+    <Property Name="MDT_MAXCD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMDMINC0_MEDICAID_MIN_QTY_DESC">
+    <Key>
+      <PropertyRef Name="RMDMINC0_MEDICAID_MIN_QTY_DESCIdentifier" />
+    </Key>
+    <Property Name="RMDMINC0_MEDICAID_MIN_QTY_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MDT_ID" Type="varchar(max)" />
+    <Property Name="MDT_MINC" Type="varchar(max)" />
+    <Property Name="MDT_MINCD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMDP0_MEDICAID_PRICE">
+    <Key>
+      <PropertyRef Name="RMDP0_MEDICAID_PRICEIdentifier" />
+    </Key>
+    <Property Name="RMDP0_MEDICAID_PRICEIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="MDPT_ID" Type="varchar(max)" />
+    <Property Name="MDPT_TYP" Type="varchar(max)" />
+    <Property Name="MDPT_DATEC" Type="varchar(max)" />
+    <Property Name="MDPT_PRICE" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMDPA0_MEDICAID_PA_DESC">
+    <Key>
+      <PropertyRef Name="RMDPA0_MEDICAID_PA_DESCIdentifier" />
+    </Key>
+    <Property Name="RMDPA0_MEDICAID_PA_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MDT_ID" Type="varchar(max)" />
+    <Property Name="MDT_PA" Type="varchar(max)" />
+    <Property Name="MDT_PAD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMDRFLD0_MEDICAID_REFILL_DESC">
+    <Key>
+      <PropertyRef Name="RMDRFLD0_MEDICAID_REFILL_DESCIdentifier" />
+    </Key>
+    <Property Name="RMDRFLD0_MEDICAID_REFILL_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MDT_ID" Type="varchar(max)" />
+    <Property Name="MDT_RFL" Type="varchar(max)" />
+    <Property Name="MDT_RFLD" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMEDMHL0_MED_HICLSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RMEDMHL0_MED_HICLSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RMEDMHL0_MED_HICLSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MED_CONCEPT_ID" Type="varchar(max)" />
+    <Property Name="MED_CONCEPT_ID_TYP" Type="varchar(max)" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="MED_CONCEPT_HICL_SRC_CD" Type="varchar(max)" />
+    <Property Name="MED_CONCEPT_OBSDATEC" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMIGC1_MEDID_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RMIGC1_MEDID_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RMIGC1_MEDID_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="MEDID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMIID1_MED">
+    <Key>
+      <PropertyRef Name="RMIID1_MEDIdentifier" />
+    </Key>
+    <Property Name="RMIID1_MEDIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="MEDID" Type="varchar(max)" />
+    <Property Name="ROUTED_DOSAGE_FORM_MED_ID" Type="varchar(max)" />
+    <Property Name="MED_STRENGTH" Type="varchar(max)" />
+    <Property Name="MED_STRENGTH_UOM" Type="varchar(max)" />
+    <Property Name="MED_MEDID_DESC" Type="varchar(max)" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="MED_GCNSEQNO_ASSIGN_CD" Type="varchar(max)" />
+    <Property Name="MED_NAME_SOURCE_CD" Type="varchar(max)" />
+    <Property Name="MED_REF_FED_LEGEND_IND" Type="varchar(max)" />
+    <Property Name="MED_REF_DEA_CD" Type="varchar(max)" />
+    <Property Name="MED_REF_MULTI_SOURCE_CD" Type="varchar(max)" />
+    <Property Name="MED_REF_GEN_DRUG_NAME_CD" Type="varchar(max)" />
+    <Property Name="MED_REF_GEN_COMP_PRICE_CD" Type="varchar(max)" />
+    <Property Name="MED_REF_GEN_SPREAD_CD" Type="varchar(max)" />
+    <Property Name="MED_REF_INNOV_IND" Type="varchar(max)" />
+    <Property Name="MED_REF_GEN_THERA_EQU_CD" Type="varchar(max)" />
+    <Property Name="MED_REF_DESI_IND" Type="varchar(max)" />
+    <Property Name="MED_REF_DESI2_IND" Type="varchar(max)" />
+    <Property Name="MED_STATUS_CD" Type="varchar(max)" />
+    <Property Name="GENERIC_MEDID" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMINDC1_NDC_MEDID">
+    <Key>
+      <PropertyRef Name="RMINDC1_NDC_MEDIDIdentifier" />
+    </Key>
+    <Property Name="RMINDC1_NDC_MEDIDIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="MEDID" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMMADMA1_ADULT_DOSE_MSTR">
+    <Key>
+      <PropertyRef Name="RMMADMA1_ADULT_DOSE_MSTRIdentifier" />
+    </Key>
+    <Property Name="RMMADMA1_ADULT_DOSE_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="MMA_MND" Type="varchar(max)" />
+    <Property Name="MMA_MNDU" Type="varchar(max)" />
+    <Property Name="MMA_MNU" Type="varchar(max)" />
+    <Property Name="MMA_MNUF" Type="varchar(max)" />
+    <Property Name="MMA_MXD" Type="varchar(max)" />
+    <Property Name="MMA_MXDU" Type="varchar(max)" />
+    <Property Name="MMA_MXU" Type="varchar(max)" />
+    <Property Name="MMA_MXUF" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMMARMA0_ADULT_RANGE_MSTR">
+    <Key>
+      <PropertyRef Name="RMMARMA0_ADULT_RANGE_MSTRIdentifier" />
+    </Key>
+    <Property Name="RMMARMA0_ADULT_RANGE_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="MMAR_MND" Type="varchar(max)" />
+    <Property Name="MMAR_MNDU" Type="varchar(max)" />
+    <Property Name="MMAR_MNU" Type="varchar(max)" />
+    <Property Name="MMAR_MNUF" Type="varchar(max)" />
+    <Property Name="MMAR_MXD" Type="varchar(max)" />
+    <Property Name="MMAR_MXDU" Type="varchar(max)" />
+    <Property Name="MMAR_MXU" Type="varchar(max)" />
+    <Property Name="MMAR_MXUF" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMMGDMA0_GERI_DOSE_MSTR">
+    <Key>
+      <PropertyRef Name="RMMGDMA0_GERI_DOSE_MSTRIdentifier" />
+    </Key>
+    <Property Name="RMMGDMA0_GERI_DOSE_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="MMG_MND" Type="varchar(max)" />
+    <Property Name="MMG_MNDU" Type="varchar(max)" />
+    <Property Name="MMG_MNU" Type="varchar(max)" />
+    <Property Name="MMG_MNUF" Type="varchar(max)" />
+    <Property Name="MMG_MXD" Type="varchar(max)" />
+    <Property Name="MMG_MXDU" Type="varchar(max)" />
+    <Property Name="MMG_MXU" Type="varchar(max)" />
+    <Property Name="MMG_MXUF" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RMMGRMA0_GERI_RANGE_MSTR">
+    <Key>
+      <PropertyRef Name="RMMGRMA0_GERI_RANGE_MSTRIdentifier" />
+    </Key>
+    <Property Name="RMMGRMA0_GERI_RANGE_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="MMGR_MND" Type="varchar(max)" />
+    <Property Name="MMGR_MNDU" Type="varchar(max)" />
+    <Property Name="MMGR_MNU" Type="varchar(max)" />
+    <Property Name="MMGR_MNUF" Type="varchar(max)" />
+    <Property Name="MMGR_MXD" Type="varchar(max)" />
+    <Property Name="MMGR_MXDU" Type="varchar(max)" />
+    <Property Name="MMGR_MXU" Type="varchar(max)" />
+    <Property Name="MMGR_MXUF" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RNDC14_NDC_MSTR">
+    <Key>
+      <PropertyRef Name="RNDC14_NDC_MSTRIdentifier" />
+    </Key>
+    <Property Name="RNDC14_NDC_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="LBLRID" Type="varchar(max)" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PS" Type="varchar(max)" />
+    <Property Name="DF" Type="varchar(max)" />
+    <Property Name="AD" Type="varchar(max)" />
+    <Property Name="LN" Type="varchar(max)" />
+    <Property Name="BN" Type="varchar(max)" />
+    <Property Name="PNDC" Type="varchar(max)" />
+    <Property Name="REPNDC" Type="varchar(max)" />
+    <Property Name="NDCFI" Type="varchar(max)" />
+    <Property Name="DADDNC" Type="varchar(max)" />
+    <Property Name="DUPDC" Type="varchar(max)" />
+    <Property Name="DESI" Type="varchar(max)" />
+    <Property Name="DESDTEC" Type="varchar(max)" />
+    <Property Name="DESI2" Type="varchar(max)" />
+    <Property Name="DES2DTEC" Type="varchar(max)" />
+    <Property Name="DEA" Type="varchar(max)" />
+    <Property Name="CL" Type="varchar(max)" />
+    <Property Name="GPI" Type="varchar(max)" />
+    <Property Name="HOSP" Type="varchar(max)" />
+    <Property Name="INNOV" Type="varchar(max)" />
+    <Property Name="IPI" Type="varchar(max)" />
+    <Property Name="MINI" Type="varchar(max)" />
+    <Property Name="MAINT" Type="varchar(max)" />
+    <Property Name="OBC" Type="varchar(max)" />
+    <Property Name="OBSDTEC" Type="varchar(max)" />
+    <Property Name="PPI" Type="varchar(max)" />
+    <Property Name="STPK" Type="varchar(max)" />
+    <Property Name="REPACK" Type="varchar(max)" />
+    <Property Name="TOP200" Type="varchar(max)" />
+    <Property Name="UD" Type="varchar(max)" />
+    <Property Name="CSP" Type="varchar(max)" />
+    <Property Name="NDL_GDGE" Type="varchar(max)" />
+    <Property Name="NDL_LNGTH" Type="varchar(max)" />
+    <Property Name="SYR_CPCTY" Type="varchar(max)" />
+    <Property Name="SHLF_PCK" Type="varchar(max)" />
+    <Property Name="SHIPPER" Type="varchar(max)" />
+    <Property Name="HCFA_FDA" Type="varchar(max)" />
+    <Property Name="HCFA_UNIT" Type="varchar(max)" />
+    <Property Name="HCFA_PS" Type="varchar(max)" />
+    <Property Name="HCFA_APPC" Type="varchar(max)" />
+    <Property Name="HCFA_MRKC" Type="varchar(max)" />
+    <Property Name="HCFA_TRMC" Type="varchar(max)" />
+    <Property Name="HCFA_TYP" Type="varchar(max)" />
+    <Property Name="HCFA_DESC1" Type="varchar(max)" />
+    <Property Name="HCFA_DESI1" Type="varchar(max)" />
+    <Property Name="UU" Type="varchar(max)" />
+    <Property Name="PD" Type="varchar(max)" />
+    <Property Name="LN25" Type="varchar(max)" />
+    <Property Name="LN25I" Type="varchar(max)" />
+    <Property Name="GPIDC" Type="varchar(max)" />
+    <Property Name="BBDC" Type="varchar(max)" />
+    <Property Name="HOME" Type="varchar(max)" />
+    <Property Name="INPCKI" Type="varchar(max)" />
+    <Property Name="OUTPCKI" Type="varchar(max)" />
+    <Property Name="OBC_EXP" Type="varchar(max)" />
+    <Property Name="PS_EQUIV" Type="varchar(max)" />
+    <Property Name="PLBLR" Type="varchar(max)" />
+    <Property Name="TOP50GEN" Type="varchar(max)" />
+    <Property Name="OBC3" Type="varchar(max)" />
+    <Property Name="GMI" Type="varchar(max)" />
+    <Property Name="GNI" Type="varchar(max)" />
+    <Property Name="GSI" Type="varchar(max)" />
+    <Property Name="GTI" Type="varchar(max)" />
+    <Property Name="NDCGI1" Type="varchar(max)" />
+    <Property Name="HCFA_DC" Type="varchar(max)" />
+    <Property Name="LN60" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RNDCAT0_NDC_ATTRIBUTE">
+    <Key>
+      <PropertyRef Name="RNDCAT0_NDC_ATTRIBUTEIdentifier" />
+    </Key>
+    <Property Name="RNDCAT0_NDC_ATTRIBUTEIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="NDC_ATTRIBUTE_TYPE_CD" Type="varchar(max)" />
+    <Property Name="NDC_ATTRIBUTE_SN" Type="varchar(max)" />
+    <Property Name="NDC_ATTRIBUTE_VALUE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RNDCINH0_NDC_INACTV_LINK">
+    <Key>
+      <PropertyRef Name="RNDCINH0_NDC_INACTV_LINKIdentifier" />
+    </Key>
+    <Property Name="RNDCINH0_NDC_INACTV_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="HIC_SEQN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RNDCINR0_INACTV_REVIEWED">
+    <Key>
+      <PropertyRef Name="RNDCINR0_INACTV_REVIEWEDIdentifier" />
+    </Key>
+    <Property Name="RNDCINR0_INACTV_REVIEWEDIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RNP2_NDC_PRICE">
+    <Key>
+      <PropertyRef Name="RNP2_NDC_PRICEIdentifier" />
+    </Key>
+    <Property Name="RNP2_NDC_PRICEIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="NPT_TYPE" Type="varchar(max)" />
+    <Property Name="NPT_DATEC" Type="varchar(max)" />
+    <Property Name="NPT_PRICEX" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="ROBCD0_OBC_DESC">
+    <Key>
+      <PropertyRef Name="ROBCD0_OBC_DESCIdentifier" />
+    </Key>
+    <Property Name="ROBCD0_OBC_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="OBC" Type="varchar(max)" />
+    <Property Name="OBC_SN" Type="varchar(max)" />
+    <Property Name="OBC_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="ROBCNDC0_OBC_NDC">
+    <Key>
+      <PropertyRef Name="ROBCNDC0_OBC_NDCIdentifier" />
+    </Key>
+    <Property Name="ROBCNDC0_OBC_NDCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="NDC" Type="varchar(max)" />
+    <Property Name="OBC3" Type="varchar(max)" />
+    <Property Name="GCN" Type="varchar(max)" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="GTI" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEDIGC0_PEDI_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RPEDIGC0_PEDI_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RPEDIGC0_PEDI_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PEDI_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEDIMA0_PEDI_MSTR">
+    <Key>
+      <PropertyRef Name="RPEDIMA0_PEDI_MSTRIdentifier" />
+    </Key>
+    <Property Name="RPEDIMA0_PEDI_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="PEDI_CODE" Type="varchar(max)" />
+    <Property Name="PEDI_DESC" Type="varchar(max)" />
+    <Property Name="PEDI_SL" Type="varchar(max)" />
+    <Property Name="PEDI_MINAG" Type="varchar(max)" />
+    <Property Name="PEDI_MAXAG" Type="varchar(max)" />
+    <Property Name="PEDI_PRCTN" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEDIRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RPEDIRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RPEDIRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="PEDI_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEDIRM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RPEDIRM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RPEDIRM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="PEDI_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEMGC0_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RPEMGC0_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RPEMGC0_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PEC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEMMA5_MSTR">
+    <Key>
+      <PropertyRef Name="RPEMMA5_MSTRIdentifier" />
+    </Key>
+    <Property Name="RPEMMA5_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="PEC" Type="varchar(max)" />
+    <Property Name="DGNAME" Type="varchar(max)" />
+    <Property Name="LBLMSG1" Type="varchar(max)" />
+    <Property Name="LBLMSG2" Type="varchar(max)" />
+    <Property Name="PEMONO" Type="varchar(max)" />
+    <Property Name="AMACDE" Type="varchar(max)" />
+    <Property Name="PHMXCDE" Type="varchar(max)" />
+    <Property Name="USPCDE" Type="varchar(max)" />
+    <Property Name="NARDCDE" Type="varchar(max)" />
+    <Property Name="ASHPCDE3" Type="varchar(max)" />
+    <Property Name="PEMONOS" Type="varchar(max)" />
+    <Property Name="PEMONOFRA" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEMMOE2_MONO">
+    <Key>
+      <PropertyRef Name="RPEMMOE2_MONOIdentifier" />
+    </Key>
+    <Property Name="RPEMMOE2_MONOIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="PEMONO" Type="varchar(max)" />
+    <Property Name="PEMONOE_SN" Type="varchar(max)" />
+    <Property Name="PEMTXTEI" Type="varchar(max)" />
+    <Property Name="PEMTXTE" Type="varchar(max)" />
+    <Property Name="PEMGNDR" Type="varchar(max)" />
+    <Property Name="PEMAGE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEMOGC0_MONO_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RPEMOGC0_MONO_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RPEMOGC0_MONO_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PEMONO" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEMORG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RPEMORG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RPEMORG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="PEMONO" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPEMRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RPEMRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RPEMRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="PEC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPREGGC0_PREG_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RPREGGC0_PREG_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RPREGGC0_PREG_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="PREG_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPREGMA0_PREG_MSTR">
+    <Key>
+      <PropertyRef Name="RPREGMA0_PREG_MSTRIdentifier" />
+    </Key>
+    <Property Name="RPREGMA0_PREG_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="PREG_CODE" Type="varchar(max)" />
+    <Property Name="PREG_DESC" Type="varchar(max)" />
+    <Property Name="PREG_SL" Type="varchar(max)" />
+    <Property Name="PREG_PRCTN" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPREGRG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RPREGRG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RPREGRG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="PREG_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPREGRM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RPREGRM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RPREGRM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="PREG_CODE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RPREGSL0_PREG_SEVER_LEVEL">
+    <Key>
+      <PropertyRef Name="RPREGSL0_PREG_SEVER_LEVELIdentifier" />
+    </Key>
+    <Property Name="RPREGSL0_PREG_SEVER_LEVELIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="PREG_SL" Type="varchar(max)" />
+    <Property Name="PREG_SLSN" Type="varchar(max)" />
+    <Property Name="PREG_SLD" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RROUTED3_ROUTE_DESC">
+    <Key>
+      <PropertyRef Name="RROUTED3_ROUTE_DESCIdentifier" />
+    </Key>
+    <Property Name="RROUTED3_ROUTE_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCRT" Type="varchar(max)" />
+    <Property Name="RT" Type="varchar(max)" />
+    <Property Name="GCRT2" Type="varchar(max)" />
+    <Property Name="GCRT_DESC" Type="varchar(max)" />
+    <Property Name="SYSTEMIC" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RRTGN0_ROUTED_GEN_MSTR">
+    <Key>
+      <PropertyRef Name="RRTGN0_ROUTED_GEN_MSTRIdentifier" />
+    </Key>
+    <Property Name="RRTGN0_ROUTED_GEN_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="ROUTED_GEN_DESC" Type="varchar(max)" />
+    <Property Name="GCRT" Type="varchar(max)" />
+    <Property Name="HICL_SEQNO" Type="varchar(max)" />
+    <Property Name="ROUTED_GEN_STATUS_CD" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RSIDEDD0_DRUG_DESC">
+    <Key>
+      <PropertyRef Name="RSIDEDD0_DRUG_DESCIdentifier" />
+    </Key>
+    <Property Name="RSIDEDD0_DRUG_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="SIDE" Type="varchar(max)" />
+    <Property Name="SIDE_DRUG_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RSIDEGC0_GCNSEQNO_LINK">
+    <Key>
+      <PropertyRef Name="RSIDEGC0_GCNSEQNO_LINKIdentifier" />
+    </Key>
+    <Property Name="RSIDEGC0_GCNSEQNO_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCN_SEQNO" Type="varchar(max)" />
+    <Property Name="SIDE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RSIDEMA3_MSTR">
+    <Key>
+      <PropertyRef Name="RSIDEMA3_MSTRIdentifier" />
+    </Key>
+    <Property Name="RSIDEMA3_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="SIDE" Type="varchar(max)" />
+    <Property Name="SIDE_SN" Type="varchar(max)" />
+    <Property Name="FDBDX" Type="varchar(max)" />
+    <Property Name="SIDE_FREQ" Type="varchar(max)" />
+    <Property Name="SIDE_SEV" Type="varchar(max)" />
+    <Property Name="SIDE_VISCD" Type="varchar(max)" />
+    <Property Name="SIDE_LABCD" Type="varchar(max)" />
+    <Property Name="SIDE_PHYS" Type="varchar(max)" />
+    <Property Name="SIDE_HYPER" Type="varchar(max)" />
+    <Property Name="DXID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RSIDERG0_ROUTED_GEN_LINK">
+    <Key>
+      <PropertyRef Name="RSIDERG0_ROUTED_GEN_LINKIdentifier" />
+    </Key>
+    <Property Name="RSIDERG0_ROUTED_GEN_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_GEN_ID" Type="varchar(max)" />
+    <Property Name="SIDE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RSIDERM0_ROUTED_MED_LINK">
+    <Key>
+      <PropertyRef Name="RSIDERM0_ROUTED_MED_LINKIdentifier" />
+    </Key>
+    <Property Name="RSIDERM0_ROUTED_MED_LINKIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="ROUTED_MED_ID" Type="varchar(max)" />
+    <Property Name="SIDE" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RSTR1_STRNGTH_DESC">
+    <Key>
+      <PropertyRef Name="RSTR1_STRNGTH_DESCIdentifier" />
+    </Key>
+    <Property Name="RSTR1_STRNGTH_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="STR60" Type="varchar(max)" />
+    <Property Name="STRNUM" Type="varchar(max)" />
+    <Property Name="VOLNUM" Type="varchar(max)" />
+    <Property Name="STRUN50" Type="varchar(max)" />
+    <Property Name="VOLUN50" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="SystemID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RSTRUOM0_STRENGTH_UOM">
+    <Key>
+      <PropertyRef Name="RSTRUOM0_STRENGTH_UOMIdentifier" />
+    </Key>
+    <Property Name="RSTRUOM0_STRENGTH_UOMIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="UOM_ID" Type="varchar(max)" />
+    <Property Name="UOM_DESC" Type="varchar(max)" />
+    <Property Name="UOM_ABBR" Type="varchar(max)" />
+    <Property Name="UOM_PREFERRED_DESC" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RUNITSD0_UNITS_DESC">
+    <Key>
+      <PropertyRef Name="RUNITSD0_UNITS_DESCIdentifier" />
+    </Key>
+    <Property Name="RUNITSD0_UNITS_DESCIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="DOSING_MODULE_UNIT_ABBREV" Type="varchar(max)" />
+    <Property Name="UNIT_DESC_ABBREV" Type="varchar(max)" />
+    <Property Name="UNIT_DESC_EXPANDED" Type="varchar(max)" />
+    <Property Name="lastModifiedBy" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RXRGDFQ0_GCDF_SCRIPT_QQ">
+    <Key>
+      <PropertyRef Name="RXRGDFQ0_GCDF_SCRIPT_QQIdentifier" />
+    </Key>
+    <Property Name="RXRGDFQ0_GCDF_SCRIPT_QQIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="GCDF" Type="varchar(max)" />
+    <Property Name="SCRIPT_QQ_ID" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="RXRNCQQ0_QQ_MSTR">
+    <Key>
+      <PropertyRef Name="RXRNCQQ0_QQ_MSTRIdentifier" />
+    </Key>
+    <Property Name="RXRNCQQ0_QQ_MSTRIdentifier" Type="bigint" Nullable="false" />
+    <Property Name="SCRIPT_QQ_ID" Type="varchar(max)" />
+    <Property Name="SCRIPT_QQ_CD" Type="varchar(max)" />
+    <Property Name="SCRIPT_QQ_DESC" Type="varchar(max)" />
+    <Property Name="XRF_SOURCE_ID" Type="varchar(max)" />
+    <Property Name="OBSOLETE_DATE" Type="varchar(max)" />
+    <Property Name="recordVersion" Type="varchar(max)" />
+    <Property Name="lastModified" Type="varchar(max)" />
+    <Property Name="systemID" Type="varchar(max)" />
+    <Property Name="spareField01" Type="varchar(max)" />
+    <Property Name="spareField02" Type="varchar(max)" />
+    <Property Name="spareField03" Type="varchar(max)" />
+    <Property Name="spareIndexedField" Type="varchar(max)" />
+    <Property Name="deleted" Type="varchar(max)" />
+    <Property Name="deletedDate" Type="varchar(max)" />
+    <Property Name="isV5" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="AtlasReferenceDALModelsStoreContainer">
+    <EntitySet Name="AHFSClass" EntityType="Self.AHFSClass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AHFSDrugs" EntityType="Self.AHFSDrugs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AHFSMapNDCClass" EntityType="Self.AHFSMapNDCClass" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AHFSMapNDCRxNorm" EntityType="Self.AHFSMapNDCRxNorm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AHFSTradeNames" EntityType="Self.AHFSTradeNames" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyAlternatives" EntityType="Self.formularyAlternatives" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyCopayList" EntityType="Self.formularyCopayList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyCoverageList" EntityType="Self.formularyCoverageList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyDetails" EntityType="Self.formularyDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyDrugClassificationList" EntityType="Self.formularyDrugClassificationList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyMaster" EntityType="Self.formularyMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyRuleSetup" EntityType="Self.formularyRuleSetup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyTiers" EntityType="Self.formularyTiers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="formularyXREF" EntityType="Self.formularyXREF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCPDPProviderAdd" EntityType="Self.NCPDPProviderAdd" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCPDPProviderDEA" EntityType="Self.NCPDPProviderDEA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCPDPProviderLic" EntityType="Self.NCPDPProviderLic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCPDPProviderMaster" EntityType="Self.NCPDPProviderMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCPDPProviderNPI" EntityType="Self.NCPDPProviderNPI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCPDPProviderSpec" EntityType="Self.NCPDPProviderSpec" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NCPDPProviderTax" EntityType="Self.NCPDPProviderTax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NDCStripeMgmt" EntityType="Self.NDCStripeMgmt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NSDEDrugs" EntityType="Self.NSDEDrugs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NTISDEAMaster" EntityType="Self.NTISDEAMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RADIMEF0_CLIN_EFFECT" EntityType="Self.RADIMEF0_CLIN_EFFECT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RADIMGC4_GCNSEQNO_LINK" EntityType="Self.RADIMGC4_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RADIMIE4_CLIN_EFFECTS_LINK" EntityType="Self.RADIMIE4_CLIN_EFFECTS_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RADIMMA5_MSTR" EntityType="Self.RADIMMA5_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RADIMMO5_MONO" EntityType="Self.RADIMMO5_MONO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RADIMSL1_SEVER_LEVEL" EntityType="Self.RADIMSL1_SEVER_LEVEL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RAHFSD1_DESC" EntityType="Self.RAHFSD1_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RAHFSGC1_GCNSEQNO_LINK" EntityType="Self.RAHFSGC1_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RAPPLNA0_FDA_NDC_APPL" EntityType="Self.RAPPLNA0_FDA_NDC_APPL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RAPPLSL0_FDA_NDC_NDA_ANDA" EntityType="Self.RAPPLSL0_FDA_NDC_NDA_ANDA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RAPPLTD0_FDA_APPL_TYPE" EntityType="Self.RAPPLTD0_FDA_APPL_TYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RATCD0_ATC_DESC" EntityType="Self.RATCD0_ATC_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RATCGC0_ATC_GCNSEQNO_LINK" EntityType="Self.RATCGC0_ATC_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RBDPGC0_REF_PRICE_DIR" EntityType="Self.RBDPGC0_REF_PRICE_DIR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RBLP0_PRICE_GCN_LINK" EntityType="Self.RBLP0_PRICE_GCN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RBLPGC0_BLP_GCNSEQNO_LINK" EntityType="Self.RBLPGC0_BLP_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RBWPGC0_REF_PRICE_WHN" EntityType="Self.RBWPGC0_REF_PRICE_WHN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RCMMD0_DESC" EntityType="Self.RCMMD0_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RCMMGC0_GCNSEQNO_LINK" EntityType="Self.RCMMGC0_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMAGD1_ALRGN_GRP_DESC" EntityType="Self.RDAMAGD1_ALRGN_GRP_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMAPM0_ALRGN_PICKLIST_MSTR" EntityType="Self.RDAMAPM0_ALRGN_PICKLIST_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMCD0_PICKLIST_CON_TYP_DESC" EntityType="Self.RDAMCD0_PICKLIST_CON_TYP_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMCSD1_XSENSIT_ALLERGY_DESC" EntityType="Self.RDAMCSD1_XSENSIT_ALLERGY_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMGHC0_HIC_ALRGN_GRP_LINK" EntityType="Self.RDAMGHC0_HIC_ALRGN_GRP_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMGRH0_ALRGN_GRP_HIST" EntityType="Self.RDAMGRH0_ALRGN_GRP_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMGSD0_GRP_STATUS_DESC" EntityType="Self.RDAMGSD0_GRP_STATUS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMGX0_ALRGN_GRP_XSENSE_LINK" EntityType="Self.RDAMGX0_ALRGN_GRP_XSENSE_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMXHC0_HIC_ALRGN_XSENSE_LINK" EntityType="Self.RDAMXHC0_HIC_ALRGN_XSENSE_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMXSD0_XSENSE_STATUS_DESC" EntityType="Self.RDAMXSD0_XSENSE_STATUS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDAMXSH0_ALRGN_XSENSE_HIST" EntityType="Self.RDAMXSH0_ALRGN_XSENSE_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDCCD0_DRUG_CAT_DESC" EntityType="Self.RDCCD0_DRUG_CAT_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDCMDD0_CONTRA_DRUG_DESC" EntityType="Self.RDDCMDD0_CONTRA_DRUG_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDCMGC0_CONTRA_GCNSEQNO_LINK" EntityType="Self.RDDCMGC0_CONTRA_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDCMMA1_CONTRA_MSTR" EntityType="Self.RDDCMMA1_CONTRA_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDCMRG0_ROUTED_GEN_LINK" EntityType="Self.RDDCMRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDCMRM0_ROUTED_MED_LINK" EntityType="Self.RDDCMRM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDIMAG0_AGENT" EntityType="Self.RDDIMAG0_AGENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDIMIN0_NDC_INACTV_DDIM_LINK" EntityType="Self.RDDIMIN0_NDC_INACTV_DDIM_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDIMRD0_REF_CATEGORY" EntityType="Self.RDDIMRD0_REF_CATEGORY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDIMRG0_ROUTED_GEN_LINK" EntityType="Self.RDDIMRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDDIMRM0_ROUTED_MED_LINK" EntityType="Self.RDDIMRM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDOSED2_DOSE_DESC" EntityType="Self.RDOSED2_DOSE_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDOSSRC0_DOSING_AGE_SOURCE" EntityType="Self.RDOSSRC0_DOSING_AGE_SOURCE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDPTCL0_CLASS_ID" EntityType="Self.RDPTCL0_CLASS_ID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDPTGC0_GCNSEQNO_LINK" EntityType="Self.RDPTGC0_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDPTRG0_ROUTED_GEN_LINK" EntityType="Self.RDPTRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDPTRTM0_ROUTED_MED_LINK" EntityType="Self.RDPTRTM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCCD0_CALC_REQ_TYPE_DESC" EntityType="Self.RDRCCD0_CALC_REQ_TYPE_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCCVU0_UNITS_CONVERSION" EntityType="Self.RDRCCVU0_UNITS_CONVERSION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCDD0_DOSE_CALC_DESC" EntityType="Self.RDRCDD0_DOSE_CALC_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCDTD0_DOSE_TYPE_DESC" EntityType="Self.RDRCDTD0_DOSE_TYPE_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCMA2_MSTR" EntityType="Self.RDRCMA2_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCMD0_MATH_PROCESS_DESC" EntityType="Self.RDRCMD0_MATH_PROCESS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCNMA1_MSTR" EntityType="Self.RDRCNMA1_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCRTD0_ROUTE_DESC" EntityType="Self.RDRCRTD0_ROUTE_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCUND0_UNITS_DESC" EntityType="Self.RDRCUND0_UNITS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RDRCXRT0_XREF" EntityType="Self.RDRCXRT0_XREF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCGC0_ETC_GCNSEQNO" EntityType="Self.RETCGC0_ETC_GCNSEQNO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCGCH0_ETC_GCNSEQNO_HIST" EntityType="Self.RETCGCH0_ETC_GCNSEQNO_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCHCH0_ETC_HICSEQN_HIST" EntityType="Self.RETCHCH0_ETC_HICSEQN_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCHLH0_ETC_HICLSEQNO_HIST" EntityType="Self.RETCHLH0_ETC_HICLSEQNO_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCMDH0_ETC_MEDID_HIST" EntityType="Self.RETCMDH0_ETC_MEDID_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCMED0_ETC_MEDID" EntityType="Self.RETCMED0_ETC_MEDID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCNDH0_ETC_NDC_HIST" EntityType="Self.RETCNDH0_ETC_NDC_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCNMH0_ETC_MED_NAME_ID_HIST" EntityType="Self.RETCNMH0_ETC_MED_NAME_ID_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETCTBL0_ETC_ID" EntityType="Self.RETCTBL0_ETC_ID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REVDEL0_EXT_VOCAB_LINK" EntityType="Self.REVDEL0_EXT_VOCAB_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REVDLT0_LINK_TYPE_DESC" EntityType="Self.REVDLT0_LINK_TYPE_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REVDUR0_RXCUI_ULT_REPL" EntityType="Self.REVDUR0_RXCUI_ULT_REPL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REVDVS0_SOURCE_DESC" EntityType="Self.REVDVS0_SOURCE_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REVDVT0_VOCAB_TYPE_DEF" EntityType="Self.REVDVT0_VOCAB_TYPE_DEF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RFFP0_FED_FIN_PARTICIPATION" EntityType="Self.RFFP0_FED_FIN_PARTICIPATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RFMLDX0_DXID" EntityType="Self.RFMLDX0_DXID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGCNINH0_GCNSEQNO_INACTV_LINK" EntityType="Self.RGCNINH0_GCNSEQNO_INACTV_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGCNINS0_STUDY_TABLE" EntityType="Self.RGCNINS0_STUDY_TABLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGCNSEQ4_GCNSEQNO_MSTR" EntityType="Self.RGCNSEQ4_GCNSEQNO_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGCNSTR0_INGREDIENT_STRENGTH" EntityType="Self.RGCNSTR0_INGREDIENT_STRENGTH" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGERIGC0_GERI_GCNSEQNO_LINK" EntityType="Self.RGERIGC0_GERI_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGERIMA0_GERI_MSTR" EntityType="Self.RGERIMA0_GERI_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGERIRG0_ROUTED_GEN_LINK" EntityType="Self.RGERIRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RGERIRM0_ROUTED_MED_LINK" EntityType="Self.RGERIRM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHIC1D2_HIC_ORGAN_SYS_DESC" EntityType="Self.RHIC1D2_HIC_ORGAN_SYS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHIC2D3_HIC_RX_CLASS_DESC" EntityType="Self.RHIC2D3_HIC_RX_CLASS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHIC3D3_HIC_THERAP_CLASS_DESC" EntityType="Self.RHIC3D3_HIC_THERAP_CLASS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHIC3L2_HIC3_HICLSEQNO_LINK" EntityType="Self.RHIC3L2_HIC3_HICLSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHIC4D2_HIC_BASE_ING_DESC" EntityType="Self.RHIC4D2_HIC_BASE_ING_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHICCAS1_HIC_CAS_LINK" EntityType="Self.RHICCAS1_HIC_CAS_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHICD5_HIC_DESC" EntityType="Self.RHICD5_HIC_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHICLSQ1_HICLSEQNO_MSTR" EntityType="Self.RHICLSQ1_HICLSEQNO_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RHICRH0_ING_HIST" EntityType="Self.RHICRH0_ING_HIST" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RINDMDD0_INDCTS_DRUG_DESC" EntityType="Self.RINDMDD0_INDCTS_DRUG_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RINDMGC0_INDCTS_GCNSEQNO_LINK" EntityType="Self.RINDMGC0_INDCTS_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RINDMLD0_LABELED_DESC" EntityType="Self.RINDMLD0_LABELED_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RINDMMA2_INDCTS_MSTR" EntityType="Self.RINDMMA2_INDCTS_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RINDMPD0_PREDICTOR_DESC" EntityType="Self.RINDMPD0_PREDICTOR_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RINDMRG0_ROUTED_GEN_LINK" EntityType="Self.RINDMRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RINDMRM0_ROUTED_MED_LINK" EntityType="Self.RINDMRM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RLBLRID3_LBLR_DESC" EntityType="Self.RLBLRID3_LBLR_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMCRMA1_MEDICARE_MSTR" EntityType="Self.RMCRMA1_MEDICARE_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMCRPB0_MEDICARE_HCPC_PB_PRICE" EntityType="Self.RMCRPB0_MEDICARE_HCPC_PB_PRICE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMCRRD1_MEDICARE_REG_REF_DESC" EntityType="Self.RMCRRD1_MEDICARE_REG_REF_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMD2_MEDICAID_MSTR" EntityType="Self.RMD2_MEDICAID_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMDCOPD0_MEDICAID_COPAY_DESC" EntityType="Self.RMDCOPD0_MEDICAID_COPAY_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMDCOV0_MEDICAID_COV_DESC" EntityType="Self.RMDCOV0_MEDICAID_COV_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMDMAXC0_MEDICAID_MAX_QTY_DESC" EntityType="Self.RMDMAXC0_MEDICAID_MAX_QTY_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMDMINC0_MEDICAID_MIN_QTY_DESC" EntityType="Self.RMDMINC0_MEDICAID_MIN_QTY_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMDP0_MEDICAID_PRICE" EntityType="Self.RMDP0_MEDICAID_PRICE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMDPA0_MEDICAID_PA_DESC" EntityType="Self.RMDPA0_MEDICAID_PA_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMDRFLD0_MEDICAID_REFILL_DESC" EntityType="Self.RMDRFLD0_MEDICAID_REFILL_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMEDMHL0_MED_HICLSEQNO_LINK" EntityType="Self.RMEDMHL0_MED_HICLSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMIGC1_MEDID_GCNSEQNO_LINK" EntityType="Self.RMIGC1_MEDID_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMIID1_MED" EntityType="Self.RMIID1_MED" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMINDC1_NDC_MEDID" EntityType="Self.RMINDC1_NDC_MEDID" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMMADMA1_ADULT_DOSE_MSTR" EntityType="Self.RMMADMA1_ADULT_DOSE_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMMARMA0_ADULT_RANGE_MSTR" EntityType="Self.RMMARMA0_ADULT_RANGE_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMMGDMA0_GERI_DOSE_MSTR" EntityType="Self.RMMGDMA0_GERI_DOSE_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RMMGRMA0_GERI_RANGE_MSTR" EntityType="Self.RMMGRMA0_GERI_RANGE_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RNDC14_NDC_MSTR" EntityType="Self.RNDC14_NDC_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RNDCAT0_NDC_ATTRIBUTE" EntityType="Self.RNDCAT0_NDC_ATTRIBUTE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RNDCINH0_NDC_INACTV_LINK" EntityType="Self.RNDCINH0_NDC_INACTV_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RNDCINR0_INACTV_REVIEWED" EntityType="Self.RNDCINR0_INACTV_REVIEWED" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RNP2_NDC_PRICE" EntityType="Self.RNP2_NDC_PRICE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROBCD0_OBC_DESC" EntityType="Self.ROBCD0_OBC_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROBCNDC0_OBC_NDC" EntityType="Self.ROBCNDC0_OBC_NDC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEDIGC0_PEDI_GCNSEQNO_LINK" EntityType="Self.RPEDIGC0_PEDI_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEDIMA0_PEDI_MSTR" EntityType="Self.RPEDIMA0_PEDI_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEDIRG0_ROUTED_GEN_LINK" EntityType="Self.RPEDIRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEDIRM0_ROUTED_MED_LINK" EntityType="Self.RPEDIRM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEMGC0_GCNSEQNO_LINK" EntityType="Self.RPEMGC0_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEMMA5_MSTR" EntityType="Self.RPEMMA5_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEMMOE2_MONO" EntityType="Self.RPEMMOE2_MONO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEMOGC0_MONO_GCNSEQNO_LINK" EntityType="Self.RPEMOGC0_MONO_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEMORG0_ROUTED_GEN_LINK" EntityType="Self.RPEMORG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPEMRG0_ROUTED_GEN_LINK" EntityType="Self.RPEMRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPREGGC0_PREG_GCNSEQNO_LINK" EntityType="Self.RPREGGC0_PREG_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPREGMA0_PREG_MSTR" EntityType="Self.RPREGMA0_PREG_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPREGRG0_ROUTED_GEN_LINK" EntityType="Self.RPREGRG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPREGRM0_ROUTED_MED_LINK" EntityType="Self.RPREGRM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RPREGSL0_PREG_SEVER_LEVEL" EntityType="Self.RPREGSL0_PREG_SEVER_LEVEL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RROUTED3_ROUTE_DESC" EntityType="Self.RROUTED3_ROUTE_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RRTGN0_ROUTED_GEN_MSTR" EntityType="Self.RRTGN0_ROUTED_GEN_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RSIDEDD0_DRUG_DESC" EntityType="Self.RSIDEDD0_DRUG_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RSIDEGC0_GCNSEQNO_LINK" EntityType="Self.RSIDEGC0_GCNSEQNO_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RSIDEMA3_MSTR" EntityType="Self.RSIDEMA3_MSTR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RSIDERG0_ROUTED_GEN_LINK" EntityType="Self.RSIDERG0_ROUTED_GEN_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RSIDERM0_ROUTED_MED_LINK" EntityType="Self.RSIDERM0_ROUTED_MED_LINK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RSTR1_STRNGTH_DESC" EntityType="Self.RSTR1_STRNGTH_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RSTRUOM0_STRENGTH_UOM" EntityType="Self.RSTRUOM0_STRENGTH_UOM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RUNITSD0_UNITS_DESC" EntityType="Self.RUNITSD0_UNITS_DESC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RXRGDFQ0_GCDF_SCRIPT_QQ" EntityType="Self.RXRGDFQ0_GCDF_SCRIPT_QQ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RXRNCQQ0_QQ_MSTR" EntityType="Self.RXRNCQQ0_QQ_MSTR" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

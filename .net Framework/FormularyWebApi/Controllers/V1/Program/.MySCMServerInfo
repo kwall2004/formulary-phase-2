@@ -1,0 +1,12 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Controllers/V1/Program
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=1156982
+ProgramFormulariesController.cs;2133300582;1;1498129890;|404026|668702
+PriorAuthorizationHeaderController.cs;631481132;2;1498475332;|404039|668819
+StepTherapyHeaderController.cs;3775781028;1;1498475332;|404028|668722
+UMProgramController.cs;3050610271;2;1498561599;|404054|668956
+ProgramCriteriaGroupController.cs;2054004980;2;1499709488;|404097|669536
+UMProgramFinishController.cs;3121117281;1;1499709488;|404103|669606
+UMProgramSearchController.cs;2665616023;2;1499709488;|404104|669620
+FormulariesPAController.cs;3846939650;1;1499771175;|404121|669963

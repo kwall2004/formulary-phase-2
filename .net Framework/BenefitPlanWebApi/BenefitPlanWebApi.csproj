@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CAD9A88-38F8-414C-9BB9-BB49EC8EFBE6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BenefitPlanWebApi</RootNamespace>
+    <AssemblyName>BenefitPlanWebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Interception.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Interception.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.11\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.WebApi, Version=5.1.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.WebAPI.5.1\lib\net45\Unity.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AtlasHandleErrorAttrbiute.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Account\AccountController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Account\AccountIndustryIdentifierController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Address\EntityAddressController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Address\EntityAddressTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\AdminConfig\AllowedPrescribersController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\AdminConfig\BenefitDetailController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\AdminConfig\BenefitWorkflowController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\AdminConfig\CopyBenefitDefinitionController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\AdminConfig\PrescriberDrugOverrideController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\AdminConfig\BenefitController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\AdminConfig\BenefitDefinitionController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanBenefitController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanViewExistingController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopayConfigurationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanCostShareMaximumsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanPharmacyTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanTransitionController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CMSBenefitStructureTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopayCoinsuranceLogicTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopayDistributionLICSController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopayExclusionsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopayDistributionController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopayOverrideQualifierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopaySetupController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopyCopayConfigurationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopyLICSCopayController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CoveragePhaseTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitServiceTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanSizeClassificationTypesController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CopayFunctionTypesController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CostBasisTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\DaySupplyTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\DeductibleExceptionsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\DeductibleExclusionQualifierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\DrugClassTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\FillExceptionChangeQualifierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\FillExceptionController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\DispenseAsWrittenCopayController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\DispenseAsWrittenTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\FormularyTierController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\LICSSetupController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\LICSTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\MACListController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\NetworkTierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\PharmacyPricingDetailController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\PharmacyTypeDaySupplyController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\PlanCapLimitsQualifierController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\EarlyRefillExceptionsQualifierController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\PlanCapLimitsCapPeriodController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\EarlyRefillExceptionsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\PlanCapLimitsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\FormularyController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\TransitionLICSConfigurationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\WaiverRiderTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\RxPricingTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\ConfigurationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CoverageSet\BenefitCoverageSetDetailsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CoverageSet\CoverageSetConfigurationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CoverageSet\CoverageSetController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CoverageSet\BenefitPlanBenefitCoverageSetNetworkTierController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\DrugReferenceDatabaseController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CoverageSet\CoverageSetThresholdController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CoverageSet\ThresholdController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CoverageSet\ThresholdQualifierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CriteriaGroup\CriteriaConditionTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CriteriaGroup\CriteriaSetController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CriteriaGroup\RuleDetailController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CriteriaGroup\CriteriaSetTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\NetworkController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\NetworkTierController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\PharmacyTypesController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\ProductTypesController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\PlanClassificationTypesController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\BenefitPlanController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\CoveragePhaseController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\BenefitPlan\ServiceTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Contact\EntityContactController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CriteriaGroup\CriteriaOperatorTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CriteriaGroup\RuleSetController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\CriteriaGroup\ValueQualifierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\DataCompare\DataCompareMCSController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\DataCompare\DataCompareMerlinController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Deductible\DeductibleController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Deductible\DeductibleTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\FrequencyQualifierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\GenderController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Group\CopyGroupContentsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Group\GroupController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\IndustryIdentifierTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Integration\BenefitIntegrationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Integration\BenefitPlanIntegrationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\ISOCountryCodeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\LineOfBusinessController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\MonthController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\NavigationBreadCrumbController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PlanBenefitPackage\HealthCareFinancialAccountTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PlanBenefitPackage\PlanBenefitPackageBusinessRuleController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PlanBenefitPackage\PlanBenefitPackageController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PlanBenefitPackage\PlanBenefitPackageSavingsAccountController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PopulationGroup\PopulationGroupBenefitConfigurationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PopulationGroup\PopulationGroupBenefitWorkflowController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PopulationGroup\PopulationGroupPlanBenefitPackageSubmitForApprovalController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PopulationGroup\PopulationGroupPlanBenefitPackageController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PrescriberController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Search\BenefitDefinitionSearchController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Search\BenefitPlanSearchController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Search\PlanBenefitPackageSearchController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PlanBenefitPackage\ServiceAreaConfigurationController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\PopulationGroup\PopulationGroupController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Search\TenantSearchController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\StateProvinceCodeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\TenantFamilyHierarchyTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\TenantFamily\TenantFamilyController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\TenantHierarchy\TenantHierarchyBenefitPlanAssociatedPopulationsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\TenantHierarchy\TenantHierarchyAssociatedPopulationsController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\TenantHierarchy\TenantHierarchyController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Tenant\TenantController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\Tenant\TenantIndustryIdentifierController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\WorkFlow\StatusNoteController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\WorkFlow\StatusTypeController.cs" />
+    <Compile Include="Controllers\V1\BenefitPlan\WorkFlow\WorkflowHistoryController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\JSONFunctions.cs" />
+    <Compile Include="Utility\UtilityWebApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\Dev.pubxml" />
+    <None Include="Properties\PublishProfiles\QA.pubxml" />
+    <None Include="Properties\PublishProfiles\UAT.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\Atlas.BenefitPlan.BLL\Atlas.BenefitPlan.BLL.csproj">
+      <Project>{9e4245e8-1e7e-4448-b5df-7e4c9f5d3480}</Project>
+      <Name>Atlas.BenefitPlan.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Atlas.BenefitPlan.DAL\Atlas.BenefitPlan.DAL.csproj">
+      <Project>{4d4cb2bf-793a-4240-b344-056550310f7e}</Project>
+      <Name>Atlas.BenefitPlan.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Atlas.Configuration\Atlas.Configuration.csproj">
+      <Project>{b918f8c1-4fe2-4ff9-bf5a-b1d338a33465}</Project>
+      <Name>Atlas.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Atlas.Core.BLL\Atlas.Core.BLL.csproj">
+      <Project>{f354654c-2c71-4bb1-b402-8383108fc9c2}</Project>
+      <Name>Atlas.Core.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Atlas.Core.DAL\Atlas.Core.DAL.csproj">
+      <Project>{e587a754-72ad-4c6e-8245-86ab848db40d}</Project>
+      <Name>Atlas.Core.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Atlas.Core.WebApi\Atlas.Core.WebApi.csproj">
+      <Project>{7C27D08F-B641-48BD-B054-B22BAC8AC6EC}</Project>
+      <Name>Atlas.Core.WebApi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49492</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55229/BenefitPlanApi</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

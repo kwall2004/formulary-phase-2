@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "object-curly-newline": [
+      "error",
+      {
+        "minProperties": 1
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "max-len": "off",
+    "array-bracket-spacing": "off",
+    "strict": "off",
+    "vars-on-top": "off",
+    "no-trailing-spaces": "off",
+    "no-negated-condition": "off",
+    "id-length": "off"
+  }
+}

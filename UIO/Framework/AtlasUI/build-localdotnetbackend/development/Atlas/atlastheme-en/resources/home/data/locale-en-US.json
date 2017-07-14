@@ -1,0 +1,54 @@
+{
+  "moduleName": "Home",
+  "claim": {
+    "title": "Claim Alert"
+  },
+  "cobc": {
+    "title": "COBC Alert"
+  },
+  "coc": {
+    "title": "CoC Alert"
+  },
+  "dal": {
+    "title": "Denial/Appeal/Letter Alert"
+  },
+  "dmr": {
+    "title": "DMR Alert"
+  },
+  "finance": {
+    "title": "Finance Collection Alert"
+  },
+  "grievance": {
+    "title": "Grievance Alert"
+  },
+  "jcode": {
+    "title": "J Code Alert"
+  },
+  "job": {
+    "title": "My Job Queue - Last 10 Jobs"
+  },
+  "locks": {
+    "title": "Locks Alert"
+  },
+  "merlinTask": {
+    "title": "Merlin Task Scheduler"
+  },
+  "mtm": {
+    "title": "Case Management Alert"
+  },
+  "openIssues": {
+    "title": "My Contact Log Open Issues"
+  },
+  "outreach": {
+    "title": "Outreach Alert"
+  },
+  "patientSafety": {
+    "title": "Patient Safety Alert"
+  },
+  "pharmacyAudit": {
+    "title": "Pharmacy Alert"
+  },
+  "priorAuth": {
+    "title": "My Prior Auth Alert"
+  }
+}

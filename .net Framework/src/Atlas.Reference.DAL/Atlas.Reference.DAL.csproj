@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBD17372-12D9-4100-AF1D-BC9DE62704BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Atlas.Reference.DAL</RootNamespace>
+    <AssemblyName>Atlas.Reference.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unity.3.0.1304.1\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NLog.4.3.11\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IReferenceRepositoryFactory.cs" />
+    <Compile Include="Models\AHFS.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AHFSChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AppSettings.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CacheStatus.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrugCatgRule.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrugListCache.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DrugTypeFn.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ETC.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ETCChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FDBClinicalData.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FDBDrugChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FDBDrugChangeSummary.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FDBDrugList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FDBPatEdMstr.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FDBPECXRef.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FileFmt.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FontSize.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FormularyCache.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FrmlryCacheStatus.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FrmlryPendingFeed.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FrmlryPlanSubType.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FrmlryPlanType.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FrmlryReview.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GCN.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GCNChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GPI.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GPIChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Lang.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedId.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedIdChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedispanBrandProb.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedispanBrandProbChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedispanDrugChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedispanDrugChangeSummary.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MedispanDrugList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MSDrugType.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NDCNote.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NDCType.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewDrugNotToDrugList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewDrugNotToFrmlry.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewDrugToDrugList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewDrugToFrmlry.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NSDEDrugChangeList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NSDEDrugList.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PatEdMonoTextType.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PDFMessage.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Reference.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Reference.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ReferenceContextPartial.cs" />
+    <Compile Include="Models\RptFmt.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RptFmtSection.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SmartSearchField.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SmartSearchGroup.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptCfg.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptCfgCol.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptCfgCvrgPrptyType.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptCfgSctn.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptCfgTier.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptCol.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptDrugSortBy.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptOrgBy.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptOTC.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptRollUp.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SumRptSctn.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TierDispl.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tmpCustomNDC.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tmpUserDrugCatgPage.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tmpUserDrugListDtlPage.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tmpUserDrugSearch.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tmpUserDrugSearchMS.cs">
+      <DependentUpon>Reference.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceRepositoryFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DrugFnTypeRepository.cs" />
+    <Compile Include="Repositories\FDBDrugListRepository.cs" />
+    <Compile Include="Repositories\FormularyHeaderVMRepository.cs" />
+    <Compile Include="Repositories\FrmlryPlanSubTypeRepository.cs" />
+    <Compile Include="Repositories\FrmlryPlanTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDrugTypeFnRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFDBDrugListRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFormularyHeaderVMRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFrmlryPlanSubTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFrmlryPlanTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMedispanDrugListRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INDCTypeRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISmartSearchRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISqlConfigRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IValidationRepository.cs" />
+    <Compile Include="Repositories\MedispanDrugListRepository.cs" />
+    <Compile Include="Repositories\NDCRepository.cs" />
+    <Compile Include="Repositories\SmartSearchRepository.cs" />
+    <Compile Include="Repositories\SQLConfigRepository.cs" />
+    <Compile Include="Repositories\ValidationRepository.cs" />
+    <Compile Include="ViewModels\CustomNdc.cs" />
+    <Compile Include="ViewModels\FormularyHeaderDrugTypeVM.cs" />
+    <Compile Include="ViewModels\FormularyHeaderPlanTypeVM.cs" />
+    <Compile Include="ViewModels\FormularyHeaderVM.cs" />
+    <Compile Include="ViewModels\NdcSearchVM.cs" />
+    <Compile Include="ViewModels\ValidationVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Atlas.Configuration\Atlas.Configuration.csproj">
+      <Project>{b918f8c1-4fe2-4ff9-bf5a-b1d338a33465}</Project>
+      <Name>Atlas.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atlas.Core.DAL\Atlas.Core.DAL.csproj">
+      <Project>{e587a754-72ad-4c6e-8245-86ab848db40d}</Project>
+      <Name>Atlas.Core.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Containers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="ClassDiagram1.cd" />
+    <EntityDeploy Include="Models\Reference.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Reference.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\Reference.edmx.diagram">
+      <DependentUpon>Reference.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Reference.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Reference.edmx</DependentUpon>
+      <LastGenOutput>Reference.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Reference.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Reference.edmx</DependentUpon>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

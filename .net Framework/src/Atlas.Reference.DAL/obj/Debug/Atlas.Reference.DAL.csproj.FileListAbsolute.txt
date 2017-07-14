@@ -1,0 +1,70 @@
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.dll.config
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Atlas.Configuration.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Atlas.Core.DAL.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Atlas.Configuration.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Atlas.Core.DAL.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.dll
+D:\Users\r6385\Repos\.net Framework - Copy\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.dll.config
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Core.DAL.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Configuration.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Core.DAL.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.csprojResolveAssemblyReference.cache
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.dll
+D:\Users\r6385\Repos\.net Framework\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.dll.config
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Reference.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Configuration.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Core.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Newtonsoft.Json.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\NLog.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Configuration.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Atlas.Core.DAL.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\Newtonsoft.Json.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\bin\Debug\NLog.xml
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.csprojResolveAssemblyReference.cache
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.dll
+D:\Users\k4854\Source\Formulary Phase 2\.net Framework\src\Atlas.Reference.DAL\obj\Debug\Atlas.Reference.DAL.pdb

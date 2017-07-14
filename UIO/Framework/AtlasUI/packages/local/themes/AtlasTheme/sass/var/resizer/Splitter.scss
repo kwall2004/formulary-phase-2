@@ -1,0 +1,10 @@
+/** @class Ext.resizer.Splitter */
+//
+
+$splitter-size: dynamic(8px);
+$collapse-tool-size: dynamic(48px);
+$splitter-focus-outline-color: dynamic(#232323);
+$splitter-focus-outline-width: dynamic(1px);
+$splitter-focus-outline-offset: dynamic(-($splitter-focus-outline-width + 1));
+$splitter-collapse-tool-background-color: dynamic(#c1e6f6);
+$splitter-collapse-tool-glyph-color:dynamic(#5aadd1);

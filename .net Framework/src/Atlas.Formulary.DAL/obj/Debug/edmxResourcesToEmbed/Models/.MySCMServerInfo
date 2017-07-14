@@ -1,0 +1,10 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/src/Atlas.Formulary.DAL/obj/Debug/edmxResourcesToEmbed/Models
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796681
+Reference.csdl;2083963133;1;1492524718;|249585|480676
+Reference.msl;985092176;1;1492524718;|249586|480677
+Reference.ssdl;738395328;1;1492524718;|249587|480678
+Formulary.csdl;2988127879;1;1499771175;|249582|480673
+Formulary.msl;3740836321;1;1499771175;|249583|480674
+Formulary.ssdl;4155503966;1;1499771175;|249584|480675

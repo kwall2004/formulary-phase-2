@@ -1,0 +1,7 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/FormularyWebApi/Business
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796784
+DevExceptionMessageGenerator.cs;2335571676;1;1492524685;|248477|479568
+IExceptionMessageGenerator.cs;4221887850;1;1492524685;|248478|479569
+ProdExceptionMessageGenerator.cs;332400202;1;1492524685;|248479|479570

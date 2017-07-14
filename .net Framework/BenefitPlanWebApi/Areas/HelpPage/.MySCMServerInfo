@@ -1,0 +1,9 @@
+SCMBranch=Formulary Phase 2
+SCMRepository=Atlas/.net Framework/BenefitPlanWebApi/Areas/HelpPage
+SCMMainlineUUID={5a1b102f-7970-442c-99a1-a301f2674cab}
+SCMBranchRepositoryID=796846
+ApiDescriptionExtensions.cs;1839406319;1;1492524449;|246832|477923
+HelpPage.css;169390451;1;1492524449;|246833|477924
+HelpPageAreaRegistration.cs;3694551259;1;1492524449;|246834|477925
+HelpPageConfigurationExtensions.cs;3800732617;1;1492524449;|246835|477926
+XmlDocumentationProvider.cs;2313433910;1;1492524449;|246836|477927
